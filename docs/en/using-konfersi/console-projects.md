@@ -17,7 +17,7 @@ The side menu has three main areas:
 - **Projects Management**: every project you own or have been invited to.
 - **Manage Plan**: plans, add-ons, your order cart and transactions.
 
-The first time you open the Console, a welcome guide offers a tour (**Take a Tour**), profile settings (**Settings**) and a shortcut to create your first project (**Create**).
+The first time you open the Console, a [welcome guide](console-guides.md) offers a tour (**Take a Tour**), profile settings (**Settings**) and a shortcut to create your first project (**Create**).
 
 ## Create a project
 

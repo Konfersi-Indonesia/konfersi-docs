@@ -17,7 +17,7 @@ Menu samping memiliki tiga bagian utama:
 - **Manajemen Proyek**: semua proyek milik Anda atau proyek tempat Anda diundang.
 - **Kelola Paket**: paket, add-on, keranjang pesanan, dan transaksi.
 
-Saat pertama kali membuka Console, panduan sambutan menawarkan tur (**Ikuti Tour**), pengaturan profil (**Pengaturan**), dan pintasan untuk membuat proyek pertama (**Buat**).
+Saat pertama kali membuka Console, [panduan sambutan](console-guides.md) menawarkan tur (**Ikuti Tour**), pengaturan profil (**Pengaturan**), dan pintasan untuk membuat proyek pertama (**Buat**).
 
 ## Membuat proyek
 

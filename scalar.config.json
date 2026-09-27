@@ -46,6 +46,12 @@
             "type": "group",
             "title": "Using Konfersi",
             "children": {
+              "/console-guides": {
+                "type": "page",
+                "title": "Console guides",
+                "icon": "phosphor/regular/signpost",
+                "filepath": "docs/en/using-konfersi/console-guides.md"
+              },
               "/console-projects": {
                 "type": "page",
                 "title": "Console & projects",
@@ -214,6 +220,12 @@
             "type": "group",
             "title": "Menggunakan Konfersi",
             "children": {
+              "/console-guides": {
+                "type": "page",
+                "title": "Panduan Console",
+                "icon": "phosphor/regular/signpost",
+                "filepath": "docs/id/using-konfersi/console-guides.md"
+              },
               "/console-projects": {
                 "type": "page",
                 "title": "Console & proyek",
