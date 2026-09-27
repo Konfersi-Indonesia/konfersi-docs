@@ -1,0 +1,360 @@
+{
+  "$schema": "https://registry.scalar.com/@scalar/schemas/config",
+  "scalar": "2.0.0",
+  "info": {
+    "title": "Konfersi Docs",
+    "description": "Guides, policies and help for the Konfersi metocean and climate platform."
+  },
+  "assetsDir": "assets",
+  "navigation": {
+    "routes": {
+      "/en": {
+        "type": "group",
+        "title": "Konfersi Docs",
+        "children": {
+          "/getting-started": {
+            "type": "group",
+            "title": "Getting started",
+            "children": {
+              "/what-is-konfersi": {
+                "type": "page",
+                "title": "What is Konfersi?",
+                "icon": "phosphor/regular/compass",
+                "filepath": "docs/en/getting-started/what-is-konfersi.md"
+              },
+              "/products-and-surfaces": {
+                "type": "page",
+                "title": "Products & surfaces",
+                "icon": "phosphor/regular/squares-four",
+                "filepath": "docs/en/getting-started/products-and-surfaces.md"
+              },
+              "/create-account": {
+                "type": "page",
+                "title": "Create an account",
+                "icon": "phosphor/regular/user-plus",
+                "filepath": "docs/en/getting-started/create-account.md"
+              },
+              "/sign-in": {
+                "type": "page",
+                "title": "Sign in",
+                "icon": "phosphor/regular/sign-in",
+                "filepath": "docs/en/getting-started/sign-in.md"
+              }
+            }
+          },
+          "/using-konfersi": {
+            "type": "group",
+            "title": "Using Konfersi",
+            "children": {
+              "/console-projects": {
+                "type": "page",
+                "title": "Console & projects",
+                "icon": "phosphor/regular/folders",
+                "filepath": "docs/en/using-konfersi/console-projects.md"
+              },
+              "/lab-workspace": {
+                "type": "page",
+                "title": "Lab workspace",
+                "icon": "phosphor/regular/flask",
+                "filepath": "docs/en/using-konfersi/lab-workspace.md"
+              },
+              "/mission-planning": {
+                "type": "page",
+                "title": "Mission Planning",
+                "icon": "phosphor/regular/boat",
+                "filepath": "docs/en/using-konfersi/mission-planning.md"
+              },
+              "/metocean-data-sources": {
+                "type": "page",
+                "title": "Metocean data sources",
+                "icon": "phosphor/regular/waves",
+                "filepath": "docs/en/using-konfersi/metocean-data-sources.md"
+              }
+            }
+          },
+          "/billing": {
+            "type": "group",
+            "title": "Plans & billing",
+            "children": {
+              "/plans-and-pricing": {
+                "type": "page",
+                "title": "Plans & pricing",
+                "icon": "phosphor/regular/tag",
+                "filepath": "docs/en/billing/plans-and-pricing.md"
+              },
+              "/payments": {
+                "type": "page",
+                "title": "Payments",
+                "icon": "phosphor/regular/credit-card",
+                "filepath": "docs/en/billing/payments.md"
+              },
+              "/refunds-and-cancellation": {
+                "type": "page",
+                "title": "Refunds & cancellation",
+                "icon": "phosphor/regular/arrow-counter-clockwise",
+                "filepath": "docs/en/billing/refunds-and-cancellation.md"
+              }
+            }
+          },
+          "/support": {
+            "type": "group",
+            "title": "Support",
+            "children": {
+              "/contact-support": {
+                "type": "page",
+                "title": "Contact support",
+                "icon": "phosphor/regular/lifebuoy",
+                "filepath": "docs/en/support/contact-support.md"
+              },
+              "/faq": {
+                "type": "page",
+                "title": "FAQ",
+                "icon": "phosphor/regular/question",
+                "filepath": "docs/en/support/faq.md"
+              }
+            }
+          },
+          "/legal": {
+            "type": "group",
+            "title": "Legal",
+            "children": {
+              "/terms": {
+                "type": "page",
+                "title": "Terms of Service",
+                "icon": "phosphor/regular/scroll",
+                "filepath": "docs/en/legal/terms.md"
+              },
+              "/privacy": {
+                "type": "page",
+                "title": "Privacy Policy",
+                "icon": "phosphor/regular/lock-key",
+                "filepath": "docs/en/legal/privacy.md"
+              },
+              "/cookies": {
+                "type": "page",
+                "title": "Cookie Notice",
+                "icon": "phosphor/regular/cookie",
+                "filepath": "docs/en/legal/cookies.md"
+              },
+              "/acceptable-use": {
+                "type": "page",
+                "title": "Acceptable Use Policy",
+                "icon": "phosphor/regular/hand-palm",
+                "filepath": "docs/en/legal/acceptable-use.md"
+              },
+              "/ai-and-metocean-disclaimer": {
+                "type": "page",
+                "title": "AI & metocean disclaimer",
+                "icon": "phosphor/regular/warning-circle",
+                "filepath": "docs/en/legal/ai-and-metocean-disclaimer.md"
+              }
+            }
+          },
+          "/trust": {
+            "type": "group",
+            "title": "Trust",
+            "children": {
+              "/security": {
+                "type": "page",
+                "title": "Security",
+                "icon": "phosphor/regular/shield-check",
+                "filepath": "docs/en/trust/security.md"
+              }
+            }
+          },
+          "/company": {
+            "type": "group",
+            "title": "Company",
+            "children": {
+              "/about": {
+                "type": "page",
+                "title": "About Konfersi",
+                "icon": "phosphor/regular/buildings",
+                "filepath": "docs/en/company/about.md"
+              }
+            }
+          }
+        }
+      },
+      "/id": {
+        "type": "group",
+        "title": "Dokumentasi Konfersi",
+        "children": {
+          "/getting-started": {
+            "type": "group",
+            "title": "Mulai",
+            "children": {
+              "/what-is-konfersi": {
+                "type": "page",
+                "title": "Apa itu Konfersi?",
+                "icon": "phosphor/regular/compass",
+                "filepath": "docs/id/getting-started/what-is-konfersi.md"
+              },
+              "/products-and-surfaces": {
+                "type": "page",
+                "title": "Produk & layanan",
+                "icon": "phosphor/regular/squares-four",
+                "filepath": "docs/id/getting-started/products-and-surfaces.md"
+              },
+              "/create-account": {
+                "type": "page",
+                "title": "Membuat akun",
+                "icon": "phosphor/regular/user-plus",
+                "filepath": "docs/id/getting-started/create-account.md"
+              },
+              "/sign-in": {
+                "type": "page",
+                "title": "Masuk",
+                "icon": "phosphor/regular/sign-in",
+                "filepath": "docs/id/getting-started/sign-in.md"
+              }
+            }
+          },
+          "/using-konfersi": {
+            "type": "group",
+            "title": "Menggunakan Konfersi",
+            "children": {
+              "/console-projects": {
+                "type": "page",
+                "title": "Console & proyek",
+                "icon": "phosphor/regular/folders",
+                "filepath": "docs/id/using-konfersi/console-projects.md"
+              },
+              "/lab-workspace": {
+                "type": "page",
+                "title": "Ruang kerja Lab",
+                "icon": "phosphor/regular/flask",
+                "filepath": "docs/id/using-konfersi/lab-workspace.md"
+              },
+              "/mission-planning": {
+                "type": "page",
+                "title": "Mission Planning",
+                "icon": "phosphor/regular/boat",
+                "filepath": "docs/id/using-konfersi/mission-planning.md"
+              },
+              "/metocean-data-sources": {
+                "type": "page",
+                "title": "Sumber data metocean",
+                "icon": "phosphor/regular/waves",
+                "filepath": "docs/id/using-konfersi/metocean-data-sources.md"
+              }
+            }
+          },
+          "/billing": {
+            "type": "group",
+            "title": "Paket & tagihan",
+            "children": {
+              "/plans-and-pricing": {
+                "type": "page",
+                "title": "Paket & harga",
+                "icon": "phosphor/regular/tag",
+                "filepath": "docs/id/billing/plans-and-pricing.md"
+              },
+              "/payments": {
+                "type": "page",
+                "title": "Pembayaran",
+                "icon": "phosphor/regular/credit-card",
+                "filepath": "docs/id/billing/payments.md"
+              },
+              "/refunds-and-cancellation": {
+                "type": "page",
+                "title": "Pengembalian dana & pembatalan",
+                "icon": "phosphor/regular/arrow-counter-clockwise",
+                "filepath": "docs/id/billing/refunds-and-cancellation.md"
+              }
+            }
+          },
+          "/support": {
+            "type": "group",
+            "title": "Bantuan",
+            "children": {
+              "/contact-support": {
+                "type": "page",
+                "title": "Hubungi tim bantuan",
+                "icon": "phosphor/regular/lifebuoy",
+                "filepath": "docs/id/support/contact-support.md"
+              },
+              "/faq": {
+                "type": "page",
+                "title": "Pertanyaan umum",
+                "icon": "phosphor/regular/question",
+                "filepath": "docs/id/support/faq.md"
+              }
+            }
+          },
+          "/legal": {
+            "type": "group",
+            "title": "Legal",
+            "children": {
+              "/terms": {
+                "type": "page",
+                "title": "Syarat & Ketentuan",
+                "icon": "phosphor/regular/scroll",
+                "filepath": "docs/id/legal/terms.md"
+              },
+              "/privacy": {
+                "type": "page",
+                "title": "Kebijakan Privasi",
+                "icon": "phosphor/regular/lock-key",
+                "filepath": "docs/id/legal/privacy.md"
+              },
+              "/cookies": {
+                "type": "page",
+                "title": "Pemberitahuan Cookie",
+                "icon": "phosphor/regular/cookie",
+                "filepath": "docs/id/legal/cookies.md"
+              },
+              "/acceptable-use": {
+                "type": "page",
+                "title": "Kebijakan Penggunaan yang Wajar",
+                "icon": "phosphor/regular/hand-palm",
+                "filepath": "docs/id/legal/acceptable-use.md"
+              },
+              "/ai-and-metocean-disclaimer": {
+                "type": "page",
+                "title": "Penafian AI & metocean",
+                "icon": "phosphor/regular/warning-circle",
+                "filepath": "docs/id/legal/ai-and-metocean-disclaimer.md"
+              }
+            }
+          },
+          "/trust": {
+            "type": "group",
+            "title": "Kepercayaan",
+            "children": {
+              "/security": {
+                "type": "page",
+                "title": "Keamanan",
+                "icon": "phosphor/regular/shield-check",
+                "filepath": "docs/id/trust/security.md"
+              }
+            }
+          },
+          "/company": {
+            "type": "group",
+            "title": "Perusahaan",
+            "children": {
+              "/about": {
+                "type": "page",
+                "title": "Tentang Konfersi",
+                "icon": "phosphor/regular/buildings",
+                "filepath": "docs/id/company/about.md"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-konfersi": {
+    "locales": [
+      "en",
+      "id"
+    ],
+    "defaultLocale": "en",
+    "localeRoutes": {
+      "en": "/en",
+      "id": "/id"
+    }
+  }
+}

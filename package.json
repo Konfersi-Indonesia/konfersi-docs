@@ -1,0 +1,11 @@
+{
+  "name": "konfersi-docs",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Konfersi public documentation (Scalar Docs markdown, en + id).",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

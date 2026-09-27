@@ -1,0 +1,21 @@
+{
+  "$comment": "Slugs that Konfersi apps link to directly (mirrored by DOCS_PAGE in @konfersi/shared). Renaming one breaks app links; scripts/validate.mjs fails if any is missing from scalar.config.json.",
+  "HOME": "",
+  "WHAT_IS_KONFERSI": "getting-started/what-is-konfersi",
+  "CREATE_ACCOUNT": "getting-started/create-account",
+  "SIGN_IN": "getting-started/sign-in",
+  "CONSOLE_PROJECTS": "using-konfersi/console-projects",
+  "LAB_WORKSPACE": "using-konfersi/lab-workspace",
+  "PRICING": "billing/plans-and-pricing",
+  "PAYMENTS": "billing/payments",
+  "REFUNDS": "billing/refunds-and-cancellation",
+  "SUPPORT": "support/contact-support",
+  "FAQ": "support/faq",
+  "TERMS": "legal/terms",
+  "PRIVACY": "legal/privacy",
+  "COOKIES": "legal/cookies",
+  "ACCEPTABLE_USE": "legal/acceptable-use",
+  "AI_DISCLAIMER": "legal/ai-and-metocean-disclaimer",
+  "SECURITY": "trust/security",
+  "ABOUT": "company/about"
+}
