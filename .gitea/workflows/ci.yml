@@ -1,0 +1,169 @@
+# konfersi-docs CI/CD (Gitea Actions, Alpine hostexecutor — same conventions as platform/* repos).
+#
+#   validate  every push / PR: frontmatter, en↔id parity, links, allowed HTML, stable slugs == @konfersi/shared DOCS_PAGE
+#   publish   push to main (or manual dispatch on main):
+#               1. mirror main → public GitHub repo (the backend reads raw files from there; git.konfersi.com is internal-only)
+#               2. for each env in DOCS_SYNC_ENVS: signed, commit-pinned sync on that backend + public API smoke
+#
+# Secrets (repo → Settings → Actions → Secrets):
+#   CI_GITEA_TOKEN                           read platform/konfersi-docs + shared/konfersi-shared
+#   GH_MIRROR_TOKEN                          GitHub fine-grained PAT, Contents: read/write on the mirror repo only
+#   DOCS_WEBHOOK_SECRET_STG|UAT|PRODUCTION   same value as the backend Worker secret DOCS_WEBHOOK_SECRET per env
+# Variables (repo → Settings → Actions → Variables):
+#   DOCS_GITHUB_MIRROR                       owner/repo of the public mirror, e.g. Konfersi-Indonesia/konfersi-docs
+#   DOCS_SYNC_ENVS                           space-separated envs to sync after publish, e.g. "stg uat"
+#   DOCS_API_BASE_STG|UAT|PRODUCTION         backend origin per env (workers.dev or another host not behind CF Access)
+
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: docs-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repos
+        env:
+          GITEA_TOKEN: "${{ secrets.CI_GITEA_TOKEN }}"
+          FALLBACK_TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          WORK="${GITHUB_WORKSPACE:-$PWD}"
+          cd "$WORK"
+          TOKEN="${GITEA_TOKEN:-$FALLBACK_TOKEN}"
+          if [ -z "${TOKEN}" ]; then
+            echo "missing Actions secret CI_GITEA_TOKEN (and github.token)" >&2
+            exit 1
+          fi
+          AUTH="https://oauth2:${TOKEN}@git.konfersi.com"
+          if [ ! -f scalar.config.json ]; then
+            git clone --depth 20 "${AUTH}/platform/konfersi-docs.git" .
+            git fetch --depth 20 origin "${GITHUB_SHA}"
+            git checkout -f "${GITHUB_SHA}"
+          fi
+          if [ ! -f ../konfersi-shared/src/docs.ts ]; then
+            rm -rf ../konfersi-shared
+            git clone --depth 1 --branch master "${AUTH}/shared/konfersi-shared.git" ../konfersi-shared
+          fi
+          test -f scalar.config.json
+          test -f ../konfersi-shared/src/docs.ts
+
+      - name: Install Node.js 22
+        run: |
+          set -euo pipefail
+          if [ -f /etc/alpine-release ]; then
+            apk add --no-cache curl tar git ca-certificates libstdc++ libgcc
+            NODE_VERSION=22.14.0
+            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64-musl.tar.gz" \
+              | tar -xz -C /usr/local --strip-components=1
+          fi
+          node -v
+          test "$(node -p "process.versions.node.split('.')[0]")" -ge 20
+
+      - name: Validate docs
+        env:
+          KONFERSI_SHARED_REQUIRED: "1"
+        run: node scripts/validate.mjs
+
+  publish:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check configuration
+        env:
+          GH_MIRROR_TOKEN: "${{ secrets.GH_MIRROR_TOKEN }}"
+          DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
+          DOCS_SYNC_ENVS: "${{ vars.DOCS_SYNC_ENVS }}"
+        run: |
+          set -euo pipefail
+          missing=""
+          [ -n "${GH_MIRROR_TOKEN:-}" ] || missing="$missing secret:GH_MIRROR_TOKEN"
+          echo "${DOCS_GITHUB_MIRROR:-}" | grep -Eq '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$' || missing="$missing var:DOCS_GITHUB_MIRROR(owner/repo)"
+          [ -n "${DOCS_SYNC_ENVS:-}" ] || missing="$missing var:DOCS_SYNC_ENVS"
+          if [ -n "$missing" ]; then
+            echo "publish blocked — configure:$missing (see README.md#cicd)" >&2
+            exit 1
+          fi
+
+      - name: Checkout (full history for the mirror)
+        env:
+          GITEA_TOKEN: "${{ secrets.CI_GITEA_TOKEN }}"
+          FALLBACK_TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          WORK="${GITHUB_WORKSPACE:-$PWD}"
+          cd "$WORK"
+          TOKEN="${GITEA_TOKEN:-$FALLBACK_TOKEN}"
+          AUTH="https://oauth2:${TOKEN}@git.konfersi.com"
+          if [ ! -f scalar.config.json ]; then
+            git clone "${AUTH}/platform/konfersi-docs.git" .
+          fi
+          if [ -f .git/shallow ]; then git fetch --unshallow origin; fi
+          git fetch origin main
+          git checkout -f "${GITHUB_SHA}"
+          # Only the commit that is still main's tip publishes; a newer push publishes itself.
+          if [ "$(git rev-parse origin/main)" != "${GITHUB_SHA}" ]; then
+            echo "main moved past ${GITHUB_SHA}; skipping stale publish"
+            echo "STALE=1" >> "$GITHUB_ENV"
+          fi
+
+      - name: Install Node.js 22
+        if: env.STALE != '1'
+        run: |
+          set -euo pipefail
+          if [ -f /etc/alpine-release ]; then
+            apk add --no-cache curl tar git ca-certificates libstdc++ libgcc
+            NODE_VERSION=22.14.0
+            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64-musl.tar.gz" \
+              | tar -xz -C /usr/local --strip-components=1
+          fi
+          node -v
+
+      - name: Mirror main → GitHub
+        if: env.STALE != '1'
+        env:
+          GH_MIRROR_TOKEN: "${{ secrets.GH_MIRROR_TOKEN }}"
+          DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
+        run: |
+          set -euo pipefail
+          # The mirror is read-only; git.konfersi.com main is the source of truth, so --force is intended.
+          git push --force "https://x-access-token:${GH_MIRROR_TOKEN}@github.com/${DOCS_GITHUB_MIRROR}.git" "${GITHUB_SHA}:refs/heads/main"
+          echo "mirrored ${GITHUB_SHA} → github.com/${DOCS_GITHUB_MIRROR}@main"
+
+      - name: Sync + smoke each backend
+        if: env.STALE != '1'
+        env:
+          DOCS_SYNC_ENVS: "${{ vars.DOCS_SYNC_ENVS }}"
+          DOCS_API_BASE_STG: "${{ vars.DOCS_API_BASE_STG }}"
+          DOCS_API_BASE_UAT: "${{ vars.DOCS_API_BASE_UAT }}"
+          DOCS_API_BASE_PRODUCTION: "${{ vars.DOCS_API_BASE_PRODUCTION }}"
+          DOCS_WEBHOOK_SECRET_STG: "${{ secrets.DOCS_WEBHOOK_SECRET_STG }}"
+          DOCS_WEBHOOK_SECRET_UAT: "${{ secrets.DOCS_WEBHOOK_SECRET_UAT }}"
+          DOCS_WEBHOOK_SECRET_PRODUCTION: "${{ secrets.DOCS_WEBHOOK_SECRET_PRODUCTION }}"
+        run: |
+          set -euo pipefail
+          for env in ${DOCS_SYNC_ENVS}; do
+            key=$(echo "$env" | tr '[:lower:]' '[:upper:]')
+            base_var="DOCS_API_BASE_${key}"
+            secret_var="DOCS_WEBHOOK_SECRET_${key}"
+            if [ -z "${!base_var:-}" ] || [ -z "${!secret_var:-}" ]; then
+              echo "env '${env}' is in DOCS_SYNC_ENVS but var ${base_var} and/or secret ${secret_var} is missing" >&2
+              exit 1
+            fi
+            echo "── ${env}"
+            DOCS_API_BASE="${!base_var}" DOCS_WEBHOOK_SECRET="${!secret_var}" \
+              DOCS_SYNC_BRANCH=main DOCS_SYNC_COMMIT="${GITHUB_SHA}" \
+              node scripts/trigger-sync.mjs
+          done

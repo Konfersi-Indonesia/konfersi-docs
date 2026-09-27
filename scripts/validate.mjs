@@ -58,6 +58,9 @@ for (const [name, slug] of Object.entries(stable)) {
 
 // When checked out next to konfersi-shared (the Konfersi workspace), DOCS_PAGE must mirror this file.
 const sharedDocs = join(ROOT, '..', 'konfersi-shared', 'src', 'docs.ts')
+if (process.env.KONFERSI_SHARED_REQUIRED === '1' && !existsSync(sharedDocs)) {
+  fail('KONFERSI_SHARED_REQUIRED=1 but ../konfersi-shared/src/docs.ts is missing (CI must clone konfersi-shared next to this repo)')
+}
 if (existsSync(sharedDocs)) {
   const block = readFileSync(sharedDocs, 'utf8').match(/DOCS_PAGE\s*=\s*\{([\s\S]*?)\}\s*as const/)?.[1] ?? ''
   const shared = Object.fromEntries([...block.matchAll(/([A-Z_]+):\s*'([^']*)'/g)].map((m) => [m[1], m[2]]))

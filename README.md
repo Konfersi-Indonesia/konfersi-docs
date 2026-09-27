@@ -77,14 +77,48 @@ Only this subset of YAML is supported: `key: value`, `key: [a, b]`, and indented
 
 ## Publishing
 
-`git.konfersi.com` is internal-only, so the backend (a Cloudflare Worker) reads the **public mirror**:
-`DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/main`.
+`git.konfersi.com` is internal-only, so the backend (a Cloudflare Worker) reads the **public GitHub mirror**:
+`DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/{ref}` with `DOCS_SOURCE_REF=main`.
+Push to `main` on git.konfersi.com and CI does the rest (see below). An hourly cron re-syncs as a safety net.
 
-1. Run `npm run validate`.
-2. Push to `main` on git.konfersi.com and on the GitHub mirror (`github` remote). Until a Gitea push-mirror is configured, push both remotes.
-3. A GitHub push webhook calls `POST <api>/v1/webhooks/docs`. Use content type `application/json` and the secret `DOCS_WEBHOOK_SECRET`; the signature arrives in `X-Hub-Signature-256`. The backend re-syncs only when the content hash changes.
-4. An hourly cron re-syncs as a safety net. raw.githubusercontent.com caches files for about 5 minutes, so a sync can briefly see the previous version.
-5. Admins can force a sync with `POST <api>/v1/admin/docs/sync?force=1`.
+## CI/CD
+
+`.gitea/workflows/ci.yml`:
+
+| Job | When | What |
+|---|---|---|
+| `validate` | every push / PR | `node scripts/validate.mjs` with `KONFERSI_SHARED_REQUIRED=1`. Checks frontmatter, en↔id parity, links, allowed HTML, and that `stable-slugs.json` matches `DOCS_PAGE` in `konfersi-shared`. |
+| `publish` | push / dispatch on `main` | 1. Force-mirrors `main` to GitHub. 2. For each env in `DOCS_SYNC_ENVS`, runs `scripts/trigger-sync.mjs`. |
+
+`trigger-sync.mjs` sends a signed webhook **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. The request carries `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails. The script then smoke-tests nav, page, search and graph in both languages.
+
+**Configure once** (git.konfersi.com → `platform/konfersi-docs` → Settings → Actions):
+
+| Kind | Name | Value |
+|---|---|---|
+| secret | `CI_GITEA_TOKEN` | Same bot token the platform repos use (read `platform/*` and `shared/konfersi-shared`). |
+| secret | `GH_MIRROR_TOKEN` | GitHub fine-grained PAT with **Contents: read & write** on the mirror repo only. |
+| secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_PRODUCTION`) | Random 64-hex value. Set the **same** value as `DOCS_WEBHOOK_SECRET_<ENV>` on `platform/konfersi-backend`. |
+| variable | `DOCS_GITHUB_MIRROR` | `Konfersi-Indonesia/konfersi-docs` |
+| variable | `DOCS_SYNC_ENVS` | e.g. `stg` (add `uat` once uat is live) |
+| variable | `DOCS_API_BASE_STG` (`_UAT`, …) | Backend origin reachable from CI and not behind Cloudflare Access, e.g. `https://konfersi-backend-stg.konfersi-indonesia.workers.dev` |
+
+**Backend side** (`platform/konfersi-backend` CI, the stg/uat deploy steps):
+
+1. Applies D1 migrations, including the docs tables and FTS.
+2. Deploys.
+3. `wrangler secret put DOCS_WEBHOOK_SECRET` from `DOCS_WEBHOOK_SECRET_<ENV>`.
+4. `npm run docs:sync`: re-indexes and smoke-tests, so docs rendering, search and indexing changes go live with the deploy.
+
+A missing secret fails the deploy **before** anything is deployed.
+
+**Frontends** (landing page and accounts): CI runs `node scripts/check-required-env.mjs .env.<mode>` before every build. A missing, non-https or localhost `VITE_DOCS_URL` (or any other required `VITE_*` value) fails the build instead of failing in the browser.
+
+**Manual operations**
+
+- **Force a rebuild:** `POST <api>/v1/admin/docs/sync?force=1` (admin session), optionally `&ref=<sha>`.
+- **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=main node scripts/trigger-sync.mjs`
+- **Rotate the webhook secret:** update both repos' `DOCS_WEBHOOK_SECRET_<ENV>`, redeploy the backend, then re-run `publish`.
 
 ## Legal pages
 
