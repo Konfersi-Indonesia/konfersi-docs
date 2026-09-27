@@ -3,12 +3,11 @@ title: Cookie Notice
 description: The cookies and browser storage that Konfersi websites and apps use, what each one does and how long it lasts.
 tags: [legal, cookies, local-storage, privacy]
 related: [legal/privacy, legal/terms, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [C1, C2, C3, C5, C6, P6]
 ---
 
-<scalar-callout type="warning">**Draft pending review.** This Cookie Notice is a draft awaiting review by our legal counsel and approval by the Direktur of PT Konfersi Metocean Climate Consultant. It is not yet in force. The effective date will be announced on this page. This notice is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
+<scalar-callout type="info">**Effective 27 September 2026.** This notice is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
 This notice explains how PT Konfersi Metocean Climate Consultant ("**Konfersi**", "**we**") uses cookies and similar browser storage on konfersi.com, accounts.konfersi.com, app.konfersi.com (Console) and lab.konfersi.com (Lab). It supplements our [Privacy Policy](privacy.md).
 

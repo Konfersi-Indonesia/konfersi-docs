@@ -3,12 +3,11 @@ title: Penafian AI & metocean
 description: Keluaran Konfersi, termasuk hasil Mission Planning dan teks yang dihasilkan AI, adalah alat bantu keputusan, bukan nasihat teknik, navigasi, atau AMDAL tersertifikasi.
 tags: [legal, penafian, ai, metocean, mission-planning]
 related: [legal/terms, legal/acceptable-use, legal/privacy, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [V1, V2, V4, V7, T9, T10, I2, I4, P13]
 ---
 
-<scalar-callout type="warning">**Rancangan yang sedang ditinjau.** Penafian ini masih berupa rancangan yang menunggu peninjauan oleh penasihat hukum dan persetujuan Direktur PT Konfersi Metocean Climate Consultant, dan belum berlaku. Tanggal mulai berlakunya akan diumumkan di halaman ini. Penafian ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
+<scalar-callout type="info">**Berlaku sejak 27 September 2026.** Penafian ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
 Penafian ini merupakan bagian dari [Syarat & Ketentuan](terms.md) Kami. Penafian ini menjelaskan kegunaan dan batasan penggunaan Keluaran platform Konfersi, termasuk hasil Mission Planning dan teks yang dihasilkan AI. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Syarat & Ketentuan.
 

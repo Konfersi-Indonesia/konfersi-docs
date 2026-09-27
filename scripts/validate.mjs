@@ -74,8 +74,11 @@ const STATUSES = new Set(['draft', 'published'])
 const ALLOWED_TAG = /^<\/?scalar-callout(\s+type="(neutral|info|success|warning|danger)")?\s*>$/
 const FORBIDDEN_HOST = /(localhost|127\.0\.0\.1|\b(?:[a-z0-9-]+\.)*(?:dev|stg|uat)\.konfersi\.com)/i
 const referenced = new Set()
+const statusBySlug = {}
+const edges = []
 
 for (const locale of locales) {
+  statusBySlug[locale] = {}
   const slugSet = new Set((pagesByLocale[locale] ?? []).map((p) => p.slug))
   for (const page of pagesByLocale[locale] ?? []) {
     const where = `[${locale}] ${page.filepath}`
@@ -96,12 +99,16 @@ for (const locale of locales) {
       if (!data[key] || typeof data[key] !== 'string') fail(`${where}: frontmatter "${key}" is required`)
     }
     if (data.status && !STATUSES.has(data.status)) fail(`${where}: status must be draft|published`)
+    statusBySlug[locale][page.slug] = data.status
     if (data.updated && !/^\d{4}-\d{2}-\d{2}$/.test(data.updated)) fail(`${where}: updated must be YYYY-MM-DD`)
     if (data.description && data.description.length > 200) warnings.push(`${where}: description over 200 chars`)
     for (const key of ['tags', 'related', 'review']) {
       if (data[key] !== undefined && !Array.isArray(data[key])) fail(`${where}: "${key}" must be a list`)
     }
-    for (const rel of data.related ?? []) if (!slugSet.has(rel)) fail(`${where}: related "${rel}" does not exist`)
+    for (const rel of data.related ?? []) {
+      if (!slugSet.has(rel)) fail(`${where}: related "${rel}" does not exist`)
+      else edges.push({ locale, where, to: rel, kind: 'related' })
+    }
     if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length) {
       fail(`${where}: draft legal pages must list open clause IDs in "review"`)
     }
@@ -122,11 +129,39 @@ for (const locale of locales) {
       if (pathPart.endsWith('.md')) {
         const slug = resolved.replace(`docs/${locale}/`, '').replace(/\.md$/, '')
         if (!slugSet.has(slug)) fail(`${where}: broken link ${target}`)
+        else edges.push({ locale, where, to: slug, kind: 'link' })
       } else if (!existsSync(join(ROOT, resolved))) {
         fail(`${where}: missing asset ${target}`)
       }
     }
   }
+}
+
+// ── Drafts are never published, so nothing public may point at one ──
+for (const { locale, where, to, kind } of edges) {
+  const from = where.replace(/^\[\w+\] docs\/\w+\//, '').replace(/\.md$/, '')
+  if (statusBySlug[locale][to] === 'draft' && statusBySlug[locale][from] !== 'draft') {
+    fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
+  }
+}
+for (const [name, slug] of Object.entries(stable)) {
+  if (name.startsWith('$') || slug === '') continue
+  for (const locale of locales) {
+    if (statusBySlug[locale]?.[slug] === 'draft') fail(`stable-slugs.json: ${name} → "${slug}" is a draft in ${locale}; apps link to it, so it must be published`)
+  }
+}
+
+// ── Release version + changelog ───────────────────────────
+const release = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')).version
+if (!/^\d+\.\d+\.\d+$/.test(release ?? '')) fail(`package.json: version "${release}" must be MAJOR.MINOR.PATCH`)
+for (const locale of locales) {
+  const changelog = join(ROOT, 'docs', locale, 'releases', 'changelog.md')
+  if (!existsSync(changelog)) {
+    fail(`[${locale}] docs/${locale}/releases/changelog.md is required`)
+    continue
+  }
+  const heading = new RegExp(`^## ${release.replace(/\./g, '\\.')}(\\s|$)`, 'm')
+  if (!heading.test(readFileSync(changelog, 'utf8'))) fail(`[${locale}] changelog has no "## ${release}" entry for the current version`)
 }
 
 // ── Orphan markdown files ─────────────────────────────────

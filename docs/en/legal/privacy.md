@@ -3,12 +3,11 @@ title: Privacy Policy
 description: How PT Konfersi Metocean Climate Consultant collects, uses, shares and protects personal data under Indonesia's Personal Data Protection Law (UU PDP).
 tags: [legal, privacy, uu-pdp, personal-data]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [P1, P2, P3, P4, P5, P7, P8, P9, P10, P11, P12, P13, P14, P16, T26]
 ---
 
-<scalar-callout type="warning">**Draft pending review.** This Privacy Policy is a draft awaiting review by our legal counsel and approval by the Direktur of PT Konfersi Metocean Climate Consultant. It is not yet in force. The effective date will be announced on this page. This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
+<scalar-callout type="info">**Effective 27 September 2026.** This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
 This Privacy Policy explains how we process personal data when you use the Konfersi websites, Accounts, Console, Lab, Mission Planning, courses and support channels (the "**Services**"). It is prepared with reference to Law No. 27 of 2022 on Personal Data Protection (*UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi*, "**UU PDP**"). Capitalised terms not defined here have the meaning given in our [Terms of Service](terms.md).
 

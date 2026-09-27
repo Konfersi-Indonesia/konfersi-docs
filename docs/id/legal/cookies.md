@@ -3,12 +3,11 @@ title: Pemberitahuan Cookie
 description: Cookie dan penyimpanan peramban yang digunakan situs web dan aplikasi Konfersi, fungsi masing-masing, serta masa berlakunya.
 tags: [legal, cookie, local-storage, privasi]
 related: [legal/privacy, legal/terms, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [C1, C2, C3, C5, C6, P6]
 ---
 
-<scalar-callout type="warning">**Rancangan yang sedang ditinjau.** Pemberitahuan Cookie ini masih berupa rancangan yang menunggu peninjauan oleh penasihat hukum dan persetujuan Direktur PT Konfersi Metocean Climate Consultant, dan belum berlaku. Tanggal mulai berlakunya akan diumumkan di halaman ini. Pemberitahuan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
+<scalar-callout type="info">**Berlaku sejak 27 September 2026.** Pemberitahuan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
 Pemberitahuan ini menjelaskan cara PT Konfersi Metocean Climate Consultant ("**Konfersi**" atau "**Kami**") menggunakan cookie dan penyimpanan peramban sejenis di konfersi.com, accounts.konfersi.com, app.konfersi.com (Console), dan lab.konfersi.com (Lab). Pemberitahuan ini melengkapi [Kebijakan Privasi](privacy.md) Kami.
 

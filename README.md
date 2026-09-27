@@ -32,9 +32,8 @@ title: Privacy Policy
 description: How PT Konfersi Metocean Climate Consultant collects, uses and protects personal data.
 tags: [legal, privacy, uu-pdp]
 related: [legal/terms, legal/cookies]
-status: draft
+status: published
 updated: 2026-09-27
-review: [P5, P8, P9]
 ---
 
 Intro paragraph (no H1 — the title comes from frontmatter).
@@ -49,7 +48,7 @@ Intro paragraph (no H1 — the title comes from frontmatter).
 |---|---|---|
 | `title` | yes | Shown as the page H1 and in search. |
 | `description` | yes | One sentence, ≤ 200 chars; used for SEO and search snippets. |
-| `status` | yes | `published` or `draft`. Drafts render with a banner and are `noindex`. |
+| `status` | yes | `published` or `draft`. Drafts are never published: the backend drops them at sync, so they are not listed, searchable or reachable. Published pages and `stable-slugs.json` pages may not link to a draft. |
 | `updated` | yes | `YYYY-MM-DD` of the last meaningful change. |
 | `tags` | no | Inline list `[a, b]`; boosts search. |
 | `related` | no | Slugs in the same locale; become explicit graph edges. |
@@ -127,7 +126,17 @@ A missing secret fails the deploy **before** anything is deployed.
 
 ## Legal pages
 
-The `legal/*` pages are drafted from the facts in the internal "TnC / legal checklist" and company profile. They stay `status: draft` until counsel and the Direktur approve them:
+The `legal/*` pages are drafted from the facts in the internal "TnC / legal checklist" and company profile. They are published as their initial version (effective 27 September 2026) and will be enriched over time.
 
-- The `review` list names the clause decisions still open.
-- To approve a page, set `status: published`, clear `review`, and bump `updated`.
+- Apps link to them (`stable-slugs.json`), so they must stay `status: published`; the validator fails otherwise.
+- Draft a substantial rewrite on a branch. When it is ready, bump `updated`, update the effective-date callout, and note the change in the changelog.
+
+## Versions
+
+The docs have one live version: `version` in `package.json` (`MAJOR.MINOR.PATCH`). The backend reads it at sync, and the docs sidebar shows it with a link to the changelog.
+
+To release:
+
+1. Bump `version` in `package.json`: patch for fixes and wording, minor for new pages or sections, major for restructures or renamed slugs.
+2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
+3. Push to `main`.

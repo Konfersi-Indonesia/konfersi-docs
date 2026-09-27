@@ -3,12 +3,11 @@ title: AI & metocean disclaimer
 description: Konfersi Outputs, including Mission Planning results and AI-generated text, are decision support, not certified engineering, navigation or EIA advice.
 tags: [legal, disclaimer, ai, metocean, mission-planning]
 related: [legal/terms, legal/acceptable-use, legal/privacy, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [V1, V2, V4, V7, T9, T10, I2, I4, P13]
 ---
 
-<scalar-callout type="warning">**Draft pending review.** This disclaimer is a draft awaiting review by our legal counsel and approval by the Direktur of PT Konfersi Metocean Climate Consultant. It is not yet in force. The effective date will be announced on this page. This disclaimer is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
+<scalar-callout type="info">**Effective 27 September 2026.** This disclaimer is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
 This disclaimer forms part of our [Terms of Service](terms.md). It explains what the Outputs of the Konfersi platform, including Mission Planning results and AI-generated text, can and cannot be used for. Capitalised terms have the meaning given in the Terms.
 

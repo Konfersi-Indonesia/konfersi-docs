@@ -179,6 +179,18 @@
                 "filepath": "docs/en/company/about.md"
               }
             }
+          },
+          "/releases": {
+            "type": "group",
+            "title": "Releases",
+            "children": {
+              "/changelog": {
+                "type": "page",
+                "title": "Changelog",
+                "icon": "phosphor/regular/clock-counter-clockwise",
+                "filepath": "docs/en/releases/changelog.md"
+              }
+            }
           }
         }
       },
@@ -351,6 +363,18 @@
                 "title": "Tentang Konfersi",
                 "icon": "phosphor/regular/buildings",
                 "filepath": "docs/id/company/about.md"
+              }
+            }
+          },
+          "/releases": {
+            "type": "group",
+            "title": "Rilis",
+            "children": {
+              "/changelog": {
+                "type": "page",
+                "title": "Catatan rilis",
+                "icon": "phosphor/regular/clock-counter-clockwise",
+                "filepath": "docs/id/releases/changelog.md"
               }
             }
           }

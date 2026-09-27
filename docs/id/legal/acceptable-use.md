@@ -3,12 +3,11 @@ title: Kebijakan Penggunaan yang Wajar
 description: Hal yang boleh dan tidak boleh Anda lakukan terhadap akun, data, Keluaran, komputasi Lab, dan kanal komunitas Konfersi.
 tags: [legal, penggunaan-wajar, aup]
 related: [legal/terms, legal/ai-and-metocean-disclaimer, legal/privacy, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [T7, T21, I6, I9, V7]
 ---
 
-<scalar-callout type="warning">**Rancangan yang sedang ditinjau.** Kebijakan Penggunaan yang Wajar ini masih berupa rancangan yang menunggu peninjauan oleh penasihat hukum dan persetujuan Direktur PT Konfersi Metocean Climate Consultant, dan belum berlaku. Tanggal mulai berlakunya akan diumumkan di halaman ini. Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
+<scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
 Kebijakan Penggunaan yang Wajar ("**Kebijakan**") ini merupakan bagian dari [Syarat & Ketentuan](terms.md) Kami. Kebijakan ini berlaku bagi setiap pihak yang menggunakan Layanan PT Konfersi Metocean Climate Consultant ("**Konfersi**" atau "**Kami**"), termasuk kolaborator yang diundang ke suatu proyek. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Syarat & Ketentuan.
 

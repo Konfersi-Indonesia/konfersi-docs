@@ -3,12 +3,11 @@ title: Acceptable Use Policy
 description: What you may and may not do with Konfersi accounts, data, Outputs, Lab compute and community channels.
 tags: [legal, acceptable-use, aup]
 related: [legal/terms, legal/ai-and-metocean-disclaimer, legal/privacy, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [T7, T21, I6, I9, V7]
 ---
 
-<scalar-callout type="warning">**Draft pending review.** This Acceptable Use Policy is a draft awaiting review by our legal counsel and approval by the Direktur of PT Konfersi Metocean Climate Consultant. It is not yet in force. The effective date will be announced on this page. This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
+<scalar-callout type="info">**Effective 27 September 2026.** This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
 This Acceptable Use Policy ("**Policy**") forms part of our [Terms of Service](terms.md). It applies to everyone who uses the Services of PT Konfersi Metocean Climate Consultant ("**Konfersi**", "**we**"), including collaborators invited to a project. Capitalised terms have the meaning given in the Terms.
 

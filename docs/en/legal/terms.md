@@ -3,12 +3,11 @@ title: Terms of Service
 description: The agreement between you and PT Konfersi Metocean Climate Consultant for using Konfersi accounts, Console, Lab, Mission Planning and courses.
 tags: [legal, terms, agreement]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
-status: draft
+status: published
 updated: 2026-09-27
-review: [T1, T3, T4, T5, T6, T10, T11, T12, T13, R1, R2, R3, R5, T14, T17, T18, T19, T20, T21, T22, T24, T25, T26, T27, T28, V2, V3, V4, V5, V6, V7, I1, I3, I4, I5, I6, I7, J2, J3, J4, J5, J6]
 ---
 
-<scalar-callout type="warning">**Draft pending review.** These Terms are a draft awaiting review by our legal counsel and approval by the Direktur of PT Konfersi Metocean Climate Consultant. They are not yet in force. The effective date will be announced on this page. These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
+<scalar-callout type="info">**Effective 27 September 2026.** These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
 These Terms of Service ("**Terms**") govern your access to and use of the Konfersi platform, websites and courses. Please read them carefully. By creating an Account, ticking the acceptance box during registration, or using the Services, you agree to these Terms. If you do not agree, do not use the Services.
 

@@ -17,5 +17,6 @@
   "ACCEPTABLE_USE": "legal/acceptable-use",
   "AI_DISCLAIMER": "legal/ai-and-metocean-disclaimer",
   "SECURITY": "trust/security",
-  "ABOUT": "company/about"
+  "ABOUT": "company/about",
+  "CHANGELOG": "releases/changelog"
 }
