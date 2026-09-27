@@ -83,22 +83,23 @@ Push to `main` on git.konfersi.com and CI does the rest (see below). An hourly c
 
 ## CI/CD
 
-`.gitea/workflows/ci.yml`:
+`.gitea/workflows/ci.yml` is self-contained: it needs no access to other (private) repos, so it keeps working once this repo is public.
 
 | Job | When | What |
 |---|---|---|
-| `validate` | every push / PR | `node scripts/validate.mjs` with `KONFERSI_SHARED_REQUIRED=1`. Checks frontmatter, en↔id parity, links, allowed HTML, and that `stable-slugs.json` matches `DOCS_PAGE` in `konfersi-shared`. |
-| `publish` | push / dispatch on `main` | 1. Force-mirrors `main` to GitHub. 2. For each env in `DOCS_SYNC_ENVS`, runs `scripts/trigger-sync.mjs`. |
+| `validate` | every push / PR | `node scripts/validate.mjs`: frontmatter, en↔id parity, links, allowed HTML, and that every `stable-slugs.json` page exists. |
+| `publish` | push / dispatch on `main` | 1. Force-mirrors `main` to GitHub over SSH with a repo-scoped deploy key. 2. For each env in `DOCS_SYNC_ENVS`, runs `scripts/trigger-sync.mjs`. |
 
 `trigger-sync.mjs` sends a signed webhook **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. The request carries `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails. The script then smoke-tests nav, page, search and graph in both languages.
 
-**Configure once** (git.konfersi.com → `platform/konfersi-docs` → Settings → Actions):
+The apps check links in the other direction. The landing page and accounts CI run `scripts/check-docs-links.mjs` before every build. It fails the build if any `DOCS_PAGE` slug from `@konfersi/shared` is missing from this repo's published navigation, in any locale. So renaming a page that an app links to breaks the app's CI, not production.
+
+**Configured on git.konfersi.com** (`platform/konfersi-docs` → Settings → Actions):
 
 | Kind | Name | Value |
 |---|---|---|
-| secret | `CI_GITEA_TOKEN` | Same bot token the platform repos use (read `platform/*` and `shared/konfersi-shared`). |
-| secret | `GH_MIRROR_TOKEN` | GitHub fine-grained PAT with **Contents: read & write** on the mirror repo only. |
-| secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_PRODUCTION`) | Random 64-hex value. Set the **same** value as `DOCS_WEBHOOK_SECRET_<ENV>` on `platform/konfersi-backend`. |
+| secret | `GH_MIRROR_DEPLOY_KEY` | Private half of the **write** deploy key on the GitHub mirror (GitHub → repo → Settings → Deploy keys). |
+| secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_PRODUCTION`) | Random 64-hex value. `platform/konfersi-backend` must hold the **same** value under the same name. |
 | variable | `DOCS_GITHUB_MIRROR` | `Konfersi-Indonesia/konfersi-docs` |
 | variable | `DOCS_SYNC_ENVS` | e.g. `stg` (add `uat` once uat is live) |
 | variable | `DOCS_API_BASE_STG` (`_UAT`, …) | Backend origin reachable from CI and not behind Cloudflare Access, e.g. `https://konfersi-backend-stg.konfersi-indonesia.workers.dev` |
@@ -112,13 +113,17 @@ Push to `main` on git.konfersi.com and CI does the rest (see below). An hourly c
 
 A missing secret fails the deploy **before** anything is deployed.
 
-**Frontends** (landing page and accounts): CI runs `node scripts/check-required-env.mjs .env.<mode>` before every build. A missing, non-https or localhost `VITE_DOCS_URL` (or any other required `VITE_*` value) fails the build instead of failing in the browser.
+**Frontends** (landing page and accounts): before every build, CI runs:
+
+- `check-required-env.mjs .env.<mode>`: every required `VITE_*` value, including `VITE_DOCS_URL`, must be present, https and not localhost.
+- `check-docs-links.mjs`: described above.
 
 **Manual operations**
 
 - **Force a rebuild:** `POST <api>/v1/admin/docs/sync?force=1` (admin session), optionally `&ref=<sha>`.
 - **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=main node scripts/trigger-sync.mjs`
-- **Rotate the webhook secret:** update both repos' `DOCS_WEBHOOK_SECRET_<ENV>`, redeploy the backend, then re-run `publish`.
+- **Rotate the webhook secret:** update `DOCS_WEBHOOK_SECRET_<ENV>` in both repos, redeploy the backend, then re-run `publish`.
+- **Rotate the mirror key:** add a new write deploy key on GitHub, replace `GH_MIRROR_DEPLOY_KEY`, then delete the old key.
 
 ## Legal pages
 

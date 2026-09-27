@@ -66,6 +66,10 @@ const sync = await withRetry("sync", async () => {
     body: payload,
   });
   const body = await res.json().catch(() => null);
+  if (res.status === 404) {
+    console.error(`docs-sync: ${base} has no /v1/webhooks/docs (404) — that backend is not running the docs module yet; deploy konfersi-backend with the docs feature first`);
+    process.exit(1);
+  }
   if (res.status === 401) {
     console.error("docs-sync: 401 — DOCS_WEBHOOK_SECRET does not match the Worker secret");
     process.exit(1);

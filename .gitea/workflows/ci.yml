@@ -1,14 +1,17 @@
-# konfersi-docs CI/CD (Gitea Actions, Alpine hostexecutor — same conventions as platform/* repos).
+# konfersi-docs CI/CD (Gitea Actions). Self-contained: needs no access to other (private) repos.
 #
-#   validate  every push / PR: frontmatter, en↔id parity, links, allowed HTML, stable slugs == @konfersi/shared DOCS_PAGE
+#   validate  every push / PR: frontmatter, en↔id parity, links, allowed HTML, stable slugs exist in the nav
 #   publish   push to main (or manual dispatch on main):
-#               1. mirror main → public GitHub repo (the backend reads raw files from there; git.konfersi.com is internal-only)
+#               1. mirror main → public GitHub repo over SSH with a repo-scoped deploy key
+#                  (the backend reads raw files from there; git.konfersi.com is internal-only)
 #               2. for each env in DOCS_SYNC_ENVS: signed, commit-pinned sync on that backend + public API smoke
 #
+# Apps check the other direction (every @konfersi/shared DOCS_PAGE they link to exists in the published nav)
+# in their own CI: konfersi-landing-page / konfersi-accounts → scripts/check-docs-links.mjs.
+#
 # Secrets (repo → Settings → Actions → Secrets):
-#   CI_GITEA_TOKEN                           read platform/konfersi-docs + shared/konfersi-shared
-#   GH_MIRROR_TOKEN                          GitHub fine-grained PAT, Contents: read/write on the mirror repo only
-#   DOCS_WEBHOOK_SECRET_STG|UAT|PRODUCTION   same value as the backend Worker secret DOCS_WEBHOOK_SECRET per env
+#   GH_MIRROR_DEPLOY_KEY                     private key of the GitHub deploy key (write) on the mirror repo
+#   DOCS_WEBHOOK_SECRET_STG|UAT|PRODUCTION   same value as the backend's DOCS_WEBHOOK_SECRET_<ENV> / Worker secret
 # Variables (repo → Settings → Actions → Variables):
 #   DOCS_GITHUB_MIRROR                       owner/repo of the public mirror, e.g. Konfersi-Indonesia/konfersi-docs
 #   DOCS_SYNC_ENVS                           space-separated envs to sync after publish, e.g. "stg uat"
@@ -33,47 +36,11 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repos
-        env:
-          GITEA_TOKEN: "${{ secrets.CI_GITEA_TOKEN }}"
-          FALLBACK_TOKEN: "${{ github.token }}"
-        run: |
-          set -euo pipefail
-          WORK="${GITHUB_WORKSPACE:-$PWD}"
-          cd "$WORK"
-          TOKEN="${GITEA_TOKEN:-$FALLBACK_TOKEN}"
-          if [ -z "${TOKEN}" ]; then
-            echo "missing Actions secret CI_GITEA_TOKEN (and github.token)" >&2
-            exit 1
-          fi
-          AUTH="https://oauth2:${TOKEN}@git.konfersi.com"
-          if [ ! -f scalar.config.json ]; then
-            git clone --depth 20 "${AUTH}/platform/konfersi-docs.git" .
-            git fetch --depth 20 origin "${GITHUB_SHA}"
-            git checkout -f "${GITHUB_SHA}"
-          fi
-          if [ ! -f ../konfersi-shared/src/docs.ts ]; then
-            rm -rf ../konfersi-shared
-            git clone --depth 1 --branch master "${AUTH}/shared/konfersi-shared.git" ../konfersi-shared
-          fi
-          test -f scalar.config.json
-          test -f ../konfersi-shared/src/docs.ts
-
-      - name: Install Node.js 22
-        run: |
-          set -euo pipefail
-          if [ -f /etc/alpine-release ]; then
-            apk add --no-cache curl tar git ca-certificates libstdc++ libgcc
-            NODE_VERSION=22.14.0
-            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64-musl.tar.gz" \
-              | tar -xz -C /usr/local --strip-components=1
-          fi
-          node -v
-          test "$(node -p "process.versions.node.split('.')[0]")" -ge 20
-
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Validate docs
-        env:
-          KONFERSI_SHARED_REQUIRED: "1"
         run: node scripts/validate.mjs
 
   publish:
@@ -83,13 +50,13 @@ jobs:
     steps:
       - name: Check configuration
         env:
-          GH_MIRROR_TOKEN: "${{ secrets.GH_MIRROR_TOKEN }}"
+          GH_MIRROR_DEPLOY_KEY: "${{ secrets.GH_MIRROR_DEPLOY_KEY }}"
           DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
           DOCS_SYNC_ENVS: "${{ vars.DOCS_SYNC_ENVS }}"
         run: |
           set -euo pipefail
           missing=""
-          [ -n "${GH_MIRROR_TOKEN:-}" ] || missing="$missing secret:GH_MIRROR_TOKEN"
+          [ -n "${GH_MIRROR_DEPLOY_KEY:-}" ] || missing="$missing secret:GH_MIRROR_DEPLOY_KEY"
           echo "${DOCS_GITHUB_MIRROR:-}" | grep -Eq '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$' || missing="$missing var:DOCS_GITHUB_MIRROR(owner/repo)"
           [ -n "${DOCS_SYNC_ENVS:-}" ] || missing="$missing var:DOCS_SYNC_ENVS"
           if [ -n "$missing" ]; then
@@ -97,49 +64,42 @@ jobs:
             exit 1
           fi
 
-      - name: Checkout (full history for the mirror)
-        env:
-          GITEA_TOKEN: "${{ secrets.CI_GITEA_TOKEN }}"
-          FALLBACK_TOKEN: "${{ github.token }}"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Skip if main moved on
         run: |
           set -euo pipefail
-          WORK="${GITHUB_WORKSPACE:-$PWD}"
-          cd "$WORK"
-          TOKEN="${GITEA_TOKEN:-$FALLBACK_TOKEN}"
-          AUTH="https://oauth2:${TOKEN}@git.konfersi.com"
-          if [ ! -f scalar.config.json ]; then
-            git clone "${AUTH}/platform/konfersi-docs.git" .
-          fi
-          if [ -f .git/shallow ]; then git fetch --unshallow origin; fi
-          git fetch origin main
-          git checkout -f "${GITHUB_SHA}"
+          git fetch --quiet origin main
           # Only the commit that is still main's tip publishes; a newer push publishes itself.
           if [ "$(git rev-parse origin/main)" != "${GITHUB_SHA}" ]; then
             echo "main moved past ${GITHUB_SHA}; skipping stale publish"
             echo "STALE=1" >> "$GITHUB_ENV"
           fi
 
-      - name: Install Node.js 22
+      - uses: actions/setup-node@v4
         if: env.STALE != '1'
-        run: |
-          set -euo pipefail
-          if [ -f /etc/alpine-release ]; then
-            apk add --no-cache curl tar git ca-certificates libstdc++ libgcc
-            NODE_VERSION=22.14.0
-            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64-musl.tar.gz" \
-              | tar -xz -C /usr/local --strip-components=1
-          fi
-          node -v
+        with:
+          node-version: 22
 
       - name: Mirror main → GitHub
         if: env.STALE != '1'
         env:
-          GH_MIRROR_TOKEN: "${{ secrets.GH_MIRROR_TOKEN }}"
+          GH_MIRROR_DEPLOY_KEY: "${{ secrets.GH_MIRROR_DEPLOY_KEY }}"
           DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
         run: |
           set -euo pipefail
+          command -v ssh >/dev/null || { (apt-get update -qq && apt-get install -y -qq openssh-client) || apk add --no-cache openssh-client; }
+          KEYDIR="$(mktemp -d)"
+          trap 'rm -rf "$KEYDIR"' EXIT
+          printf '%s\n' "$GH_MIRROR_DEPLOY_KEY" > "$KEYDIR/id"
+          chmod 600 "$KEYDIR/id"
+          # Pinned GitHub host key (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints).
+          echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl" > "$KEYDIR/known_hosts"
+          export GIT_SSH_COMMAND="ssh -i $KEYDIR/id -o IdentitiesOnly=yes -o UserKnownHostsFile=$KEYDIR/known_hosts -o StrictHostKeyChecking=yes"
           # The mirror is read-only; git.konfersi.com main is the source of truth, so --force is intended.
-          git push --force "https://x-access-token:${GH_MIRROR_TOKEN}@github.com/${DOCS_GITHUB_MIRROR}.git" "${GITHUB_SHA}:refs/heads/main"
+          git push --force "git@github.com:${DOCS_GITHUB_MIRROR}.git" "${GITHUB_SHA}:refs/heads/main"
           echo "mirrored ${GITHUB_SHA} → github.com/${DOCS_GITHUB_MIRROR}@main"
 
       - name: Sync + smoke each backend
