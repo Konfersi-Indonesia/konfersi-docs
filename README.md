@@ -77,11 +77,14 @@ Only this subset of YAML is supported: `key: value`, `key: [a, b]`, and indented
 
 ## Publishing
 
+`git.konfersi.com` is internal-only, so the backend (a Cloudflare Worker) reads the **public mirror**:
+`DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/main`.
+
 1. Run `npm run validate`.
-2. Push to `main`.
-3. The git host's push webhook calls `POST <api>/v1/webhooks/docs`. The backend re-syncs only the pages whose content changed.
-4. An hourly cron re-syncs as a safety net.
-5. Admins can force a sync with `POST <api>/v1/admin/docs/sync`.
+2. Push to `main` on git.konfersi.com and on the GitHub mirror (`github` remote). Until a Gitea push-mirror is configured, push both remotes.
+3. A GitHub push webhook calls `POST <api>/v1/webhooks/docs`. Use content type `application/json` and the secret `DOCS_WEBHOOK_SECRET`; the signature arrives in `X-Hub-Signature-256`. The backend re-syncs only when the content hash changes.
+4. An hourly cron re-syncs as a safety net. raw.githubusercontent.com caches files for about 5 minutes, so a sync can briefly see the previous version.
+5. Admins can force a sync with `POST <api>/v1/admin/docs/sync?force=1`.
 
 ## Legal pages
 
