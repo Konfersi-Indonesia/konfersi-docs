@@ -6,6 +6,8 @@
   "SIGN_IN": "getting-started/sign-in",
   "CONSOLE_PROJECTS": "using-konfersi/console-projects",
   "LAB_WORKSPACE": "using-konfersi/lab-workspace",
+  "MISSION_PLANNING": "using-konfersi/mission-planning",
+  "METOCEAN_DATA_SOURCES": "using-konfersi/metocean-data-sources",
   "PRICING": "billing/plans-and-pricing",
   "PAYMENTS": "billing/payments",
   "REFUNDS": "billing/refunds-and-cancellation",

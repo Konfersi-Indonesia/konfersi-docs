@@ -2,7 +2,7 @@
 title: Ruang kerja Lab
 description: Buka proyek Konfersi di Lab, ruang kerja metocean berbasis browser, atau gunakan ekstensi Konfersi Lab di VS Code desktop.
 tags: [lab, ruang-kerja, vs-code, ekstensi]
-related: [using-konfersi/console-projects, getting-started/sign-in, billing/plans-and-pricing]
+related: [using-konfersi/console-projects, using-konfersi/metocean-data-sources, getting-started/sign-in, billing/plans-and-pricing]
 status: published
 updated: 2026-09-27
 ---
@@ -30,17 +30,24 @@ Lab terbuka di tab baru dengan alamat berakhiran `/project/` diikuti slug proyek
 
 ### Membuka Lab tanpa proyek
 
-Jika Anda langsung membuka [lab.konfersi.com](https://lab.konfersi.com), akan muncul **Select a project to open Lab**. Isi **Project slug** lalu pilih **Open in Lab**, atau pilih **Browse in Console** untuk memilih proyek dari daftar Anda. Slug proyek dapat dilihat di halaman detail proyek di Console.
+Jika Anda langsung membuka [lab.konfersi.com](https://lab.konfersi.com) tanpa proyek di alamatnya, Anda akan diarahkan ke **Manajemen Proyek** di Console. Pilih proyek di sana untuk membukanya di Lab.
 
 ## Mengenal tampilan Lab
 
-Lab terbuka dengan tema editor gelap dan bilah aktivitas di samping. Pilih ikon **Konfersi Lab** di bilah aktivitas untuk membuka panel **Workspace**. Panel ini memiliki tiga bagian:
+Lab memakai tema Konfersi Anda, **Konfersi Light** atau **Konfersi Dark**, sama dengan yang Anda pakai di Console. Jika Anda menggantinya di Lab lewat **Preferences: Color Theme**, Console dan aplikasi Konfersi lainnya ikut berganti.
 
-- **Account**: akun yang sedang masuk dan peran Anda di proyek ini.
-- **Project**: nama, slug, dan paket proyek, lengkap dengan bilah kuota untuk pemakaian AI, penyimpanan, dan komputasi.
-- **Console**: tombol **Browse projects in Console**, **Open Console**, dan **Open project in Console**.
+Pilih ikon **Konfersi Lab** di bilah aktivitas. Bilah samping menampilkan bagian-bagian berikut, dari atas ke bawah:
 
-Bilah status di bagian bawah juga menampilkan proyek yang sedang dibuka. Arahkan kursor ke sana untuk melihat pemakaian kuota dan pintasan kembali ke Console.
+- **Project**: akun yang sedang masuk, proyek dan paketnya, serta pemakaian kuota AI, penyimpanan, dan komputasi.
+- **Points**: titik observasi proyek. Pilih **Open Map** untuk melihatnya di peta dan menambah titik dengan mengeklik peta, atau tambahkan titik lewat koordinat maupun dari berkas CSV, Excel, atau KML.
+- **Data**: variabel metocean yang sudah diunduh dan dianalisis untuk titik terpilih. Pilih **Fetch Data** untuk mengunduh variabel lain; kemajuannya tampil sebagai notifikasi, dan lognya di **Output › Konfersi Lab**.
+- **Analysis**: semua analisis yang tersedia untuk sebuah titik, seperti deret waktu, statistik, diagram mawar, dan nilai ekstrem, ditambah analisis lokasi seperti pasang surut dan siklon tropis. Hasilnya terbuka di panel **Chart** di bagian bawah.
+- **Validation**: pemeriksaan kualitas otomatis atas data yang sudah diunduh.
+- **Planning & Risk**: brief proyek, operasi dan lingkungan, serta penilaian risiko. Masing-masing terbuka sebagai dokumen yang Anda ubah lalu simpan dengan **Ctrl+S** (**Cmd+S** di Mac).
+- **Reports**: membuat laporan Metocean Design Basis sebagai dokumen Word, dan menulis bagian laporan satu per satu dengan AI.
+- **Documentation**: dokumentasi ini, langsung di dalam Lab. Setiap bagian juga punya tombol **?** yang membuka halaman penjelasannya.
+
+Bilah status di bagian bawah menampilkan proyek yang sedang dibuka. Pilih untuk membuka pintasan ke Console, dokumentasi, dan log.
 
 <scalar-callout type="info">Proyek dibuat, dibagikan, dan di-upgrade di Console, bukan di Lab. Lab selalu bekerja pada satu proyek. Untuk berpindah proyek, buka proyek lain dari Console.</scalar-callout>
 
@@ -48,17 +55,18 @@ Bilah status di bagian bawah juga menampilkan proyek yang sedang dibuka. Arahkan
 
 Ekstensi **Konfersi Lab** yang menjalankan ruang kerja di browser juga dapat berjalan di VS Code desktop. Setelah ekstensi terpasang, masuk dengan cara berikut:
 
-1. Buka Command Palette, lalu jalankan **Konfersi Lab: Sign In**.
+1. Buka Command Palette, lalu jalankan **Konfersi: Sign In**.
 2. VS Code membuka tab browser di Accounts. Masuk jika diminta.
 3. Di halaman **Masuk ke Konfersi Lab**, periksa alamat email, lalu pilih **Setujui perangkat**.
 4. Saat muncul **Perangkat sudah masuk**, kembali ke VS Code. Proses masuk akan selesai dengan sendirinya.
 
-Perintah lain yang dapat dijalankan dari Command Palette:
+Setiap aksi di Lab adalah sebuah perintah. Ketik **Konfersi** di Command Palette untuk melihat semuanya, misalnya:
 
-- **Konfersi Lab: Account**: membuka Console, menelusuri proyek, atau keluar.
-- **Konfersi Lab: Open Console**
-- **Konfersi Lab: Browse Projects in Console**
-- **Konfersi Lab: Sign Out**
+- **Konfersi: Open Map**
+- **Konfersi: Fetch Data…**
+- **Konfersi: Search Documentation…**
+- **Konfersi: Open Console**
+- **Konfersi: Sign Out**
 
 <scalar-callout type="warning">Setujui proses masuk perangkat hanya jika Anda sendiri yang memulainya. Jika tidak, tutup tab tersebut tanpa menyetujuinya.</scalar-callout>
 
@@ -71,7 +79,10 @@ Periksa slug proyek. Pastikan Anda masuk dengan akun pemilik proyek atau akun ya
 Pilih **Retry**. Jika masalah berlanjut, periksa koneksi Anda dan [hubungi tim bantuan](../support/contact-support.md).
 
 **"Login link expired or already used."** atau **"Login timed out."** di VS Code
-Jalankan **Konfersi Lab: Sign In** lagi dan segera setujui permintaan yang baru.
+Jalankan **Konfersi: Sign In** lagi dan segera setujui permintaan yang baru.
+
+**Sebuah bagian di bilah samping menyebut data atau lapisan peta belum tersedia.**
+Data untuk titik tersebut belum diunduh. Pilih titiknya, lalu **Fetch Data** di bagian **Data**. Lihat [Sumber data metocean](metocean-data-sources.md).
 
 **Tombol Lab di Console tidak aktif.**
 Proyek masih menggunakan paket uji coba gratis, atau paketnya sudah berakhir. Lihat [Console & proyek](console-projects.md).
