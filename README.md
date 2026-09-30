@@ -78,10 +78,12 @@ Only this subset of YAML is supported: `key: value`, `key: [a, b]`, and indented
 
 `git.konfersi.com` is internal-only, so the backend (a Cloudflare Worker) reads the **public GitHub mirror**:
 `DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/{ref}`, where each
-environment follows one branch through `DOCS_SOURCE_REF`: stg (and local dev) read `stg`, production reads `main`.
+environment follows one ref through `DOCS_SOURCE_REF`: stg (and local dev) read the `stg` branch, uat reads `uat`,
+and smoke + production read a **release tag** (`vX.Y.Z`), which the release pipeline sets.
 
-Open PRs against `stg`; a merge publishes to the stg docs. Merging `stg` into `main` is the release to production.
-CI does the rest (see below). An hourly cron re-syncs each backend from its branch as a safety net.
+Open PRs against `stg`; a merge publishes to the stg docs. `stg` → `uat` publishes to uat, `uat` → `main` prepares a
+release, and publishing a Gitea release (tag `vX.Y.Z` on `main`) releases the docs to production.
+CI does the rest (see below). An hourly cron re-syncs each backend from its `DOCS_SOURCE_REF` as a safety net.
 
 ## CI/CD
 
@@ -90,9 +92,10 @@ CI does the rest (see below). An hourly cron re-syncs each backend from its bran
 | Job | When | What |
 |---|---|---|
 | `validate` | every push / PR | `node scripts/validate.mjs`: frontmatter, en↔id parity, links, allowed HTML, and that every `stable-slugs.json` page exists. |
-| `publish` | push / dispatch on `stg` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key. 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>`. Without that variable the branch is only mirrored. |
+| `publish` | push / dispatch on `stg`, `uat` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key (`scripts/mirror-push.sh`). 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>` + `DOCS_SYNC_COMMIT=<sha>` (`scripts/sync-envs.sh`). Without that variable the branch is only mirrored. |
+| `release` | Gitea release **published** with tag `vX.Y.Z` (or a dispatch on that tag) | 1. `scripts/check-release.mjs <tag>`: the tag must equal `v` + `package.json` version and every locale's changelog needs its `## X.Y.Z` entry; the tagged commit must be on `main`; `validate.mjs` runs again. 2. Mirrors `refs/tags/<tag>` to GitHub (same deploy key, no `--force`: a release tag never moves). 3. For each env in `DOCS_SYNC_ENVS_RELEASE`, runs `trigger-sync.mjs` with `DOCS_SYNC_TAG=<tag>`. Unset → a notice, the tag is only mirrored. Pre-releases are skipped with a notice. |
 
-`trigger-sync.mjs` sends a signed webhook **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. The request carries `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails. The script then smoke-tests nav, page, search and graph in both languages.
+Branch syncs are signed webhooks **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. Release syncs are pinned to the tag (`refs/tags/<tag>`); only a backend whose `DOCS_SOURCE_REF` is a release tag accepts them, and it keeps a newer tag the release flow pinned until the release pipeline moves `DOCS_SOURCE_REF` up to it. Requests carry `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails, or if the backend shows a different docs version than the one it was pinned to. The script then smoke-tests nav, page, search and graph in both languages.
 
 The apps check links in the other direction. The landing page and accounts CI run `scripts/check-docs-links.mjs` before every build. It fails the build if any `DOCS_PAGE` slug from `@konfersi/shared` is missing from this repo's published navigation, in any locale. So renaming a page that an app links to breaks the app's CI, not production.
 
@@ -101,11 +104,13 @@ The apps check links in the other direction. The landing page and accounts CI ru
 | Kind | Name | Value |
 |---|---|---|
 | secret | `GH_MIRROR_DEPLOY_KEY` | Private half of the **write** deploy key on the GitHub mirror (GitHub → repo → Settings → Deploy keys). |
-| secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_PRODUCTION`) | Random 64-hex value. `platform/konfersi-backend` must hold the **same** value under the same name. |
+| secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_SMOKE`, `_PRODUCTION`) | Random 64-hex value. `platform/konfersi-backend` must hold the **same** value under the same name. |
 | variable | `DOCS_GITHUB_MIRROR` | `Konfersi-Indonesia/konfersi-docs` |
 | variable | `DOCS_SYNC_ENVS_STG` | `stg`: envs that follow the `stg` branch |
-| variable | `DOCS_SYNC_ENVS_MAIN` | envs that follow `main` (`production` once it is live; unset = mirror only) |
-| variable | `DOCS_API_BASE_STG` (`_UAT`, …) | Backend origin reachable from CI and not behind Cloudflare Access, e.g. `https://konfersi-backend-stg.konfersi-indonesia.workers.dev` |
+| variable | `DOCS_SYNC_ENVS_UAT` | `uat`: envs that follow the `uat` branch (unset = mirror only) |
+| variable | `DOCS_SYNC_ENVS_MAIN` | envs that follow `main` (normally unset: production follows release tags) |
+| variable | `DOCS_SYNC_ENVS_RELEASE` | envs that follow release tags, e.g. `production` (and `smoke`); unset = the tag is only mirrored |
+| variable | `DOCS_API_BASE_STG` (`_UAT`, `_SMOKE`, `_PRODUCTION`) | Backend origin reachable from CI and not behind Cloudflare Access, e.g. `https://konfersi-backend-stg.konfersi-indonesia.workers.dev` |
 
 **Backend side** (`platform/konfersi-backend` CI, the stg/uat deploy steps):
 
@@ -123,8 +128,9 @@ A missing secret fails the deploy **before** anything is deployed.
 
 **Manual operations**
 
-- **Force a rebuild:** `POST <api>/v1/admin/docs/sync?force=1` (admin session), optionally `&ref=<sha>`.
-- **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=stg node scripts/trigger-sync.mjs` (the branch that env's `DOCS_SOURCE_REF` names)
+- **Force a rebuild:** `POST <api>/v1/admin/docs/sync?force=1` (admin session), optionally `&ref=<sha|vX.Y.Z>`.
+- **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=stg node scripts/trigger-sync.mjs` (the branch that env's `DOCS_SOURCE_REF` names), or `DOCS_SYNC_TAG=vX.Y.Z` for an env that follows release tags.
+- **Re-run a release:** dispatch the workflow on the tag (`refs/tags/vX.Y.Z`); mirroring an unchanged tag is a no-op.
 - **Rotate the webhook secret:** update `DOCS_WEBHOOK_SECRET_<ENV>` in both repos, redeploy the backend, then re-run `publish`.
 - **Rotate the mirror key:** add a new write deploy key on GitHub, replace `GH_MIRROR_DEPLOY_KEY`, then delete the old key.
 
@@ -137,10 +143,20 @@ The `legal/*` pages are drafted from the facts in the internal "TnC / legal chec
 
 ## Versions
 
-The docs have one live version: `version` in `package.json` (`MAJOR.MINOR.PATCH`). The backend reads it at sync, and the docs sidebar shows it with a link to the changelog.
+The release number is `version` in `package.json` (`MAJOR.MINOR.PATCH`). The backend reads it at sync and the docs
+sidebar shows the resulting **docs version**, with a link to the changelog:
 
-To release:
+| Environment follows | Docs version shown | Example |
+|---|---|---|
+| a branch (stg, uat), synced by CI / webhook | `<version>+<short commit>` | `1.4.0+0123abc` |
+| a release tag (smoke, production) | exactly the tag | `v1.4.0` |
+| a branch read with nothing pinned (manual sync without a ref) | `<version>` | `1.4.0` |
+
+When the backend has `DOCS_SOURCE_COMMIT_URL` (the mirror's commit URL with `{ref}`), the version links to that commit or tag.
+
+Release tags are **`vX.Y.Z`** (no prefix, no suffix) and must equal `v` + `package.json` version. To release:
 
 1. Bump `version` in `package.json`: patch for fixes and wording, minor for new pages or sections, major for restructures or renamed slugs.
 2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
-3. Merge to `stg` (stg docs), then `stg` → `main` (production).
+3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`.
+4. On git.konfersi.com, publish a release on `main` with tag `v<version>`. CI checks it, mirrors the tag and syncs `DOCS_SYNC_ENVS_RELEASE`; the release pipeline sets production's `DOCS_SOURCE_REF` to the tag.
