@@ -1,10 +1,12 @@
 # konfersi-docs CI/CD (Gitea Actions). Self-contained: needs no access to other (private) repos.
 #
 #   validate  every push / PR: frontmatter, en↔id parity, links, allowed HTML, stable slugs exist in the nav
-#   publish   push to main (or manual dispatch on main):
-#               1. mirror main → public GitHub repo over SSH with a repo-scoped deploy key
-#                  (the backend reads raw files from there; git.konfersi.com is internal-only)
-#               2. for each env in DOCS_SYNC_ENVS: signed, commit-pinned sync on that backend + public API smoke
+#   publish   push to stg or main (or a manual dispatch on either):
+#               1. mirror the branch → the same branch of the public GitHub repo over SSH with a
+#                  repo-scoped deploy key (backends read raw files from there; git.konfersi.com is internal-only)
+#               2. for each env in DOCS_SYNC_ENVS_<BRANCH>: signed, commit-pinned sync on that backend + API smoke
+#   Branches: PRs merge to stg (the stg backend reads GitHub stg, DOCS_SOURCE_REF=stg); stg → main is the
+#   release (production reads main). A branch without DOCS_SYNC_ENVS_<BRANCH> only mirrors.
 #
 # Apps check the other direction (every @konfersi/shared DOCS_PAGE they link to exists in the published nav)
 # in their own CI: konfersi-landing-page / konfersi-accounts → scripts/check-docs-links.mjs.
@@ -14,7 +16,7 @@
 #   DOCS_WEBHOOK_SECRET_STG|UAT|PRODUCTION   same value as the backend's DOCS_WEBHOOK_SECRET_<ENV> / Worker secret
 # Variables (repo → Settings → Actions → Variables):
 #   DOCS_GITHUB_MIRROR                       owner/repo of the public mirror, e.g. Konfersi-Indonesia/konfersi-docs
-#   DOCS_SYNC_ENVS                           space-separated envs to sync after publish, e.g. "stg uat"
+#   DOCS_SYNC_ENVS_STG | DOCS_SYNC_ENVS_MAIN  space-separated envs to sync after that branch publishes, e.g. "stg"
 #   DOCS_API_BASE_STG|UAT|PRODUCTION         backend origin per env (workers.dev or another host not behind CF Access)
 
 name: CI
@@ -46,7 +48,7 @@ jobs:
           [ -d .git ] || git init -q .
           URL="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
           git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
-          git fetch -q --depth 1 origin "${GITHUB_SHA}" "+refs/heads/main:refs/remotes/origin/main"
+          git fetch -q --depth 1 origin "${GITHUB_SHA}" "+refs/heads/${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
           git checkout -q -f "${GITHUB_SHA}"
       - name: Install Node.js 22
         run: |
@@ -66,20 +68,18 @@ jobs:
 
   publish:
     needs: validate
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: (github.ref == 'refs/heads/stg' || github.ref == 'refs/heads/main') && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     steps:
       - name: Check configuration
         env:
           GH_MIRROR_DEPLOY_KEY: "${{ secrets.GH_MIRROR_DEPLOY_KEY }}"
           DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
-          DOCS_SYNC_ENVS: "${{ vars.DOCS_SYNC_ENVS }}"
         run: |
           set -euo pipefail
           missing=""
           [ -n "${GH_MIRROR_DEPLOY_KEY:-}" ] || missing="$missing secret:GH_MIRROR_DEPLOY_KEY"
           echo "${DOCS_GITHUB_MIRROR:-}" | grep -Eq '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$' || missing="$missing var:DOCS_GITHUB_MIRROR(owner/repo)"
-          [ -n "${DOCS_SYNC_ENVS:-}" ] || missing="$missing var:DOCS_SYNC_ENVS"
           if [ -n "$missing" ]; then
             echo "publish blocked — configure:$missing (see README.md#cicd)" >&2
             exit 1
@@ -95,18 +95,18 @@ jobs:
           [ -d .git ] || git init -q .
           URL="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
           git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
-          git fetch -q origin "${GITHUB_SHA}" "+refs/heads/main:refs/remotes/origin/main"
+          git fetch -q origin "${GITHUB_SHA}" "+refs/heads/${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
           # The mirror push needs full history (a workspace reused from validate is shallow).
           if [ -f .git/shallow ]; then git fetch -q --unshallow origin; fi
           git checkout -q -f "${GITHUB_SHA}"
 
-      - name: Skip if main moved on
+      - name: Skip if the branch moved on
         run: |
           set -euo pipefail
-          git fetch --quiet origin main
-          # Only the commit that is still main's tip publishes; a newer push publishes itself.
-          if [ "$(git rev-parse origin/main)" != "${GITHUB_SHA}" ]; then
-            echo "main moved past ${GITHUB_SHA}; skipping stale publish"
+          git fetch --quiet origin "${GITHUB_REF_NAME}"
+          # Only the commit that is still the branch tip publishes; a newer push publishes itself.
+          if [ "$(git rev-parse "origin/${GITHUB_REF_NAME}")" != "${GITHUB_SHA}" ]; then
+            echo "${GITHUB_REF_NAME} moved past ${GITHUB_SHA}; skipping stale publish"
             echo "STALE=1" >> "$GITHUB_ENV"
           fi
 
@@ -125,7 +125,7 @@ jobs:
           fi
           node -v
 
-      - name: Mirror main → GitHub
+      - name: Mirror branch → GitHub
         if: env.STALE != '1'
         env:
           GH_MIRROR_DEPLOY_KEY: "${{ secrets.GH_MIRROR_DEPLOY_KEY }}"
@@ -140,14 +140,15 @@ jobs:
           # Pinned GitHub host key (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints).
           echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl" > "$KEYDIR/known_hosts"
           export GIT_SSH_COMMAND="ssh -i $KEYDIR/id -o IdentitiesOnly=yes -o UserKnownHostsFile=$KEYDIR/known_hosts -o StrictHostKeyChecking=yes"
-          # The mirror is read-only; git.konfersi.com main is the source of truth, so --force is intended.
-          git push --force "git@github.com:${DOCS_GITHUB_MIRROR}.git" "${GITHUB_SHA}:refs/heads/main"
-          echo "mirrored ${GITHUB_SHA} → github.com/${DOCS_GITHUB_MIRROR}@main"
+          # The mirror is read-only; git.konfersi.com is the source of truth, so --force is intended.
+          git push --force "git@github.com:${DOCS_GITHUB_MIRROR}.git" "${GITHUB_SHA}:refs/heads/${GITHUB_REF_NAME}"
+          echo "mirrored ${GITHUB_SHA} → github.com/${DOCS_GITHUB_MIRROR}@${GITHUB_REF_NAME}"
 
       - name: Sync + smoke each backend
         if: env.STALE != '1'
         env:
-          DOCS_SYNC_ENVS: "${{ vars.DOCS_SYNC_ENVS }}"
+          DOCS_SYNC_ENVS_STG: "${{ vars.DOCS_SYNC_ENVS_STG }}"
+          DOCS_SYNC_ENVS_MAIN: "${{ vars.DOCS_SYNC_ENVS_MAIN }}"
           DOCS_API_BASE_STG: "${{ vars.DOCS_API_BASE_STG }}"
           DOCS_API_BASE_UAT: "${{ vars.DOCS_API_BASE_UAT }}"
           DOCS_API_BASE_PRODUCTION: "${{ vars.DOCS_API_BASE_PRODUCTION }}"
@@ -156,16 +157,21 @@ jobs:
           DOCS_WEBHOOK_SECRET_PRODUCTION: "${{ secrets.DOCS_WEBHOOK_SECRET_PRODUCTION }}"
         run: |
           set -euo pipefail
-          for env in ${DOCS_SYNC_ENVS}; do
+          envs_var="DOCS_SYNC_ENVS_$(echo "${GITHUB_REF_NAME}" | tr '[:lower:]' '[:upper:]')"
+          if [ -z "${!envs_var:-}" ]; then
+            echo "::notice::${envs_var} is not set: ${GITHUB_REF_NAME} is mirrored, no backend follows it yet"
+            exit 0
+          fi
+          for env in ${!envs_var}; do
             key=$(echo "$env" | tr '[:lower:]' '[:upper:]')
             base_var="DOCS_API_BASE_${key}"
             secret_var="DOCS_WEBHOOK_SECRET_${key}"
             if [ -z "${!base_var:-}" ] || [ -z "${!secret_var:-}" ]; then
-              echo "env '${env}' is in DOCS_SYNC_ENVS but var ${base_var} and/or secret ${secret_var} is missing" >&2
+              echo "env '${env}' is in ${envs_var} but var ${base_var} and/or secret ${secret_var} is missing" >&2
               exit 1
             fi
             echo "── ${env}"
             DOCS_API_BASE="${!base_var}" DOCS_WEBHOOK_SECRET="${!secret_var}" \
-              DOCS_SYNC_BRANCH=main DOCS_SYNC_COMMIT="${GITHUB_SHA}" \
+              DOCS_SYNC_BRANCH="${GITHUB_REF_NAME}" DOCS_SYNC_COMMIT="${GITHUB_SHA}" \
               node scripts/trigger-sync.mjs
           done
