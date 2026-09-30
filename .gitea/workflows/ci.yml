@@ -36,7 +36,18 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        env:
+          TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          # Inline, not actions/checkout: the runner has no Node for JS actions.
+          command -v git >/dev/null || apk add --no-cache git
+          [ -d .git ] || git init -q .
+          URL="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
+          git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
+          git fetch -q --depth 1 origin "${GITHUB_SHA}" "+refs/heads/main:refs/remotes/origin/main"
+          git checkout -q -f "${GITHUB_SHA}"
       - name: Install Node.js 22
         run: |
           set -euo pipefail
@@ -74,9 +85,20 @@ jobs:
             exit 1
           fi
 
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        env:
+          TOKEN: "${{ github.token }}"
+        run: |
+          set -euo pipefail
+          # Inline, not actions/checkout: the runner has no Node for JS actions.
+          command -v git >/dev/null || apk add --no-cache git
+          [ -d .git ] || git init -q .
+          URL="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
+          git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
+          git fetch -q origin "${GITHUB_SHA}" "+refs/heads/main:refs/remotes/origin/main"
+          # The mirror push needs full history (a workspace reused from validate is shallow).
+          if [ -f .git/shallow ]; then git fetch -q --unshallow origin; fi
+          git checkout -q -f "${GITHUB_SHA}"
 
       - name: Skip if main moved on
         run: |
