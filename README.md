@@ -77,8 +77,11 @@ Only this subset of YAML is supported: `key: value`, `key: [a, b]`, and indented
 ## Publishing
 
 `git.konfersi.com` is internal-only, so the backend (a Cloudflare Worker) reads the **public GitHub mirror**:
-`DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/{ref}` with `DOCS_SOURCE_REF=main`.
-Push to `main` on git.konfersi.com and CI does the rest (see below). An hourly cron re-syncs as a safety net.
+`DOCS_SOURCE_BASE_URL=https://raw.githubusercontent.com/Konfersi-Indonesia/konfersi-docs/{ref}`, where each
+environment follows one branch through `DOCS_SOURCE_REF`: stg (and local dev) read `stg`, production reads `main`.
+
+Open PRs against `stg`; a merge publishes to the stg docs. Merging `stg` into `main` is the release to production.
+CI does the rest (see below). An hourly cron re-syncs each backend from its branch as a safety net.
 
 ## CI/CD
 
@@ -87,7 +90,7 @@ Push to `main` on git.konfersi.com and CI does the rest (see below). An hourly c
 | Job | When | What |
 |---|---|---|
 | `validate` | every push / PR | `node scripts/validate.mjs`: frontmatter, en↔id parity, links, allowed HTML, and that every `stable-slugs.json` page exists. |
-| `publish` | push / dispatch on `main` | 1. Force-mirrors `main` to GitHub over SSH with a repo-scoped deploy key. 2. For each env in `DOCS_SYNC_ENVS`, runs `scripts/trigger-sync.mjs`. |
+| `publish` | push / dispatch on `stg` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key. 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>`. Without that variable the branch is only mirrored. |
 
 `trigger-sync.mjs` sends a signed webhook **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. The request carries `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails. The script then smoke-tests nav, page, search and graph in both languages.
 
@@ -100,7 +103,8 @@ The apps check links in the other direction. The landing page and accounts CI ru
 | secret | `GH_MIRROR_DEPLOY_KEY` | Private half of the **write** deploy key on the GitHub mirror (GitHub → repo → Settings → Deploy keys). |
 | secret | `DOCS_WEBHOOK_SECRET_STG` (`_UAT`, `_PRODUCTION`) | Random 64-hex value. `platform/konfersi-backend` must hold the **same** value under the same name. |
 | variable | `DOCS_GITHUB_MIRROR` | `Konfersi-Indonesia/konfersi-docs` |
-| variable | `DOCS_SYNC_ENVS` | e.g. `stg` (add `uat` once uat is live) |
+| variable | `DOCS_SYNC_ENVS_STG` | `stg`: envs that follow the `stg` branch |
+| variable | `DOCS_SYNC_ENVS_MAIN` | envs that follow `main` (`production` once it is live; unset = mirror only) |
 | variable | `DOCS_API_BASE_STG` (`_UAT`, …) | Backend origin reachable from CI and not behind Cloudflare Access, e.g. `https://konfersi-backend-stg.konfersi-indonesia.workers.dev` |
 
 **Backend side** (`platform/konfersi-backend` CI, the stg/uat deploy steps):
@@ -120,7 +124,7 @@ A missing secret fails the deploy **before** anything is deployed.
 **Manual operations**
 
 - **Force a rebuild:** `POST <api>/v1/admin/docs/sync?force=1` (admin session), optionally `&ref=<sha>`.
-- **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=main node scripts/trigger-sync.mjs`
+- **Re-run from a laptop:** `DOCS_API_BASE=… DOCS_WEBHOOK_SECRET=… DOCS_SYNC_BRANCH=stg node scripts/trigger-sync.mjs` (the branch that env's `DOCS_SOURCE_REF` names)
 - **Rotate the webhook secret:** update `DOCS_WEBHOOK_SECRET_<ENV>` in both repos, redeploy the backend, then re-run `publish`.
 - **Rotate the mirror key:** add a new write deploy key on GitHub, replace `GH_MIRROR_DEPLOY_KEY`, then delete the old key.
 
@@ -139,4 +143,4 @@ To release:
 
 1. Bump `version` in `package.json`: patch for fixes and wording, minor for new pages or sections, major for restructures or renamed slugs.
 2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
-3. Push to `main`.
+3. Merge to `stg` (stg docs), then `stg` → `main` (production).
