@@ -48,7 +48,8 @@ jobs:
           [ -d .git ] || git init -q .
           URL="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
           git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
-          git fetch -q --depth 1 origin "${GITHUB_SHA}" "+refs/heads/${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
+          # PR runs have no branch ref to fetch (GITHUB_REF_NAME is the PR number): the commit is enough.
+          git fetch -q --depth 1 origin "${GITHUB_SHA}"
           git checkout -q -f "${GITHUB_SHA}"
       - name: Install Node.js 22
         run: |
