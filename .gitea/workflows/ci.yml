@@ -37,9 +37,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
+      - name: Install Node.js 22
+        run: |
+          set -euo pipefail
+          # The runner is Alpine: actions/setup-node's glibc build cannot execute there.
+          if [ -f /etc/alpine-release ]; then
+            apk add --no-cache curl tar ca-certificates libstdc++ libgcc
+            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v22.14.0/node-v22.14.0-linux-x64-musl.tar.gz" \
+              | tar -xz -C /usr/local --strip-components=1
+          elif ! command -v node >/dev/null 2>&1; then
+            curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+            apt-get install -y nodejs
+          fi
+          node -v
       - name: Validate docs
         run: node scripts/validate.mjs
 
@@ -78,10 +88,20 @@ jobs:
             echo "STALE=1" >> "$GITHUB_ENV"
           fi
 
-      - uses: actions/setup-node@v4
+      - name: Install Node.js 22
         if: env.STALE != '1'
-        with:
-          node-version: 22
+        run: |
+          set -euo pipefail
+          # The runner is Alpine: actions/setup-node's glibc build cannot execute there.
+          if [ -f /etc/alpine-release ]; then
+            apk add --no-cache curl tar ca-certificates libstdc++ libgcc
+            curl -fsSL "https://unofficial-builds.nodejs.org/download/release/v22.14.0/node-v22.14.0-linux-x64-musl.tar.gz" \
+              | tar -xz -C /usr/local --strip-components=1
+          elif ! command -v node >/dev/null 2>&1; then
+            curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+            apt-get install -y nodejs
+          fi
+          node -v
 
       - name: Mirror main → GitHub
         if: env.STALE != '1'
