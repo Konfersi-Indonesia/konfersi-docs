@@ -1,0 +1,75 @@
+# konfersi-docs reverse sync (Gitea Actions). Pulls the public GitHub mirror → Gitea.
+#
+#   Companion to ci.yml `publish` (Gitea → GitHub). Runs on the existing Alpine runner
+#   (no JS actions / actions/checkout — same inline git pattern as ci.yml).
+#
+#   For each of stg, uat, main:
+#     - skip when tips already match (loop break with Gitea→GitHub publish)
+#     - fast-forward when Gitea tip is an ancestor of GitHub tip
+#     - create the branch on Gitea when it is missing
+#     - warn and do NOT force-push on diverge (manual intervene)
+#
+# Secrets: none (public GitHub HTTPS fetch; push to Gitea uses github.token as oauth2).
+# Variables (optional):
+#   DOCS_GITHUB_MIRROR   owner/repo, default Konfersi-Indonesia/konfersi-docs
+
+name: Pull from GitHub
+
+on:
+  schedule:
+    # Every 15 minutes (Gitea cron)
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: pull-from-github
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fast-forward stg / uat / main from GitHub when ahead
+        env:
+          TOKEN: "${{ github.token }}"
+          DOCS_GITHUB_MIRROR: "${{ vars.DOCS_GITHUB_MIRROR }}"
+        run: |
+          set -euo pipefail
+          # Inline git, not actions/checkout: Alpine runner has no Node for JS actions.
+          command -v git >/dev/null || apk add --no-cache git
+          [ -d .git ] || git init -q .
+          MIRROR="${DOCS_GITHUB_MIRROR:-Konfersi-Indonesia/konfersi-docs}"
+          ORIGIN="https://oauth2:${TOKEN}@git.konfersi.com/${GITHUB_REPOSITORY}.git"
+          git remote add origin "$ORIGIN" 2>/dev/null || git remote set-url origin "$ORIGIN"
+          git remote add github "https://github.com/${MIRROR}.git" 2>/dev/null \
+            || git remote set-url github "https://github.com/${MIRROR}.git"
+
+          git fetch -q --prune origin
+          git fetch -q --prune github
+
+          for branch in stg uat main; do
+            GH_TIP=$(git rev-parse "github/${branch}" 2>/dev/null || true)
+            GT_TIP=$(git rev-parse "origin/${branch}" 2>/dev/null || true)
+            if [ -z "${GH_TIP:-}" ]; then
+              echo "skip ${branch}: missing on GitHub"
+              continue
+            fi
+            if [ "${GH_TIP}" = "${GT_TIP:-}" ]; then
+              echo "skip ${branch}: tips already match (${GH_TIP})"
+              continue
+            fi
+            # Only fast-forward when Gitea is behind GitHub; refuse diverge.
+            if [ -n "${GT_TIP:-}" ] && git merge-base --is-ancestor "${GT_TIP}" "${GH_TIP}"; then
+              git push origin "${GH_TIP}:refs/heads/${branch}"
+              echo "fast-forwarded Gitea ${branch} → ${GH_TIP}"
+            elif [ -z "${GT_TIP:-}" ]; then
+              git push origin "${GH_TIP}:refs/heads/${branch}"
+              echo "created Gitea ${branch} @ ${GH_TIP}"
+            else
+              echo "::warning::${branch} diverged (gitea=${GT_TIP} github=${GH_TIP}); not force-pushing"
+            fi
+          done
