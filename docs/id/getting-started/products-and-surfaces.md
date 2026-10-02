@@ -4,7 +4,7 @@ description: Aplikasi Konfersi yang dapat Anda gunakan dengan satu akun, fungsin
 tags: [ikhtisar, console, lab, accounts, mcp]
 related: [getting-started/what-is-konfersi, using-konfersi/console-projects, using-konfersi/lab-workspace]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Konfersi terdiri dari beberapa aplikasi yang memakai satu akun yang sama. Anda cukup masuk sekali, dan sesi yang sama berlaku di Console, Lab, dan situs Konfersi lainnya. Halaman ini menjelaskan fungsi masing-masing aplikasi.
@@ -31,8 +31,11 @@ Accounts adalah layanan masuk tunggal untuk Konfersi. Jika Anda membuka Console 
 Console adalah pusat kerja Anda. Dari menu samping, Anda dapat membuka:
 
 - **Dasbor**: ringkasan pekerjaan Anda, proyek terkini, dan aktivitas terbaru.
-- **Manajemen Proyek**: membuat, membuka, mengubah, dan menghapus proyek.
-- **Kelola Paket**: paket, add-on, keranjang pesanan, dan transaksi.
+- **Proyek Lab**: membuat, membuka, mengubah, dan menghapus proyek, serta memilih paket dan add-on.
+- **Kursus** dan **Komunitas**: kursus langsung dan mandiri, diskusi artikel, dan tanya jawab khusus member.
+- **Organisasi**: proyek bersama dan anggota tim Anda, jika Anda tergabung di organisasi.
+- **Pembayaran & Tagihan**: keranjang pesanan dan transaksi.
+- **Profil & Pengaturan**, **Panduan Konsol**, dan **Dukungan**.
 
 Semua pekerjaan di Konfersi berada di dalam sebuah **proyek**, dan setiap proyek memiliki paket serta kuotanya sendiri. Lihat [Console & proyek](../using-konfersi/console-projects.md).
 

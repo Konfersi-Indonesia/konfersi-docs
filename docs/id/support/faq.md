@@ -4,7 +4,7 @@ description: Jawaban atas pertanyaan umum seputar akun Konfersi, cara masuk, pak
 tags: [faq, bantuan, akun, tagihan, lab, mission-planning]
 related: [support/contact-support, getting-started/what-is-konfersi, billing/plans-and-pricing, legal/privacy]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Jawaban singkat untuk pertanyaan yang paling sering kami terima. Jika pertanyaan Anda belum terjawab, [hubungi tim bantuan](contact-support.md).
@@ -35,7 +35,7 @@ Ada. Tingkatan **Akademik & Riset** gratis dan ditujukan bagi pelajar, peneliti,
 
 ### Di mana saya bisa melihat harga?
 
-Harga terkini ditampilkan di Console pada menu **Kelola Paket** dan saat checkout. Harga ditampilkan dalam IDR untuk organisasi di Indonesia dan dalam USD untuk negara lain. Pembayaran diproses dalam IDR.
+Harga terkini ditampilkan di Console pada menu **Proyek Lab → Paket Proyek & Add-on** dan saat checkout. Harga ditampilkan dalam IDR untuk organisasi di Indonesia dan dalam USD untuk negara lain. Pembayaran diproses dalam IDR.
 
 ### Apakah paket berlaku per akun atau per proyek?
 
@@ -47,7 +47,7 @@ Kartu kredit atau debit, ATM/transfer bank melalui virtual account, serta QRIS/e
 
 ### Pembayaran saya berhasil, tetapi paket tidak berubah. Apa yang harus dilakukan?
 
-Buka **Kelola Paket → Transaksi** dan periksa status pesanan. Jika statusnya masih **Dalam Proses** beberapa menit setelah Anda membayar, atau dana terpotong tetapi pesanan gagal, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) beserta ID pesanan Anda. Lihat [Pembayaran](../billing/payments.md#ada-kendala).
+Buka **Pembayaran & Tagihan → Transaksi** dan periksa status pesanan. Jika statusnya masih **Dalam Proses** beberapa menit setelah Anda membayar, atau dana terpotong tetapi pesanan gagal, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) beserta ID pesanan Anda. Lihat [Pembayaran](../billing/payments.md#ada-kendala).
 
 ### Bagaimana cara mengajukan pengembalian dana?
 

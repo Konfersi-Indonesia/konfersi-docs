@@ -4,24 +4,29 @@ description: Membuat, membuka, membagikan, dan mengelola proyek di Konfersi Cons
 tags: [console, proyek, paket, kolaborasi]
 related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Console di [app.konfersi.com](https://app.konfersi.com) adalah tempat Anda mengatur pekerjaan. Semua aktivitas di Konfersi berlangsung di dalam sebuah **proyek**. Setiap proyek memiliki paket, kuota, dan anggotanya sendiri. Halaman ini menjelaskan cara membuat proyek, mengenali isinya, dan membagikannya.
 
 ## Mengenal Console
 
-Menu samping memiliki tiga bagian utama:
+Menu samping memiliki bagian berikut:
 
 - **Dasbor**: proyek terkini, aktivitas terbaru, ringkasan pemakaian, dan artikel terbaru kami.
-- **Manajemen Proyek**: semua proyek milik Anda atau proyek tempat Anda diundang.
-- **Kelola Paket**: paket, add-on, keranjang pesanan, dan transaksi.
+- **Proyek Lab**: **Proyek Saya** (semua proyek milik Anda atau proyek tempat Anda diundang) dan **Paket Proyek & Add-on**.
+- **Kursus**: **Marketplace** kursus dan **Kursus Saya**. Lihat [Kursus](courses.md).
+- **Komunitas**: **Diskusi Artikel** dan **Tanya jawab member**. Lihat [Komunitas](community.md).
+- **Organisasi**: anggota, proyek bersama, dan pengaturan tim Anda, jika Anda tergabung di organisasi. Lihat [Organisasi](organizations/index.md).
+- **Pembayaran & Tagihan**: **Keranjang Pesanan** dan **Transaksi**. Lihat [Keranjang pesanan & transaksi](../billing/order-cart-and-transactions.md).
+- **Profil & Pengaturan**: **Profil Saya** dan **Keamanan**. Lihat [Profil Anda](../account/profile.md) dan [Keamanan](../account/security/index.md).
+- **Panduan Konsol** dan **Dukungan**. Lihat [Tiket dukungan](../support/support-tickets.md).
 
 Saat pertama kali membuka Console, [panduan sambutan](console-guides.md) menawarkan tur (**Ikuti Tour**), pengaturan profil (**Pengaturan**), dan pintasan untuk membuat proyek pertama (**Buat**).
 
 ## Membuat proyek
 
-1. Buka **Manajemen Proyek**, lalu pilih **Buat Proyek Baru**.
+1. Buka **Proyek Lab → Proyek Saya**, lalu pilih **Buat Proyek Baru**.
 2. **Informasi Proyek**: isi **Judul Proyek** (wajib). **Deskripsi** boleh diisi atau dikosongkan. Pilih **Lanjutkan**.
 3. **Tag**: cari tag yang sudah ada, atau ketik tag baru lalu pilih **Buat Baru**. Anda dapat menambahkan hingga 5 tag baru. Pilih **Lanjutkan**, atau **Lewati untuk Sekarang** jika ingin menambahkan tag nanti.
 4. **Selesaikan Setup**: pilih salah satu kartu paket. Pilih **Lihat Detail Manfaat** untuk melihat isi tiap paket. Harga ditampilkan belum termasuk PPN.
@@ -36,7 +41,7 @@ Nama paket, isi paket, dan harga terkini diambil dari katalog yang berlaku dan d
 
 ## Mencari dan membuka proyek
 
-Di **Manajemen Proyek**, Anda dapat:
+Di **Proyek Saya**, Anda dapat:
 
 - Mencari lewat kolom **Cari Proyek Anda...**.
 - Mengurutkan berdasarkan **Terakhir Dilihat**, **Terakhir Diperbarui**, **Dibuat**, atau **Nama A-Z**.
@@ -72,7 +77,7 @@ Bagian **Siapa yang dapat mengakses** menampilkan **Pemilik** dan setiap **Asist
 
 ## Menghapus proyek
 
-1. Di **Manajemen Proyek**, buka menu proyek lalu pilih **Hapus**.
+1. Di **Proyek Saya**, buka menu proyek lalu pilih **Hapus**.
 2. Ketik `HAPUS PROYEK INI` untuk konfirmasi, lalu pilih **Hapus**.
 
 <scalar-callout type="danger">Tindakan ini tidak dapat dibatalkan. Semua berkas, commit, dan data di dalam proyek akan dihapus secara permanen.</scalar-callout>

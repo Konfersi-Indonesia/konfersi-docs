@@ -58,6 +58,32 @@
                 "icon": "phosphor/regular/folders",
                 "filepath": "docs/en/using-konfersi/console-projects.md"
               },
+              "/organizations": {
+                "type": "group",
+                "title": "Organizations",
+                "icon": "phosphor/regular/buildings",
+                "filepath": "docs/en/using-konfersi/organizations/index.md",
+                "children": {
+                  "/members-and-invitations": {
+                    "type": "page",
+                    "title": "Members & invitations",
+                    "icon": "phosphor/regular/users",
+                    "filepath": "docs/en/using-konfersi/organizations/members-and-invitations.md"
+                  },
+                  "/shared-projects-and-courses": {
+                    "type": "page",
+                    "title": "Shared projects & courses",
+                    "icon": "phosphor/regular/folders",
+                    "filepath": "docs/en/using-konfersi/organizations/shared-projects-and-courses.md"
+                  },
+                  "/settings": {
+                    "type": "page",
+                    "title": "Organization settings",
+                    "icon": "phosphor/regular/shield-check",
+                    "filepath": "docs/en/using-konfersi/organizations/settings.md"
+                  }
+                }
+              },
               "/lab-workspace": {
                 "type": "page",
                 "title": "Lab workspace",
@@ -75,6 +101,156 @@
                 "title": "Metocean data sources",
                 "icon": "phosphor/regular/waves",
                 "filepath": "docs/en/using-konfersi/metocean-data-sources.md"
+              },
+              "/courses": {
+                "type": "page",
+                "title": "Courses",
+                "icon": "phosphor/regular/graduation-cap",
+                "filepath": "docs/en/using-konfersi/courses.md"
+              },
+              "/community": {
+                "type": "page",
+                "title": "Community",
+                "icon": "phosphor/regular/chats",
+                "filepath": "docs/en/using-konfersi/community.md"
+              }
+            }
+          },
+          "/lab": {
+            "type": "group",
+            "title": "Konfersi Lab",
+            "children": {
+              "/get-started": {
+                "type": "page",
+                "title": "Get started with Lab",
+                "icon": "phosphor/regular/flask",
+                "filepath": "docs/en/lab/get-started.md"
+              },
+              "/desktop": {
+                "type": "group",
+                "title": "Desktop editors",
+                "icon": "phosphor/regular/devices",
+                "filepath": "docs/en/lab/desktop/index.md",
+                "children": {
+                  "/install-the-extension": {
+                    "type": "page",
+                    "title": "Install the extension",
+                    "icon": "phosphor/regular/download",
+                    "filepath": "docs/en/lab/desktop/install-the-extension.md"
+                  },
+                  "/sign-in-and-updates": {
+                    "type": "page",
+                    "title": "Sign in & updates",
+                    "icon": "phosphor/regular/sign-in",
+                    "filepath": "docs/en/lab/desktop/sign-in-and-updates.md"
+                  }
+                }
+              },
+              "/points": {
+                "type": "group",
+                "title": "Observation points",
+                "icon": "phosphor/regular/map-pin",
+                "filepath": "docs/en/lab/points/index.md",
+                "children": {
+                  "/manage-points": {
+                    "type": "page",
+                    "title": "Manage points",
+                    "icon": "phosphor/regular/pencil",
+                    "filepath": "docs/en/lab/points/manage-points.md"
+                  },
+                  "/process-points": {
+                    "type": "page",
+                    "title": "Process points",
+                    "icon": "phosphor/regular/gear",
+                    "filepath": "docs/en/lab/points/process-points.md"
+                  }
+                }
+              },
+              "/map": {
+                "type": "group",
+                "title": "Map & layers",
+                "icon": "phosphor/regular/map-trifold",
+                "filepath": "docs/en/lab/map/index.md",
+                "children": {
+                  "/project-boundaries": {
+                    "type": "page",
+                    "title": "Project boundaries",
+                    "icon": "phosphor/regular/polygon",
+                    "filepath": "docs/en/lab/map/project-boundaries.md"
+                  }
+                }
+              },
+              "/data": {
+                "type": "group",
+                "title": "How data is processed",
+                "icon": "phosphor/regular/database",
+                "filepath": "docs/en/lab/data/index.md",
+                "children": {
+                  "/variables-and-sources": {
+                    "type": "page",
+                    "title": "Variables & sources",
+                    "icon": "phosphor/regular/waves",
+                    "filepath": "docs/en/lab/data/variables-and-sources.md"
+                  }
+                }
+              },
+              "/analysis": {
+                "type": "group",
+                "title": "Analyses & charts",
+                "icon": "phosphor/regular/chart-line",
+                "filepath": "docs/en/lab/analysis/index.md",
+                "children": {
+                  "/data-validation": {
+                    "type": "page",
+                    "title": "Data validation",
+                    "icon": "phosphor/regular/check-circle",
+                    "filepath": "docs/en/lab/analysis/data-validation.md"
+                  }
+                }
+              },
+              "/reports-and-documents": {
+                "type": "page",
+                "title": "Reports & project documents",
+                "icon": "phosphor/regular/file-doc",
+                "filepath": "docs/en/lab/reports-and-documents.md"
+              },
+              "/troubleshooting": {
+                "type": "page",
+                "title": "Troubleshooting",
+                "icon": "phosphor/regular/wrench",
+                "filepath": "docs/en/lab/troubleshooting.md"
+              },
+              "/faq": {
+                "type": "page",
+                "title": "Lab FAQ",
+                "icon": "phosphor/regular/question",
+                "filepath": "docs/en/lab/faq.md"
+              }
+            }
+          },
+          "/account": {
+            "type": "group",
+            "title": "Account & security",
+            "children": {
+              "/profile": {
+                "type": "page",
+                "title": "Your profile",
+                "icon": "phosphor/regular/user",
+                "filepath": "docs/en/account/profile.md"
+              },
+              "/security": {
+                "type": "group",
+                "title": "Security",
+                "icon": "phosphor/regular/lock-key",
+                "filepath": "docs/en/account/security/index.md",
+                "children": {
+                  "/connected-devices": {
+                    "type": "page",
+                    "title": "Connected devices",
+                    "icon": "phosphor/regular/devices",
+                    "filepath": "docs/en/account/security/connected-devices.md"
+                  }
+                }
               }
             }
           },
@@ -94,6 +270,12 @@
                 "icon": "phosphor/regular/credit-card",
                 "filepath": "docs/en/billing/payments.md"
               },
+              "/order-cart-and-transactions": {
+                "type": "page",
+                "title": "Order cart & transactions",
+                "icon": "phosphor/regular/receipt",
+                "filepath": "docs/en/billing/order-cart-and-transactions.md"
+              },
               "/refunds-and-cancellation": {
                 "type": "page",
                 "title": "Refunds & cancellation",
@@ -106,6 +288,12 @@
             "type": "group",
             "title": "Support",
             "children": {
+              "/support-tickets": {
+                "type": "page",
+                "title": "Support tickets",
+                "icon": "phosphor/regular/ticket",
+                "filepath": "docs/en/support/support-tickets.md"
+              },
               "/contact-support": {
                 "type": "page",
                 "title": "Contact support",
@@ -244,6 +432,32 @@
                 "icon": "phosphor/regular/folders",
                 "filepath": "docs/id/using-konfersi/console-projects.md"
               },
+              "/organizations": {
+                "type": "group",
+                "title": "Organisasi",
+                "icon": "phosphor/regular/buildings",
+                "filepath": "docs/id/using-konfersi/organizations/index.md",
+                "children": {
+                  "/members-and-invitations": {
+                    "type": "page",
+                    "title": "Anggota & undangan",
+                    "icon": "phosphor/regular/users",
+                    "filepath": "docs/id/using-konfersi/organizations/members-and-invitations.md"
+                  },
+                  "/shared-projects-and-courses": {
+                    "type": "page",
+                    "title": "Proyek & kursus bersama",
+                    "icon": "phosphor/regular/folders",
+                    "filepath": "docs/id/using-konfersi/organizations/shared-projects-and-courses.md"
+                  },
+                  "/settings": {
+                    "type": "page",
+                    "title": "Pengaturan organisasi",
+                    "icon": "phosphor/regular/shield-check",
+                    "filepath": "docs/id/using-konfersi/organizations/settings.md"
+                  }
+                }
+              },
               "/lab-workspace": {
                 "type": "page",
                 "title": "Ruang kerja Lab",
@@ -261,6 +475,156 @@
                 "title": "Sumber data metocean",
                 "icon": "phosphor/regular/waves",
                 "filepath": "docs/id/using-konfersi/metocean-data-sources.md"
+              },
+              "/courses": {
+                "type": "page",
+                "title": "Kursus",
+                "icon": "phosphor/regular/graduation-cap",
+                "filepath": "docs/id/using-konfersi/courses.md"
+              },
+              "/community": {
+                "type": "page",
+                "title": "Komunitas",
+                "icon": "phosphor/regular/chats",
+                "filepath": "docs/id/using-konfersi/community.md"
+              }
+            }
+          },
+          "/lab": {
+            "type": "group",
+            "title": "Konfersi Lab",
+            "children": {
+              "/get-started": {
+                "type": "page",
+                "title": "Mulai memakai Lab",
+                "icon": "phosphor/regular/flask",
+                "filepath": "docs/id/lab/get-started.md"
+              },
+              "/desktop": {
+                "type": "group",
+                "title": "Editor desktop",
+                "icon": "phosphor/regular/devices",
+                "filepath": "docs/id/lab/desktop/index.md",
+                "children": {
+                  "/install-the-extension": {
+                    "type": "page",
+                    "title": "Memasang ekstensi",
+                    "icon": "phosphor/regular/download",
+                    "filepath": "docs/id/lab/desktop/install-the-extension.md"
+                  },
+                  "/sign-in-and-updates": {
+                    "type": "page",
+                    "title": "Masuk & pembaruan",
+                    "icon": "phosphor/regular/sign-in",
+                    "filepath": "docs/id/lab/desktop/sign-in-and-updates.md"
+                  }
+                }
+              },
+              "/points": {
+                "type": "group",
+                "title": "Titik observasi",
+                "icon": "phosphor/regular/map-pin",
+                "filepath": "docs/id/lab/points/index.md",
+                "children": {
+                  "/manage-points": {
+                    "type": "page",
+                    "title": "Mengelola titik",
+                    "icon": "phosphor/regular/pencil",
+                    "filepath": "docs/id/lab/points/manage-points.md"
+                  },
+                  "/process-points": {
+                    "type": "page",
+                    "title": "Memproses titik",
+                    "icon": "phosphor/regular/gear",
+                    "filepath": "docs/id/lab/points/process-points.md"
+                  }
+                }
+              },
+              "/map": {
+                "type": "group",
+                "title": "Peta & lapisan",
+                "icon": "phosphor/regular/map-trifold",
+                "filepath": "docs/id/lab/map/index.md",
+                "children": {
+                  "/project-boundaries": {
+                    "type": "page",
+                    "title": "Batas proyek",
+                    "icon": "phosphor/regular/polygon",
+                    "filepath": "docs/id/lab/map/project-boundaries.md"
+                  }
+                }
+              },
+              "/data": {
+                "type": "group",
+                "title": "Cara data diproses",
+                "icon": "phosphor/regular/database",
+                "filepath": "docs/id/lab/data/index.md",
+                "children": {
+                  "/variables-and-sources": {
+                    "type": "page",
+                    "title": "Variabel & sumber",
+                    "icon": "phosphor/regular/waves",
+                    "filepath": "docs/id/lab/data/variables-and-sources.md"
+                  }
+                }
+              },
+              "/analysis": {
+                "type": "group",
+                "title": "Analisis & grafik",
+                "icon": "phosphor/regular/chart-line",
+                "filepath": "docs/id/lab/analysis/index.md",
+                "children": {
+                  "/data-validation": {
+                    "type": "page",
+                    "title": "Validasi data",
+                    "icon": "phosphor/regular/check-circle",
+                    "filepath": "docs/id/lab/analysis/data-validation.md"
+                  }
+                }
+              },
+              "/reports-and-documents": {
+                "type": "page",
+                "title": "Laporan & dokumen proyek",
+                "icon": "phosphor/regular/file-doc",
+                "filepath": "docs/id/lab/reports-and-documents.md"
+              },
+              "/troubleshooting": {
+                "type": "page",
+                "title": "Pemecahan masalah",
+                "icon": "phosphor/regular/wrench",
+                "filepath": "docs/id/lab/troubleshooting.md"
+              },
+              "/faq": {
+                "type": "page",
+                "title": "Pertanyaan umum Lab",
+                "icon": "phosphor/regular/question",
+                "filepath": "docs/id/lab/faq.md"
+              }
+            }
+          },
+          "/account": {
+            "type": "group",
+            "title": "Akun & keamanan",
+            "children": {
+              "/profile": {
+                "type": "page",
+                "title": "Profil Anda",
+                "icon": "phosphor/regular/user",
+                "filepath": "docs/id/account/profile.md"
+              },
+              "/security": {
+                "type": "group",
+                "title": "Keamanan",
+                "icon": "phosphor/regular/lock-key",
+                "filepath": "docs/id/account/security/index.md",
+                "children": {
+                  "/connected-devices": {
+                    "type": "page",
+                    "title": "Perangkat terhubung",
+                    "icon": "phosphor/regular/devices",
+                    "filepath": "docs/id/account/security/connected-devices.md"
+                  }
+                }
               }
             }
           },
@@ -280,6 +644,12 @@
                 "icon": "phosphor/regular/credit-card",
                 "filepath": "docs/id/billing/payments.md"
               },
+              "/order-cart-and-transactions": {
+                "type": "page",
+                "title": "Keranjang pesanan & transaksi",
+                "icon": "phosphor/regular/receipt",
+                "filepath": "docs/id/billing/order-cart-and-transactions.md"
+              },
               "/refunds-and-cancellation": {
                 "type": "page",
                 "title": "Pengembalian dana & pembatalan",
@@ -292,6 +662,12 @@
             "type": "group",
             "title": "Bantuan",
             "children": {
+              "/support-tickets": {
+                "type": "page",
+                "title": "Tiket dukungan",
+                "icon": "phosphor/regular/ticket",
+                "filepath": "docs/id/support/support-tickets.md"
+              },
               "/contact-support": {
                 "type": "page",
                 "title": "Hubungi tim bantuan",

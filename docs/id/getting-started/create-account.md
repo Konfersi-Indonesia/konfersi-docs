@@ -4,7 +4,7 @@ description: Daftar ke Konfersi, verifikasi alamat email, dan lengkapi profil An
 tags: [akun, daftar, registrasi, onboarding]
 related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Satu akun Konfersi membuka Console, Lab, dan semua layanan data Konfersi. Penyiapannya hanya empat langkah singkat: buat akun, verifikasi email, lengkapi profil, lalu mulai menjelajah.
@@ -14,7 +14,7 @@ Satu akun Konfersi membuka Console, Lab, dan semua layanan data Konfersi. Penyia
 Siapkan:
 
 - Alamat email yang bisa langsung Anda buka, atau akun di salah satu penyedia masuk yang tampil di halaman pendaftaran.
-- Beberapa informasi tentang organisasi Anda. Formulir profil menanyakan nama organisasi, sektor, dan peran Anda.
+- Opsional: beberapa informasi tentang organisasi Anda, seperti nama, sektor, dan peran Anda. Jika Anda anggota organisasi di Konfersi, atau diundang ke salah satunya, Anda bisa memakai detail organisasi tersebut tanpa mengetik ulang.
 
 Dengan mendaftar, Anda menyetujui [Syarat & Ketentuan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md). Mohon baca keduanya terlebih dahulu.
 
@@ -52,12 +52,14 @@ Saat pertama kali masuk, Anda akan diminta melengkapi profil. Formulir **Lengkap
 1. Opsional: pilih **Unggah foto** untuk menambahkan foto profil berformat JPG, PNG, atau WebP.
 2. Periksa **Nama Lengkap** Anda.
 3. Pilih **Negara**.
+4. Opsional: isi **Nomor telepon**.
 
 **Organisasi**
 
-1. Isi **Nama Organisasi**. Ini bisa berupa nama perusahaan atau sekolah.
-2. Pilih **Sektor** dan **Peran**. Jika tidak ada pilihan yang cocok, ketik sendiri lalu tambahkan.
-3. Opsional: isi **Lokasi organisasi** (kota atau wilayah) dan **Nomor telepon**.
+Langkah ini opsional. Pilih **Lanjut** untuk melewatinya.
+
+- Jika Anda anggota organisasi di Konfersi, atau diundang ke salah satunya, organisasi itu tampil paling atas dan sudah terpilih. Detailnya ditampilkan untuk Anda periksa, dan Anda hanya perlu memilih **Peran**. Pemilik organisasi menjaga detail ini tetap terbaru. Untuk undangan, profil Anda mengikuti organisasi setelah undangan diterima.
+- Untuk mengisi sendiri, pilih **Isi detail sendiri** (atau langsung isi kolomnya jika tidak ada organisasi yang tampil). Isi **Nama Organisasi**, misalnya nama perusahaan atau sekolah, lalu opsional jenis, sektor, ukuran, situs web, lokasi, dan **Peran** Anda. Jika tidak ada pilihan yang cocok, ketik sendiri lalu tambahkan. Jika Anda mengisi salah satu kolom ini, nama organisasi juga perlu diisi.
 
 **Tujuan**
 

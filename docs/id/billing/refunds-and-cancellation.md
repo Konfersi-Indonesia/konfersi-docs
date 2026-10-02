@@ -4,7 +4,7 @@ description: Cara membatalkan pesanan Konfersi dan mengajukan pengembalian dana 
 tags: [tagihan, pengembalian-dana, refund, pembatalan, kursus, paket]
 related: [legal/terms, billing/payments, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Syarat & Ketentuan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Syarat & Ketentuan, yang berlaku adalah Syarat & Ketentuan.
@@ -16,7 +16,7 @@ Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan p
 Anda tidak perlu mengajukan pengembalian dana untuk pesanan yang belum dibayar:
 
 - **Pesanan yang belum dibayar** cukup dibiarkan. Pembayaran yang tertunda akan kedaluwarsa otomatis jika tidak diselesaikan tepat waktu, dan Anda tidak dikenai biaya.
-- **Pesanan yang gagal, kedaluwarsa, atau dibatalkan** tidak pernah ditagihkan. Statusnya dapat dilihat di **Kelola Paket → Transaksi**.
+- **Pesanan yang gagal, kedaluwarsa, atau dibatalkan** tidak pernah ditagihkan. Statusnya dapat dilihat di **Pembayaran & Tagihan → Transaksi**.
 
 Lihat [Pembayaran](payments.md) untuk arti setiap status.
 

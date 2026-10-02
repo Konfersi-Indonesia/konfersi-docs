@@ -4,10 +4,27 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-09-27
+updated: 2026-10-02
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.1.0 — 2 October 2026
+
+Guides for every part of the Console, and docs organised in sub-folders.
+
+**New**
+
+- [Organizations](../using-konfersi/organizations/index.md): [members & invitations](../using-konfersi/organizations/members-and-invitations.md), [shared projects & courses](../using-konfersi/organizations/shared-projects-and-courses.md) and [organization settings](../using-konfersi/organizations/settings.md) for owners — email domains, joining rules, join requests, single sign-on and activity.
+- [Courses](../using-konfersi/courses.md) and [Community](../using-konfersi/community.md) (article discussions and Member Q&A).
+- A new Account & security section: [Your profile](../account/profile.md), [Security](../account/security/index.md) and [Connected devices](../account/security/connected-devices.md).
+- [Order cart & transactions](../billing/order-cart-and-transactions.md) and [Support tickets](../support/support-tickets.md).
+- A new Konfersi Lab section: [get started](../lab/get-started.md), [desktop editors](../lab/desktop/index.md) (installing the extension in VS Code and Antigravity, sign-in and updates), [observation points](../lab/points/index.md) and [processing](../lab/points/process-points.md), [map & layers](../lab/map/index.md), [how data is processed](../lab/data/index.md) and [variables & sources](../lab/data/variables-and-sources.md), [analyses & charts](../lab/analysis/index.md), [data validation](../lab/analysis/data-validation.md), [reports](../lab/reports-and-documents.md), [troubleshooting](../lab/troubleshooting.md) and a [Lab FAQ](../lab/faq.md).
+
+**Updated**
+
+- Menu names now match the Console: **Lab Project**, **Payment & Billing** and **Profile & Settings**.
+- [Create an account](../getting-started/create-account.md): the organization step is optional, and you can use an organization you belong to or were invited to.
 
 ## 1.0.0 — 27 September 2026
 

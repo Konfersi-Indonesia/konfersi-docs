@@ -13,7 +13,7 @@ The repo can be made public or mirrored anywhere. Point the backend at the new l
 
 ```
 scalar.config.json     Scalar Docs 2.0 config — navigation.routes has one root per locale (/en, /id)
-docs/<locale>/<group>/<page>.md
+docs/<locale>/<section>/[<folder>/…]<page>.md
 assets/                Images; reference them with a relative path (../../../assets/x.png)
 stable-slugs.json      Slugs apps link to directly (mirrored by DOCS_PAGE in @konfersi/shared)
 scripts/validate.mjs   Run by CI and before every push: npm run validate
@@ -23,6 +23,26 @@ scripts/validate.mjs   Run by CI and before every push: npm run validate
 
 - A page's slug is its route path without the locale root. For example, `/en` + `/legal` + `/terms` gives `legal/terms`, and the file is `docs/en/legal/terms.md`.
 - The same slug in every locale forms a translation pair. The validator fails if a page exists in one language only.
+
+**Sections, folders and overview pages**
+
+- Top-level groups under a locale root are **sections** (the sidebar headings and docs home cards).
+- Groups inside a section are **folders**, and can nest to any depth. The slug and file path follow the route: `/en` + `/using-konfersi` + `/organizations` + `/settings` → `using-konfersi/organizations/settings` → `docs/en/using-konfersi/organizations/settings.md`.
+- A folder can have its own **overview page**: give the group a `filepath` of `docs/<locale>/<path>/index.md`. Its slug is the folder path (`using-konfersi/organizations`), and links to it use `…/organizations/index.md`. Sections can't have one.
+- Breadcrumbs on each page show the section and the folders above it, linking folders that have an overview page.
+
+```json
+"/organizations": {
+  "type": "group",
+  "title": "Organizations",
+  "filepath": "docs/en/using-konfersi/organizations/index.md",
+  "children": {
+    "/settings": { "type": "page", "title": "Organization settings", "filepath": "docs/en/using-konfersi/organizations/settings.md" }
+  }
+}
+```
+
+Keep a page's slug stable once published (apps and other sites may link to it); add new folders for new content rather than moving existing pages.
 
 ## Writing a page
 

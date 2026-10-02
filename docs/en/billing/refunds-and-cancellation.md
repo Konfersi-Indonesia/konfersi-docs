@@ -4,7 +4,7 @@ description: How to cancel a Konfersi order and how to request a refund for a co
 tags: [billing, refunds, cancellation, courses, plans]
 related: [legal/terms, billing/payments, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 This page explains, in practical terms, how to cancel an order and how to ask for a refund. The binding rules are in the refund section of our [Terms of Service](../legal/terms.md). If this page and the Terms ever disagree, the Terms apply.
@@ -16,7 +16,7 @@ This page explains, in practical terms, how to cancel an order and how to ask fo
 You don't need a refund for an order you haven't paid yet:
 
 - **Unpaid orders** can be left alone. A pending payment expires automatically if it isn't completed in time, and you are not charged.
-- **Failed, expired or canceled orders** are never charged. Their status in **Manage Plan → Transactions** shows this.
+- **Failed, expired or canceled orders** are never charged. Their status in **Payment & Billing → Transactions** shows this.
 
 See [Payments](payments.md) for what each status means.
 

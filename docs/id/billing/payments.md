@@ -4,14 +4,14 @@ description: Cara membayar paket, add-on, dan kursus Konfersi melalui Midtrans, 
 tags: [tagihan, pembayaran, midtrans, qris, virtual-account, kartu]
 related: [billing/plans-and-pricing, billing/refunds-and-cancellation, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Konfersi menerima pembayaran melalui **Midtrans**, payment gateway asal Indonesia. Anda membayar di halaman pembayaran Midtrans, lalu Midtrans langsung memberi tahu Konfersi hasilnya. Halaman ini menjelaskan langkah-langkahnya, metode pembayaran, dan arti setiap status.
 
 ## Membayar paket atau add-on di Console
 
-1. Di [Console](../using-konfersi/console-projects.md), buka **Kelola Paket**, lalu pilih paket di **Paket Proyek** atau sumber daya tambahan di **Add-Ons**. Anda juga dapat mengumpulkan beberapa pesanan di **Keranjang Pesanan** terlebih dahulu.
+1. Di [Console](../using-konfersi/console-projects.md), buka **Proyek Lab → Paket Proyek & Add-on**, lalu pilih paket, atau sumber daya tambahan di bagian add-on. Anda juga dapat mengumpulkan beberapa pesanan di [Keranjang Pesanan](order-cart-and-transactions.md) terlebih dahulu.
 2. Periksa rinciannya: harga paket, add-on (jika ada), subtotal, pajak (PPN), dan total akhir. Lihat [Paket & harga](plans-and-pricing.md) untuk penjelasan tentang harga dan mata uang.
 3. Pilih metode pembayaran, lalu klik **Bayar Sekarang**.
 4. Selesaikan pembayaran di jendela Midtrans, misalnya dengan memindai kode QR atau membayar ke nomor virtual account dari bank Anda.
@@ -35,7 +35,7 @@ Beberapa hal yang perlu diketahui:
 
 ## Status pembayaran dan pesanan
 
-Pantau pesanan Anda di **Kelola Paket → Transaksi**. Status yang mungkin muncul:
+Pantau pesanan Anda di **Pembayaran & Tagihan → Transaksi**. Status yang mungkin muncul:
 
 | Status di Console | Artinya | Yang perlu dilakukan |
 |---|---|---|
@@ -49,7 +49,7 @@ Pesanan yang gagal, kedaluwarsa, atau dibatalkan tidak dapat dilanjutkan, dan An
 
 ## Membayar kursus
 
-Pendaftaran kursus menggunakan halaman checkout terpisah yang juga didukung Midtrans. Setelah Anda mengisi formulir pendaftaran, Anda akan diarahkan ke halaman pembayaran Midtrans. Metode yang tersedia di sana adalah metode yang diaktifkan Midtrans untuk checkout tersebut. Setelah pembayaran dikonfirmasi, tim kursus akan mengirimkan konfirmasi pendaftaran melalui email.
+Anda mendaftar kursus dari **Kursus → Marketplace** di Console (lihat [Kursus](../using-konfersi/courses.md)). Setiap kursus dibayar dalam checkout tersendiri, terpisah dari paket dan add-on, dan juga didukung Midtrans. Setelah Anda mengisi formulir pendaftaran, Anda akan diarahkan ke halaman pembayaran Midtrans. Metode yang tersedia di sana adalah metode yang diaktifkan Midtrans untuk checkout tersebut. Setelah pembayaran dikonfirmasi, tim kursus akan mengirimkan konfirmasi pendaftaran melalui email.
 
 ## Bagaimana hasil pembayaran sampai ke Konfersi
 
