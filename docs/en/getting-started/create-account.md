@@ -4,7 +4,7 @@ description: Sign up for Konfersi, verify your email address and complete your p
 tags: [account, sign-up, registration, onboarding]
 related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 One Konfersi account opens the Console, Lab and every Konfersi data service. Setting it up takes four short steps: create the account, verify your email, complete your profile, and start exploring.
@@ -14,7 +14,7 @@ One Konfersi account opens the Console, Lab and every Konfersi data service. Set
 You need:
 
 - An email address you can open right away, or an account with one of the sign-in providers shown on the sign-up page.
-- A few details about your organisation. The profile form asks for your organisation's name, sector and your role.
+- Optional: a few details about your organisation, such as its name, sector and your role. If you belong to an organisation on Konfersi, or were invited to one, you can use its details instead of typing them.
 
 Signing up means you accept the [Terms of Service](../legal/terms.md) and the [Privacy Policy](../legal/privacy.md). Please read them first.
 
@@ -52,12 +52,14 @@ The first time you sign in, Konfersi asks you to fill in your profile. The **Com
 1. Optional: select **Upload photo** to add a profile photo in JPG, PNG or WebP format.
 2. Check your **Full Name**.
 3. Choose your **Country**.
+4. Optional: add your **Phone number**.
 
 **Organization**
 
-1. Enter your **Organization Name**. This can be a company or school name.
-2. Choose a **Sector** and a **Role**. If none of the options fits, type your own and add it.
-3. Optional: add your **Organization location** (city or region) and **Phone number**.
+This step is optional. Select **Next** to skip it.
+
+- If you belong to an organisation on Konfersi, or were invited to one, it is listed at the top and already selected. Its details are shown for you to check, and you only choose your **Role**. The organisation's owners keep these details up to date. For an invitation, your profile follows the organisation once you accept it.
+- To type the details yourself, select **Enter details myself** (or just fill in the fields if no organisation is listed). Add the **Organization Name**, such as a company or school name, and optionally its type, sector, size, website, location and your **Role**. If none of the options fits, type your own and add it. If you fill in any of these, the organisation name is needed too.
 
 **Purpose**
 

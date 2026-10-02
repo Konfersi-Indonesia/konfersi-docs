@@ -4,7 +4,7 @@ description: The Konfersi apps you can use with one account, what each one is fo
 tags: [overview, console, lab, accounts, mcp]
 related: [getting-started/what-is-konfersi, using-konfersi/console-projects, using-konfersi/lab-workspace]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Konfersi is a set of apps that share one account. You sign in once, and the same session works in the Console, in Lab and on the other Konfersi sites. This page explains which app does what.
@@ -31,8 +31,11 @@ Accounts is the single sign-in service for Konfersi. When you open the Console o
 The Console is your home base. From the side menu you can open:
 
 - **Dashboard**: an overview of your work, recent projects and recent activity.
-- **Projects Management**: create, open, edit and delete projects.
-- **Manage Plan**: plans, add-ons, your order cart and transactions.
+- **Lab Project**: create, open, edit and delete projects, and choose plans and add-ons.
+- **Courses** and **Community**: live and self-paced courses, article discussions and a members-only Q&A.
+- **Organization**: your team's shared projects and members, if you belong to an organization.
+- **Payment & Billing**: your order cart and transactions.
+- **Profile & Settings**, **Console Guides** and **Support**.
 
 Every piece of work in Konfersi belongs to a **project**, and each project has its own plan and quotas. See [Console & projects](../using-konfersi/console-projects.md).
 

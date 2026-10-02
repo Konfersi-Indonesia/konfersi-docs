@@ -4,24 +4,29 @@ description: Create, open, share and manage projects in the Konfersi Console, an
 tags: [console, projects, plans, collaboration]
 related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 The Console at [app.konfersi.com](https://app.konfersi.com) is where you organise your work. Everything you do in Konfersi happens inside a **project**. Each project has its own plan, its own quotas and its own people. This page shows you how to create a project, find your way around it and share it.
 
 ## Find your way around
 
-The side menu has three main areas:
+The side menu has these areas:
 
 - **Dashboard**: your recent projects, recent activity, usage at a glance, and our newest articles.
-- **Projects Management**: every project you own or have been invited to.
-- **Manage Plan**: plans, add-ons, your order cart and transactions.
+- **Lab Project**: **My Projects** (every project you own or have been invited to) and **Project Plans & Add-ons**.
+- **Courses**: the course **Marketplace** and **My Courses**. See [Courses](courses.md).
+- **Community**: **Article Discussions** and **Member Q&A**. See [Community](community.md).
+- **Organization**: your team's members, shared projects and settings, if you belong to one. See [Organizations](organizations/index.md).
+- **Payment & Billing**: your **Order Cart** and **Transactions**. See [Order cart & transactions](../billing/order-cart-and-transactions.md).
+- **Profile & Settings**: **My Profile** and **Security**. See [Your profile](../account/profile.md) and [Security](../account/security/index.md).
+- **Console Guides** and **Support**. See [Support tickets](../support/support-tickets.md).
 
 The first time you open the Console, a [welcome guide](console-guides.md) offers a tour (**Take a Tour**), profile settings (**Settings**) and a shortcut to create your first project (**Create**).
 
 ## Create a project
 
-1. Go to **Projects Management** and select **Create New Project**.
+1. Go to **Lab Project → My Projects** and select **Create New Project**.
 2. **Project Information**: enter a **Project Title**. This is required. Adding a **Description** is optional. Select **Continue**.
 3. **Tags**: search for existing tags, or type a new one and select **Create New**. You can add up to 5 new tags. Select **Continue**, or select **Skip for Now** to add tags later.
 4. **Finish Setup**: choose a plan card. Select **See Detail Benefits** to see what each plan includes. Prices are shown excluding VAT.
@@ -36,7 +41,7 @@ Plan names, what each plan includes, and current prices come from the live catal
 
 ## Find and open projects
 
-On **Projects Management** you can:
+On **My Projects** you can:
 
 - Search with **Search your Projects...**.
 - Sort by **Last Viewed**, **Last Updated**, **Created** or **Name A-Z**.
@@ -72,7 +77,7 @@ Projects are private. Only the owner and invited people can open them. Owners of
 
 ## Delete a project
 
-1. On **Projects Management**, open the project's menu and choose **Delete**.
+1. On **My Projects**, open the project's menu and choose **Delete**.
 2. Type `DELETE THIS PROJECT` to confirm, then select **Delete**.
 
 <scalar-callout type="danger">Deleting a project is irreversible. All files, commits and data in the project are permanently removed.</scalar-callout>

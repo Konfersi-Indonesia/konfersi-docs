@@ -4,7 +4,7 @@ description: Answers to common questions about Konfersi accounts, sign-in, plans
 tags: [faq, help, account, billing, lab, mission-planning]
 related: [support/contact-support, getting-started/what-is-konfersi, billing/plans-and-pricing, legal/privacy]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Quick answers to the questions we hear most. If yours isn't here, [contact support](contact-support.md).
@@ -35,7 +35,7 @@ Yes. The **Academic & Research** tier is free and aimed at students, researchers
 
 ### Where can I see prices?
 
-Current prices are shown in the Console under **Manage Plan**, and at checkout. Prices appear in IDR for organisations in Indonesia and in USD elsewhere. Payments are processed in IDR.
+Current prices are shown in the Console under **Lab Project → Project Plans & Add-ons**, and at checkout. Prices appear in IDR for organisations in Indonesia and in USD elsewhere. Payments are processed in IDR.
 
 ### Is a plan per account or per project?
 
@@ -47,7 +47,7 @@ Credit or debit card, ATM/bank transfer through a virtual account, and QRIS / e-
 
 ### My payment went through but my plan didn't change. What now?
 
-Open **Manage Plan → Transactions** and check the order status. If it still shows **In Progress** a few minutes after you paid, or you were charged but the order failed, email [support@konfersi.com](mailto:support@konfersi.com) with your order ID. See [Payments](../billing/payments.md#something-went-wrong).
+Open **Payment & Billing → Transactions** and check the order status. If it still shows **In Progress** a few minutes after you paid, or you were charged but the order failed, email [support@konfersi.com](mailto:support@konfersi.com) with your order ID. See [Payments](../billing/payments.md#something-went-wrong).
 
 ### How do I get a refund?
 

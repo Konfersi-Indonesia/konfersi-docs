@@ -4,7 +4,7 @@ description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek C
 tags: [tagihan, paket, harga, add-on, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Paket Konfersi disusun berdasarkan seberapa banyak Anda menggunakan platform: komputasi Lab, penyimpanan, kredit AI, dan akses ke fitur Metocean Analytics. Halaman ini menjelaskan tiap tingkatan paket, cara kerja paket dan add-on di Console, serta tempat Anda dapat melihat harga terkini.
@@ -43,14 +43,15 @@ Setelah pembayaran selesai, sumber daya dari paket atau add-on otomatis ditambah
 
 ## Tempat mengelola paket
 
-Di Console, buka **Kelola Paket** di sidebar:
+Di menu samping Console:
 
 | Menu | Kegunaan |
 |---|---|
-| **Paket Proyek** | Melihat paket tiap proyek dan memilih paket untuk upgrade |
-| **Add-Ons** | Membeli sumber daya tambahan untuk sebuah proyek |
-| **Keranjang Pesanan** | Meninjau beberapa pesanan paket atau add-on sebelum membayar |
-| **Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
+| **Proyek Lab → Paket Proyek & Add-on** | Membandingkan paket, memilih paket untuk sebuah proyek, dan membeli add-on untuk sumber daya tambahan |
+| **Pembayaran & Tagihan → Keranjang Pesanan** | Meninjau beberapa pesanan paket atau add-on sebelum membayar |
+| **Pembayaran & Tagihan → Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
+
+Lihat [Keranjang pesanan & transaksi](order-cart-and-transactions.md).
 
 ## Mata uang, pajak, dan harga terkini
 

@@ -1,42 +1,35 @@
 ---
-title: Mission Planning
-description: Perkirakan downtime akibat cuaca untuk operasi lepas pantai atau pesisir pada lokasi dan periode tertentu, di dalam proyek Konfersi.
-tags: [mission-planning, downtime, operasi, metocean]
-related: [using-konfersi/console-projects, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
+title: Perencanaan Misi
+description: Perkiraan downtime akibat cuaca untuk operasi lepas pantai atau pesisir di suatu lokasi dan periode, di dalam Konfersi Lab.
+tags: [mission-planning, downtime, operations, metocean]
+related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
-Mission Planning membantu Anda memahami seberapa sering kondisi metocean berpotensi menghentikan sebuah operasi. Anda menentukan lokasi, periode, dan bila perlu rincian perjalanan (trip) serta tugas (task) dalam operasi tersebut. Mission Planning lalu memperkirakan downtime yang mungkin terjadi dan merangkumnya dalam sebuah laporan.
+Perencanaan Misi membantu Anda memahami seberapa sering kondisi metocean cenderung menghentikan operasi. Anda bekerja di **Konfersi Lab** (aktivitas Perencanaan Misi): atur lingkungan dan urutan operasi, jalankan simulasi jendela cuaca pada titik terpilih, lalu tinjau heatmap downtime dan laporan markdown yang diperkaya.
 
-<scalar-callout type="info">Mission Planning mulai diluncurkan akhir Oktober 2026, setelah uji coba internal. Ini adalah modul analisis Konfersi pertama yang dirilis untuk pelanggan. Detail di halaman ini dapat berubah sebelum maupun selama masa peluncuran.</scalar-callout>
+<scalar-callout type="info">Perencanaan Misi berjalan di Konfersi Lab pada backend produk (`/v1/metocean/planning/*`). Buka proyek di Lab, lalu pilih aktivitas Perencanaan Misi.</scalar-callout>
 
-## Cara kerjanya
+## Cara kerja
 
-Mission Planning berjalan di dalam proyek Console, jadi Anda perlu memiliki proyek terlebih dahulu. Lihat [Console & proyek](console-projects.md).
-
-Alur kerjanya terdiri dari empat bagian:
-
-1. **Tentukan konteks analisis.** Pilih lokasi dan periode yang ingin dianalisis. Jika perlu, rinci operasinya menjadi trip dan task.
-2. **Jalankan analisis.**
-3. **Tinjau downtime.** Hasil ditampilkan dalam tabel dan grafik untuk beberapa tingkat:
-   - downtime lingkungan
-   - downtime per trip
-   - downtime per task
-   - downtime keseluruhan
-4. **Dapatkan laporan.** Mission Planning menyusun laporan dari analisis tersebut.
+1. Buka proyek di Konfersi Lab.
+2. Pilih titik observasi yang sudah memiliki data angin / gelombang / arus.
+3. Di **Config** Perencanaan Misi, atur kondisi, periode ulang, lingkungan (batas), dan operasi (JSON Lanjutan untuk hierarki penuh). Simpan.
+4. **Jalankan perencanaan**. Hasil menampilkan heatmap downtime lingkungan plus tabel trip / task / overall.
+5. Buka tab **Report** untuk markdown yang dapat disesuaikan (salin atau unduh). Penyempurnaan AI laporan bersifat opsional nanti — simulasi inti bukan AI.
 
 ## Paket dan ekspor
 
-Kemampuan ekspor dapat bergantung pada paket proyek Anda dan pada status uji coba proyek tersebut. Periksa paket proyek di Console, lalu lihat [Paket & harga](../billing/plans-and-pricing.md).
+Apa yang dapat Anda ekspor bergantung pada paket proyek. Periksa paket di Console.
 
 ## Metode dan data
 
-Pendekatannya mengacu pada praktik industri, seperti DNV-GL RP C205, serta panduan dari lembaga seperti ISO, WMO, dan IMO. Data metocean yang digunakan dijelaskan di [Sumber data metocean](metocean-data-sources.md).
+Pendekatan ini mengacu pada praktik industri, seperti DNV-GL RP C205 dan panduan dari badan seperti ISO, WMO, dan IMO. Data metocean dijelaskan di [Sumber data metocean](metocean-data-sources.md).
 
-<scalar-callout type="warning">Hasil Mission Planning adalah alat bantu perencanaan. Hasil ini bukan studi tapak yang tersertifikasi dan tidak menggantikan penilaian profesional maupun prosedur keselamatan Anda sendiri. Baca [Penafian AI & metocean](../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
+<scalar-callout type="warning">Hasil Perencanaan Misi mendukung perencanaan. Ini bukan studi situs tersertifikasi dan tidak menggantikan penilaian profesional atau prosedur keselamatan Anda. Baca [disclaimer AI & metocean](../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
 
 ## Bantuan
 
-- Pertanyaan seputar peluncuran atau akses: [hubungi tim bantuan](../support/contact-support.md).
-- Butuh studi tapak yang lengkap? Tim konsultasi Konfersi siap membantu. Lihat [Apa itu Konfersi?](../getting-started/what-is-konfersi.md).
+- Pertanyaan akses: [hubungi dukungan](../support/contact-support.md).
+- Orientasi Lab: [Ruang kerja Lab](lab-workspace.md).

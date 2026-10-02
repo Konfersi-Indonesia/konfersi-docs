@@ -4,14 +4,14 @@ description: How paying for Konfersi plans, add-ons and courses works through Mi
 tags: [billing, payments, midtrans, qris, virtual-account, card]
 related: [billing/plans-and-pricing, billing/refunds-and-cancellation, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Konfersi takes payments through **Midtrans**, an Indonesian payment gateway. You pay on a Midtrans payment screen, and Konfersi is told the result directly by Midtrans. This page explains the steps, the payment methods and what each status means.
 
 ## Paying for a plan or add-on in the Console
 
-1. In the [Console](../using-konfersi/console-projects.md), open **Manage Plan** and choose a plan under **Project Plan**, or extra resources under **Add-Ons**. You can collect several orders in the **Order Cart** first.
+1. In the [Console](../using-konfersi/console-projects.md), open **Lab Project → Project Plans & Add-ons** and choose a plan, or extra resources under add-ons. You can collect several orders in the [Order Cart](order-cart-and-transactions.md) first.
 2. Review the breakdown: plan price, any add-ons, subtotal, tax (PPN) and grand total. See [Plans & pricing](plans-and-pricing.md) for how prices and currency work.
 3. Select a payment method and choose **Pay Now**.
 4. Finish the payment in the Midtrans window, for example by scanning the QR code or paying the virtual account number from your bank.
@@ -35,7 +35,7 @@ A few things to know:
 
 ## Payment and order statuses
 
-Track your orders in **Manage Plan → Transactions**. You'll see these statuses:
+Track your orders in **Payment & Billing → Transactions**. You'll see these statuses:
 
 | Status in the Console | What it means | What to do |
 |---|---|---|
@@ -49,7 +49,7 @@ An order that failed, expired or was canceled can't be resumed. Create a new ord
 
 ## Paying for a course
 
-Course registrations use a separate checkout, still powered by Midtrans. After you fill in the registration form, you are sent to a Midtrans payment page. The methods offered there are the ones Midtrans enables for that checkout. Once your payment is confirmed, the course team sends your registration confirmation by email.
+You enrol in a course from **Courses → Marketplace** in the Console (see [Courses](../using-konfersi/courses.md)). Each course is paid in its own checkout, separate from plans and add-ons and still powered by Midtrans. After you fill in the enrolment form, you are sent to a Midtrans payment page. The methods offered there are the ones Midtrans enables for that checkout. Once your payment is confirmed, the course team sends your registration confirmation by email.
 
 ## How payment results reach Konfersi
 

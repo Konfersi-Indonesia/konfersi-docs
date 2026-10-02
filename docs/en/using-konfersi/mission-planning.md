@@ -1,34 +1,27 @@
 ---
 title: Mission Planning
-description: Estimate weather-related downtime for an offshore or coastal operation at a location and period, inside a Konfersi project.
+description: Estimate weather-related downtime for an offshore or coastal operation at a location and period, inside Konfersi Lab.
 tags: [mission-planning, downtime, operations, metocean]
-related: [using-konfersi/console-projects, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
+related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
-Mission Planning helps you understand how often metocean conditions are likely to stop an operation. You set a location, a period and, if you want, the trips and tasks the operation involves. Mission Planning then estimates the expected downtime and summarises it in a report.
+Mission Planning helps you understand how often metocean conditions are likely to stop an operation. You work in **Konfersi Lab** (Mission Planning activity): set environments and the operations sequence, run a weather-window simulation at a selected point, then review downtime heatmaps and an enriched markdown report.
 
-<scalar-callout type="info">Mission Planning is rolling out from the end of October 2026, following an internal trial. It is the first Konfersi analysis module released to customers. The details on this page may change before and during the rollout.</scalar-callout>
+<scalar-callout type="info">Mission Planning runs in Konfersi Lab on the product backend (`/v1/metocean/planning/*`). Open the project in Lab, then choose the Mission Planning activity.</scalar-callout>
 
 ## How it works
 
-Mission Planning runs inside a Console project, so first you need a project. See [Console & projects](console-projects.md).
-
-The workflow has four parts:
-
-1. **Set the analysis context.** Choose the location and the period you want to analyse. Optionally, break the operation down into trips and tasks.
-2. **Run the analysis.**
-3. **Review the downtime.** Results are shown as tables and charts at several levels:
-   - environmental downtime
-   - downtime per trip
-   - downtime per task
-   - overall downtime
-4. **Get the report.** Mission Planning produces a report of the analysis.
+1. Open the project in Konfersi Lab.
+2. Select an observation point that already has acquired wind / wave / current data.
+3. In Mission Planning **Config**, set condition, return period, environments (limits), and operations (Advanced JSON for the full hierarchy). Save.
+4. **Run planning**. Results show environmental downtime heatmaps plus trip / task / overall tables.
+5. Open the **Report** tab for customizable enriched markdown (copy or download). Optional AI refinement of the report is later — the core simulation is not AI.
 
 ## Plans and exports
 
-What you can export may depend on your project's plan and on whether the project is on a trial. Check the project's plan in the Console, and see [Plans & pricing](../billing/plans-and-pricing.md).
+What you can export may depend on your project's plan. Check the plan in the Console.
 
 ## Methods and data
 
@@ -38,5 +31,5 @@ The approach is informed by industry practice, such as DNV-GL RP C205 and guidan
 
 ## Get help
 
-- Questions about the rollout or access: [contact support](../support/contact-support.md).
-- Need a full site-specific study? Konfersi's consulting team can help. See [What is Konfersi?](../getting-started/what-is-konfersi.md).
+- Questions about access: [contact support](../support/contact-support.md).
+- Lab orientation: [Lab workspace](lab-workspace.md).

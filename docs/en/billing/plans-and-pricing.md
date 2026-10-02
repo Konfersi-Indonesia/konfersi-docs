@@ -4,7 +4,7 @@ description: The Konfersi plan tiers, how plans and add-ons attach to Console pr
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-09-27
+updated: 2026-10-01
 ---
 
 Konfersi plans are built around how much of the platform you use: Lab compute, storage, AI credits and access to the Metocean Analytics tools. This page explains the tiers, how plans and add-ons work inside the Console, and where you can see current prices.
@@ -43,14 +43,15 @@ When a payment completes, the plan's or add-on's resources are added to the proj
 
 ## Where to manage your plan
 
-In the Console, open **Manage Plan** in the sidebar:
+In the Console side menu:
 
 | Menu item | Use it to |
 |---|---|
-| **Project Plan** | See each project's current plan and choose a plan to upgrade to |
-| **Add-Ons** | Buy extra resources for a project |
-| **Order Cart** | Review several plan or add-on orders before paying |
-| **Transactions** | Track the status of your orders and continue a pending payment |
+| **Lab Project → Project Plans & Add-ons** | Compare plans, choose a plan for a project, and buy add-ons for extra resources |
+| **Payment & Billing → Order Cart** | Review several plan or add-on orders before paying |
+| **Payment & Billing → Transactions** | Track the status of your orders and continue a pending payment |
+
+See [Order cart & transactions](order-cart-and-transactions.md).
 
 ## Currency, tax and current prices
 

@@ -19,11 +19,18 @@ if (!ext?.locales?.length) fail('scalar.config.json: x-konfersi.locales is requi
 const locales = ext?.locales ?? []
 
 // ── Walk the route tree per locale ────────────────────────
-function collectPages(node, prefix, out, groupTitle) {
+// Groups nest to any depth. A nested group with a filepath is a folder with its own
+// overview page at docs/<locale>/<folder>/index.md; top-level sections cannot have one.
+function collectPages(node, prefix, out, groupTitle, depth = 0) {
   for (const [key, child] of Object.entries(node.children ?? {})) {
     const path = `${prefix}${key}`
-    if (child.type === 'group') collectPages(child, path, out, child.title)
-    else if (child.type === 'page') out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle })
+    if (child.type === 'group') {
+      if (child.filepath) {
+        if (depth === 0) fail(`${path}: a top-level section cannot have a filepath; give a nested folder the overview page instead`)
+        else out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle, folder: true })
+      }
+      collectPages(child, path, out, depth === 0 ? child.title : groupTitle, depth + 1)
+    } else if (child.type === 'page') out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle })
     else if (child.type !== 'link' && child.type !== 'spacer') fail(`${path}: unsupported node type "${child.type}"`)
   }
   return out
@@ -69,6 +76,9 @@ if (existsSync(sharedDocs)) {
   for (const k of Object.keys(shared)) if (!(k in ours)) fail(`konfersi-shared DOCS_PAGE.${k} is not in stable-slugs.json`)
 }
 
+/** `folder/index.md` is the folder's overview page, so its slug is `folder`. */
+const slugFromPath = (relativePath) => relativePath.replace(/\.md$/, '').replace(/(^|\/)index$/, '')
+
 // ── Per-file checks ───────────────────────────────────────
 const STATUSES = new Set(['draft', 'published'])
 const ALLOWED_TAG = /^<\/?scalar-callout(\s+type="(neutral|info|success|warning|danger)")?\s*>$/
@@ -82,7 +92,7 @@ for (const locale of locales) {
   const slugSet = new Set((pagesByLocale[locale] ?? []).map((p) => p.slug))
   for (const page of pagesByLocale[locale] ?? []) {
     const where = `[${locale}] ${page.filepath}`
-    const expected = `docs/${locale}/${page.slug}.md`
+    const expected = page.folder ? `docs/${locale}/${page.slug}/index.md` : `docs/${locale}/${page.slug}.md`
     if (page.filepath !== expected) fail(`${where}: filepath must be ${expected}`)
     const abs = join(ROOT, page.filepath)
     referenced.add(relative(ROOT, abs))
@@ -107,7 +117,7 @@ for (const locale of locales) {
     }
     for (const rel of data.related ?? []) {
       if (!slugSet.has(rel)) fail(`${where}: related "${rel}" does not exist`)
-      else edges.push({ locale, where, to: rel, kind: 'related' })
+      else edges.push({ locale, where, from: page.slug, to: rel, kind: 'related' })
     }
     if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length) {
       fail(`${where}: draft legal pages must list open clause IDs in "review"`)
@@ -127,9 +137,9 @@ for (const locale of locales) {
       const [pathPart] = target.split('#')
       const resolved = posix.normalize(posix.join(posix.dirname(page.filepath), pathPart))
       if (pathPart.endsWith('.md')) {
-        const slug = resolved.replace(`docs/${locale}/`, '').replace(/\.md$/, '')
+        const slug = slugFromPath(resolved.replace(`docs/${locale}/`, ''))
         if (!slugSet.has(slug)) fail(`${where}: broken link ${target}`)
-        else edges.push({ locale, where, to: slug, kind: 'link' })
+        else edges.push({ locale, where, from: page.slug, to: slug, kind: 'link' })
       } else if (!existsSync(join(ROOT, resolved))) {
         fail(`${where}: missing asset ${target}`)
       }
@@ -138,8 +148,7 @@ for (const locale of locales) {
 }
 
 // ── Drafts are never published, so nothing public may point at one ──
-for (const { locale, where, to, kind } of edges) {
-  const from = where.replace(/^\[\w+\] docs\/\w+\//, '').replace(/\.md$/, '')
+for (const { locale, where, from, to, kind } of edges) {
   if (statusBySlug[locale][to] === 'draft' && statusBySlug[locale][from] !== 'draft') {
     fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
   }
