@@ -115,7 +115,7 @@ CI does the rest (see below). An hourly cron re-syncs each backend from its `DOC
 | `publish` | push / dispatch on `stg`, `uat` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key (`scripts/mirror-push.sh`). 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>` + `DOCS_SYNC_COMMIT=<sha>` (`scripts/sync-envs.sh`). Without that variable the branch is only mirrored. |
 | `release` | Gitea release **published** with tag `vX.Y.Z` (or a dispatch on that tag) | 1. `scripts/check-release.mjs <tag>`: the tag must equal `v` + `package.json` version and every locale's changelog needs its `## X.Y.Z` entry; the tagged commit must be on `main`; `validate.mjs` runs again. 2. Mirrors `refs/tags/<tag>` to GitHub (same deploy key, no `--force`: a release tag never moves). 3. For each env in `DOCS_SYNC_ENVS_RELEASE`, runs `trigger-sync.mjs` with `DOCS_SYNC_TAG=<tag>`. Unset → a notice, the tag is only mirrored. Pre-releases are skipped with a notice. |
 
-**Reverse pull (GitHub → Gitea):** `.gitea/workflows/pull-from-github.yml` runs hourly and on manual dispatch. It fast-forwards `stg` / `uat` / `main` from the public GitHub mirror when Gitea's tip is an ancestor of GitHub's (or the branch is missing on Gitea). Matching tips are skipped (loop break with `publish`). Diverged branches warn and are **not** force-pushed. Uses the same Alpine inline-git pattern as `ci.yml`; push auth is `${{ github.token }}` as oauth2. Optional var: `DOCS_GITHUB_MIRROR` (defaults to `Konfersi-Indonesia/konfersi-docs`).
+**Reverse pull (GitHub → Gitea):** `.gitea/workflows/pull-from-github.yml` runs once daily (06:00) and on manual dispatch. It fast-forwards `stg` / `uat` / `main` from the public GitHub mirror when Gitea's tip is an ancestor of GitHub's (or the branch is missing on Gitea). Matching tips are skipped (loop break with `publish`). Diverged branches warn and are **not** force-pushed. Uses the same Alpine inline-git pattern as `ci.yml`; push auth is `${{ github.token }}` as oauth2. Optional var: `DOCS_GITHUB_MIRROR` (defaults to `Konfersi-Indonesia/konfersi-docs`).
 
 Branch syncs are signed webhooks **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. Release syncs are pinned to the tag (`refs/tags/<tag>`); only a backend whose `DOCS_SOURCE_REF` is a release tag accepts them, and it keeps a newer tag the release flow pinned until the release pipeline moves `DOCS_SOURCE_REF` up to it. Requests carry `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails, or if the backend shows a different docs version than the one it was pinned to. The script then smoke-tests nav, page, search and graph in both languages.
 
@@ -155,7 +155,7 @@ A missing secret fails the deploy **before** anything is deployed.
 - **Re-run a release:** dispatch the workflow on the tag (`refs/tags/vX.Y.Z`); mirroring an unchanged tag is a no-op.
 - **Rotate the webhook secret:** update `DOCS_WEBHOOK_SECRET_<ENV>` in both repos, redeploy the backend, then re-run `publish`.
 - **Rotate the mirror key:** add a new write deploy key on GitHub, replace `GH_MIRROR_DEPLOY_KEY`, then delete the old key.
-- **Pull from GitHub:** Actions → **Pull from GitHub** → Run workflow (or wait for the hourly cron).
+- **Pull from GitHub:** Actions → **Pull from GitHub** → Run workflow (or wait for the daily cron).
 
 ## Legal pages
 
