@@ -2,7 +2,7 @@
 title: Perencanaan Misi
 description: Perkirakan berapa lama rangkaian operasi laut berlangsung setelah cuaca diperhitungkan, dan kapan sebaiknya dimulai, di Konfersi Lab.
 tags: [mission-planning, downtime, operations, metocean, weather-window]
-related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
+related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
 updated: 2026-10-02
 ---

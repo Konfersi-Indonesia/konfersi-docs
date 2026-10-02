@@ -96,6 +96,12 @@
                 "icon": "phosphor/regular/boat",
                 "filepath": "docs/en/using-konfersi/mission-planning.md"
               },
+              "/risk-assessment": {
+                "type": "page",
+                "title": "Risk Assessment",
+                "icon": "phosphor/regular/shield-warning",
+                "filepath": "docs/en/using-konfersi/risk-assessment.md"
+              },
               "/metocean-data-sources": {
                 "type": "page",
                 "title": "Metocean data sources",
@@ -469,6 +475,12 @@
                 "title": "Mission Planning",
                 "icon": "phosphor/regular/boat",
                 "filepath": "docs/id/using-konfersi/mission-planning.md"
+              },
+              "/risk-assessment": {
+                "type": "page",
+                "title": "Penilaian Risiko",
+                "icon": "phosphor/regular/shield-warning",
+                "filepath": "docs/id/using-konfersi/risk-assessment.md"
               },
               "/metocean-data-sources": {
                 "type": "page",
