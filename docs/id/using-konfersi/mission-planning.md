@@ -58,7 +58,7 @@ Pilih **Jalankan perencanaan** di tab atau di Kontrol. Tombol ini nonaktif, deng
 - sebuah lingkungan belum memiliki data di lokasinya,
 - proyek tidak memiliki sisa jam CPU, atau menggunakan paket Free.
 
-Setiap run memakai jam CPU proyek sesuai lama run berjalan; sisa jam diperbarui saat run selesai. Menyunting rencana, melihat hasil, mengekspor, dan laporan selalu tersedia.
+Setiap run memakai jam CPU proyek sesuai lama run berjalan; sisa jam diperbarui saat run selesai. Menjalankan rencana lagi tanpa perubahan apa pun (rencana, data, dan versi perencanaan sama) langsung menampilkan hasil sebelumnya tanpa biaya; pilih **Tetap jalankan lagi** untuk menghitungnya sekali lagi. Menyunting rencana, melihat hasil, mengekspor, dan laporan selalu tersedia.
 
 **Pengaturan run**:
 
@@ -68,6 +68,7 @@ Setiap run memakai jam CPU proyek sesuai lama run berjalan; sisa jam diperbarui 
 
 ## 4. Baca hasil
 
+- **Dasar data**: periode data per jam yang dimiliki setiap lingkungan (mis. 2007–2025, 18,5 tahun). Jika kurang dari 10 tahun, peringatan menyebutkan bahwa sebaran antartahun dan tanggal mulai terbaik kurang pasti.
 - **Seluruh misi**: durasi P10, P50, P80, dan P90 dalam hari (mis. P50 berarti separuh dari semua tanggal mulai selesai dalam waktu itu), serta durasi minimum dalam cuaca sempurna.
 - **Tanggal mulai terbaik**, serta bulan terbaik dan terburuk untuk memulai.
 - **Heatmap** untuk seluruh misi, tiap trip, tiap tugas, dan downtime tiap lingkungan. Pilih statistik (rata-rata, P50, P80), variabilitas (*dalam bulan* atau *antartahun*), dan periode (harian, mingguan, setengah bulanan). *Dalam bulan* menggabungkan setiap tanggal mulai pada hari kalender itu dari semua tahun; *antartahun* lebih dulu merata-ratakan tanggal mulai tiap tahun, lalu menunjukkan sebaran angka tahunan itu, sehingga terlihat seberapa besar perbedaan satu tahun dengan tahun lain. Nilai mingguan (hari 1–7, 8–14, 15–21, 22–28, 29–31) dan setengah bulanan (1–15, 16–31) adalah rata-rata nilai harian pada hari-hari tersebut. **Tampilkan sebagai tabel** menyajikan angka yang sama dalam tabel.
