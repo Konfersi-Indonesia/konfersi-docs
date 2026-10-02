@@ -58,7 +58,7 @@ Select **Run planning** in the tab or in Control. Run is disabled, with the reas
 - an environment has no data at its location yet,
 - the project has no CPU hours left, or is on the Free plan.
 
-Runs use the project's CPU hours. Editing the plan, viewing results, exporting and the report are always available.
+Runs use the project's CPU hours, charged for the time each run takes; the hours left update when a run finishes. Editing the plan, viewing results, exporting and the report are always available.
 
 **Run settings**:
 
@@ -70,12 +70,12 @@ Runs use the project's CPU hours. Editing the plan, viewing results, exporting a
 
 - **Whole mission**: P10, P50, P80 and P90 duration in days (for example, P50 means half of all start dates finish within it), plus the minimum duration in perfect weather.
 - **Best start dates** and the best and worst months to start.
-- **Heatmaps** for the whole mission, each trip, each task, and each environment's downtime. Choose the statistic (mean, P50, P80), the variability (*within months* or *between years*) and the period (daily, weekly, half-monthly). **Show as table** gives the same numbers as a table.
+- **Heatmaps** for the whole mission, each trip, each task, and each environment's downtime. Choose the statistic (mean, P50, P80), the variability (*within months* or *between years*) and the period (daily, weekly, half-monthly). *Within months* pools every start on that calendar day across all years; *between years* first averages each year's starts, then shows how those yearly figures spread, so it tells you how much one year can differ from another. Weekly (days 1–7, 8–14, 15–21, 22–28, 29–31) and half-monthly (1–15, 16–31) values are the average of the daily values in those days. **Show as table** gives the same numbers as a table.
 - **What causes the downtime**: per environment, the share of blocked hours in which each limit was exceeded.
 - **Compare with** another run to see a difference heatmap. Blue means this run is better, red means worse.
 - **Export CSV** or **Export PNG** for any heatmap.
 
-Results stay available after you close Lab. Past runs, yours and your teammates', are under **Runs** in the tree. A banner tells you when the plan has changed since the results were computed.
+Results stay available after you close Lab. Past runs, yours and your teammates', are under **Runs** in the tree. Each project keeps the full results (heatmaps) of its newest 50 runs; older runs keep their summary, and you can run the plan again to see their heatmaps. A banner tells you when the plan has changed since the results were computed.
 
 ## 5. Report
 

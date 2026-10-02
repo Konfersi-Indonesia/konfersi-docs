@@ -21,7 +21,7 @@ Risk Assessment is the **risk register** of your project. For each hazard you re
 
 ## 1. Identify hazards
 
-Add a hazard from the Register, from an activity under Coverage, or from **Library suggestions** (matches from Konfersi's hazard library — not AI; you confirm and complete each one). For each hazard record:
+Add a hazard from the Register, from an activity under Coverage, or from **Library suggestions** (matches from your organisation's hazard library — not AI; you confirm and complete each one). The **Controls** library is your register's own list: it starts as a copy of the organisation's control library, and **Add from organisation library** offers controls added there since. For each hazard record:
 
 - **Where it applies** — the project, or an operation, trip, task or activity of your plan.
 - **Hazard, cause and hazardous event**, then the **consequence**.
@@ -52,7 +52,7 @@ Hazards are never deleted silently: removing one asks for a reason and keeps it 
 
 ## 5. Evidence from Mission Planning
 
-The **Evidence** tab shows metocean screening from your latest Mission Planning run (how often the weather stops the work at your site) and lets you attach it to a hazard. **Weather hazard screening** scores weather hazards per environment and suggests risk control options (it uses CPU hours). This is **evidence** for the register — not a full FSA or NOPSEMA demonstration on its own.
+The **Evidence** tab shows metocean screening from your latest Mission Planning run (how often the weather stops the work at your site) and lets you attach it to a hazard. **Weather hazard screening** scores weather hazards per environment and suggests risk control options (it uses CPU hours). Probability (P) comes from each season's downtime. Consequence (C) compares each season's wind and wave value at the chosen return period, from the extreme value analysis at the location, with that environment's limits: within the limit scores 1, up to 1.5 times the limit 3, beyond that 5. An environment with no metocean data, or no extreme value analysis, at its location is marked as such: its score uses a placeholder, so acquire or analyse the data and run the screening again. This is **evidence** for the register — not a full FSA or NOPSEMA demonstration on its own.
 
 ## 6. Checklist and review
 

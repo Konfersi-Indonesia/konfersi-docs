@@ -58,7 +58,7 @@ Pilih **Jalankan perencanaan** di tab atau di Kontrol. Tombol ini nonaktif, deng
 - sebuah lingkungan belum memiliki data di lokasinya,
 - proyek tidak memiliki sisa jam CPU, atau menggunakan paket Free.
 
-Setiap run memakai jam CPU proyek. Menyunting rencana, melihat hasil, mengekspor, dan laporan selalu tersedia.
+Setiap run memakai jam CPU proyek sesuai lama run berjalan; sisa jam diperbarui saat run selesai. Menyunting rencana, melihat hasil, mengekspor, dan laporan selalu tersedia.
 
 **Pengaturan run**:
 
@@ -70,12 +70,12 @@ Setiap run memakai jam CPU proyek. Menyunting rencana, melihat hasil, mengekspor
 
 - **Seluruh misi**: durasi P10, P50, P80, dan P90 dalam hari (mis. P50 berarti separuh dari semua tanggal mulai selesai dalam waktu itu), serta durasi minimum dalam cuaca sempurna.
 - **Tanggal mulai terbaik**, serta bulan terbaik dan terburuk untuk memulai.
-- **Heatmap** untuk seluruh misi, tiap trip, tiap tugas, dan downtime tiap lingkungan. Pilih statistik (rata-rata, P50, P80), variabilitas (*dalam bulan* atau *antartahun*), dan periode (harian, mingguan, setengah bulanan). **Tampilkan sebagai tabel** menyajikan angka yang sama dalam tabel.
+- **Heatmap** untuk seluruh misi, tiap trip, tiap tugas, dan downtime tiap lingkungan. Pilih statistik (rata-rata, P50, P80), variabilitas (*dalam bulan* atau *antartahun*), dan periode (harian, mingguan, setengah bulanan). *Dalam bulan* menggabungkan setiap tanggal mulai pada hari kalender itu dari semua tahun; *antartahun* lebih dulu merata-ratakan tanggal mulai tiap tahun, lalu menunjukkan sebaran angka tahunan itu, sehingga terlihat seberapa besar perbedaan satu tahun dengan tahun lain. Nilai mingguan (hari 1–7, 8–14, 15–21, 22–28, 29–31) dan setengah bulanan (1–15, 16–31) adalah rata-rata nilai harian pada hari-hari tersebut. **Tampilkan sebagai tabel** menyajikan angka yang sama dalam tabel.
 - **Penyebab downtime**: per lingkungan, porsi jam terhambat ketika tiap batas terlampaui.
 - **Bandingkan dengan** run lain untuk melihat heatmap selisih. Biru berarti run ini lebih baik, merah berarti lebih buruk.
 - **Ekspor CSV** atau **Ekspor PNG** untuk setiap heatmap.
 
-Hasil tetap tersedia setelah Lab ditutup. Run sebelumnya, milik Anda dan rekan tim, ada di **Run** pada pohon. Sebuah spanduk memberi tahu jika rencana telah berubah sejak hasil dihitung.
+Hasil tetap tersedia setelah Lab ditutup. Run sebelumnya, milik Anda dan rekan tim, ada di **Run** pada pohon. Setiap proyek menyimpan hasil lengkap (heatmap) dari 50 run terbarunya; run yang lebih lama menyimpan ringkasannya, dan Anda dapat menjalankan rencana lagi untuk melihat heatmap-nya. Sebuah spanduk memberi tahu jika rencana telah berubah sejak hasil dihitung.
 
 ## 5. Laporan
 
