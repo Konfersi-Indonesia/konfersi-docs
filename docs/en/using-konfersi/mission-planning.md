@@ -58,7 +58,7 @@ Select **Run planning** in the tab or in Control. Run is disabled, with the reas
 - an environment has no data at its location yet,
 - the project has no CPU hours left, or is on the Free plan.
 
-Runs use the project's CPU hours, charged for the time each run takes; the hours left update when a run finishes. Editing the plan, viewing results, exporting and the report are always available.
+Runs use the project's CPU hours, charged for the time each run takes; the hours left update when a run finishes. Running a plan again with nothing changed (same plan, same data, same planning version) shows the earlier result straight away at no cost; choose **Run again anyway** to compute it once more. Editing the plan, viewing results, exporting and the report are always available.
 
 **Run settings**:
 
@@ -68,6 +68,7 @@ Runs use the project's CPU hours, charged for the time each run takes; the hours
 
 ## 4. Read the results
 
+- **Data basis**: the hourly period every environment has data for (for example 2007–2025, 18.5 years). With fewer than 10 years, a warning says the between-years spread and best start dates are uncertain.
 - **Whole mission**: P10, P50, P80 and P90 duration in days (for example, P50 means half of all start dates finish within it), plus the minimum duration in perfect weather.
 - **Best start dates** and the best and worst months to start.
 - **Heatmaps** for the whole mission, each trip, each task, and each environment's downtime. Choose the statistic (mean, P50, P80), the variability (*within months* or *between years*) and the period (daily, weekly, half-monthly). *Within months* pools every start on that calendar day across all years; *between years* first averages each year's starts, then shows how those yearly figures spread, so it tells you how much one year can differ from another. Weekly (days 1–7, 8–14, 15–21, 22–28, 29–31) and half-monthly (1–15, 16–31) values are the average of the daily values in those days. **Show as table** gives the same numbers as a table.
