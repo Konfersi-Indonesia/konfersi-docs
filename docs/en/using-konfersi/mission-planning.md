@@ -2,7 +2,7 @@
 title: Mission Planning
 description: Estimate how long a sequence of marine operations takes once weather is counted, and when to start it, inside Konfersi Lab.
 tags: [mission-planning, downtime, operations, metocean, weather-window]
-related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, legal/ai-and-metocean-disclaimer]
+related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
 updated: 2026-10-02
 ---
