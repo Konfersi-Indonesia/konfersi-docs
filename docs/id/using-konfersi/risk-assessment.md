@@ -21,7 +21,7 @@ Penilaian Risiko adalah **register risiko** proyek Anda. Untuk setiap bahaya And
 
 ## 1. Identifikasi bahaya
 
-Tambahkan bahaya dari Register, dari aktivitas di Cakupan, atau dari **Saran pustaka** (kecocokan dari pustaka bahaya Konfersi — bukan AI; Anda mengonfirmasi dan melengkapinya). Untuk setiap bahaya catat:
+Tambahkan bahaya dari Register, dari aktivitas di Cakupan, atau dari **Saran pustaka** (kecocokan dari pustaka bahaya organisasi Anda — bukan AI; Anda mengonfirmasi dan melengkapinya). Pustaka **Kontrol** adalah daftar milik register Anda: awalnya salinan pustaka kontrol organisasi, dan **Tambah dari pustaka organisasi** menawarkan kontrol yang ditambahkan di sana sesudahnya. Untuk setiap bahaya catat:
 
 - **Lingkup penerapan** — proyek, atau operasi, trip, tugas, atau aktivitas dalam rencana.
 - **Bahaya, penyebab, dan kejadian berbahaya**, lalu **konsekuensinya**.
@@ -52,7 +52,7 @@ Bahaya tidak pernah dihapus diam-diam: menghapus bahaya meminta alasan dan menyi
 
 ## 5. Bukti dari Perencanaan Misi
 
-Tab **Bukti** menampilkan penyaringan metocean dari run Perencanaan Misi terbaru (seberapa sering cuaca menghentikan pekerjaan di lokasi Anda) dan memungkinkan Anda melampirkannya ke bahaya. **Penyaringan bahaya cuaca** memberi skor bahaya cuaca per lingkungan dan menyarankan opsi kontrol risiko (memakai jam CPU). Ini adalah **bukti** untuk register — bukan demonstrasi FSA atau NOPSEMA lengkap dengan sendirinya.
+Tab **Bukti** menampilkan penyaringan metocean dari run Perencanaan Misi terbaru (seberapa sering cuaca menghentikan pekerjaan di lokasi Anda) dan memungkinkan Anda melampirkannya ke bahaya. **Penyaringan bahaya cuaca** memberi skor bahaya cuaca per lingkungan dan menyarankan opsi kontrol risiko (memakai jam CPU). Probabilitas (P) berasal dari downtime tiap musim. Konsekuensi (C) membandingkan nilai angin dan gelombang tiap musim pada periode ulang yang dipilih, dari analisis nilai ekstrem di lokasi, dengan batas lingkungan tersebut: dalam batas bernilai 1, hingga 1,5 kali batas bernilai 3, di atasnya 5. Lingkungan tanpa data metocean atau tanpa analisis nilai ekstrem di lokasinya diberi tanda: skornya memakai nilai sementara, jadi akuisisi atau analisis datanya lalu jalankan penyaringan lagi. Ini adalah **bukti** untuk register — bukan demonstrasi FSA atau NOPSEMA lengkap dengan sendirinya.
 
 ## 6. Daftar periksa dan tinjauan
 
