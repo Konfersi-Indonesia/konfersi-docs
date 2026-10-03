@@ -1,0 +1,104 @@
+# Security checks on every PR and release-branch push (same file in every platform repo).
+#   1. Secrets: gitleaks over the tracked files (known false positives: .gitleaks.toml allowlist).
+#   2. .gitignore: local env files, Worker dev vars, keys and handoff folders must be ignored.
+#   3. Tracked files: no dev vars, private keys, handoff folders or *.local env files;
+#      a committed .env.* may only hold public settings (see check-env below).
+# Required status check on main and uat ("Security / scan (pull_request)").
+name: Security
+
+on:
+  pull_request:
+  push:
+    branches: [stg, uat, main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        env:
+          TOKEN: "${{ github.token }}"
+          REPO: "${{ github.repository }}"
+        run: |
+          set -euo pipefail
+          WORK="${GITHUB_WORKSPACE:-$PWD}"
+          mkdir -p "$WORK" && cd "$WORK"
+          if [ ! -d .git ]; then
+            git init -q .
+            git remote add origin "https://oauth2:${TOKEN}@git.konfersi.com/${REPO}.git"
+          fi
+          git fetch -q --depth 1 origin "${GITHUB_SHA}"
+          git checkout -q -f "${GITHUB_SHA}"
+
+      - name: Install gitleaks (pinned, checksum verified)
+        run: |
+          set -euo pipefail
+          V=8.24.3
+          case "$(uname -m)" in
+            x86_64|amd64) A=x64;   SUM=9991e0b2903da4c8f6122b5c3186448b927a5da4deef1fe45271c3793f4ee29c ;;
+            aarch64|arm64) A=arm64; SUM=5f2edbe1f49f7b920f9e06e90759947d3c5dfc16f752fb93aaafc17e9d14cf07 ;;
+            *) echo "unsupported architecture $(uname -m)" >&2; exit 1 ;;
+          esac
+          T="gitleaks_${V}_linux_${A}.tar.gz"
+          curl -fsSL -o "/tmp/$T" "https://github.com/gitleaks/gitleaks/releases/download/v${V}/${T}"
+          echo "${SUM}  /tmp/$T" | sha256sum -c -
+          mkdir -p /tmp/gitleaks && tar -xzf "/tmp/$T" -C /tmp/gitleaks gitleaks
+
+      - name: Secrets in tracked files (gitleaks)
+        run: |
+          set -euo pipefail
+          cd "${GITHUB_WORKSPACE:-$PWD}"
+          # Only what git tracks (no build output or dependencies).
+          rm -rf /tmp/tracked && mkdir -p /tmp/tracked
+          # Regular files only: submodules (gitlinks) are listed but scanned in their own repo.
+          git ls-files -z | xargs -0 -I{} sh -c '[ -f "$1" ] || exit 0; mkdir -p "/tmp/tracked/$(dirname "$1")" && cp -p "$1" "/tmp/tracked/$1"' _ {}
+          # .gitleaks.toml (tracked) allowlists known test fixtures; paths are relative to the repo.
+          cd /tmp/tracked
+          /tmp/gitleaks/gitleaks dir . --no-banner --redact --exit-code 1
+
+      - name: .gitignore covers local secrets
+        run: |
+          set -euo pipefail
+          cd "${GITHUB_WORKSPACE:-$PWD}"
+          missing=""
+          for p in .env.local .env.stg.local app/.env.local .dev.vars .dev.vars.stg server.pem private.key id_rsa \
+                   .stg-handoff/x .uat-handoff/x .wrangler/x node_modules/x; do
+            git check-ignore -q --no-index "$p" || missing="$missing $p"
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::.gitignore must ignore:$missing" >&2
+            exit 1
+          fi
+
+      - name: Tracked files hold no secrets
+        run: |
+          set -euo pipefail
+          cd "${GITHUB_WORKSPACE:-$PWD}"
+          bad=$(git ls-files | grep -vE '\.example$' | grep -E '(^|/)\.dev\.vars|(^|/)\.(stg|uat)-handoff/|\.(pem|key|p12|pfx)$|(^|/)id_(rsa|ed25519|ecdsa)$|(^|/)\.env(\.[^/]*)?\.local$|(^|/)credentials\.json$' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::tracked files that must never be committed:" >&2
+            echo "$bad" >&2
+            exit 1
+          fi
+          # A committed .env.* is shipped to the browser (VITE_*) or is a URL: only public settings.
+          # Secret-like names must be empty unless they are public by design (site / client keys).
+          PUBLIC='^(VITE_TURNSTILE_SITE_KEY|VITE_TURNSTILE_LOGIN_SITE_KEY|VITE_MIDTRANS_CLIENT_KEY)$'
+          fail=0
+          for f in $(git ls-files | grep -E '(^|/)\.env(\.[^/]*)?$' || true); do
+            while IFS= read -r line; do
+              case "$line" in ''|\#*) continue ;; esac
+              key="${line%%=*}"; val="${line#*=}"; val="${val%\"}"; val="${val#\"}"; val="${val%\'}"; val="${val#\'}"
+              [[ "$key" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] || continue
+              if ! [[ "$key" =~ ^VITE_ || "$key" =~ _(URL|ORIGIN)$ ]]; then
+                echo "::error::$f: $key is not a public setting (only VITE_* and *_URL / *_ORIGIN belong in a committed env file)" >&2; fail=1
+              elif [[ "$key" =~ (SECRET|PASSWORD|PASSWD|PRIVATE|TOKEN|_KEY|APIKEY|CREDENTIAL) ]] && ! [[ "$key" =~ $PUBLIC ]] && [ -n "$val" ]; then
+                echo "::error::$f: $key looks secret and has a value; keep it out of git" >&2; fail=1
+              fi
+            done < "$f"
+          done
+          exit $fail
