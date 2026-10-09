@@ -114,6 +114,12 @@
                 "icon": "phosphor/regular/graduation-cap",
                 "filepath": "docs/en/using-konfersi/courses.md"
               },
+              "/certificates": {
+                "type": "page",
+                "title": "Certificates",
+                "icon": "phosphor/regular/certificate",
+                "filepath": "docs/en/using-konfersi/certificates.md"
+              },
               "/community": {
                 "type": "page",
                 "title": "Community",
@@ -493,6 +499,12 @@
                 "title": "Kursus",
                 "icon": "phosphor/regular/graduation-cap",
                 "filepath": "docs/id/using-konfersi/courses.md"
+              },
+              "/certificates": {
+                "type": "page",
+                "title": "Sertifikat",
+                "icon": "phosphor/regular/certificate",
+                "filepath": "docs/id/using-konfersi/certificates.md"
               },
               "/community": {
                 "type": "page",

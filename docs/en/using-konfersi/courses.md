@@ -4,7 +4,7 @@ description: Browse the course marketplace, enrol in a live or self-paced course
 tags: [courses, training, marketplace, enrol, tickets, webinar]
 related: [billing/payments, billing/order-cart-and-transactions, using-konfersi/organizations/shared-projects-and-courses]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Konfersi runs live and self-paced courses. You find them under **Courses** in the Console side menu:
@@ -53,3 +53,5 @@ Paid seats are held until the payment deadline shown on the course and in **My C
 Once you're enrolled, **Join meeting** and **Join community** links appear here when the course team shares them; they're also emailed to you before the course starts. **Copy meeting link** copies the link, for example to add to your calendar.
 
 For refunds, see [Refunds & cancellation](../billing/refunds-and-cancellation.md).
+
+When you complete a course, your certificate appears under **Certificates**. See [Certificates](certificates.md).

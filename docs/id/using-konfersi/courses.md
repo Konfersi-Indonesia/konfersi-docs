@@ -4,7 +4,7 @@ description: Jelajahi marketplace kursus, daftar kursus langsung atau mandiri, b
 tags: [kursus, pelatihan, marketplace, daftar, tiket, webinar]
 related: [billing/payments, billing/order-cart-and-transactions, using-konfersi/organizations/shared-projects-and-courses]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Konfersi menyelenggarakan kursus langsung dan mandiri. Anda menemukannya di menu **Kursus** pada menu samping Console:
@@ -53,3 +53,5 @@ Kursi berbayar ditahan sampai batas waktu pembayaran yang tertera di kursus dan 
 Setelah Anda terdaftar, tautan **Gabung pertemuan** dan **Gabung komunitas** muncul di sini begitu tim kursus membagikannya; tautan ini juga dikirim lewat email sebelum kursus dimulai. Anda juga bisa menyalin tautan pertemuan, misalnya untuk ditambahkan ke kalender.
 
 Untuk pengembalian dana, lihat [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md).
+
+Setelah Anda menyelesaikan kursus, sertifikat Anda muncul di **Sertifikat**. Lihat [Sertifikat](certificates.md).
