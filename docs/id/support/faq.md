@@ -51,7 +51,7 @@ Buka **Pembayaran & Tagihan → Transaksi** dan periksa status pesanan. Jika sta
 
 ### Bagaimana cara mengajukan pengembalian dana?
 
-Kirim email ke support@konfersi.com beserta ID pesanan dan informasi yang tercantum di [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md). Ketentuan yang berlaku ada di [Syarat & Ketentuan](../legal/terms.md).
+Kirim email ke support@konfersi.com beserta ID pesanan dan informasi yang tercantum di [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md). Ketentuan yang berlaku ada di [Ketentuan Layanan](../legal/terms.md).
 
 ## Data, Lab, dan Mission Planning
 

@@ -4,6 +4,7 @@ description: How to cancel a Konfersi order and how to request a refund for a co
 tags: [billing, refunds, cancellation, courses, plans]
 related: [legal/terms, billing/payments, support/contact-support]
 status: published
+review: [terms-12-refund-policy-final]
 updated: 2026-10-01
 ---
 

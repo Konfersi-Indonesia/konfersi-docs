@@ -4,12 +4,13 @@ description: Cara PT Konfersi Metocean Climate Consultant mengumpulkan, mengguna
 tags: [legal, privasi, uu-pdp, data-pribadi]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+review: [privacy-course-orders-processor]
+updated: 2026-10-09
 ---
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
-Kebijakan Privasi ini menjelaskan cara Kami memproses Data Pribadi ketika Anda menggunakan situs web, Accounts, Console, Lab, Mission Planning, kursus, dan kanal bantuan Konfersi ("**Layanan**"). Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi ("**UU PDP**"). Istilah berhuruf kapital yang tidak didefinisikan di sini memiliki arti sebagaimana dimaksud dalam [Syarat & Ketentuan](terms.md) Kami.
+Kebijakan Privasi ini menjelaskan cara Kami memproses Data Pribadi ketika Anda menggunakan situs web, Accounts, Console, Lab, Mission Planning, kursus, dan kanal bantuan Konfersi ("**Layanan**"). Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi ("**UU PDP**"). Istilah berhuruf kapital yang tidak didefinisikan di sini memiliki arti sebagaimana dimaksud dalam [Ketentuan Layanan](terms.md) Kami.
 
 ## 1. Identitas Kami
 
@@ -25,7 +26,7 @@ Kebijakan Privasi ini menjelaskan cara Kami memproses Data Pribadi ketika Anda m
 
 2.2. **Data penyedia layanan masuk**: apabila Anda memilih masuk menggunakan Google, GitHub, atau Microsoft, Kami menerima dari penyedia tersebut pengenal akun, alamat surel, nama tampilan, dan URL foto profil Anda, sesuai dengan izin yang Anda setujui.
 
-2.3. **Data profil pendaftaran**: negara; nama organisasi, sektor, dan jabatan Anda; lokasi organisasi dan nomor telepon (keduanya opsional); sumber informasi Anda mengenai Konfersi; tujuan penggunaan Layanan; serta persetujuan Anda atas Syarat & Ketentuan Kami.
+2.3. **Data profil pendaftaran**: negara; nama organisasi, sektor, dan jabatan Anda; lokasi organisasi dan nomor telepon (keduanya opsional); sumber informasi Anda mengenai Konfersi; tujuan penggunaan Layanan; serta persetujuan Anda atas Ketentuan Layanan Kami.
 
 2.4. **Data proyek dan Data Pelanggan**: proyek, tag, dan keanggotaan kolaborator; alamat surel orang yang Anda undang ke suatu proyek; konfigurasi Mission Planning; lokasi (lintang dan bujur) dan label yang Anda tambahkan; permintaan dan hasil analisis; serta catatan kuota dan pemakaian Paket untuk proyek Anda.
 

@@ -73,4 +73,4 @@ Konfersi sudah dikenal sebagai merek sejak sekitar 2021, lalu resmi berbadan huk
 
 Untuk bantuan produk, pertanyaan tagihan, kemitraan, atau kebutuhan konsultasi, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) atau lihat [Hubungi tim bantuan](../support/contact-support.md).
 
-[Syarat & Ketentuan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md) kami menjelaskan cara kami bekerja sama dengan Anda dan menangani data Anda.
+[Ketentuan Layanan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md) kami menjelaskan cara kami bekerja sama dengan Anda dan menangani data Anda.

@@ -4,7 +4,8 @@ description: The agreement between you and PT Konfersi Metocean Climate Consulta
 tags: [legal, terms, agreement]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, terms-12-refund-policy-final]
+updated: 2026-10-09
 ---
 
 <scalar-callout type="info">**Effective 27 September 2026.** These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>

@@ -4,7 +4,8 @@ description: How PT Konfersi Metocean Climate Consultant collects, uses, shares 
 tags: [legal, privacy, uu-pdp, personal-data]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+review: [privacy-course-orders-processor]
+updated: 2026-10-09
 ---
 
 <scalar-callout type="info">**Effective 27 September 2026.** This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>

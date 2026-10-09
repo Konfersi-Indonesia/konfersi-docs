@@ -4,12 +4,12 @@ description: Hal yang boleh dan tidak boleh Anda lakukan terhadap akun, data, Ke
 tags: [legal, penggunaan-wajar, aup]
 related: [legal/terms, legal/ai-and-metocean-disclaimer, legal/privacy, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
-Kebijakan Penggunaan yang Wajar ("**Kebijakan**") ini merupakan bagian dari [Syarat & Ketentuan](terms.md) Kami. Kebijakan ini berlaku bagi setiap pihak yang menggunakan Layanan PT Konfersi Metocean Climate Consultant ("**Konfersi**" atau "**Kami**"), termasuk kolaborator yang diundang ke suatu proyek. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Syarat & Ketentuan.
+Kebijakan Penggunaan yang Wajar ("**Kebijakan**") ini merupakan bagian dari [Ketentuan Layanan](terms.md) Kami. Kebijakan ini berlaku bagi setiap pihak yang menggunakan Layanan PT Konfersi Metocean Climate Consultant ("**Konfersi**" atau "**Kami**"), termasuk kolaborator yang diundang ke suatu proyek. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Ketentuan Layanan.
 
 ## 1. Prinsip umum
 
@@ -70,7 +70,7 @@ Anda dilarang mendaftarkan atau menggunakan nama domain, akun media sosial, atau
 
 ## 8. Penegakan
 
-8.1. Apabila Kami secara wajar meyakini bahwa Anda telah melanggar Kebijakan ini, Kami dapat, secara proporsional terhadap tingkat pelanggaran: menghapus atau menonaktifkan konten yang bersangkutan; membatasi, menangguhkan, atau menghentikan beban kerja; menangguhkan atau mengakhiri akses atau Akun Anda berdasarkan angka 13 Syarat & Ketentuan; serta melaporkan kegiatan yang melanggar hukum kepada otoritas yang berwenang.
+8.1. Apabila Kami secara wajar meyakini bahwa Anda telah melanggar Kebijakan ini, Kami dapat, secara proporsional terhadap tingkat pelanggaran: menghapus atau menonaktifkan konten yang bersangkutan; membatasi, menangguhkan, atau menghentikan beban kerja; menangguhkan atau mengakhiri akses atau Akun Anda berdasarkan angka 13 Ketentuan Layanan; serta melaporkan kegiatan yang melanggar hukum kepada otoritas yang berwenang.
 
 8.2. Sepanjang dapat dilakukan secara wajar dan sah, Kami akan memberi tahu Anda dan memberikan kesempatan untuk menjelaskan atau memperbaiki pelanggaran sebelum Kami bertindak. Kami dapat bertindak seketika apabila terdapat risiko terhadap keamanan, Pengguna lain, atau kepatuhan hukum.
 
@@ -78,4 +78,4 @@ Anda dilarang mendaftarkan atau menggunakan nama domain, akun media sosial, atau
 
 ## 9. Perubahan
 
-Kami dapat memperbarui Kebijakan ini berdasarkan angka 20 Syarat & Ketentuan. Untuk pertanyaan, lihat [Hubungi tim bantuan](../support/contact-support.md).
+Kami dapat memperbarui Kebijakan ini berdasarkan angka 20 Ketentuan Layanan. Untuk pertanyaan, lihat [Hubungi tim bantuan](../support/contact-support.md).

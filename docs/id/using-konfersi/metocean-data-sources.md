@@ -50,7 +50,7 @@ Saat Anda memakai hasil Konfersi dalam laporan atau publikasi:
 
 - Cantumkan dataset yang mendasarinya, misalnya ERA5 atau CMEMS, selain Konfersi.
 - Ikuti ketentuan lisensi terbaru di situs web masing-masing penyedia. Ketentuan tersebut berlaku di atas ringkasan ini.
-- Patuhi batasan tambahan yang berlaku dalam paket atau kontrak Konfersi Anda. Lihat [Syarat & Ketentuan](../legal/terms.md) dan [Kebijakan Penggunaan yang Wajar](../legal/acceptable-use.md).
+- Patuhi batasan tambahan yang berlaku dalam paket atau kontrak Konfersi Anda. Lihat [Ketentuan Layanan](../legal/terms.md) dan [Kebijakan Penggunaan yang Wajar](../legal/acceptable-use.md).
 
 ## Keterbatasan
 

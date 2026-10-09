@@ -65,4 +65,4 @@ Untuk mengetahui cara pembayaran, lihat [Pembayaran](payments.md).
 ## Pertanyaan seputar paket
 
 - Membutuhkan sesuatu di luar tingkatan yang ada, seperti komputasi lebih besar atau lisensi kustom? Tanyakan tentang paket Perusahaan & Operasi melalui [Hubungi tim bantuan](../support/contact-support.md).
-- Untuk cara Konfersi dapat menggunakan data proyek Anda, lihat [Kebijakan Privasi](../legal/privacy.md). Untuk ketentuan kontrak yang berlaku bagi paket berbayar, lihat [Syarat & Ketentuan](../legal/terms.md).
+- Untuk cara Konfersi dapat menggunakan data proyek Anda, lihat [Kebijakan Privasi](../legal/privacy.md). Untuk ketentuan kontrak yang berlaku bagi paket berbayar, lihat [Ketentuan Layanan](../legal/terms.md).

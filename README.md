@@ -183,3 +183,7 @@ Release tags are **`vX.Y.Z`** (no prefix, no suffix) and must equal `v` + `packa
 2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
 3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`.
 4. On git.konfersi.com, publish a release on `main` with tag `v<version>`. CI checks it, mirrors the tag and syncs `DOCS_SYNC_ENVS_RELEASE`; the release pipeline sets production's `DOCS_SOURCE_REF` to the tag.
+
+### Open legal clauses
+
+Published legal pages may also carry `review`. It lists clauses a human still has to decide (tracked in platform/konfersi-universe#15). Agents do not write legal wording; they keep the page structurally consistent and list the open clause here until the decision lands.

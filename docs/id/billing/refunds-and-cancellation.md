@@ -4,12 +4,13 @@ description: Cara membatalkan pesanan Konfersi dan mengajukan pengembalian dana 
 tags: [tagihan, pengembalian-dana, refund, pembatalan, kursus, paket]
 related: [legal/terms, billing/payments, support/contact-support]
 status: published
+review: [terms-12-refund-policy-final]
 updated: 2026-10-01
 ---
 
-Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Syarat & Ketentuan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Syarat & Ketentuan, yang berlaku adalah Syarat & Ketentuan.
+Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Ketentuan Layanan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Ketentuan Layanan, yang berlaku adalah Ketentuan Layanan.
 
-<scalar-callout type="warning">Kebijakan pengembalian dana kami masih menunggu tinjauan hukum final. Proses di halaman ini adalah cara kami menangani permintaan saat ini, tetapi syarat kelayakan dan batas waktunya dapat berubah setelah Syarat & Ketentuan difinalkan. Selalu periksa [Syarat & Ketentuan](../legal/terms.md) terbaru.</scalar-callout>
+<scalar-callout type="warning">Kebijakan pengembalian dana kami masih menunggu tinjauan hukum final. Proses di halaman ini adalah cara kami menangani permintaan saat ini, tetapi syarat kelayakan dan batas waktunya dapat berubah setelah Ketentuan Layanan difinalkan. Selalu periksa [Ketentuan Layanan](../legal/terms.md) terbaru.</scalar-callout>
 
 ## Membatalkan sebelum membayar
 
@@ -24,14 +25,14 @@ Lihat [Pembayaran](payments.md) untuk arti setiap status.
 
 Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Private Course.
 
-- Dapat atau tidaknya pembelian kursus dikembalikan dananya bergantung pada jenis kursus, waktu pengajuan, dan seberapa banyak materi yang sudah Anda akses. Ketentuannya diatur dalam [Syarat & Ketentuan](../legal/terms.md).
+- Dapat atau tidaknya pembelian kursus dikembalikan dananya bergantung pada jenis kursus, waktu pengajuan, dan seberapa banyak materi yang sudah Anda akses. Ketentuannya diatur dalam [Ketentuan Layanan](../legal/terms.md).
 - **Private Course** dijadwalkan dan disesuaikan khusus untuk Anda, sehingga perubahan dan pembatalan biasanya disepakati langsung dengan tim kursus. Hubungi kami sedini mungkin.
 
 ## Paket platform dan add-on
 
 Bagian ini berlaku untuk paket dan add-on yang dibeli untuk proyek Console.
 
-- Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi. [Syarat & Ketentuan](../legal/terms.md) mengatur kapan pembelian platform dapat dikembalikan dananya setelah sumber daya tersebut tersedia bagi Anda.
+- Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi. [Ketentuan Layanan](../legal/terms.md) mengatur kapan pembelian platform dapat dikembalikan dananya setelah sumber daya tersebut tersedia bagi Anda.
 - Jika Anda **tertagih dua kali**, atau dana sudah terpotong tetapi pesanan tidak pernah selesai, itu termasuk masalah pembayaran, bukan permintaan pengembalian dana. Hubungi kami dan kami akan menelusurinya. Lihat [Pembayaran](payments.md#ada-kendala).
 - Perjanjian **Perusahaan & Operasi** mengikuti ketentuan pembatalan dan pengembalian dana dalam perjanjian yang Anda tanda tangani.
 
@@ -50,9 +51,9 @@ Kirim email ke [support@konfersi.com](mailto:support@konfersi.com) dari alamat e
 **Langkah selanjutnya**
 
 1. Kami mengonfirmasi bahwa permintaan Anda sudah diterima, dan mungkin meminta informasi tambahan.
-2. Kami meninjau permintaan berdasarkan [Syarat & Ketentuan](../legal/terms.md) dan memberi tahu hasilnya melalui email.
+2. Kami meninjau permintaan berdasarkan [Ketentuan Layanan](../legal/terms.md) dan memberi tahu hasilnya melalui email.
 3. Jika disetujui, dana dikembalikan melalui kanal pembayaran semula atau metode lain yang kita sepakati bersama. Lama waktu hingga dana diterima bergantung pada bank atau penyedia pembayaran Anda.
 
 ## Hak Anda sebagai konsumen
 
-Tidak ada isi halaman ini yang membatasi hak Anda berdasarkan hukum perlindungan konsumen Indonesia. Lihat [Syarat & Ketentuan](../legal/terms.md) untuk rinciannya.
+Tidak ada isi halaman ini yang membatasi hak Anda berdasarkan hukum perlindungan konsumen Indonesia. Lihat [Ketentuan Layanan](../legal/terms.md) untuk rinciannya.

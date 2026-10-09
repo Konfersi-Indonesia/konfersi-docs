@@ -4,12 +4,12 @@ description: Keluaran Konfersi, termasuk hasil Mission Planning dan teks yang di
 tags: [legal, penafian, ai, metocean, mission-planning]
 related: [legal/terms, legal/acceptable-use, legal/privacy, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Penafian ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
-Penafian ini merupakan bagian dari [Syarat & Ketentuan](terms.md) Kami. Penafian ini menjelaskan kegunaan dan batasan penggunaan Keluaran platform Konfersi, termasuk hasil Mission Planning dan teks yang dihasilkan AI. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Syarat & Ketentuan.
+Penafian ini merupakan bagian dari [Ketentuan Layanan](terms.md) Kami. Penafian ini menjelaskan kegunaan dan batasan penggunaan Keluaran platform Konfersi, termasuk hasil Mission Planning dan teks yang dihasilkan AI. Istilah berhuruf kapital memiliki arti sebagaimana dimaksud dalam Ketentuan Layanan.
 
 ## 1. Keluaran merupakan alat bantu keputusan
 
@@ -70,7 +70,7 @@ Mission Planning sedang dalam masa peluncuran, dan sebagian fitur dapat terlebih
 
 ## 7. Tanggung jawab
 
-Tanggung jawab Kami sehubungan dengan Keluaran dibatasi sebagaimana diatur dalam angka 16 dan 17 [Syarat & Ketentuan](terms.md). Tidak ada ketentuan dalam penafian ini yang membatasi hak yang tidak dapat dikesampingkan berdasarkan hukum Indonesia, termasuk berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen.
+Tanggung jawab Kami sehubungan dengan Keluaran dibatasi sebagaimana diatur dalam angka 16 dan 17 [Ketentuan Layanan](terms.md). Tidak ada ketentuan dalam penafian ini yang membatasi hak yang tidak dapat dikesampingkan berdasarkan hukum Indonesia, termasuk berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen.
 
 ## 8. Kontak
 

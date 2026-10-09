@@ -1,15 +1,16 @@
 ---
-title: Syarat & Ketentuan
+title: Ketentuan Layanan
 description: Perjanjian antara Anda dan PT Konfersi Metocean Climate Consultant atas penggunaan akun, Console, Lab, Mission Planning, dan kursus Konfersi.
 tags: [legal, syarat-ketentuan, perjanjian]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, terms-12-refund-policy-final]
+updated: 2026-10-09
 ---
 
-<scalar-callout type="info">**Berlaku sejak 27 September 2026.** Syarat & Ketentuan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
+<scalar-callout type="info">**Berlaku sejak 27 September 2026.** Ketentuan Layanan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
-Syarat & Ketentuan ini ("**Syarat**") mengatur akses dan penggunaan Anda atas platform, situs web, dan kursus Konfersi. Mohon baca dengan saksama. Dengan membuat Akun, mencentang kotak persetujuan saat pendaftaran, atau menggunakan Layanan, Anda menyatakan setuju untuk terikat pada Syarat ini. Apabila Anda tidak setuju, mohon untuk tidak menggunakan Layanan.
+Ketentuan Layanan ini ("**Syarat**") mengatur akses dan penggunaan Anda atas platform, situs web, dan kursus Konfersi. Mohon baca dengan saksama. Dengan membuat Akun, mencentang kotak persetujuan saat pendaftaran, atau menggunakan Layanan, Anda menyatakan setuju untuk terikat pada Syarat ini. Apabila Anda tidak setuju, mohon untuk tidak menggunakan Layanan.
 
 ## 1. Para pihak
 

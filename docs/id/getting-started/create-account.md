@@ -16,7 +16,7 @@ Siapkan:
 - Alamat email yang bisa langsung Anda buka, atau akun di salah satu penyedia masuk yang tampil di halaman pendaftaran.
 - Opsional: beberapa informasi tentang organisasi Anda, seperti nama, sektor, dan peran Anda. Jika Anda anggota organisasi di Konfersi, atau diundang ke salah satunya, Anda bisa memakai detail organisasi tersebut tanpa mengetik ulang.
 
-Dengan mendaftar, Anda menyetujui [Syarat & Ketentuan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md). Mohon baca keduanya terlebih dahulu.
+Dengan mendaftar, Anda menyetujui [Ketentuan Layanan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md). Mohon baca keduanya terlebih dahulu.
 
 ## Langkah 1: Buat akun
 
@@ -65,7 +65,7 @@ Langkah ini opsional. Pilih **Lanjut** untuk melewatinya.
 
 1. Jawab pertanyaan **Dari mana anda mengetahui kami?**.
 2. Pada **Tujuan pembuatan akun**, pilih opsi hingga batas jumlah yang tertera.
-3. Centang **Saya menyetujui Syarat dan Ketentuan**.
+3. Centang **Saya menyetujui Ketentuan Layanan**.
 4. Pilih **Selesaikan Pendaftaran**.
 
 Saat muncul **Semua siap**, Anda akan diarahkan ke Console dalam beberapa detik. Anda juga dapat memilih **Buka Konsol sekarang**.

@@ -65,7 +65,7 @@ This step is optional. Select **Next** to skip it.
 
 1. Answer **How did you hear about us?**.
 2. Under **Purpose of creating an account**, pick up to the number of options shown.
-3. Tick **I agree to the Terms and Conditions**.
+3. Tick **I agree to the Terms of Service**.
 4. Select **Complete Registration**.
 
 When you see **You're all set**, Konfersi takes you to the Console after a few seconds. You can also select **Go to Console now**.
