@@ -9,9 +9,18 @@ updated: 2026-10-09
 
 Setelah Anda menyelesaikan kursus, Konfersi menerbitkan sertifikat atas nama Anda. Semua sertifikat ada di **Courses → Sertifikat** pada Console.
 
+## Cara mendapatkan sertifikat
+
+Konfersi menerbitkan sertifikat secara otomatis untuk kursus yang memberikannya:
+
+- **Kursus mandiri**: saat Anda menandai pelajaran terakhir selesai di pemutar pelajaran. Lihat [Ikuti pelajaran](courses.md#ikuti-pelajaran).
+- **Kursus langsung**: setelah tim kursus mencatat kehadiran Anda.
+
+Saat sertifikat terbit, Anda menerima notifikasi **Sertifikat terbit** di Console dan email **Sertifikat Anda sudah tersedia**. Pendaftaran Anda di **Kursus Saya** juga menampilkan **Sertifikat Anda sudah tersedia** dengan tombol **Lihat sertifikat**.
+
 ## Sertifikat Anda
 
-**Sertifikat** menampilkan setiap sertifikat yang diterbitkan untuk Anda beserta kursus, penerbit, dan tanggalnya. Buka salah satunya untuk melihat sertifikat dan **Detail**-nya:
+**Sertifikat** menampilkan setiap sertifikat yang diterbitkan untuk Anda beserta kursus, status, penerbit, tanggal, dan ID sertifikatnya. Jika belum ada, halaman ini menampilkan **Belum ada sertifikat.** dengan tombol **Lihat kursus**. Buka salah satunya untuk melihat sertifikat dan **Detail**-nya:
 
 | Kolom | Isinya |
 |---|---|

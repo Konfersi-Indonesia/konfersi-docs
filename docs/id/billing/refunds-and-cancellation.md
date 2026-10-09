@@ -2,10 +2,10 @@
 title: Pengembalian dana & pembatalan
 description: Cara membatalkan pesanan Konfersi dan mengajukan pengembalian dana untuk pembelian kursus maupun platform.
 tags: [tagihan, pengembalian-dana, refund, pembatalan, kursus, paket]
-related: [legal/terms, billing/payments, support/contact-support]
+related: [legal/terms, billing/payments, billing/order-cart-and-transactions, support/contact-support]
 status: published
 review: [terms-12-refund-policy-final]
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Ketentuan Layanan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Ketentuan Layanan, yang berlaku adalah Ketentuan Layanan.
@@ -53,6 +53,20 @@ Kirim email ke [support@konfersi.com](mailto:support@konfersi.com) dari alamat e
 1. Kami mengonfirmasi bahwa permintaan Anda sudah diterima, dan mungkin meminta informasi tambahan.
 2. Kami meninjau permintaan berdasarkan [Ketentuan Layanan](../legal/terms.md) dan memberi tahu hasilnya melalui email.
 3. Jika disetujui, dana dikembalikan melalui kanal pembayaran semula atau metode lain yang kita sepakati bersama. Lama waktu hingga dana diterima bergantung pada bank atau penyedia pembayaran Anda.
+
+## Setelah dana dikembalikan
+
+Saat dana dikembalikan, Konfersi memperbarui pesanan Anda dan memberi tahu Anda:
+
+| Pengembalian | Di Console | Yang berubah |
+|---|---|---|
+| **Pengembalian penuh paket atau add-on** | Transaksi menampilkan **Dikembalikan** dan **Pembayaran dikembalikan**: *Pembayaran ini telah dikembalikan dan apa yang diberikan pesanan ini telah dihapus dari proyek.* | Sumber daya paket atau add-on dari pesanan itu dihapus dari proyek |
+| **Pengembalian penuh kursus** | Transaksi menampilkan **Dikembalikan** dengan *Pembayaran ini telah dikembalikan dan kursi kursus dilepas.* Pendaftaran pindah ke **Dibatalkan & dikembalikan** di [Kursus Saya](../using-konfersi/courses.md#kursus-saya) | Kursi Anda dilepas |
+| **Pengembalian sebagian** | Transaksi menampilkan **Dikembalikan Sebagian**: *Sebagian pembayaran ini telah dikembalikan. Pesanannya tetap aktif; hubungi dukungan jika ada pertanyaan.* | Tidak ada perubahan lain |
+
+Anda juga menerima notifikasi (**Pembayaran Dikembalikan**, **Kursus dikembalikan**, atau **Pengembalian sebagian**) di Console dan, kecuali Anda mematikannya, lewat email. Lihat [Notifikasi](../account/notifications.md).
+
+Dana dikembalikan melalui kanal pembayaran yang Anda pakai, atau dengan metode yang disepakati bersama Anda. Transaksi di **Pembayaran & Tagihan → Transaksi** tetap menyimpan catatan pengembaliannya.
 
 ## Hak Anda sebagai konsumen
 

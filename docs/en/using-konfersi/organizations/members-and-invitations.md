@@ -4,7 +4,7 @@ description: Invite people to an organization, accept an invitation, change role
 tags: [organization, members, invitation, owner, contributor, role]
 related: [using-konfersi/organizations, using-konfersi/organizations/settings]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 The **Members** section of an [organization](index.md) lists everyone in it, with their role and the date they joined. Use **Search members** to find someone in a large team.
@@ -18,7 +18,7 @@ The **Members** section of an [organization](index.md) lists everyone in it, wit
 Good to know:
 
 - An invitation is valid for **7 days**. Its expiry date is shown next to it.
-- Select **Revoke** to cancel an invitation that hasn't been used.
+- Select **Revoke** to cancel an invitation that hasn't been used. Confirm with **Revoke invitation?**: the link sent to that address stops working.
 - You can't invite someone who is already a member, or send a second invitation while one is pending for the same address.
 - If the invitation email couldn't be sent, the invitation is still saved. The person joins when they sign in with that address and accept it from the **Organization** page.
 - Inviting someone a former owner removed lets them join again.
@@ -38,11 +38,16 @@ You join as a **contributor**. If the link says the invitation was already used,
 
 ## Change a member's role (owners)
 
-On **Members**, open the role menu next to the person and choose **Make owner** or **Make contributor**. An organization always keeps at least one owner, so the last owner can't be made a contributor.
+On **Members**, open the role menu next to the person and choose **Owner** or **Contributor**. The Console asks you to confirm with **Change role?**:
+
+- To **Owner**: they can then manage members, domains, single sign-on and shared projects.
+- To **Contributor**: they can no longer manage the organization.
+
+Select **Change role** to confirm. An organization always keeps at least one owner, so the last owner can't be made a contributor.
 
 ## Remove a member (owners)
 
-Select **Remove** next to the person and confirm. They lose access to the projects shared with the organization straight away. An owner can invite them again later.
+Select the remove button next to the person, then **Remove** under **Remove member?**. To remove an owner, change them to **Contributor** first. They lose access to the projects shared with the organization straight away. An owner can invite them again later.
 
 ## Leave an organization
 

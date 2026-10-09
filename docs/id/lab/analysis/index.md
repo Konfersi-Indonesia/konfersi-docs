@@ -33,6 +33,12 @@ Untuk setiap variabel yang sudah diproses (angin, gelombang, arus, suhu permukaa
 
 Pengaturan nilai ekstrem, seperti metode dan ambang batas untuk Peaks Over Threshold, diambil dari **Detail Proyek → Ambang Batas**. Gunakan **Isi Ambang Batas Saran** sebagai titik awal, lalu simpan. Jika pencocokan model tidak konvergen untuk datanya, grafik akan memberi tahu.
 
+### Siklon tropis pada deret harian
+
+Grafik **Deret waktu harian** untuk **Angin**, **Gelombang (total)**, dan **Arus** memberi arsiran pada hari-hari ketika siklon tropis berada dalam **500 km** dari titik, berdasarkan catatan IBTrACS. Setiap pita merah muda membentang dari hari pertama hingga hari terakhir badai berada dalam jarak itu, sehingga Anda bisa membedakan puncak akibat badai dari kondisi biasa. Tidak ada yang perlu diaktifkan, dan radiusnya tetap. Jika catatan siklon tidak bisa diakses, grafik tampil tanpa pita.
+
+Untuk melihat lintasan badainya, gunakan [Lintasan siklon di sekitar titik](../map/index.md#lintasan-siklon-di-sekitar-titik) di peta.
+
 ## Analisis lokasi
 
 | Analisis | Isinya |

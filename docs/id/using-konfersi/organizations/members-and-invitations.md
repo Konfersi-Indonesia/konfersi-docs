@@ -4,7 +4,7 @@ description: Mengundang orang ke organisasi, menerima undangan, mengubah peran, 
 tags: [organisasi, anggota, undangan, pemilik, kontributor, peran]
 related: [using-konfersi/organizations, using-konfersi/organizations/settings]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Bagian **Anggota** pada [organisasi](index.md) menampilkan semua anggota beserta peran dan tanggal bergabungnya. Gunakan **Cari anggota** untuk menemukan seseorang di tim yang besar.
@@ -18,7 +18,7 @@ Bagian **Anggota** pada [organisasi](index.md) menampilkan semua anggota beserta
 Perlu diketahui:
 
 - Undangan berlaku **7 hari**. Tanggal kedaluwarsanya tampil di samping undangan.
-- Pilih **Cabut** untuk membatalkan undangan yang belum dipakai.
+- Pilih **Cabut** untuk membatalkan undangan yang belum dipakai. Konfirmasi di **Cabut undangan?**: tautan yang dikirim ke alamat itu tidak berlaku lagi.
 - Anda tidak bisa mengundang orang yang sudah menjadi anggota, atau mengirim undangan kedua selama undangan untuk alamat yang sama masih tertunda.
 - Jika email undangan gagal terkirim, undangan tetap tersimpan. Orang tersebut bergabung saat masuk dengan alamat itu dan menerima undangan dari halaman **Organisasi**.
 - Mengundang lagi orang yang pernah dikeluarkan memungkinkan mereka bergabung kembali.
@@ -38,11 +38,16 @@ Anda bergabung sebagai **kontributor**. Jika tautan menyatakan undangan sudah di
 
 ## Mengubah peran anggota (pemilik)
 
-Di **Anggota**, buka menu peran di samping orang tersebut lalu pilih **Jadikan pemilik** atau **Jadikan kontributor**. Organisasi selalu memiliki minimal satu pemilik, jadi pemilik terakhir tidak bisa dijadikan kontributor.
+Di **Anggota**, buka menu peran di samping orang tersebut lalu pilih **Pemilik** atau **Kontributor**. Console meminta konfirmasi lewat **Ubah peran?**:
+
+- Menjadi **Pemilik**: orang itu bisa mengelola anggota, domain, single sign-on, dan proyek bersama.
+- Menjadi **Kontributor**: orang itu tidak bisa lagi mengelola organisasi.
+
+Pilih **Ubah peran** untuk mengonfirmasi. Organisasi selalu memiliki minimal satu pemilik, jadi pemilik terakhir tidak bisa dijadikan kontributor.
 
 ## Mengeluarkan anggota (pemilik)
 
-Pilih **Keluarkan** di samping orang tersebut lalu konfirmasi. Mereka langsung kehilangan akses ke proyek yang dibagikan ke organisasi. Pemilik bisa mengundang mereka lagi nanti.
+Pilih tombol keluarkan di samping orang tersebut, lalu **Keluarkan** pada **Keluarkan anggota?**. Untuk mengeluarkan pemilik, ubah dulu perannya menjadi **Kontributor**. Mereka langsung kehilangan akses ke proyek yang dibagikan ke organisasi. Pemilik bisa mengundang mereka lagi nanti.
 
 ## Keluar dari organisasi
 

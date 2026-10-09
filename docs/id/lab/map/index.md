@@ -1,10 +1,10 @@
 ---
 title: Peta & lapisan
-description: Pakai peta proyek di Lab — peta dasar, overlay klimatologi ERA5, prakiraan langsung, lalu lintas kapal, dan batas referensi.
-tags: [lab, peta, lapisan, overlay, peta dasar, klimatologi, prakiraan, open-meteo, ais, kapal, zee, batas]
+description: Pakai peta proyek di Lab — peta dasar, overlay, prakiraan langsung, lalu lintas kapal, batas, lintasan siklon, stasiun pasut, dan ekspor PNG.
+tags: [lab, peta, lapisan, overlay, peta dasar, klimatologi, prakiraan, open-meteo, ais, kapal, zee, batas, siklon, ibtracs, stasiun pasut, uhslc, ekspor, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 **Peta proyek** menampilkan titik observasi dan batas proyek di atas peta dasar, dengan overlay data opsional. Buka dari **Penjelajah Peta** atau dengan **Konfersi: Buka Peta**.
@@ -78,6 +78,45 @@ Label dan batas untuk orientasi:
 | **Perairan kepulauan** | Perairan kepulauan dan perairan pedalaman | Marine Regions |
 
 <scalar-callout type="warning">Lapisan referensi hanya untuk referensi. Lapisan ini tidak untuk keperluan hukum atau navigasi.</scalar-callout>
+
+## Lintasan siklon di sekitar titik
+
+Lihat siklon tropis mana saja yang pernah melintas dekat sebuah titik observasi:
+
+1. Di **Penjelajah Peta → Titik Observasi**, klik kanan titiknya lalu pilih **Tampilkan Lintasan Siklon di Peta**. Anda juga bisa menjalankan **Konfersi: Tampilkan Lintasan Siklon di Peta** untuk titik yang dipilih.
+2. Di **Radius pencarian**, pilih **250 km**, **500 km**, atau **1000 km**.
+3. Setiap badai yang melintas dalam jarak itu digambar sebagai garis, dan peta diperbesar agar lintasan dan titiknya terlihat. Pilih sebuah lintasan untuk melihat nama dan tahun badainya, misalnya *HAIYAN 2013*.
+
+Lintasan berasal dari catatan best-track **IBTrACS**, seluruh catatan tanpa filter tanggal. Badai yang lebih lemah dari badai tropis (di bawah 34 knot) tidak ditampilkan. Warna setiap lintasan menunjukkan kategori Saffir-Simpson terkuat yang dicapai badai selama berada di dalam radius pencarian:
+
+| Warna | Kategori |
+|---|---|
+| Sian | Badai tropis (TS) |
+| Kuning | Kategori 1 |
+| Oranye | Kategori 2 |
+| Merah | Kategori 3 |
+| Magenta | Kategori 4 |
+| Ungu | Kategori 5 |
+
+Jika tidak ada badai yang cukup dekat, Lab memberi tahu: *Tidak ada siklon tropis yang melintas dalam 500 km dari (titik) dalam catatan IBTrACS.*
+
+## Stasiun pasut di sekitar titik
+
+Klik kanan sebuah titik lalu pilih **Tampilkan Stasiun Pasut di Peta** (atau jalankan **Konfersi: Tampilkan Stasiun Pasut di Peta**). Lab menandai stasiun pasut **UHSLC** yang dipakai analisis pasut untuk titik ini dengan titik hijau, lalu memperbesar peta agar keduanya terlihat. Pilih titik hijau itu untuk melihat nama stasiunnya.
+
+Jika tidak ada stasiun di dekatnya, Lab memberi tahu bahwa pasut di sana berasal dari model **FES2022**, dan tidak ada yang ditandai. Lihat [Cara data diproses](../data/index.md) untuk cara pasut dimodelkan dan divalidasi.
+
+**Hapus Anotasi Peta**, di bilah judul peta, menghapus lintasan siklon dan stasiun pasut. Menampilkan salah satunya akan menggantikan yang lain.
+
+## Mengekspor peta sebagai PNG
+
+Saat peta terbuka, pilih **Ekspor Peta sebagai PNG** di bilah judul peta, atau jalankan **Konfersi: Ekspor Peta sebagai PNG**.
+
+- Di browser, gambar langsung terunduh. Di editor desktop, pilih lokasi penyimpanannya.
+- Nama berkasnya `konfersi-map-YYYYMMDDHHMM.png` (waktu UTC).
+- Gambarnya adalah peta seperti yang Anda lihat: peta dasar, overlay, batas, lintasan siklon, dan stasiun pasut. Penanda titik observasi, legenda, popup, dan kontrol peta tidak ikut.
+
+Jika peta belum terbuka, Lab meminta Anda: *Buka peta terlebih dahulu, lalu ekspor.*
 
 ## Pengaturan Anda diingat
 

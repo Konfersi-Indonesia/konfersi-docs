@@ -33,6 +33,12 @@ For each processed variable (wind, waves, currents, sea surface temperature, sal
 
 Extreme value settings, such as the method and the threshold for Peaks Over Threshold, come from **Project Details → Thresholds**. Use **Fill Suggested Thresholds** for a starting point, then save. If the fit doesn't converge for the data, the chart says so.
 
+### Tropical cyclones on daily series
+
+The **Daily timeseries** chart for **Wind**, **Wave (total sea)** and **Current** shades the days when a tropical cyclone was within **500 km** of the point, using the IBTrACS record. Each light red band runs from the first to the last day the storm was within that distance, so you can tell storm peaks from ordinary conditions. There's nothing to switch on, and the radius is fixed. If the cyclone record can't be reached, the chart shows without the bands.
+
+To see the storm tracks themselves, use [Cyclone tracks near a point](../map/index.md#cyclone-tracks-near-a-point) on the map.
+
 ## Site analyses
 
 | Analysis | What it shows |

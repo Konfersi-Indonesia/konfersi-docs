@@ -9,9 +9,18 @@ updated: 2026-10-09
 
 When you complete a course, Konfersi issues a certificate in your name. You find all of them under **Courses → Certificates** in the Console.
 
+## How you get a certificate
+
+Konfersi issues a certificate automatically for courses that award one:
+
+- **Self-paced courses**: when you mark the last lesson as done in the lesson player. See [Follow the lessons](courses.md#follow-the-lessons).
+- **Live courses**: after the course team records your attendance.
+
+When it's issued, you get a **Certificate issued** notification in the Console and a **Your certificate is ready** email. Your enrolment in **My Courses** also shows **Your certificate is ready** with **View certificate**.
+
 ## Your certificates
 
-**Certificates** lists every certificate issued to you with its course, issuer and date. Open one to see the certificate and its **Details**:
+**Certificates** lists every certificate issued to you with its course, status, issuer, date and certificate ID. If you don't have one yet, it shows **No certificates yet.** with **Browse courses**. Open one to see the certificate and its **Details**:
 
 | Field | What it shows |
 |---|---|

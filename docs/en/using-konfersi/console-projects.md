@@ -2,7 +2,7 @@
 title: Console & projects
 description: Create, open, share and manage projects in the Konfersi Console, and open them in Lab.
 tags: [console, projects, plans, collaboration]
-related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
+related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
 updated: 2026-10-09
 ---
@@ -13,7 +13,7 @@ The Console at [app.konfersi.com](https://app.konfersi.com) is where you organis
 
 The side menu has these areas:
 
-- **Dashboard**: your recent projects, recent activity, usage at a glance, and our newest articles.
+- **Dashboard**: your recent projects, recent activity, usage at a glance, what **Needs your attention**, and our newest articles.
 - **Lab Project**: **My Projects** (every project you own or have been invited to) and **Project Plans & Add-ons**.
 - **Courses**: the course **Marketplace** and **My Courses**. See [Courses](courses.md).
 - **Community**: **Article Discussions** and **Member Q&A**. See [Community](community.md).
@@ -63,6 +63,12 @@ A project's detail page shows:
 - **Quota Monitoring**: how much of the plan's allowances you've used, such as storage, compute hours and AI requests.
 - **Upgrade Plan** and **Buy Add-Ons**: ways to get more capacity for this project.
 
+### Quota warnings
+
+When a project has used **80%** of a quota, a warning appears at the top of **Quota Monitoring**, for example *Storage is at 85% of its limit.* When a quota runs out, it reads *… is used up. Add more or upgrade the plan to keep working.* Use **Upgrade Plan** or **Buy Add-Ons** to get more before work stops. Lab access time isn't included: the plan's end date is shown instead.
+
+The **Dashboard** also lists the quota closest to its limit across all your projects under **Needs your attention**, for example *Demo: Jakarta Bay: Storage at 85%* with **Add an add-on or upgrade the plan before work stops.** Select it to open the project. When nothing needs you, it shows **You are all caught up**.
+
 <scalar-callout type="neutral">Lab needs a paid plan. On the free trial plan, the Lab button reads **Upgrade plan to access Lab**. When a project's plan expires, the button is disabled and shows that the plan has expired.</scalar-callout>
 
 ### Edit a project
@@ -71,13 +77,9 @@ If you own the project, open the **⋯** menu on the detail page and choose **Ed
 
 ## Share a project
 
-Projects are private. Only the owner and invited people can open them. Owners of projects on higher-tier plans can invite assistants.
+Projects are private. Only the owner and invited people can open them. If the project's plan or add-ons include assistant seats, the owner can invite assistants from the **⋯** menu with **Manage Project Access**, cancel pending invitations and remove assistants. Assistants can leave a project with **Leave project**.
 
-1. Open the project and select **Manage Project Access**.
-2. Enter your collaborator's email address and select **Share**.
-3. The invitation appears under **Invitation List** as **Pending** until it is accepted.
-
-**Who can access** lists the **Owner** and each **Assistant**. To remove an assistant, open their role menu and choose **Remove Collaborator**. Extra seats are available as add-ons.
+See [Share a project](project-sharing.md) for seats, invitations, accepting an invitation (also when you're signed in with another email) and leaving.
 
 ## Delete a project
 

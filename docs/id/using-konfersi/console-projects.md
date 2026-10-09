@@ -2,7 +2,7 @@
 title: Console & proyek
 description: Membuat, membuka, membagikan, dan mengelola proyek di Konfersi Console, serta membukanya di Lab.
 tags: [console, proyek, paket, kolaborasi]
-related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
+related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
 updated: 2026-10-09
 ---
@@ -13,7 +13,7 @@ Console di [app.konfersi.com](https://app.konfersi.com) adalah tempat Anda menga
 
 Menu samping memiliki bagian berikut:
 
-- **Dasbor**: proyek terkini, aktivitas terbaru, ringkasan pemakaian, dan artikel terbaru kami.
+- **Dasbor**: proyek terkini, aktivitas terbaru, ringkasan pemakaian, hal yang **Perlu perhatian Anda**, dan artikel terbaru kami.
 - **Proyek Lab**: **Proyek Saya** (semua proyek milik Anda atau proyek tempat Anda diundang) dan **Paket Proyek & Add-on**.
 - **Kursus**: **Marketplace** kursus dan **Kursus Saya**. Lihat [Kursus](courses.md).
 - **Komunitas**: **Diskusi Artikel** dan **Tanya jawab member**. Lihat [Komunitas](community.md).
@@ -63,6 +63,14 @@ Halaman detail proyek menampilkan:
 - **Pemantauan Kuota**: seberapa banyak jatah paket yang sudah terpakai, misalnya penyimpanan, jam komputasi, dan permintaan AI.
 - **Tingkatkan Paket** dan **Beli Add-On**: cara menambah kapasitas untuk proyek ini.
 
+### Peringatan kuota
+
+Jika sebuah proyek sudah memakai **80%** dari suatu kuota, peringatan muncul di bagian atas **Pemantauan Kuota**, misalnya *Storage sudah terpakai 85% dari batasnya.* Jika kuota habis, tertulis *… sudah habis. Tambahkan kuota atau upgrade paket untuk terus bekerja.* Gunakan **Tingkatkan Paket** atau **Beli Add-On** untuk menambah kapasitas sebelum pekerjaan terhenti. Masa akses Lab tidak termasuk: tanggal berakhirnya paket ditampilkan sebagai gantinya.
+
+**Dasbor** juga menampilkan kuota yang paling mendekati batas di semua proyek Anda di bagian **Perlu perhatian Anda**, misalnya *Demo: Jakarta Bay: Storage terpakai 85%* dengan **Tambahkan add-on atau upgrade paket sebelum pekerjaan terhenti.** Pilih untuk membuka proyeknya. Jika tidak ada yang perlu ditangani, tampil **Semua sudah beres**.
+
+Nama kuota di peringatan ini, seperti *Storage* atau *CPU hours*, saat ini tampil dalam bahasa Inggris.
+
 <scalar-callout type="neutral">Lab memerlukan paket berbayar. Pada paket uji coba gratis, tombol Lab bertuliskan **Tingkatkan paket untuk akses Lab**. Jika paket proyek sudah berakhir, tombol dinonaktifkan dan menandakan bahwa paket telah kedaluwarsa.</scalar-callout>
 
 ### Mengubah proyek
@@ -71,13 +79,9 @@ Jika Anda pemilik proyek, buka menu **⋯** di halaman detail, lalu pilih **Edit
 
 ## Membagikan proyek
 
-Proyek bersifat privat. Hanya pemilik dan orang yang diundang yang dapat membukanya. Pemilik proyek dengan paket tingkat lebih tinggi dapat mengundang asisten.
+Proyek bersifat privat. Hanya pemilik dan orang yang diundang yang dapat membukanya. Jika paket atau add-on proyek menyertakan kursi asisten, pemilik dapat mengundang asisten dari menu **⋯** lewat **Kelola Akses Proyek**, membatalkan undangan yang tertunda, dan menghapus asisten. Asisten dapat keluar dari proyek lewat **Keluar dari proyek**.
 
-1. Buka proyek, lalu pilih **Kelola Akses Proyek**.
-2. Masukkan alamat email kolaborator, lalu pilih **Bagikan**.
-3. Undangan muncul di **Daftar Undangan** dengan status **Tertunda** sampai diterima.
-
-Bagian **Siapa yang dapat mengakses** menampilkan **Pemilik** dan setiap **Asisten**. Untuk mengeluarkan asisten, buka menu perannya lalu pilih **Hapus Kolaborator**. Kursi tambahan tersedia sebagai add-on.
+Lihat [Membagikan proyek](project-sharing.md) untuk kursi, undangan, cara menerima undangan (juga saat Anda masuk dengan email lain), dan keluar dari proyek.
 
 ## Menghapus proyek
 

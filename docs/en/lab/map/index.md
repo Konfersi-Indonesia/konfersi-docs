@@ -1,10 +1,10 @@
 ---
 title: Map & layers
-description: Use the Lab project map — basemaps, ERA5 climatology overlays, live forecasts, shipping traffic and reference boundaries.
-tags: [lab, map, layers, overlays, basemap, climatology, forecast, open-meteo, ais, shipping, eez, boundaries]
+description: Use the Lab project map — basemaps, overlays, live forecasts, shipping traffic, boundaries, cyclone tracks, tide gauges and PNG export.
+tags: [lab, map, layers, overlays, basemap, climatology, forecast, open-meteo, ais, shipping, eez, boundaries, cyclone, ibtracs, tide gauge, uhslc, export, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 The **Project Map** shows your observation points and project boundaries over a basemap, with optional data overlays. Open it from **Map Explorer** or with **Konfersi: Open Map**.
@@ -78,6 +78,45 @@ Labels and boundaries for orientation:
 | **Archipelagic waters** | Archipelagic and internal waters | Marine Regions |
 
 <scalar-callout type="warning">Reference layers are for reference only. They are not for legal or navigational use.</scalar-callout>
+
+## Cyclone tracks near a point
+
+See which tropical cyclones passed near an observation point:
+
+1. In **Map Explorer → Observation Points**, right-click the point and choose **Show Cyclone Tracks on Map**. You can also run **Konfersi: Show Cyclone Tracks on Map** for the selected point.
+2. Under **Search radius**, choose **250 km**, **500 km** or **1000 km**.
+3. Each storm that passed within that distance is drawn as a line, and the map zooms to fit the tracks and the point. Select a track to see the storm's name and year, for example *HAIYAN 2013*.
+
+Tracks come from the **IBTrACS** best-track record, the full record with no date filter. Storms weaker than tropical-storm strength (below 34 knots) aren't shown. Each track is coloured by the strongest Saffir-Simpson category the storm reached while inside the search radius:
+
+| Colour | Category |
+|---|---|
+| Cyan | Tropical storm (TS) |
+| Yellow | Category 1 |
+| Orange | Category 2 |
+| Red | Category 3 |
+| Magenta | Category 4 |
+| Purple | Category 5 |
+
+If no storm passed close enough, Lab tells you so: *No tropical cyclone passed within 500 km of (point) in the IBTrACS record.*
+
+## Tide gauge near a point
+
+Right-click a point and choose **Show Tide Gauge on Map** (or run **Konfersi: Show Tide Gauge on Map**). Lab pins the **UHSLC** tide gauge that the tide analysis uses for this point as a green dot and zooms to show both. Select the dot to see the station name.
+
+If there's no gauge nearby, Lab tells you that tides there come from the **FES2022** model instead, and nothing is pinned. See [How data is processed](../data/index.md) for how tides are modelled and validated.
+
+**Clear Map Annotations**, in the map's title bar, removes cyclone tracks and the tide gauge. Showing one replaces the other.
+
+## Export the map as PNG
+
+With the map open, select **Export Map as PNG** in the map's title bar, or run **Konfersi: Export Map as PNG**.
+
+- In the browser, the image downloads straight away. In a desktop editor, choose where to save it.
+- The file is named `konfersi-map-YYYYMMDDHHMM.png` (time in UTC).
+- The image is the map as you see it: basemap, overlays, boundaries, cyclone tracks and the tide gauge. Observation point pins, legends, popups and map controls aren't included.
+
+If the map isn't open, Lab asks you to *Open the map first, then export it.*
 
 ## Your settings are remembered
 

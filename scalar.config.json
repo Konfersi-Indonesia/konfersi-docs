@@ -58,6 +58,12 @@
                 "icon": "phosphor/regular/folders",
                 "filepath": "docs/en/using-konfersi/console-projects.md"
               },
+              "/project-sharing": {
+                "type": "page",
+                "title": "Share a project",
+                "icon": "phosphor/regular/users-three",
+                "filepath": "docs/en/using-konfersi/project-sharing.md"
+              },
               "/organizations": {
                 "type": "group",
                 "title": "Organizations",
@@ -256,6 +262,12 @@
                 "icon": "phosphor/regular/user",
                 "filepath": "docs/en/account/profile.md"
               },
+              "/notifications": {
+                "type": "page",
+                "title": "Notifications",
+                "icon": "phosphor/regular/bell",
+                "filepath": "docs/en/account/notifications.md"
+              },
               "/security": {
                 "type": "group",
                 "title": "Security",
@@ -449,6 +461,12 @@
                 "title": "Console & proyek",
                 "icon": "phosphor/regular/folders",
                 "filepath": "docs/id/using-konfersi/console-projects.md"
+              },
+              "/project-sharing": {
+                "type": "page",
+                "title": "Membagikan proyek",
+                "icon": "phosphor/regular/users-three",
+                "filepath": "docs/id/using-konfersi/project-sharing.md"
               },
               "/organizations": {
                 "type": "group",
@@ -647,6 +665,12 @@
                 "title": "Profil Anda",
                 "icon": "phosphor/regular/user",
                 "filepath": "docs/id/account/profile.md"
+              },
+              "/notifications": {
+                "type": "page",
+                "title": "Notifikasi",
+                "icon": "phosphor/regular/bell",
+                "filepath": "docs/id/account/notifications.md"
               },
               "/security": {
                 "type": "group",
