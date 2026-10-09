@@ -4,7 +4,7 @@ description: Masuk ke Konfersi dengan email atau penyedia, atur ulang kata sandi
 tags: [akun, masuk, kata-sandi, sso]
 related: [getting-started/create-account, using-konfersi/lab-workspace, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 Konfersi memakai satu proses masuk untuk semua aplikasinya. Setelah Anda masuk di Accounts, sesi yang sama berlaku di Console, Lab, dan ruang kerja metocean Anda.
@@ -12,8 +12,10 @@ Konfersi memakai satu proses masuk untuk semua aplikasinya. Setelah Anda masuk d
 ## Masuk dengan email dan kata sandi
 
 1. Buka [accounts.konfersi.com](https://accounts.konfersi.com). Jika Anda membuka [app.konfersi.com](https://app.konfersi.com) atau [lab.konfersi.com](https://lab.konfersi.com) tanpa sesi aktif, Anda akan diarahkan ke sana secara otomatis.
-2. Isi **Email** dan **Kata Sandi**.
-3. Pilih **Masuk**.
+2. Isi **Email** lalu pilih **Lanjut**.
+3. Isi **Kata Sandi** lalu pilih **Masuk**. Pilih **Ubah** jika email yang Anda ketik salah.
+
+![Halaman Masuk di Konfersi Accounts](../../../assets/screenshots/id/accounts-sign-in.png)
 
 Setelah berhasil masuk, Anda dikembalikan ke halaman asal. Jika Anda langsung membuka Accounts, Anda akan masuk ke Console.
 

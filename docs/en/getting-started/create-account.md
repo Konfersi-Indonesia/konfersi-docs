@@ -4,7 +4,7 @@ description: Sign up for Konfersi, verify your email address and complete your p
 tags: [account, sign-up, registration, onboarding]
 related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 One Konfersi account opens the Console, Lab and every Konfersi data service. Setting it up takes four short steps: create the account, verify your email, complete your profile, and start exploring.
@@ -32,6 +32,8 @@ You'll see a **Check your inbox** screen confirming the address we sent the veri
 ### Sign up with a provider instead
 
 If sign-in providers are available, you'll see their buttons under **Or continue with**. Select one and approve the request on the provider's page. Konfersi receives your name and email address from the provider, so you don't need a password. You then go straight to [completing your profile](#step-3-complete-your-profile).
+
+![The Create Account form in Konfersi Accounts](../../../assets/screenshots/en/accounts-sign-up.png)
 
 ## Step 2: Verify your email
 

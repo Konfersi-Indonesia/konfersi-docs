@@ -4,7 +4,7 @@ description: Sign in to Konfersi with email or a provider, reset a forgotten pas
 tags: [account, sign-in, password, sso]
 related: [getting-started/create-account, using-konfersi/lab-workspace, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-10-09
 ---
 
 Konfersi uses one sign-in for all of its apps. When you sign in at Accounts, the same session works in the Console, in Lab and in your metocean workspaces.
@@ -12,8 +12,10 @@ Konfersi uses one sign-in for all of its apps. When you sign in at Accounts, the
 ## Sign in with email and password
 
 1. Go to [accounts.konfersi.com](https://accounts.konfersi.com). If you open [app.konfersi.com](https://app.konfersi.com) or [lab.konfersi.com](https://lab.konfersi.com) without a session, you're sent there automatically.
-2. Enter your **Email** and **Password**.
-3. Select **Sign In**.
+2. Enter your **Email** and select **Continue**.
+3. Enter your **Password** and select **Sign In**. Select **Change** if you typed the wrong email.
+
+![The Sign In page in Konfersi Accounts](../../../assets/screenshots/en/accounts-sign-in.png)
 
 Once you're signed in, Konfersi takes you back to the page you started from. If you came straight to Accounts, you land in the Console.
 

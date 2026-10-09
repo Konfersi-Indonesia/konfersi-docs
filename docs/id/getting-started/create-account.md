@@ -4,7 +4,7 @@ description: Daftar ke Konfersi, verifikasi alamat email, dan lengkapi profil An
 tags: [akun, daftar, registrasi, onboarding]
 related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Satu akun Konfersi membuka Console, Lab, dan semua layanan data Konfersi. Penyiapannya hanya empat langkah singkat: buat akun, verifikasi email, lengkapi profil, lalu mulai menjelajah.
@@ -32,6 +32,8 @@ Setelah itu, layar **Periksa kotak masuk Anda** muncul dan menampilkan alamat tu
 ### Mendaftar dengan penyedia
 
 Jika penyedia masuk tersedia, tombolnya muncul di bawah **Atau lanjutkan dengan**. Pilih salah satu, lalu setujui permintaan di halaman penyedia tersebut. Konfersi menerima nama dan alamat email Anda dari penyedia, jadi Anda tidak perlu membuat kata sandi. Anda kemudian langsung diarahkan untuk [melengkapi profil](#langkah-3-lengkapi-profil).
+
+![Formulir Buat Akun di Konfersi Accounts](../../../assets/screenshots/id/accounts-sign-up.png)
 
 ## Langkah 2: Verifikasi email
 
