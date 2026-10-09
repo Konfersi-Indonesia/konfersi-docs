@@ -4,7 +4,7 @@ description: Isi detail proyek, brief, operasi, dan penilaian risiko di Konfersi
 tags: [lab, laporan, docx, word, metocean design basis, brief, penilaian risiko, perencanaan, detail proyek, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 ## Detail Proyek
@@ -36,19 +36,20 @@ Setiap dokumen terbuka di editor. Dokumen diperiksa terhadap skema saat Anda men
 
 ## Membuat laporan
 
-Lab menghasilkan laporan **Metocean Design Basis** sebagai dokumen Word (`.docx`) untuk sebuah titik.
+Lab menghasilkan laporan **Metocean Design Basis** sebagai dokumen Word (`.docx`) untuk satu titik observasi. Buka **Pembuatan Laporan** dari bilah aktivitas, daftar alat di menu Lab, atau **Buka Pembuatan Laporan** di Command Palette. Laporan terbuka sebagai tab editor.
 
-1. Pilih titik yang akan dilaporkan dan pastikan sudah diproses.
-2. Di **Konfersi Lab → Laporan**, tinjau **Bagian**-nya. Setiap bagian berupa **grafik dari analisis** atau **teks standar**.
-3. Opsional: pilih **Sintesis Bagian** pada sebuah bagian agar AI menulis teksnya dari hasil analisis.
-4. Pilih **Buat Laporan (DOCX)**. Setelah laporan siap, pilih **Unduh**.
+1. Pilih **Titik observasi**. Jika proyek belum punya titik, tambahkan dulu di peta.
+2. Di **Bagian**, pilih isi laporan. **Semua**, **Hanya yang siap**, dan **Tidak ada** memilih dengan cepat. Lab mengingat pilihan Anda untuk proyek ini.
+   Setiap bagian menunjukkan statusnya:
+   - **Data siap**, atau belum ada data analisis di titik ini. Proses titiknya terlebih dahulu.
+   - **Teks AI siap**, atau teks AI belum disintesis.
+   - **Teks standar** (teks tetap) atau **Grafik dari analisis**.
+3. Opsional: pilih sebuah bagian lalu **Sintesis dengan AI** agar AI menulis teksnya dari analisis titik tersebut. Baca hasilnya di **Teks bagian**, atau pilih **Buka sebagai Markdown**. **Sintesis ulang** menulis ulang teksnya. Bagian yang belum disintesis tampil di laporan sebagai "Section Not Yet Ready".
+4. Pilih **Buat laporan Word**. Progresnya ditampilkan dan Anda bisa **Batal**. Jika ada bagian yang belum punya data atau teks AI, Lab memberi tahu jumlahnya sebelum menandainya sebagai belum siap di laporan.
+5. Setelah **Laporan … sudah siap**, pilih **Unduh** lalu simpan `.docx`-nya.
 
-Laporan sebelumnya tetap ada di **Dokumen**; pilih **Unduh Laporan** untuk mengunduhnya lagi.
+Laporan sebelumnya ada di **Laporan yang dibuat**; pilih **Unduh .docx** untuk mengunduhnya lagi.
 
 Laporan berisi profil proyek, grafik dan tabel dari analisis, serta bagian standar seperti keterbatasan, ketergantungan, dan satuan. Sunting di Word sebelum dibagikan.
 
-Membuat laporan dan menyintesis bagian memakai kuota AI proyek.
-
 <scalar-callout type="warning">Teks yang ditulis AI harus diperiksa oleh orang yang kompeten sebelum diandalkan atau dibagikan. Lihat [penafian AI & metocean](../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
-
-Ruang kerja **Pembuatan Laporan** di bilah aktivitas masih dalam pengembangan; untuk saat ini gunakan **Konfersi Lab → Laporan**.

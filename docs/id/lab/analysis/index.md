@@ -4,7 +4,7 @@ description: Setiap analisis Konfersi Lab untuk sebuah titik — deret waktu, st
 tags: [lab, analisis, grafik, statistik, mawar, nilai ekstrem, periode ulang, gev, pot, pasang surut, siklon, ekspor]
 related: [lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Setelah titik [diproses](../points/process-points.md), analisisnya siap dibuka.
@@ -51,11 +51,25 @@ Di panel **Analitik Data**:
 
 - **Sesuaikan grafik**: jenis grafik, skala (linear atau log), rentang, warna (termasuk palet yang aman bagi buta warna), tebal garis, penanda, ukuran teks, dan garis grid. Terapkan ke **Grafik ini** atau **Semua grafik**, atau **Atur ulang**.
 - **Simpan gambar** (PNG) dan **Simpan CSV** untuk memakai datanya di tempat lain.
+- **Ekspor semua** menyimpan setiap grafik di tampilan sebagai PNG dan setiap tabel sebagai CSV, dalam satu `.zip` yang dinamai sesuai tampilan.
 - **Buka sebagai JSON** untuk memeriksa hasil lengkapnya.
+
+## Hasil analisis tambahan
+
+- **Distribusi gabungan**: frekuensi gabungan ditampilkan untuk **Semua musim** dan setiap musim (Des–Feb, Mar–Mei, Jun–Agu, Sep–Nov): mawar, peta panas kejadian menurut arah dan kelas, tabel frekuensi (%), dan statistik per arah.
+- **Nilai ekstrem**: jika tersedia, **Grafik tingkat periode ulang**, **Grafik Q-Q**, dan **Densitas hasil fitting** untuk menilai kecocokan model.
+- **Pasang surut**: tabel **Acuan stasiun** menyebutkan stasiun pasut dan sel model FES2022 beserta posisi dan jaraknya. Jika stasiun memvalidasi model: **Observasi vs prediksi**, **Residu (observasi − prediksi)**, dan sebaran **Observasi terhadap prediksi**.
+- **Siklon tropis per bulan**: tabel **Kejadian bulanan per kategori**.
 
 ## Menjelaskan grafik dengan AI
 
-Pilih **Jelaskan** untuk mendapat penjelasan analisis titik dalam bahasa sehari-hari. Fitur ini memakai kuota AI proyek.
+Pilih **Jelaskan** agar Konfersi Agent membaca angka pada grafik dan menjelaskannya dalam bahasa sehari-hari. Tidak ada yang berjalan sampai Anda memilihnya. **Jelaskan lagi** meminta penjelasan baru.
+
+- Setiap penjelasan adalah satu giliran Konfersi Agent dan memakai jatah AI proyek. Sebelum mulai, Lab menampilkan sisa jatah. Sesudahnya, Lab menampilkan berapa token yang terpakai. Jika jatah sudah habis, Lab menampilkan **Jatah AI sudah habis** dan penjelasan tidak dibuat.
+- Hanya ringkasan singkat angka yang dikirim, bukan seluruh data Anda. Penjelasan mengikuti bahasa Lab Anda.
+- Jika Konfersi Agent dinonaktifkan untuk Lab Anda, tombol ini menjelaskannya.
+
+Tombol yang sama ada di hasil Perencanaan Misi sebagai **Jelaskan hasil**. Lihat [Perencanaan Misi](../../using-konfersi/mission-planning.md).
 
 <scalar-callout type="warning">Penjelasan dibuat oleh AI. Periksa dengan datanya sebelum mengandalkannya. Lihat [penafian AI & metocean](../../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
 

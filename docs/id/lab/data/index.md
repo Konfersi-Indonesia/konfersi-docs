@@ -4,7 +4,7 @@ description: Apa yang terjadi saat Anda memproses titik di Konfersi Lab — dari
 tags: [lab, data, pemrosesan, alur, copernicus, era5, cmems, netcdf]
 related: [lab/data/variables-and-sources, lab/points/process-points, using-konfersi/metocean-data-sources]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Saat Anda [memproses titik](../points/process-points.md), server Konfersi yang mengerjakannya. Editor atau browser Anda hanya memulai proses dan menampilkan kemajuannya.
@@ -32,6 +32,26 @@ Beberapa analisis memakai sumber tambahan dan dijalankan saat Anda membukanya, b
 | **Pasang surut** | Model pasang surut global FES2022, divalidasi dengan stasiun pasang surut UHSLC terdekat jika ada |
 | **Siklon tropis per bulan**, **Audit badai (500 km)** | IBTrACS, catatan internasional lintasan siklon tropis |
 | **Kedalaman air** | GMRT (menggabungkan GEBCO dan survei multibeam), atau GEBCO |
+
+## Melihat data yang dimiliki titik
+
+Tampilan **Ketersediaan Data** di panel **Analitik Data** menampilkan setiap variabel untuk titik yang dipilih, beserta statusnya:
+
+| Status | Artinya |
+|---|---|
+| **Siap** | Sudah diunduh dan dianalisis. Menampilkan berapa analisis yang siap, dan bisa bertanda analisis lama atau dipakai ulang |
+| **Berjalan** | Sedang diambil atau dianalisis |
+| **Gagal** | Upaya terakhir gagal |
+| **Sesuai permintaan** | Dianalisis saat Anda membukanya; tidak ada yang diunduh |
+| **Belum diambil** | Belum diambil untuk titik ini |
+
+Jika diketahui, setiap variabel juga menampilkan sumber, cakupan, resolusi, dan waktu pembaruannya.
+
+- **Coba lagi yang gagal** mengambil ulang variabel yang gagal.
+- **Ambil yang belum ada** mengambil variabel yang belum diambil.
+- **Tampilkan proses** menampilkan pekerjaan yang sedang berjalan, dan **Segarkan** memuat ulang daftar.
+
+Tindakan yang sama ada di Command Palette sebagai **Tampilkan Ketersediaan Data**, **Segarkan Ketersediaan Data**, dan **Coba Lagi Variabel Gagal**. Mencoba ulang atau mengambil data memulai proses baru untuk titik tersebut.
 
 ## Tempat data Anda disimpan
 

@@ -4,7 +4,7 @@ description: What happens when you process a point in Konfersi Lab — from the 
 tags: [lab, data, processing, pipeline, copernicus, era5, cmems, netcdf]
 related: [lab/data/variables-and-sources, lab/points/process-points, using-konfersi/metocean-data-sources]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 When you [process a point](../points/process-points.md), Konfersi's servers do the work. Your editor or browser only starts the process and shows its progress.
@@ -32,6 +32,26 @@ Some analyses use extra sources and run when you open them, rather than during p
 | **Tides** | FES2022 global tide model, validated against the nearest UHSLC tide-gauge station where there is one |
 | **Tropical cyclones by month**, **Storm audit (500 km)** | IBTrACS, the international record of tropical cyclone tracks |
 | **Water depth** | GMRT (merging GEBCO and multibeam surveys), else GEBCO |
+
+## See what a point has
+
+The **Data Availability** view in the **Data Analytics** panel lists every variable for the selected point, with its state:
+
+| State | Meaning |
+|---|---|
+| **Ready** | Downloaded and analysed. Shows how many analyses are ready, and may say **older analysis** or **reused** |
+| **Running** | Being fetched or analysed now |
+| **Failed** | The last attempt failed |
+| **On demand** | Analysed when you open it; nothing is downloaded |
+| **Not acquired** | Not fetched for this point yet |
+
+Where known, each variable also shows its source, coverage, resolution and when it was updated.
+
+- **Retry failed** fetches the failed variables again.
+- **Fetch missing** fetches the ones not acquired yet.
+- **Show processes** shows the running work, and **Refresh** reloads the list.
+
+The same actions are in the Command Palette as **Show Data Availability**, **Refresh Data Availability** and **Retry Failed Variables**. Retrying or fetching starts a new process for the point.
 
 ## Where your data lives
 

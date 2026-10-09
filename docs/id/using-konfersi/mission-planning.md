@@ -4,7 +4,7 @@ description: Perkirakan berapa lama rangkaian operasi laut berlangsung setelah c
 tags: [mission-planning, downtime, operations, metocean, weather-window]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Perencanaan Misi memperkirakan seberapa jauh cuaca memperpanjang operasi laut. Anda menjelaskan **di mana** pekerjaan dilakukan, **batas** kondisi yang masih bisa dikerjakan kapal dan kru, lalu **urutan** pekerjaannya. Konfersi menjalankan ulang urutan itu terhadap data metocean per jam selama puluhan tahun, dari setiap tanggal mulai yang mungkin. Hasilnya menunjukkan berapa lama operasi kemungkinan berlangsung, bulan mana yang terbaik, dan batas mana yang menyebabkan waktu tunggu.
@@ -80,7 +80,7 @@ Hasil tetap tersedia setelah Lab ditutup. Run sebelumnya, milik Anda dan rekan t
 
 ## 5. Laporan
 
-**Laporan** menampilkan ringkasan run yang sedang Anda lihat, langsung di layar. Anda bisa melihat sumber Markdown-nya, **Salin**, atau **Unduh .md**. Opsi untuk menjelaskan hasil dengan AI sedang direncanakan; perencanaannya sendiri tidak memakai AI.
+**Laporan** menampilkan ringkasan run yang sedang Anda lihat, langsung di layar. Anda bisa melihat sumber Markdown-nya, **Salin**, atau **Unduh .md**. **Jelaskan hasil** meminta Konfersi Agent menjelaskan run dalam bahasa sehari-hari. Fitur ini memakai jatah AI proyek dan hanya berjalan saat Anda memilihnya; lihat [Menjelaskan grafik dengan AI](../lab/analysis/index.md#menjelaskan-grafik-dengan-ai). Perencanaannya sendiri tidak memakai AI.
 
 ## Templat dan CSV
 

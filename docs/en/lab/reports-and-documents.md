@@ -4,7 +4,7 @@ description: Fill in the project details, briefing, operations and risk assessme
 tags: [lab, report, docx, word, metocean design basis, briefing, risk assessment, planning, project details, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 ## Project Details
@@ -36,19 +36,20 @@ Each opens as a document in the editor. The documents are checked against a sche
 
 ## Generate the report
 
-Lab produces a **Metocean Design Basis** report as a Word document (`.docx`) for a point.
+Lab produces a **Metocean Design Basis** report as a Word document (`.docx`) for one observation point. Open **Report Generation** from the activity bar, the Lab menu's tools, or **Open Report Generation** in the Command Palette. It opens as an editor tab.
 
-1. Select the point to report on and make sure it's processed.
-2. In **Konfersi Lab → Reports**, review the **Sections**. Each is either **charts from analyses** or **standard text**.
-3. Optional: choose **Synthesize Section** on a section to have AI write its text from the analyses.
-4. Choose **Generate Report (DOCX)**. When **Report … is ready**, select **Download**.
+1. Choose the **Observation point**. If the project has no points yet, add one on the map first.
+2. Under **Sections**, choose what goes in the report. **All**, **Ready only** and **None** select quickly. Lab remembers your choice for the project.
+   Each section shows its state:
+   - **Data ready**, or **No analysed data at this point**. Process the point first.
+   - **AI text ready**, or **AI text not synthesized yet**.
+   - **Standard text** (fixed wording) or **Charts from analyses**.
+3. Optional: pick a section and select **Synthesize with AI** to have AI write its text from the point's analyses. Read the result under **Section text**, or select **Open as Markdown**. **Synthesize again** rewrites it. A section that isn't synthesized appears in the report as "Section Not Yet Ready".
+4. Select **Generate Word report**. Progress is shown and you can **Cancel**. If some included sections have no data or AI text, Lab tells you how many before it marks them as not ready in the report.
+5. When **Report … is ready**, select **Download** and save the `.docx`.
 
-Earlier reports stay under **Documents**; choose **Download Report** on one to get it again.
+Earlier reports are listed under **Generated reports**; select **Download .docx** to get one again.
 
 The report contains the project profile, the analyses' charts and tables, and standard sections such as limitations, reliance and units. Edit it in Word before you share it.
 
-Generating a report and synthesizing sections use your project's AI quota.
-
 <scalar-callout type="warning">AI-written text must be checked by a qualified person before it's relied on or shared. See the [AI & metocean disclaimer](../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
-
-The separate **Report Generation** workspace in the activity bar is still being built; use **Konfersi Lab → Reports** for now.

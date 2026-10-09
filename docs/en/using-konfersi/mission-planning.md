@@ -4,7 +4,7 @@ description: Estimate how long a sequence of marine operations takes once weathe
 tags: [mission-planning, downtime, operations, metocean, weather-window]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Mission Planning estimates how weather stretches a marine operation. You describe **where** the work happens and **what limits** the vessel and crew can work in, then the **sequence** of work. Konfersi replays that sequence against decades of hourly metocean data from every possible start date. It then shows how long the operation is likely to take, which months are best, and which limit causes the waiting.
@@ -80,7 +80,7 @@ Results stay available after you close Lab. Past runs, yours and your teammates'
 
 ## 5. Report
 
-**Report** shows a summary of the run you are viewing, rendered on screen. You can view the Markdown source, **Copy** it, or **Download .md**. An option to explain results with AI is planned; the planning itself does not use AI.
+**Report** shows a summary of the run you are viewing, rendered on screen. You can view the Markdown source, **Copy** it, or **Download .md**. **Explain results** asks Konfersi Agent to explain the run in plain language. It uses your project's AI allowance and runs only when you select it; see [Explain a chart with AI](../lab/analysis/index.md#explain-a-chart-with-ai). The planning itself does not use AI.
 
 ## Templates and CSV
 
