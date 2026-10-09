@@ -50,7 +50,7 @@ Paid seats are held until the payment deadline shown on the course and in **My C
 | **Canceled** | The enrolment was cancelled |
 | **Refunded** | The payment was refunded |
 
-Once you're enrolled in a course that has lessons online, select **Open lessons** to start learning. See [Follow the lessons](#follow-the-lessons).
+Once you're enrolled in a course that has lessons online, the enrolment shows your progress as **x of y lessons** (or **Completed**) and a button to the lessons: **Start lessons**, **Continue lessons** once you've begun, or **Review lessons** when you've finished. See [Follow the lessons](#follow-the-lessons).
 
 **Join meeting** and **Join community** links appear here when the course team shares them; they're also emailed to you before the course starts. **Copy meeting link** copies the link, for example to add to your calendar.
 
@@ -58,7 +58,7 @@ For refunds, see [Refunds & cancellation](../billing/refunds-and-cancellation.md
 
 ## Follow the lessons
 
-Courses with lessons online open in the lesson player. Go to **Courses → My Courses** and select **Open lessons** on an enrolment with the status **Enrolled**. The player opens at the first lesson you haven't finished yet.
+Courses with lessons online open in the lesson player. Go to **Courses → My Courses** and select **Start lessons**, **Continue lessons** or **Review lessons** on an enrolment with the status **Enrolled**. The player opens at the first lesson you haven't finished yet.
 
 - **The header** shows the course title, your progress as **x of y lessons done** with a percentage and a progress bar, and **My courses** to go back.
 - **The lesson list** groups lessons by topic. A tick marks a lesson you've done, a lock marks one that isn't open to you yet, and a question mark marks a quiz step. Select a lesson to open it.

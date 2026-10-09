@@ -65,11 +65,9 @@ Halaman detail proyek menampilkan:
 
 ### Peringatan kuota
 
-Jika sebuah proyek sudah memakai **80%** dari suatu kuota, peringatan muncul di bagian atas **Pemantauan Kuota**, misalnya *Storage sudah terpakai 85% dari batasnya.* Jika kuota habis, tertulis *… sudah habis. Tambahkan kuota atau upgrade paket untuk terus bekerja.* Gunakan **Tingkatkan Paket** atau **Beli Add-On** untuk menambah kapasitas sebelum pekerjaan terhenti. Masa akses Lab tidak termasuk: tanggal berakhirnya paket ditampilkan sebagai gantinya.
+Jika sebuah proyek sudah memakai **80%** dari suatu kuota, peringatan muncul di bagian atas **Pemantauan Kuota**, misalnya *Penyimpanan sudah terpakai 85% dari batasnya.* Jika kuota habis, tertulis *… sudah habis. Tambahkan kuota atau upgrade paket untuk terus bekerja.* Gunakan **Tingkatkan Paket** atau **Beli Add-On** untuk menambah kapasitas sebelum pekerjaan terhenti. Masa akses Lab, kursi pemilik, kursi asisten, dan slot pembuatan proyek tidak diberi peringatan: tanggal berakhirnya paket dan **Kelola Akses Proyek** sudah mencakupnya.
 
-**Dasbor** juga menampilkan kuota yang paling mendekati batas di semua proyek Anda di bagian **Perlu perhatian Anda**, misalnya *Demo: Jakarta Bay: Storage terpakai 85%* dengan **Tambahkan add-on atau upgrade paket sebelum pekerjaan terhenti.** Pilih untuk membuka proyeknya. Jika tidak ada yang perlu ditangani, tampil **Semua sudah beres**.
-
-Nama kuota di peringatan ini, seperti *Storage* atau *CPU hours*, saat ini tampil dalam bahasa Inggris.
+**Dasbor** juga menampilkan kuota yang paling mendekati batas di semua proyek Anda di bagian **Perlu perhatian Anda**, misalnya *Demo: Jakarta Bay: Penyimpanan terpakai 85%* dengan **Tambahkan add-on atau upgrade paket sebelum pekerjaan terhenti.** Pilih untuk membuka proyeknya. Jika tidak ada yang perlu ditangani, tampil **Semua sudah beres**.
 
 <scalar-callout type="neutral">Lab memerlukan paket berbayar. Pada paket uji coba gratis, tombol Lab bertuliskan **Tingkatkan paket untuk akses Lab**. Jika paket proyek sudah berakhir, tombol dinonaktifkan dan menandakan bahwa paket telah kedaluwarsa.</scalar-callout>
 

@@ -50,7 +50,7 @@ Kursi berbayar ditahan sampai batas waktu pembayaran yang tertera di kursus dan 
 | **Dibatalkan** | Pendaftaran dibatalkan |
 | **Dikembalikan** | Pembayaran dikembalikan |
 
-Jika Anda terdaftar di kursus yang pelajarannya sudah tersedia online, pilih **Open lessons** untuk mulai belajar. Lihat [Ikuti pelajaran](#ikuti-pelajaran).
+Jika Anda terdaftar di kursus yang materinya sudah tersedia online, pendaftaran menampilkan progres Anda sebagai **x dari y materi** (atau **Selesai**) dan tombol ke materi: **Mulai belajar**, **Lanjutkan belajar** setelah Anda mulai, atau **Tinjau materi** setelah selesai. Lihat [Ikuti pelajaran](#ikuti-pelajaran).
 
 Setelah Anda terdaftar, tautan **Gabung pertemuan** dan **Gabung komunitas** muncul di sini begitu tim kursus membagikannya; tautan ini juga dikirim lewat email sebelum kursus dimulai. Anda juga bisa menyalin tautan pertemuan, misalnya untuk ditambahkan ke kalender.
 
@@ -58,18 +58,16 @@ Untuk pengembalian dana, lihat [Pengembalian dana & pembatalan](../billing/refun
 
 ## Ikuti pelajaran
 
-Kursus yang pelajarannya sudah online dibuka di pemutar pelajaran. Buka **Courses → Kursus Saya**, lalu pilih **Open lessons** pada pendaftaran berstatus **Terdaftar**. Pemutar langsung membuka pelajaran pertama yang belum Anda selesaikan.
+Kursus yang pelajarannya sudah online dibuka di pemutar pelajaran. Buka **Courses → Kursus Saya**, lalu pilih **Mulai belajar**, **Lanjutkan belajar**, atau **Tinjau materi** pada pendaftaran berstatus **Terdaftar**. Pemutar langsung membuka pelajaran pertama yang belum Anda selesaikan.
 
-<scalar-callout type="info">Untuk sementara, teks di pemutar pelajaran masih berbahasa Inggris, juga saat Console memakai Bahasa Indonesia. Panduan ini memakai label yang tampil di layar.</scalar-callout>
-
-- **Bagian atas** menampilkan judul kursus, progres Anda dalam bentuk **x of y lessons done** beserta persentase dan bilah progres, serta **My courses** untuk kembali.
+- **Bagian atas** menampilkan judul kursus, progres Anda dalam bentuk **x dari y materi selesai** beserta persentase dan bilah progres, serta **Kursus saya** untuk kembali.
 - **Daftar pelajaran** dikelompokkan per topik. Tanda centang berarti pelajaran sudah selesai, gembok berarti pelajaran belum terbuka untuk Anda, dan tanda tanya menandai langkah kuis. Pilih pelajaran untuk membukanya.
-- **Pelajaran** menampilkan video, teks, dan unduhan pendukung di bawah **Files**. Jika video tidak bisa diputar di halaman, pilih **Open the video**.
-- **Previous** dan **Next** berpindah antarpelajaran.
+- **Pelajaran** menampilkan video, teks, dan unduhan pendukung di bawah **Berkas**. Jika video tidak bisa diputar di halaman, pilih **Buka video**.
+- **Sebelumnya** dan **Berikutnya** berpindah antarpelajaran.
 
 ### Pantau progres Anda
 
-Pilih **Mark as done** setelah Anda menyelesaikan sebuah pelajaran. Konfersi langsung menyimpannya ke akun Anda dan membawa Anda ke pelajaran berikutnya. Tombolnya lalu berubah menjadi **Done**; pilih lagi jika Anda ingin menandai pelajaran itu belum selesai.
+Pilih **Tandai selesai** setelah Anda menyelesaikan sebuah pelajaran. Konfersi langsung menyimpannya ke akun Anda dan membawa Anda ke pelajaran berikutnya. Tombolnya lalu berubah menjadi **Selesai**; pilih lagi jika Anda ingin menandai pelajaran itu belum selesai.
 
 Kuis interaktif belum tersedia. Pada langkah kuis, pelajari materinya, lalu tandai selesai.
 
@@ -77,10 +75,10 @@ Progres disimpan per akun, jadi Anda bisa berhenti kapan saja dan melanjutkan da
 
 ### Menyelesaikan kursus
 
-Setelah semua pelajaran ditandai selesai, Console menampilkan **Course completed. Well done!**. Jika kursus memberikan sertifikat, Konfersi menerbitkannya saat itu juga: **View certificate** muncul di bagian atas pemutar, pendaftaran Anda di **Kursus Saya** menampilkan **Sertifikat Anda sudah tersedia**, dan Anda menerima notifikasi serta email. Untuk kursus langsung, sertifikat diterbitkan setelah tim kursus mencatat kehadiran Anda.
+Setelah semua pelajaran ditandai selesai, Console menampilkan **Kursus selesai. Kerja bagus!**. Jika kursus memberikan sertifikat, Konfersi menerbitkannya saat itu juga: **Lihat sertifikat** muncul di bagian atas pemutar, pendaftaran Anda di **Kursus Saya** menampilkan **Sertifikat Anda sudah tersedia**, dan Anda menerima notifikasi serta email. Untuk kursus langsung, sertifikat diterbitkan setelah tim kursus mencatat kehadiran Anda.
 
 Menandai pelajaran sebagai belum selesai setelahnya tidak mencabut sertifikat.
 
-<scalar-callout type="neutral">Jika pemutar menampilkan **Lessons for this course are not online yet.**, tim kursus belum menerbitkan pelajarannya. Kursus langsung memakai tautan pertemuan.</scalar-callout>
+<scalar-callout type="neutral">Jika pemutar menampilkan **Materi kursus ini belum tersedia online.**, tim kursus belum menerbitkan pelajarannya. Kursus langsung memakai tautan pertemuan.</scalar-callout>
 
 Lihat [Sertifikat](certificates.md) untuk membagikan, mengunduh, dan memverifikasi sertifikat Anda.

@@ -65,7 +65,7 @@ A project's detail page shows:
 
 ### Quota warnings
 
-When a project has used **80%** of a quota, a warning appears at the top of **Quota Monitoring**, for example *Storage is at 85% of its limit.* When a quota runs out, it reads *… is used up. Add more or upgrade the plan to keep working.* Use **Upgrade Plan** or **Buy Add-Ons** to get more before work stops. Lab access time isn't included: the plan's end date is shown instead.
+When a project has used **80%** of a quota, a warning appears at the top of **Quota Monitoring**, for example *Storage is at 85% of its limit.* When a quota runs out, it reads *… is used up. Add more or upgrade the plan to keep working.* Use **Upgrade Plan** or **Buy Add-Ons** to get more before work stops. Lab access time, the owner seat, assistant seats and the project-creation slot don't get warnings: the plan's end date and **Manage Project Access** cover those.
 
 The **Dashboard** also lists the quota closest to its limit across all your projects under **Needs your attention**, for example *Demo: Jakarta Bay: Storage at 85%* with **Add an add-on or upgrade the plan before work stops.** Select it to open the project. When nothing needs you, it shows **You are all caught up**.
 
