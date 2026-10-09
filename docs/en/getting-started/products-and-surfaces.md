@@ -51,6 +51,8 @@ Mission Planning is the first analysis module Konfersi is releasing publicly. It
 
 The Konfersi MCP server will let AI agents on your own machine work with Konfersi's agentic AI, curated datasets, external sources and your Lab projects. It is not available yet.
 
+See [API and integrations](../using-konfersi/api-and-integrations.md) for what you can connect today.
+
 ## Consulting and courses
 
 Not everything happens in the apps. Konfersi also runs consulting studies and offers courses. Both are described on [konfersi.com](https://konfersi.com) and in [What is Konfersi?](what-is-konfersi.md).

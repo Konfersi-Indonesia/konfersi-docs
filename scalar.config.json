@@ -120,6 +120,12 @@
                 "icon": "phosphor/regular/certificate",
                 "filepath": "docs/en/using-konfersi/certificates.md"
               },
+              "/api-and-integrations": {
+                "type": "page",
+                "title": "API and integrations",
+                "icon": "phosphor/regular/plugs-connected",
+                "filepath": "docs/en/using-konfersi/api-and-integrations.md"
+              },
               "/community": {
                 "type": "page",
                 "title": "Community",
@@ -505,6 +511,12 @@
                 "title": "Sertifikat",
                 "icon": "phosphor/regular/certificate",
                 "filepath": "docs/id/using-konfersi/certificates.md"
+              },
+              "/api-and-integrations": {
+                "type": "page",
+                "title": "API dan integrasi",
+                "icon": "phosphor/regular/plugs-connected",
+                "filepath": "docs/id/using-konfersi/api-and-integrations.md"
               },
               "/community": {
                 "type": "page",

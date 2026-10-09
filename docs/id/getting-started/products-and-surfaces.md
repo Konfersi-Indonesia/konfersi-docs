@@ -51,6 +51,8 @@ Mission Planning adalah modul analisis pertama yang dirilis Konfersi untuk publi
 
 Server MCP Konfersi nantinya memungkinkan agen AI di komputer Anda bekerja dengan AI agentik Konfersi, dataset terkurasi, sumber data eksternal, dan proyek Lab Anda. Layanan ini belum tersedia.
 
+Lihat [API dan integrasi](../using-konfersi/api-and-integrations.md) untuk apa yang bisa Anda hubungkan saat ini.
+
 ## Konsultasi dan kursus
 
 Tidak semua layanan berjalan di aplikasi. Konfersi juga mengerjakan studi konsultasi dan menyelenggarakan kursus. Keduanya dijelaskan di [konfersi.com](https://konfersi.com) dan di [Apa itu Konfersi?](what-is-konfersi.md).
