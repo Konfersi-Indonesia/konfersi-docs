@@ -29,6 +29,8 @@ Signing up means you accept the [Terms of Service](../legal/terms.md) and the [P
 
 You'll see a **Check your inbox** screen confirming the address we sent the verification link to.
 
+<scalar-callout type="neutral">Starting from the Konfersi website? Select **Sign up** in the top bar, **Create free account** on the home page, or **Get started** on a plan on the [Pricing](../billing/plans-and-pricing.md#see-plans-on-the-konfersi-website) page. Each one opens the **Create Account** page directly.</scalar-callout>
+
 ### Sign up with a provider instead
 
 If sign-in providers are available, you'll see their buttons under **Or continue with**. Select one and approve the request on the provider's page. Konfersi receives your name and email address from the provider, so you don't need a password. You then go straight to [completing your profile](#step-3-complete-your-profile).

@@ -4,7 +4,7 @@ description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek C
 tags: [tagihan, paket, harga, add-on, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Paket Konfersi disusun berdasarkan seberapa banyak Anda menggunakan platform: komputasi Lab, penyimpanan, kredit AI, dan akses ke fitur Metocean Analytics. Halaman ini menjelaskan tiap tingkatan paket, cara kerja paket dan add-on di Console, serta tempat Anda dapat melihat harga terkini.
@@ -52,6 +52,17 @@ Di menu samping Console:
 | **Pembayaran & Tagihan → Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
 
 Lihat [Keranjang pesanan & transaksi](order-cart-and-transactions.md).
+
+## Melihat paket di situs web Konfersi
+
+Halaman **Harga** di situs web Konfersi (pilih **Harga** di bilah atas) menampilkan paket dan harga yang sama dengan di Console, langsung dari katalog paket yang sama. Anda tidak perlu akun untuk melihatnya.
+
+- Setiap paket menampilkan harganya, atau **Gratis**, atau **Harga khusus**, beserta isinya, seperti jam komputasi, penyimpanan, dan kredit AI.
+- Harga ditampilkan dalam **IDR** saat situs web berbahasa Indonesia dan dalam **USD** saat berbahasa Inggris. Catatan di bawah daftar paket menyebutkan PPN yang ditambahkan saat checkout.
+- **Mulai** membuka halaman **Paket Proyek & Add-on** di Console. Jika belum masuk, yang terbuka adalah halaman **Buat Akun**. Setelah akun siap, buka **Proyek Lab → Paket Proyek & Add-on** di Console (lihat [Membuat akun](../getting-started/create-account.md)).
+- **Hubungi sales** (pada paket dengan harga khusus) membuka permintaan dukungan di Console dengan nama paket sudah terisi. Masuk terlebih dahulu jika diminta.
+
+Harga yang Anda bayar selalu yang tampil saat checkout di Console.
 
 ## Mata uang, pajak, dan harga terkini
 

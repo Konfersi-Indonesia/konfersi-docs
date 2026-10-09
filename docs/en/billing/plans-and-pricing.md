@@ -4,7 +4,7 @@ description: The Konfersi plan tiers, how plans and add-ons attach to Console pr
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Konfersi plans are built around how much of the platform you use: Lab compute, storage, AI credits and access to the Metocean Analytics tools. This page explains the tiers, how plans and add-ons work inside the Console, and where you can see current prices.
@@ -52,6 +52,17 @@ In the Console side menu:
 | **Payment & Billing → Transactions** | Track the status of your orders and continue a pending payment |
 
 See [Order cart & transactions](order-cart-and-transactions.md).
+
+## See plans on the Konfersi website
+
+The **Pricing** page on the Konfersi website (select **Pricing** in the top bar) lists the same plans and prices as the Console, read live from the same plan catalog. You don't need an account to see it.
+
+- Each plan shows its price, or **Free**, or **Custom pricing**, and what it includes, such as compute hours, storage and AI credits.
+- Prices are in **IDR** when the website is in Indonesian and in **USD** in English. The note under the plans gives the VAT (PPN) that is added at checkout.
+- **Get started** opens the Console's **Project Plans & Add-ons** page. If you are signed out, it opens **Create Account** instead. Once your account is set up, open **Lab Project → Project Plans & Add-ons** in the Console (see [Create an account](../getting-started/create-account.md)).
+- **Contact sales** (on plans with custom pricing) opens a support request in the Console with the plan already filled in. Sign in first if you are asked to.
+
+The price you pay is always the one shown at checkout in the Console.
 
 ## Currency, tax and current prices
 
