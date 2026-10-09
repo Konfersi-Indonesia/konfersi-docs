@@ -53,6 +53,8 @@ Jika diketahui, setiap variabel juga menampilkan sumber, cakupan, resolusi, dan 
 
 Tindakan yang sama ada di Command Palette sebagai **Tampilkan Ketersediaan Data**, **Segarkan Ketersediaan Data**, dan **Coba Lagi Variabel Gagal**. Mencoba ulang atau mengambil data memulai proses baru untuk titik tersebut.
 
+![Panel Analitik Data dengan Ketersediaan Data untuk sebuah titik (antarmuka bahasa Inggris)](../../../../assets/screenshots/en/lab-data-availability.png)
+
 ## Tempat data Anda disimpan
 
 - Berkas unduhan dan hasilnya disimpan Konfersi per lokasi, dan dipakai ulang antarproyek agar data yang sama tidak diunduh dua kali.

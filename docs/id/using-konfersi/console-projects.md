@@ -4,7 +4,7 @@ description: Membuat, membuka, membagikan, dan mengelola proyek di Konfersi Cons
 tags: [console, proyek, paket, kolaborasi]
 related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 Console di [app.konfersi.com](https://app.konfersi.com) adalah tempat Anda mengatur pekerjaan. Semua aktivitas di Konfersi berlangsung di dalam sebuah **proyek**. Setiap proyek memiliki paket, kuota, dan anggotanya sendiri. Halaman ini menjelaskan cara membuat proyek, mengenali isinya, dan membagikannya.
@@ -39,6 +39,8 @@ Saat pertama kali membuka Console, [panduan sambutan](console-guides.md) menawar
 
 Nama paket, isi paket, dan harga terkini diambil dari katalog yang berlaku dan ditampilkan di Console saat checkout. Untuk gambaran umum, lihat [Paket & harga](../billing/plans-and-pricing.md). Untuk proses pembayaran, lihat [Pembayaran](../billing/payments.md).
 
+![Formulir Create New Project di Console (antarmuka bahasa Inggris)](../../../assets/screenshots/en/console-create-project.png)
+
 ## Mencari dan membuka proyek
 
 Di **Proyek Saya**, Anda dapat:
@@ -48,6 +50,8 @@ Di **Proyek Saya**, Anda dapat:
 - Beralih antara tampilan kisi dan tampilan daftar.
 
 Untuk membuka detail proyek, buka menu proyek lalu pilih **Detail**. Untuk langsung ke Lab, pilih **Lab Platform** atau klik ganda proyek tersebut.
+
+![Daftar Projects Management di Console (antarmuka bahasa Inggris)](../../../assets/screenshots/en/console-projects.png)
 
 ## Isi halaman proyek
 

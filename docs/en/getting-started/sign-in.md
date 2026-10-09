@@ -12,8 +12,14 @@ Konfersi uses one sign-in for all of its apps. When you sign in at Accounts, the
 ## Sign in with email and password
 
 1. Go to [accounts.konfersi.com](https://accounts.konfersi.com). If you open [app.konfersi.com](https://app.konfersi.com) or [lab.konfersi.com](https://lab.konfersi.com) without a session, you're sent there automatically.
-2. Enter your **Email** and select **Continue**.
-3. Enter your **Password** and select **Sign In**. Select **Change** if you typed the wrong email.
+2. Enter your **Email** and select **Continue**. Select **Change** if you typed the wrong email.
+3. If email sign-in links are on for your account (the default for new accounts), Konfersi emails you a sign-in link. Open it within 10 minutes to sign in. You can also:
+   - select **Enter the code manually** to type the code from the email
+   - wait and select **Send a new link**
+   - select **Use password instead**
+4. Otherwise, or after **Use password instead**, enter your **Password** and select **Sign In**.
+
+You can turn email sign-in links on or off in your account's security settings.
 
 ![The Sign In page in Konfersi Accounts](../../../assets/screenshots/en/accounts-sign-in.png)
 

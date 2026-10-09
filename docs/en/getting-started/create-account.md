@@ -74,6 +74,8 @@ When you see **You're all set**, Konfersi takes you to the Console after a few s
 
 <scalar-callout type="neutral">Your answers are kept while you move between steps in the same browser tab. If you close the tab before you finish, you'll be asked to complete your profile the next time you sign in.</scalar-callout>
 
+![Step 1 of the Complete Profile form](../../../assets/screenshots/en/accounts-complete-profile.png)
+
 ## Step 4: Start exploring
 
 The Console opens with a short welcome guide. You can take a tour, set up your profile, or create your first project. Continue with [Console & projects](../using-konfersi/console-projects.md).

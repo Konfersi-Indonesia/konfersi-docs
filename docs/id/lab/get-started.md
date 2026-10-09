@@ -4,7 +4,7 @@ description: Apa itu Konfersi Lab, apa yang Anda perlukan, cara membuka proyek, 
 tags: [lab, mulai, ruang kerja, browser, vs code, antigravity, kuota]
 related: [using-konfersi/lab-workspace, lab/desktop, lab/points, lab/troubleshooting]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Konfersi Lab adalah ruang kerja metocean untuk satu proyek dalam satu waktu. Di Lab Anda menempatkan titik observasi di peta, memprosesnya untuk mengunduh dan menganalisis data metocean, membaca hasilnya dalam grafik, memeriksa kualitas data, merencanakan operasi, dan membuat laporan.
@@ -49,6 +49,8 @@ Lab tampil seperti editor kode. Bagian-bagiannya:
 Setiap aksi juga tersedia sebagai perintah. Buka Command Palette (**Ctrl+Shift+P**, atau **Cmd+Shift+P** di Mac) lalu ketik **Konfersi** untuk melihat semuanya.
 
 Setiap bagian memiliki tombol **?** (**Bantuan**) yang membuka halaman dokumentasi terkait di dalam Lab.
+
+![Konfersi Lab dengan proyek terbuka: kartu proyek, alat, dan aktivitas terbaru (antarmuka bahasa Inggris)](../../../assets/screenshots/en/lab-home.png)
 
 ## Analisis pertama Anda, langkah demi langkah
 

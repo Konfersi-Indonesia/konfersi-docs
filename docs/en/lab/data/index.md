@@ -53,6 +53,8 @@ Where known, each variable also shows its source, coverage, resolution and when 
 
 The same actions are in the Command Palette as **Show Data Availability**, **Refresh Data Availability** and **Retry Failed Variables**. Retrying or fetching starts a new process for the point.
 
+![The Data Analytics panel with Data Availability for a point](../../../../assets/screenshots/en/lab-data-availability.png)
+
 ## Where your data lives
 
 - Downloaded files and results are stored by Konfersi for the location, and reused across projects to avoid downloading the same data twice.

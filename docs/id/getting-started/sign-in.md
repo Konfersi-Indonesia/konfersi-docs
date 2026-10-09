@@ -12,8 +12,14 @@ Konfersi memakai satu proses masuk untuk semua aplikasinya. Setelah Anda masuk d
 ## Masuk dengan email dan kata sandi
 
 1. Buka [accounts.konfersi.com](https://accounts.konfersi.com). Jika Anda membuka [app.konfersi.com](https://app.konfersi.com) atau [lab.konfersi.com](https://lab.konfersi.com) tanpa sesi aktif, Anda akan diarahkan ke sana secara otomatis.
-2. Isi **Email** lalu pilih **Lanjut**.
-3. Isi **Kata Sandi** lalu pilih **Masuk**. Pilih **Ubah** jika email yang Anda ketik salah.
+2. Isi **Email** lalu pilih **Lanjut**. Pilih **Ubah** jika email yang Anda ketik salah.
+3. Jika tautan masuk lewat email aktif untuk akun Anda (bawaan untuk akun baru), Konfersi mengirim tautan masuk ke email Anda. Buka tautan itu dalam 10 menit untuk masuk. Anda juga bisa:
+   - memilih **Masukkan kode secara manual** untuk mengetik kode dari email
+   - menunggu lalu memilih **Kirim tautan baru**
+   - memilih **Pakai kata sandi**
+4. Jika tidak, atau setelah memilih **Pakai kata sandi**, isi **Kata Sandi** lalu pilih **Masuk**.
+
+Anda bisa menyalakan atau mematikan tautan masuk lewat email di pengaturan keamanan akun.
 
 ![Halaman Masuk di Konfersi Accounts](../../../assets/screenshots/id/accounts-sign-in.png)
 

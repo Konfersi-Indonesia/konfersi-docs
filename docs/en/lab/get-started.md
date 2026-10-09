@@ -4,7 +4,7 @@ description: What Konfersi Lab is, what you need to use it, how to open a projec
 tags: [lab, get started, workspace, browser, vs code, antigravity, quotas]
 related: [using-konfersi/lab-workspace, lab/desktop, lab/points, lab/troubleshooting]
 status: published
-updated: 2026-10-02
+updated: 2026-10-09
 ---
 
 Konfersi Lab is the metocean workbench for one project at a time. In Lab you place observation points on a map, process them to download and analyse metocean data, read the results as charts, check data quality, plan operations and produce reports.
@@ -47,6 +47,8 @@ Lab looks like a code editor. Its parts are:
 Every action is also a command. Open the Command Palette (**Ctrl+Shift+P**, or **Cmd+Shift+P** on Mac) and type **Konfersi** to see them all.
 
 Each section has a **?** (**Help**) button that opens the matching page of these docs inside Lab.
+
+![Konfersi Lab with a project open: the project card, tools and recent activity](../../../assets/screenshots/en/lab-home.png)
 
 ## Your first analysis, step by step
 

@@ -4,7 +4,7 @@ description: Create, open, share and manage projects in the Konfersi Console, an
 tags: [console, projects, plans, collaboration]
 related: [using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-10-01
+updated: 2026-10-09
 ---
 
 The Console at [app.konfersi.com](https://app.konfersi.com) is where you organise your work. Everything you do in Konfersi happens inside a **project**. Each project has its own plan, its own quotas and its own people. This page shows you how to create a project, find your way around it and share it.
@@ -39,6 +39,8 @@ The first time you open the Console, a [welcome guide](console-guides.md) offers
 
 Plan names, what each plan includes, and current prices come from the live catalogue and are shown in the Console at checkout. For an overview, see [Plans & pricing](../billing/plans-and-pricing.md). For checkout, see [Payments](../billing/payments.md).
 
+![The Create New Project form in the Console](../../../assets/screenshots/en/console-create-project.png)
+
 ## Find and open projects
 
 On **My Projects** you can:
@@ -48,6 +50,8 @@ On **My Projects** you can:
 - Switch between the grid view and the list view.
 
 To open a project's details, use the project's menu and choose **Detail**. To go straight to Lab, choose **Lab Platform**, or double-click the project.
+
+![The Projects Management list in the Console](../../../assets/screenshots/en/console-projects.png)
 
 ## Inside a project
 

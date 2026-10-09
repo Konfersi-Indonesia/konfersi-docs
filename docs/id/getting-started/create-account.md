@@ -74,6 +74,8 @@ Saat muncul **Semua siap**, Anda akan diarahkan ke Console dalam beberapa detik.
 
 <scalar-callout type="neutral">Jawaban Anda tetap tersimpan selama Anda berpindah langkah di tab browser yang sama. Jika tab ditutup sebelum selesai, Anda akan diminta melengkapi profil lagi saat masuk berikutnya.</scalar-callout>
 
+![Langkah 1 formulir Lengkapi Profil](../../../assets/screenshots/id/accounts-complete-profile.png)
+
 ## Langkah 4: Mulai menjelajah
 
 Console terbuka dengan panduan sambutan singkat. Anda dapat mengikuti tur, mengatur profil, atau membuat proyek pertama. Lanjutkan ke [Console & proyek](../using-konfersi/console-projects.md).
