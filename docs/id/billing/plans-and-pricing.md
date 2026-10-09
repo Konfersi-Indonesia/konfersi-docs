@@ -59,7 +59,7 @@ Halaman **Harga** di situs web Konfersi (pilih **Harga** di bilah atas) menampil
 
 - Setiap paket menampilkan harganya, atau **Gratis**, atau **Harga khusus**, beserta isinya, seperti jam komputasi, penyimpanan, dan kredit AI.
 - Harga ditampilkan dalam **IDR** saat situs web berbahasa Indonesia dan dalam **USD** saat berbahasa Inggris. Catatan di bawah daftar paket menyebutkan PPN yang ditambahkan saat checkout.
-- **Mulai** membuka halaman **Paket Proyek & Add-on** di Console. Jika belum masuk, yang terbuka adalah halaman **Buat Akun**. Setelah akun siap, buka **Proyek Lab → Paket Proyek & Add-on** di Console (lihat [Membuat akun](../getting-started/create-account.md)).
+- **Mulai** membuka halaman **Paket Proyek & Add-on** di Console. Jika belum masuk, Anda membuat akun terlebih dahulu (lihat [Membuat akun](../getting-started/create-account.md)). Setelah Anda memverifikasi email di browser yang sama dan melengkapi profil, Konfersi langsung membawa Anda ke halaman tersebut.
 - **Hubungi sales** (pada paket dengan harga khusus) membuka permintaan dukungan di Console dengan nama paket sudah terisi. Masuk terlebih dahulu jika diminta.
 
 Harga yang Anda bayar selalu yang tampil saat checkout di Console.

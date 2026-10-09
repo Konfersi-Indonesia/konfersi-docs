@@ -29,7 +29,7 @@ Dengan mendaftar, Anda menyetujui [Ketentuan Layanan](../legal/terms.md) dan [Ke
 
 Setelah itu, layar **Periksa kotak masuk Anda** muncul dan menampilkan alamat tujuan tautan verifikasi.
 
-<scalar-callout type="neutral">Mulai dari situs web Konfersi? Pilih **Daftar** di bilah atas, **Buat akun gratis** di beranda, atau **Mulai** pada salah satu paket di halaman [Harga](../billing/plans-and-pricing.md#melihat-paket-di-situs-web-konfersi). Masing-masing langsung membuka halaman **Buat Akun**.</scalar-callout>
+<scalar-callout type="neutral">Mulai dari situs web Konfersi? Pilih **Daftar** di bilah atas, **Buat akun gratis** di beranda, atau **Mulai** pada salah satu paket di halaman [Harga](../billing/plans-and-pricing.md#melihat-paket-di-situs-web-konfersi). Masing-masing langsung membuka halaman **Buat Akun**. Jika Anda memverifikasi email di browser yang sama, lalu masuk dan melengkapi profil, Anda kembali ke halaman asal, bukan ke beranda Console.</scalar-callout>
 
 ### Mendaftar dengan penyedia
 
