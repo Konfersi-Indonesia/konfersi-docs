@@ -2,7 +2,7 @@
 
 For the reviewing lawyer and the Direktur, before version 2 goes to production. Content owner: konfersi-team (business). Tracking: platform/konfersi-universe#258 (parent #9; decisions delegated in #15).
 
-**What changed in version 2:** the refund rules in Terms §12.2–12.3 and the matching refund page (decided in #258). The Privacy Policy is unchanged apart from the version note. It is listed here because the decision on #258 asks for it to be reviewed together with the other two.
+**What changed in version 2:** the refund rules in Terms §12.2–12.3 and the matching refund page (decided in #258). The Privacy Policy is unchanged apart from the version note. It is listed here because the decision on #258 asks for it to be reviewed together with the other two. Since then the Privacy Policy draft has gained the public profile clauses (`privacy-public-profile`) and, for platform/konfersi-universe#289, account deletion and purge, the account data export and AI CV import (`privacy-purge-export-cv-import`, see below).
 
 **Pages:**
 
@@ -32,6 +32,10 @@ Open items on each page are listed in its `review:` frontmatter. The id `lawyer-
 - [ ] **Course payment-orders database processor** (`privacy-course-orders-processor`, still open): name the provider before production.
 - [ ] **Retention periods** (Privacy §6): 10 years for transaction records under UU 8/1997. Confirm the period is correct.
 - [ ] **Breach notification:** 3 × 24 h to subjects and the authority (UU PDP art. 46). Confirm the operational owner.
+- [ ] **Account purge, export and AI CV import** (`privacy-purge-export-cv-import`, #289; Privacy §2.9, §3, §4.2, §6, §9.1, §12.4):
+  - 30-day grace after an account is deleted, then the hourly purge deletes or anonymises the data per the personal-data map (backend `src/lib/personal-data-map.ts`). Orders, payments, certificates and support requests are retained with a pseudonymous code. Confirm the retention basis for each, in particular certificates (art. 20(2)(c)/(f)), since they stay publicly verifiable.
+  - The account-wide export exists in the API but has no button yet, so §9.1 offers it "on request". Confirm that's sufficient for art. 7 and 13.
+  - AI CV import: the CV is processed once by Workers AI (Cloudflare) and never stored. A billing record (project, model, tokens, outcome) is kept and de-linked from the person at purge. Confirm the legal basis (contract, (b)) and that Cloudflare's processor terms cover Workers AI.
 - [ ] Other open clauses still flagged on the Terms: `terms-6.3-risk-assessment-released`, `terms-scope-mcp-and-io-certificates`.
 
 ## Before publishing to production

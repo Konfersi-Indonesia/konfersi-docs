@@ -9,6 +9,13 @@ updated: 2026-10-10
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
 
+## 1.3.0 — 10 October 2026
+
+**Updated**
+
+- [Your public profile](../using-konfersi/public-profile.md): share your profile with a QR code or images for stories and posts, download an ATS-friendly CV (PDF or Markdown, English or Indonesian), import your CV with AI, make business cards (PNG, print PDF, vCard), and set organisation defaults for cards and AI CV import.
+- [Privacy Policy](../legal/privacy.md), version 2 draft: account deletion and purge, the account data export, AI CV import and files generated from your profile. This is a legal draft awaiting our lawyer's sign-off, like the rest of version 2.
+
 ## 1.2.0 — 10 October 2026
 
 **New**

@@ -9,6 +9,13 @@ updated: 2026-10-10
 
 Setiap rilis Dokumentasi Konfersi memiliki nomor versi. Versi yang tampil di sidebar dokumentasi adalah rilis yang sedang Anda baca. Rilis yang lebih baru ditampilkan di bagian atas halaman ini.
 
+## 1.3.0 — 10 Oktober 2026
+
+**Diperbarui**
+
+- [Profil publik Anda](../using-konfersi/public-profile.md): bagikan profil dengan kode QR atau gambar untuk story dan post, unduh CV ramah ATS (PDF atau Markdown, bahasa Inggris atau Indonesia), impor CV dengan AI, buat kartu nama (PNG, PDF cetak, vCard), dan atur bawaan organisasi untuk kartu nama dan impor CV dengan AI.
+- [Kebijakan Privasi](../legal/privacy.md), draf versi 2: penghapusan dan pembersihan akun, ekspor data akun, impor CV dengan AI, dan berkas yang dibuat dari profil Anda. Ini adalah draf hukum yang menunggu persetujuan pengacara Kami, seperti bagian versi 2 lainnya.
+
 ## 1.2.0 — 10 Oktober 2026
 
 **Baru**

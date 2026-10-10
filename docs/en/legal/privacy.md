@@ -4,11 +4,11 @@ description: How PT Konfersi Metocean Climate Consultant collects, uses, shares 
 tags: [legal, privacy, uu-pdp, personal-data]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile]
+review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile, privacy-purge-export-cv-import]
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Version 2 (draft for legal review).** Takes effect on the date shown here once it has passed legal review. Until then, the version effective 27 September 2026 applies.</scalar-callout>
+<scalar-callout type="warning">**Version 2: DRAFT, not yet approved by our lawyer.** This text is a legal draft. It needs sign-off from our lawyer before it is published to production, and it takes effect only on the date shown here once it has passed that review. Until then, the version effective 27 September 2026 applies. Clauses added in this draft include account deletion and purge (§6), the account data export (§9.1) and AI CV import (§2.9, §4.2, §12.4).</scalar-callout>
 
 <scalar-callout type="info">**Effective 27 September 2026.** This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
@@ -40,7 +40,7 @@ This Privacy Policy explains how we process personal data when you use the Konfe
 
 2.8. **Course data**: the details you give when you register for a course, your enrolment and progress, and, where applicable, certificates issued to you.
 
-2.9. **Public profile data** (only if you create a [public profile](../using-konfersi/public-profile.md)): your handle and the handles you used before; the CV content you enter (headline, location, sections, links and contacts) and the visibility you choose for each field; the courses, certificates and Lab projects you choose to show; when you published and gave consent; data requests you send or receive (who asked, which fields, the message) and the access you grant (which fields, until when, and any revocation); and statistics about your profile page counted in aggregate (views, unique views, link clicks and card scans). Unique views are counted with a daily keyed code that is not stored for more than two days and is not linked to a visitor's identity; we do not set cookies on profile pages for this. If someone reports a profile, we keep the report (reason, message and the reporter's account) and our decision.
+2.9. **Public profile data** (only if you create a [public profile](../using-konfersi/public-profile.md)): your handle and the handles you used before; the CV content you enter (headline, location, sections, links and contacts) and the visibility you choose for each field; the courses, certificates and Lab projects you choose to show; when you published and gave consent; data requests you send or receive (who asked, which fields, the message) and the access you grant (which fields, until when, and any revocation); and statistics about your profile page counted in aggregate (views, unique views, link clicks and card scans). Unique views are counted with a daily keyed code that is not stored for more than two days and is not linked to a visitor's identity; we do not set cookies on profile pages for this. If someone reports a profile, we keep the report (reason, message and the reporter's account) and our decision. If you use **AI CV import**, the CV file you upload is read once, in memory, by an AI model run by our hosting provider, to suggest fields for your profile draft; the file is never stored or logged. We keep a billing record of each import (the paying project, the AI model, the AI tokens used and the outcome) but none of the CV's content. Files generated from your profile when you ask for them (CV downloads, share images and business cards) may be kept in our storage as copies; any such copies are deleted when your Account is purged (see section 6).
 
 2.10. **Cookies and similar technologies**: see our [Cookie Notice](cookies.md).
 
@@ -61,6 +61,7 @@ We process personal data only for the purposes below, on the legal bases listed 
 | Understand how the Services are used in aggregate and improve them, using registration answers such as sector and purpose | Registration profile, usage data | Legitimate interest (f) |
 | Publish your public profile and show its fields to the people you choose | Public profile data | Explicit consent (a), given when you publish and withdrawn when you unpublish or delete it; performance of a contract (b) for data requests and grants you make |
 | Count views of your public profile for you, and review reported profiles | Public profile data | Legitimate interest (f) |
+| Read a CV you upload to suggest fields for your profile draft, and bill the AI use to the project you choose | CV file (not stored), public profile data, AI import billing record | Performance of a contract (b) |
 | Send service messages (for example, sign-in, security, billing, changes to terms) | Account data | Performance of a contract (b); legal obligation (c) |
 | Send newsletters, course announcements and marketing | Account data | Explicit consent (a), which you may withdraw at any time |
 | Comply with law and requests from competent authorities, and establish or defend legal claims | Any relevant data | Legal obligation (c); legitimate interest (f) |
@@ -75,7 +76,7 @@ Where we rely on legitimate interest, we have balanced our interest against your
 
 | Provider | Role |
 |---|---|
-| Cloudflare, Inc. | Hosting and content delivery of the Services, databases (D1), file storage (R2), transactional email sending and network security |
+| Cloudflare, Inc. | Hosting and content delivery of the Services, databases (D1), file storage (R2), AI models (Workers AI, for example for AI CV import and the in-product assistant), transactional email sending and network security |
 | Midtrans (PT Midtrans) | Payment gateway: processes payments and card tokenisation |
 | Frappe Helpdesk | Support ticket management for support@konfersi.com |
 | Our identity provider (Authentik) | Sign-in for Konfersi staff to internal administration tools |
@@ -104,7 +105,8 @@ We also use a managed database service to store course payment orders; its detai
 
 | Data | Retention |
 |---|---|
-| Account, registration profile and Customer Data | While your Account is active, then up to 30 days after closure to allow data export, after which it is deleted or anonymised within 90 days (except backups, which are overwritten on their normal cycle) |
+| Account, registration profile and Customer Data | While your Account is active. When you delete your Account, we keep it for a 30-day grace period, during which you can still ask for a copy of your data. After that we purge it: your data is deleted, or anonymised where a record has to stay (for example, a project you were a member of that belongs to someone else). Records we must keep for their own periods, such as orders, payments, certificates and support requests, are kept with only a pseudonymous code instead of your identity where possible. Backups are overwritten on their normal cycle |
+| AI CV import billing records | On the paying project's usage records for as long as those are kept; the link to you is removed when your Account is purged |
 | Transaction and invoice records | For the period required by Indonesian tax, accounting and company-document law, generally ten (10) years under Law No. 8 of 1997 on Company Documents |
 | Public profile | Until you unpublish or delete it, or close your Account. A handle you stop using redirects to your new one for 30 days and is then released |
 | Access you grant to on-request fields | Until it expires (30 days unless you choose otherwise, at most 365 days) or you revoke it |
@@ -138,7 +140,7 @@ You can also lodge a complaint with the personal data protection authority estab
 
 ## 9. How to exercise your rights
 
-9.1. Send your request to **support@konfersi.com** from the email address linked to your Account, with "Privacy request" in the subject line and a description of what you are asking for. You can correct most Account and profile data yourself in Accounts or the Console. For your public profile, **Download my data** and **Delete profile** in the Console give you a copy of it or remove it at any time.
+9.1. Send your request to **support@konfersi.com** from the email address linked to your Account, with "Privacy request" in the subject line and a description of what you are asking for. You can correct most Account and profile data yourself in Accounts or the Console. For your public profile, **Download my data** and **Delete profile** in the Console give you a copy of it or remove it at any time. You can also ask us for a copy of all the data held about your Account in a machine-readable format (UU PDP art. 13); until a download for this is available in the Services, we provide it on request.
 
 9.2. We may need to verify your identity before acting on a request. We will acknowledge your request and respond within the time limits set by UU PDP. If we cannot fully meet a request (for example, because we must keep transaction records by law), we will tell you why.
 
@@ -159,6 +161,8 @@ The Services are intended for users aged 18 and over. Some courses may be attend
 12.2. We do not use your Customer Data to train AI models made available to other customers without telling you first and, where required, obtaining your consent.
 
 12.3. See our [AI & metocean disclaimer](ai-and-metocean-disclaimer.md) for the limits of automated Outputs.
+
+12.4. **AI CV import** uses an AI model to read a CV you upload and suggest fields for your public profile. The suggestions are only added to your draft after you review them, and nothing is saved or published until you save. We do not use the CV to make decisions about you, and it is not stored.
 
 ## 13. Marketing communications
 

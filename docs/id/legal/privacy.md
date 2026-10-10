@@ -4,11 +4,11 @@ description: Cara PT Konfersi Metocean Climate Consultant mengumpulkan, mengguna
 tags: [legal, privasi, uu-pdp, data-pribadi]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile]
+review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile, privacy-purge-export-cv-import]
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku.</scalar-callout>
+<scalar-callout type="warning">**Versi 2: DRAF, belum disetujui oleh pengacara Kami.** Teks ini adalah draf hukum. Teks ini memerlukan persetujuan pengacara Kami sebelum diterbitkan ke produksi, dan baru berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan tersebut. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku. Klausul yang ditambahkan dalam draf ini antara lain penghapusan dan pembersihan akun (§6), ekspor data akun (§9.1), serta impor CV dengan AI (§2.9, §4.2, §12.4).</scalar-callout>
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
@@ -40,7 +40,7 @@ Kebijakan Privasi ini menjelaskan cara Kami memproses Data Pribadi ketika Anda m
 
 2.8. **Data kursus**: data yang Anda berikan ketika mendaftar kursus, status pendaftaran dan kemajuan belajar Anda, serta sertifikat yang diterbitkan untuk Anda, apabila ada.
 
-2.9. **Data profil publik** (hanya apabila Anda membuat [profil publik](../using-konfersi/public-profile.md)): handle Anda beserta handle yang pernah Anda gunakan; isi CV yang Anda masukkan (judul singkat, lokasi, bagian, tautan, dan kontak) serta visibilitas yang Anda pilih untuk setiap bidang; kursus, sertifikat, dan proyek Lab yang Anda pilih untuk ditampilkan; waktu Anda menerbitkan dan memberikan persetujuan; permintaan data yang Anda kirim atau terima (siapa yang meminta, bidang apa, dan pesannya) serta akses yang Anda berikan (bidang apa, sampai kapan, dan pencabutannya); serta statistik halaman profil Anda yang dihitung secara agregat (jumlah tayangan, tayangan unik, klik tautan, dan pindaian kartu). Tayangan unik dihitung dengan kode harian berkunci yang tidak disimpan lebih dari dua hari dan tidak dikaitkan dengan identitas pengunjung; untuk keperluan ini Kami tidak memasang cookie di halaman profil. Apabila seseorang melaporkan suatu profil, Kami menyimpan laporan tersebut (alasan, pesan, dan akun pelapor) beserta keputusan Kami.
+2.9. **Data profil publik** (hanya apabila Anda membuat [profil publik](../using-konfersi/public-profile.md)): handle Anda beserta handle yang pernah Anda gunakan; isi CV yang Anda masukkan (judul singkat, lokasi, bagian, tautan, dan kontak) serta visibilitas yang Anda pilih untuk setiap bidang; kursus, sertifikat, dan proyek Lab yang Anda pilih untuk ditampilkan; waktu Anda menerbitkan dan memberikan persetujuan; permintaan data yang Anda kirim atau terima (siapa yang meminta, bidang apa, dan pesannya) serta akses yang Anda berikan (bidang apa, sampai kapan, dan pencabutannya); serta statistik halaman profil Anda yang dihitung secara agregat (jumlah tayangan, tayangan unik, klik tautan, dan pindaian kartu). Tayangan unik dihitung dengan kode harian berkunci yang tidak disimpan lebih dari dua hari dan tidak dikaitkan dengan identitas pengunjung; untuk keperluan ini Kami tidak memasang cookie di halaman profil. Apabila seseorang melaporkan suatu profil, Kami menyimpan laporan tersebut (alasan, pesan, dan akun pelapor) beserta keputusan Kami. Apabila Anda menggunakan **impor CV dengan AI**, berkas CV yang Anda unggah dibaca satu kali, di dalam memori, oleh model AI yang dijalankan oleh penyedia hosting Kami, untuk menyarankan isian bagi draf profil Anda; berkas tersebut tidak pernah disimpan atau dicatat dalam log. Kami menyimpan catatan penagihan untuk setiap impor (proyek yang membayar, model AI, token AI yang terpakai, dan hasilnya), tetapi tidak menyimpan isi CV. Berkas yang dibuat dari profil Anda saat Anda memintanya (unduhan CV, gambar untuk dibagikan, dan kartu nama) dapat disimpan sebagai salinan di penyimpanan Kami; salinan tersebut dihapus saat Akun Anda dibersihkan (lihat bagian 6).
 
 2.10. **Cookie dan teknologi serupa**: lihat [Pemberitahuan Cookie](cookies.md) Kami.
 
@@ -61,6 +61,7 @@ Kami hanya memproses Data Pribadi untuk tujuan di bawah ini, berdasarkan dasar p
 | Memahami penggunaan Layanan secara agregat dan menyempurnakannya, dengan memanfaatkan jawaban pendaftaran seperti sektor dan tujuan | Data profil pendaftaran, data pemakaian | Kepentingan yang sah (huruf f) |
 | Menerbitkan profil publik Anda dan menampilkan bidangnya kepada orang yang Anda pilih | Data profil publik | Persetujuan yang sah secara eksplisit (huruf a), yang diberikan saat Anda menerbitkan dan ditarik saat Anda membatalkan penerbitan atau menghapusnya; pemenuhan kewajiban perjanjian (huruf b) untuk permintaan data dan pemberian akses yang Anda lakukan |
 | Menghitung tayangan profil publik untuk Anda dan meninjau profil yang dilaporkan | Data profil publik | Kepentingan yang sah (huruf f) |
+| Membaca CV yang Anda unggah untuk menyarankan isian draf profil Anda, dan menagihkan penggunaan AI ke proyek yang Anda pilih | Berkas CV (tidak disimpan), data profil publik, catatan penagihan impor AI | Pemenuhan kewajiban perjanjian (huruf b) |
 | Mengirimkan pesan layanan (misalnya terkait masuk, keamanan, tagihan, dan perubahan ketentuan) | Data akun | Pemenuhan kewajiban perjanjian (huruf b); pemenuhan kewajiban hukum (huruf c) |
 | Mengirimkan buletin, pengumuman kursus, dan materi pemasaran | Data akun | Persetujuan yang sah secara eksplisit (huruf a), yang dapat Anda tarik kapan saja |
 | Mematuhi hukum dan permintaan otoritas yang berwenang, serta membuktikan atau membela tuntutan hukum | Data yang relevan | Pemenuhan kewajiban hukum (huruf c); kepentingan yang sah (huruf f) |
@@ -75,7 +76,7 @@ Dalam hal Kami mengandalkan kepentingan yang sah, Kami telah menimbang kepenting
 
 | Penyedia | Peran |
 |---|---|
-| Cloudflare, Inc. | Hosting dan pengiriman konten Layanan, basis data (D1), penyimpanan berkas (R2), pengiriman surel transaksional, dan keamanan jaringan |
+| Cloudflare, Inc. | Hosting dan pengiriman konten Layanan, basis data (D1), penyimpanan berkas (R2), model AI (Workers AI, misalnya untuk impor CV dengan AI dan asisten di dalam produk), pengiriman surel transaksional, dan keamanan jaringan |
 | Midtrans (PT Midtrans) | Gerbang pembayaran: memproses pembayaran dan tokenisasi kartu |
 | Frappe Helpdesk | Pengelolaan tiket bantuan untuk support@konfersi.com |
 | Penyedia identitas Kami (Authentik) | Proses masuk staf Konfersi ke perangkat administrasi internal |
@@ -104,7 +105,8 @@ Kami juga menggunakan layanan basis data terkelola untuk menyimpan pesanan pemba
 
 | Data | Jangka waktu penyimpanan |
 |---|---|
-| Data akun, profil pendaftaran, dan Data Pelanggan | Selama Akun Anda aktif, kemudian hingga 30 hari setelah penutupan untuk memungkinkan ekspor data, setelah itu dihapus atau dianonimkan dalam 90 hari (kecuali cadangan data, yang ditimpa sesuai siklus normalnya) |
+| Data akun, profil pendaftaran, dan Data Pelanggan | Selama Akun Anda aktif. Saat Anda menghapus Akun, Kami menyimpannya selama masa tenggang 30 hari, dan selama masa itu Anda masih dapat meminta salinan data Anda. Setelah itu Kami membersihkannya: data Anda dihapus, atau dianonimkan apabila suatu catatan harus tetap ada (misalnya proyek milik orang lain tempat Anda menjadi anggota). Catatan yang wajib Kami simpan sesuai jangka waktunya sendiri, seperti pesanan, pembayaran, sertifikat, dan permintaan dukungan, disimpan dengan hanya menyisakan kode pseudonim sebagai pengganti identitas Anda apabila memungkinkan. Cadangan data ditimpa sesuai siklus normalnya |
+| Catatan penagihan impor CV dengan AI | Pada catatan penggunaan proyek yang membayar selama catatan tersebut disimpan; kaitannya dengan Anda dihapus saat Akun Anda dibersihkan |
 | Catatan transaksi dan faktur | Selama jangka waktu yang diwajibkan oleh peraturan perundang-undangan di bidang perpajakan, akuntansi, dan dokumen perusahaan di Indonesia, yang pada umumnya sepuluh (10) tahun berdasarkan Undang-Undang Nomor 8 Tahun 1997 tentang Dokumen Perusahaan |
 | Profil publik | Hingga Anda membatalkan penerbitan atau menghapusnya, atau menutup Akun. Handle yang tidak lagi Anda gunakan dialihkan ke handle baru selama 30 hari, kemudian dilepas |
 | Akses yang Anda berikan atas bidang atas permintaan | Hingga kedaluwarsa (30 hari kecuali Anda memilih lain, paling lama 365 hari) atau Anda mencabutnya |
@@ -138,7 +140,7 @@ Anda juga dapat menyampaikan pengaduan kepada lembaga penyelenggara pelindungan 
 
 ## 9. Cara menggunakan hak Anda
 
-9.1. Kirimkan permintaan Anda ke **support@konfersi.com** dari alamat surel yang terhubung dengan Akun Anda, dengan subjek "Permintaan privasi" dan uraian mengenai hal yang Anda minta. Sebagian besar data akun dan profil dapat Anda perbaiki sendiri melalui Accounts atau Console. Untuk profil publik, **Unduh data saya** dan **Hapus profil** di Console memberi Anda salinannya atau menghapusnya kapan saja.
+9.1. Kirimkan permintaan Anda ke **support@konfersi.com** dari alamat surel yang terhubung dengan Akun Anda, dengan subjek "Permintaan privasi" dan uraian mengenai hal yang Anda minta. Sebagian besar data akun dan profil dapat Anda perbaiki sendiri melalui Accounts atau Console. Untuk profil publik, **Unduh data saya** dan **Hapus profil** di Console memberi Anda salinannya atau menghapusnya kapan saja. Anda juga dapat meminta kepada Kami salinan seluruh data yang Kami simpan terkait Akun Anda dalam format yang dapat dibaca mesin (Pasal 13 UU PDP); sampai fitur unduhan untuk ini tersedia di Layanan, Kami menyediakannya atas permintaan.
 
 9.2. Kami mungkin perlu memverifikasi identitas Anda sebelum menindaklanjuti permintaan. Kami akan mengonfirmasi penerimaan permintaan Anda dan menanggapinya dalam jangka waktu yang ditetapkan oleh UU PDP. Apabila Kami tidak dapat memenuhi permintaan sepenuhnya (misalnya karena Kami wajib menyimpan catatan transaksi berdasarkan hukum), Kami akan menyampaikan alasannya.
 
@@ -159,6 +161,8 @@ Layanan ditujukan bagi pengguna berusia 18 tahun ke atas. Sebagian kursus dapat 
 12.2. Kami tidak menggunakan Data Pelanggan Anda untuk melatih model AI yang disediakan bagi pelanggan lain tanpa memberi tahu Anda terlebih dahulu dan, apabila diwajibkan, memperoleh persetujuan Anda.
 
 12.3. Lihat [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami mengenai batasan Keluaran yang dihasilkan secara otomatis.
+
+12.4. **Impor CV dengan AI** menggunakan model AI untuk membaca CV yang Anda unggah dan menyarankan isian bagi profil publik Anda. Saran tersebut baru ditambahkan ke draf Anda setelah Anda meninjaunya, dan tidak ada yang disimpan atau diterbitkan sebelum Anda menyimpan. Kami tidak menggunakan CV tersebut untuk mengambil keputusan tentang Anda, dan CV tersebut tidak disimpan.
 
 ## 13. Komunikasi pemasaran
 
