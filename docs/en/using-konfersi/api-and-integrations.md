@@ -1,10 +1,10 @@
 ---
 title: API and integrations
-description: What you can connect to Konfersi today, and what the public API and MCP server will offer when they launch.
+description: What you can connect to Konfersi today, including AI assistants over MCP, and what the public API will offer when it launches.
 tags: [api, mcp, integrations, agents, vscode]
-related: [getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
+related: [using-konfersi/ai-assistants-mcp, getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
 status: published
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 ## What you can connect today
@@ -13,7 +13,7 @@ updated: 2026-10-09
 |---|---|---|
 | **Konfersi Lab extension** (VS Code, Cursor and other editors) | Available | Install the extension and sign in with your Konfersi account. See [Desktop editors](../lab/desktop/index.md) |
 | **Public API** (API keys for your own scripts) | Not available yet | |
-| **MCP server** (connect your own AI agent) | Not available yet | |
+| **MCP servers** (connect your own AI assistant) | Available | Create a token in the Console and add Konfersi to your assistant. See [Use Konfersi with AI assistants (MCP)](ai-assistants-mcp.md) |
 
 ## Public API
 
@@ -21,15 +21,9 @@ Konfersi's sites (Console, Lab, Accounts) talk to the Konfersi API on your behal
 
 If you need data out of Konfersi now, use the export options in the Lab, or [contact support](../support/contact-support.md) to tell us what you'd like to automate.
 
-## MCP server
+## MCP servers
 
-The Konfersi MCP server will let an AI agent on your own machine work with your Lab projects and Konfersi's datasets. It is not available yet. Before launch we still need to decide:
-
-- which tools your agent may use
-- how it signs in
-- how its usage counts against your plan
-
-This page will be updated when it launches.
+AI assistants such as Claude Code, Claude Desktop and Cursor can search these docs and work with your metocean projects through Konfersi's MCP servers. You create a personal token in the Console, choose what it may do and which projects it covers, and revoke it at any time. Runs your assistant starts use your plan's quota, the same as in the Lab. See [Use Konfersi with AI assistants (MCP)](ai-assistants-mcp.md).
 
 ## Your data and connected tools
 

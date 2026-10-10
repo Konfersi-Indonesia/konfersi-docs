@@ -1,10 +1,10 @@
 ---
 title: API dan integrasi
-description: Apa yang bisa Anda hubungkan ke Konfersi saat ini, serta apa yang akan ditawarkan API publik dan server MCP saat diluncurkan.
+description: Apa yang bisa Anda hubungkan ke Konfersi saat ini, termasuk asisten AI melalui MCP, serta apa yang akan ditawarkan API publik saat diluncurkan.
 tags: [api, mcp, integrasi, agen, vscode]
-related: [getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
+related: [using-konfersi/ai-assistants-mcp, getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
 status: published
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 ## Yang bisa dihubungkan saat ini
@@ -13,7 +13,7 @@ updated: 2026-10-09
 |---|---|---|
 | **Ekstensi Konfersi Lab** (VS Code, Cursor, dan editor lain) | Tersedia | Pasang ekstensinya lalu masuk dengan akun Konfersi Anda. Lihat [Editor desktop](../lab/desktop/index.md) |
 | **API publik** (kunci API untuk skrip Anda sendiri) | Belum tersedia | |
-| **Server MCP** (hubungkan agen AI Anda sendiri) | Belum tersedia | |
+| **Server MCP** (hubungkan asisten AI Anda sendiri) | Tersedia | Buat token di Console lalu tambahkan Konfersi ke asisten Anda. Lihat [Gunakan Konfersi dengan asisten AI (MCP)](ai-assistants-mcp.md) |
 
 ## API publik
 
@@ -23,13 +23,7 @@ Jika Anda perlu mengeluarkan data dari Konfersi sekarang, gunakan opsi ekspor di
 
 ## Server MCP
 
-Server MCP Konfersi akan memungkinkan agen AI di komputer Anda bekerja dengan proyek Lab dan dataset Konfersi. Server ini belum tersedia. Sebelum peluncuran, kami masih perlu memutuskan:
-
-- alat apa saja yang boleh digunakan agen Anda
-- cara agen masuk
-- bagaimana penggunaannya dihitung terhadap paket Anda
-
-Halaman ini akan diperbarui saat server MCP diluncurkan.
+Asisten AI seperti Claude Code, Claude Desktop, dan Cursor bisa mencari di dokumentasi ini dan bekerja dengan proyek metocean Anda melalui server MCP Konfersi. Anda membuat token pribadi di Console, memilih apa yang boleh dilakukannya dan proyek mana yang dicakupnya, lalu bisa mencabutnya kapan saja. Pekerjaan yang dimulai asisten memakai kuota paket Anda, sama seperti di Lab. Lihat [Gunakan Konfersi dengan asisten AI (MCP)](ai-assistants-mcp.md).
 
 ## Data Anda dan alat yang terhubung
 

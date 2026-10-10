@@ -132,6 +132,12 @@
                 "icon": "phosphor/regular/plugs-connected",
                 "filepath": "docs/en/using-konfersi/api-and-integrations.md"
               },
+              "/ai-assistants-mcp": {
+                "type": "page",
+                "title": "Use Konfersi with AI assistants (MCP)",
+                "icon": "phosphor/regular/robot",
+                "filepath": "docs/en/using-konfersi/ai-assistants-mcp.md"
+              },
               "/community": {
                 "type": "page",
                 "title": "Community",
@@ -535,6 +541,12 @@
                 "title": "API dan integrasi",
                 "icon": "phosphor/regular/plugs-connected",
                 "filepath": "docs/id/using-konfersi/api-and-integrations.md"
+              },
+              "/ai-assistants-mcp": {
+                "type": "page",
+                "title": "Gunakan Konfersi dengan asisten AI (MCP)",
+                "icon": "phosphor/regular/robot",
+                "filepath": "docs/id/using-konfersi/ai-assistants-mcp.md"
               },
               "/community": {
                 "type": "page",
