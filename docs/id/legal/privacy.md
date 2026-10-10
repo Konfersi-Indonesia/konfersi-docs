@@ -4,9 +4,11 @@ description: Cara PT Konfersi Metocean Climate Consultant mengumpulkan, mengguna
 tags: [legal, privasi, uu-pdp, data-pribadi]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-review: [privacy-course-orders-processor]
-updated: 2026-10-09
+review: [privacy-course-orders-processor, lawyer-review-v2]
+updated: 2026-10-10
 ---
+
+<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku.</scalar-callout>
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 

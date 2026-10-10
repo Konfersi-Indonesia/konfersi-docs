@@ -4,13 +4,13 @@ description: Cara membatalkan pesanan Konfersi dan mengajukan pengembalian dana 
 tags: [tagihan, pengembalian-dana, refund, pembatalan, kursus, paket]
 related: [legal/terms, billing/payments, billing/order-cart-and-transactions, support/contact-support]
 status: published
-review: [terms-12-refund-policy-final]
-updated: 2026-10-09
+review: [lawyer-review-v2]
+updated: 2026-10-10
 ---
 
 Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Ketentuan Layanan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Ketentuan Layanan, yang berlaku adalah Ketentuan Layanan.
 
-<scalar-callout type="warning">Kebijakan pengembalian dana kami masih menunggu tinjauan hukum final. Proses di halaman ini adalah cara kami menangani permintaan saat ini, tetapi syarat kelayakan dan batas waktunya dapat berubah setelah Ketentuan Layanan difinalkan. Selalu periksa [Ketentuan Layanan](../legal/terms.md) terbaru.</scalar-callout>
+<scalar-callout type="warning">Ketentuan ini mengikuti versi 2 [Ketentuan Layanan](../legal/terms.md) yang sedang dalam tinjauan hukum. Ketentuan ini berlaku setelah versi tersebut berlaku; halaman Ketentuan Layanan mencantumkan tanggal berlakunya.</scalar-callout>
 
 ## Membatalkan sebelum membayar
 
@@ -25,14 +25,18 @@ Lihat [Pembayaran](payments.md) untuk arti setiap status.
 
 Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Private Course.
 
-- Dapat atau tidaknya pembelian kursus dikembalikan dananya bergantung pada jenis kursus, waktu pengajuan, dan seberapa banyak materi yang sudah Anda akses. Ketentuannya diatur dalam [Ketentuan Layanan](../legal/terms.md).
+- **Kursus dengan sesi langsung:** pengembalian dana penuh jika Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**.
+- **Kursus mandiri (*self-paced*):** pengembalian dana penuh jika Anda membatalkan **sebelum menyelesaikan 20% materi kursus** (kemajuan pelajaran Anda terlihat di [Kursus Saya](../using-konfersi/courses.md#kursus-saya)).
+- Setelah itu, biaya kursus tidak dikembalikan, kecuali Kami membatalkan atau menjadwalkan ulang kursus dan Anda tidak dapat hadir pada tanggal baru.
 - **Private Course** dijadwalkan dan disesuaikan khusus untuk Anda, sehingga perubahan dan pembatalan biasanya disepakati langsung dengan tim kursus. Hubungi kami sedini mungkin.
 
 ## Paket platform dan add-on
 
 Bagian ini berlaku untuk paket dan add-on yang dibeli untuk proyek Console.
 
-- Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi. [Ketentuan Layanan](../legal/terms.md) mengatur kapan pembelian platform dapat dikembalikan dananya setelah sumber daya tersebut tersedia bagi Anda.
+- Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi.
+- **Setelah sebagian kuota paket atau add-on digunakan, pembeliannya tidak dapat dikembalikan dananya.**
+- Jika Kami gagal menyediakan layanan sebagaimana diuraikan dan tidak memperbaikinya dalam waktu yang wajar, Kami mengembalikan **bagian yang belum digunakan secara proporsional**.
 - Jika Anda **tertagih dua kali**, atau dana sudah terpotong tetapi pesanan tidak pernah selesai, itu termasuk masalah pembayaran, bukan permintaan pengembalian dana. Hubungi kami dan kami akan menelusurinya. Lihat [Pembayaran](payments.md#ada-kendala).
 - Perjanjian **Perusahaan & Operasi** mengikuti ketentuan pembatalan dan pengembalian dana dalam perjanjian yang Anda tanda tangani.
 

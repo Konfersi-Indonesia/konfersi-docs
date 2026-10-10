@@ -4,9 +4,11 @@ description: The agreement between you and PT Konfersi Metocean Climate Consulta
 tags: [legal, terms, agreement]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
 status: published
-review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, terms-12-refund-policy-final]
-updated: 2026-10-09
+review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, lawyer-review-v2]
+updated: 2026-10-10
 ---
+
+<scalar-callout type="warning">**Version 2 (draft for legal review).** Takes effect on the date shown here once it has passed legal review, with at least 14 days' notice. Until then, the version effective 27 September 2026 applies.</scalar-callout>
 
 <scalar-callout type="info">**Effective 27 September 2026.** These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
@@ -120,9 +122,15 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 
 12.1. This section sets the binding refund rules. The practical steps for requesting a refund are described on the [Refunds & cancellation](../billing/refunds-and-cancellation.md) page. Different rules apply to Courses and to platform Plans.
 
-12.2. **Courses.** You may cancel a Course enrolment and receive a full refund if you cancel within the cancellation window stated on the course page or at checkout, and before the Course starts or before you access any recorded Course material. After that, Course fees are not refundable, except as set out in section 12.4.
+12.2. **Courses.** You may cancel a Course enrolment and receive a full refund:
 
-12.3. **Platform Plans and add-ons.** Plan and add-on resources (such as compute hours, storage or credits) are made available to your project as soon as payment is confirmed. Fees for a Plan period that has started, or for add-ons that have been made available, are not refundable, except as set out in section 12.4. Enterprise customers follow the refund terms in their signed agreement.
+(a) for a Course with live sessions, if you cancel **at least 7 days before the first live session**; or
+
+(b) for a self-paced Course, if you cancel **before you have consumed 20% of the Course content**, as recorded by your lesson progress in the Services.
+
+After that, Course fees are not refundable, except as set out in section 12.4. A Private Course follows the cancellation terms agreed for it in writing.
+
+12.3. **Platform Plans and add-ons.** Plan and add-on resources (such as compute hours, storage or credits) are made available to your project as soon as payment is confirmed. Once any of the quota granted by a Plan or add-on has been used, its fees are not refundable, except that we will make a **pro-rated refund for the unused part** where we fail to provide the Services as described (section 12.4(c)). Enterprise customers follow the refund terms in their signed agreement.
 
 12.4. **When we will refund.** We will refund the amount concerned if: (a) you were charged more than once for the same order, or charged for an order that was not completed; (b) we cancel a Course, or reschedule it and you cannot attend the new date; (c) we fail to provide paid Services as described and do not remedy the failure within a reasonable time after you notify us; or (d) a refund is required by law.
 

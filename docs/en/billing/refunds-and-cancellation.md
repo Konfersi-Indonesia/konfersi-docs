@@ -4,13 +4,13 @@ description: How to cancel a Konfersi order and how to request a refund for a co
 tags: [billing, refunds, cancellation, courses, plans]
 related: [legal/terms, billing/payments, billing/order-cart-and-transactions, support/contact-support]
 status: published
-review: [terms-12-refund-policy-final]
-updated: 2026-10-09
+review: [lawyer-review-v2]
+updated: 2026-10-10
 ---
 
 This page explains, in practical terms, how to cancel an order and how to ask for a refund. The binding rules are in the refund section of our [Terms of Service](../legal/terms.md). If this page and the Terms ever disagree, the Terms apply.
 
-<scalar-callout type="warning">Our refund policy is pending final legal review. The process on this page is how we handle requests today, but eligibility rules and time windows may change when the Terms are finalised. Always check the current [Terms of Service](../legal/terms.md).</scalar-callout>
+<scalar-callout type="warning">These rules follow version 2 of the [Terms of Service](../legal/terms.md), which is in legal review. They apply once that version takes effect; the Terms page shows the effective date.</scalar-callout>
 
 ## Cancelling before you pay
 
@@ -25,14 +25,18 @@ See [Payments](payments.md) for what each status means.
 
 This covers Konfersi Course Series, Web Series and Private Course purchases.
 
-- Whether a course purchase can be refunded depends on the course type, timing, and how much of the course you have already accessed. Those conditions are set out in the [Terms of Service](../legal/terms.md).
+- **Courses with live sessions:** full refund if you cancel **at least 7 days before the first live session**.
+- **Self-paced courses:** full refund if you cancel **before you have completed 20% of the course content** (your lesson progress in [My Courses](../using-konfersi/courses.md#my-courses) shows how far you are).
+- After that, course fees are not refunded, unless we cancel or reschedule the course and you can't attend the new date.
 - A **Private Course** is scheduled and tailored for you, so changes and cancellations are usually agreed with the course team directly. Get in touch as early as you can.
 
 ## Platform plans and add-ons
 
 This covers plans and add-ons bought for a Console project.
 
-- Plan and add-on resources, such as storage, compute and AI credits, are applied to your project as soon as payment is confirmed. The [Terms of Service](../legal/terms.md) set out when a platform purchase can be refunded once those resources are available to you.
+- Plan and add-on resources, such as storage, compute and AI credits, are applied to your project as soon as payment is confirmed.
+- **Once any of a plan's or add-on's quota has been used, it is not refundable.**
+- If we fail to provide the service as described and don't fix it in reasonable time, we refund the **unused part pro-rata**.
 - If you were **charged twice**, or charged but your order never completed, that is a payment problem rather than a refund request. Contact us and we'll investigate. See [Payments](payments.md#something-went-wrong).
 - **Enterprise & Operations** agreements follow the cancellation and refund terms in your signed agreement.
 

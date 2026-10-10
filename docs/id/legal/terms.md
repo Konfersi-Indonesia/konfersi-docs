@@ -4,9 +4,11 @@ description: Perjanjian antara Anda dan PT Konfersi Metocean Climate Consultant 
 tags: [legal, syarat-ketentuan, perjanjian]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
 status: published
-review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, terms-12-refund-policy-final]
-updated: 2026-10-09
+review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates, lawyer-review-v2]
+updated: 2026-10-10
 ---
+
+<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum, dengan pemberitahuan paling lambat 14 hari sebelumnya. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku.</scalar-callout>
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Ketentuan Layanan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
@@ -120,9 +122,15 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 12.1. Angka ini menetapkan ketentuan pengembalian dana yang mengikat. Langkah praktis untuk mengajukan pengembalian dana diuraikan di halaman [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md). Ketentuan yang berbeda berlaku untuk Kursus dan untuk Paket platform.
 
-12.2. **Kursus.** Anda dapat membatalkan pendaftaran Kursus dan memperoleh pengembalian dana secara penuh apabila Anda membatalkan dalam jangka waktu pembatalan yang tercantum di halaman kursus atau pada saat pembayaran, serta sebelum Kursus dimulai atau sebelum Anda mengakses materi Kursus yang terekam. Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4.
+12.2. **Kursus.** Anda dapat membatalkan pendaftaran Kursus dan memperoleh pengembalian dana secara penuh:
 
-12.3. **Paket platform dan tambahan.** Sumber daya Paket dan tambahan (seperti jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Biaya untuk periode Paket yang telah dimulai, atau untuk tambahan yang telah tersedia, tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4. Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
+(a) untuk Kursus dengan sesi langsung, apabila Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**; atau
+
+(b) untuk Kursus mandiri (*self-paced*), apabila Anda membatalkan **sebelum Anda menyelesaikan 20% materi Kursus**, sebagaimana tercatat dalam kemajuan pelajaran Anda di Layanan.
+
+Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4. Private Course tunduk pada ketentuan pembatalan yang disepakati secara tertulis untuknya.
+
+12.3. **Paket platform dan tambahan.** Sumber daya Paket dan tambahan (seperti jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Setelah sebagian kuota yang diberikan oleh suatu Paket atau tambahan digunakan, biayanya tidak dapat dikembalikan, kecuali bahwa Kami akan memberikan **pengembalian dana secara proporsional untuk bagian yang belum digunakan** apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)). Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
 
 12.4. **Keadaan Kami mengembalikan dana.** Kami akan mengembalikan jumlah yang bersangkutan apabila: (a) Anda dikenai tagihan lebih dari satu kali untuk pesanan yang sama, atau dikenai tagihan untuk pesanan yang tidak terselesaikan; (b) Kami membatalkan suatu Kursus, atau menjadwalkan ulang Kursus dan Anda tidak dapat hadir pada tanggal yang baru; (c) Kami gagal menyediakan Layanan berbayar sebagaimana diuraikan dan tidak memperbaiki kegagalan tersebut dalam jangka waktu yang wajar setelah Anda memberi tahu Kami; atau (d) pengembalian dana diwajibkan oleh hukum.
 
