@@ -126,6 +126,12 @@
                 "icon": "phosphor/regular/certificate",
                 "filepath": "docs/en/using-konfersi/certificates.md"
               },
+              "/public-profile": {
+                "type": "page",
+                "title": "Your public profile",
+                "icon": "phosphor/regular/identification-card",
+                "filepath": "docs/en/using-konfersi/public-profile.md"
+              },
               "/api-and-integrations": {
                 "type": "page",
                 "title": "API and integrations",
@@ -535,6 +541,12 @@
                 "title": "Sertifikat",
                 "icon": "phosphor/regular/certificate",
                 "filepath": "docs/id/using-konfersi/certificates.md"
+              },
+              "/public-profile": {
+                "type": "page",
+                "title": "Profil publik Anda",
+                "icon": "phosphor/regular/identification-card",
+                "filepath": "docs/id/using-konfersi/public-profile.md"
               },
               "/api-and-integrations": {
                 "type": "page",

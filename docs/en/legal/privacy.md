@@ -4,7 +4,7 @@ description: How PT Konfersi Metocean Climate Consultant collects, uses, shares 
 tags: [legal, privacy, uu-pdp, personal-data]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-review: [privacy-course-orders-processor, lawyer-review-v2]
+review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile]
 updated: 2026-10-10
 ---
 
@@ -40,9 +40,11 @@ This Privacy Policy explains how we process personal data when you use the Konfe
 
 2.8. **Course data**: the details you give when you register for a course, your enrolment and progress, and, where applicable, certificates issued to you.
 
-2.9. **Cookies and similar technologies**: see our [Cookie Notice](cookies.md).
+2.9. **Public profile data** (only if you create a [public profile](../using-konfersi/public-profile.md)): your handle and the handles you used before; the CV content you enter (headline, location, sections, links and contacts) and the visibility you choose for each field; the courses, certificates and Lab projects you choose to show; when you published and gave consent; data requests you send or receive (who asked, which fields, the message) and the access you grant (which fields, until when, and any revocation); and statistics about your profile page counted in aggregate (views, unique views, link clicks and card scans). Unique views are counted with a daily keyed code that is not stored for more than two days and is not linked to a visitor's identity; we do not set cookies on profile pages for this. If someone reports a profile, we keep the report (reason, message and the reporter's account) and our decision.
 
-2.10. We do not intentionally collect specific personal data (*data pribadi yang bersifat spesifik*) as defined in UU PDP, such as health, biometric or criminal-record data. Please do not include such data in Customer Data or support requests.
+2.10. **Cookies and similar technologies**: see our [Cookie Notice](cookies.md).
+
+2.11. We do not intentionally collect specific personal data (*data pribadi yang bersifat spesifik*) as defined in UU PDP, such as health, biometric or criminal-record data. Please do not include such data in Customer Data or support requests.
 
 ## 3. Purposes and legal bases
 
@@ -57,6 +59,8 @@ We process personal data only for the purposes below, on the legal bases listed 
 | Respond to support requests and run the community | Support and community data | Performance of a contract (b); legitimate interest (f) |
 | Detect, prevent and investigate fraud, abuse and security incidents | Session, security and transaction data | Legitimate interest (f); legal obligation (c) |
 | Understand how the Services are used in aggregate and improve them, using registration answers such as sector and purpose | Registration profile, usage data | Legitimate interest (f) |
+| Publish your public profile and show its fields to the people you choose | Public profile data | Explicit consent (a), given when you publish and withdrawn when you unpublish or delete it; performance of a contract (b) for data requests and grants you make |
+| Count views of your public profile for you, and review reported profiles | Public profile data | Legitimate interest (f) |
 | Send service messages (for example, sign-in, security, billing, changes to terms) | Account data | Performance of a contract (b); legal obligation (c) |
 | Send newsletters, course announcements and marketing | Account data | Explicit consent (a), which you may withdraw at any time |
 | Comply with law and requests from competent authorities, and establish or defend legal claims | Any relevant data | Legal obligation (c); legitimate interest (f) |
@@ -82,9 +86,11 @@ We also use a managed database service to store course payment orders; its detai
 
 4.4. **Your collaborators**: project members can see the project's content and the names and email addresses of other members and invitees.
 
-4.5. **Authorities and advisers**: where required by law, court order or a competent authority, and to our professional advisers under confidentiality duties.
+4.5. **Visitors to your public profile**: once you publish, the fields you mark *Public* can be seen by anyone with the link and may be indexed by search engines. Fields you mark *On request* are shown only to signed-in Konfersi users you approve, for the period you choose. Fields marked *Only me* are never shown. The people you share fields with can see them only while the access lasts. Someone who reports a profile is never identified to its owner.
 
-4.6. **Corporate transactions**: to a successor entity in a merger, reorganisation or transfer of business, subject to this Privacy Policy.
+4.6. **Authorities and advisers**: where required by law, court order or a competent authority, and to our professional advisers under confidentiality duties.
+
+4.7. **Corporate transactions**: to a successor entity in a merger, reorganisation or transfer of business, subject to this Privacy Policy.
 
 ## 5. Transfers outside Indonesia
 
@@ -100,6 +106,9 @@ We also use a managed database service to store course payment orders; its detai
 |---|---|
 | Account, registration profile and Customer Data | While your Account is active, then up to 30 days after closure to allow data export, after which it is deleted or anonymised within 90 days (except backups, which are overwritten on their normal cycle) |
 | Transaction and invoice records | For the period required by Indonesian tax, accounting and company-document law, generally ten (10) years under Law No. 8 of 1997 on Company Documents |
+| Public profile | Until you unpublish or delete it, or close your Account. A handle you stop using redirects to your new one for 30 days and is then released |
+| Access you grant to on-request fields | Until it expires (30 days unless you choose otherwise, at most 365 days) or you revoke it |
+| Profile view statistics | Aggregate counts for up to 400 days; the daily codes used to count unique views for at most two days |
 | Sign-in session records | Until the session expires or is revoked (sign-in sessions last up to 30 days), then deleted in routine clean-up |
 | Support requests | For as long as needed to resolve the request and for up to 3 years after it is closed |
 | Technical and security logs | For short periods set by our hosting provider, unless needed to investigate an incident |
@@ -129,7 +138,7 @@ You can also lodge a complaint with the personal data protection authority estab
 
 ## 9. How to exercise your rights
 
-9.1. Send your request to **support@konfersi.com** from the email address linked to your Account, with "Privacy request" in the subject line and a description of what you are asking for. You can correct most Account and profile data yourself in Accounts or the Console.
+9.1. Send your request to **support@konfersi.com** from the email address linked to your Account, with "Privacy request" in the subject line and a description of what you are asking for. You can correct most Account and profile data yourself in Accounts or the Console. For your public profile, **Download my data** and **Delete profile** in the Console give you a copy of it or remove it at any time.
 
 9.2. We may need to verify your identity before acting on a request. We will acknowledge your request and respond within the time limits set by UU PDP. If we cannot fully meet a request (for example, because we must keep transaction records by law), we will tell you why.
 

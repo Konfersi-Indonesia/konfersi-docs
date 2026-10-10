@@ -4,7 +4,7 @@ description: Cara PT Konfersi Metocean Climate Consultant mengumpulkan, mengguna
 tags: [legal, privasi, uu-pdp, data-pribadi]
 related: [legal/terms, legal/cookies, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-review: [privacy-course-orders-processor, lawyer-review-v2]
+review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profile]
 updated: 2026-10-10
 ---
 
@@ -40,9 +40,11 @@ Kebijakan Privasi ini menjelaskan cara Kami memproses Data Pribadi ketika Anda m
 
 2.8. **Data kursus**: data yang Anda berikan ketika mendaftar kursus, status pendaftaran dan kemajuan belajar Anda, serta sertifikat yang diterbitkan untuk Anda, apabila ada.
 
-2.9. **Cookie dan teknologi serupa**: lihat [Pemberitahuan Cookie](cookies.md) Kami.
+2.9. **Data profil publik** (hanya apabila Anda membuat [profil publik](../using-konfersi/public-profile.md)): handle Anda beserta handle yang pernah Anda gunakan; isi CV yang Anda masukkan (judul singkat, lokasi, bagian, tautan, dan kontak) serta visibilitas yang Anda pilih untuk setiap bidang; kursus, sertifikat, dan proyek Lab yang Anda pilih untuk ditampilkan; waktu Anda menerbitkan dan memberikan persetujuan; permintaan data yang Anda kirim atau terima (siapa yang meminta, bidang apa, dan pesannya) serta akses yang Anda berikan (bidang apa, sampai kapan, dan pencabutannya); serta statistik halaman profil Anda yang dihitung secara agregat (jumlah tayangan, tayangan unik, klik tautan, dan pindaian kartu). Tayangan unik dihitung dengan kode harian berkunci yang tidak disimpan lebih dari dua hari dan tidak dikaitkan dengan identitas pengunjung; untuk keperluan ini Kami tidak memasang cookie di halaman profil. Apabila seseorang melaporkan suatu profil, Kami menyimpan laporan tersebut (alasan, pesan, dan akun pelapor) beserta keputusan Kami.
 
-2.10. Kami tidak dengan sengaja mengumpulkan Data Pribadi yang bersifat spesifik sebagaimana dimaksud dalam UU PDP, seperti data kesehatan, data biometrik, atau catatan kejahatan. Mohon untuk tidak mencantumkan data tersebut dalam Data Pelanggan atau permintaan bantuan.
+2.10. **Cookie dan teknologi serupa**: lihat [Pemberitahuan Cookie](cookies.md) Kami.
+
+2.11. Kami tidak dengan sengaja mengumpulkan Data Pribadi yang bersifat spesifik sebagaimana dimaksud dalam UU PDP, seperti data kesehatan, data biometrik, atau catatan kejahatan. Mohon untuk tidak mencantumkan data tersebut dalam Data Pelanggan atau permintaan bantuan.
 
 ## 3. Tujuan dan dasar pemrosesan
 
@@ -57,6 +59,8 @@ Kami hanya memproses Data Pribadi untuk tujuan di bawah ini, berdasarkan dasar p
 | Menanggapi permintaan bantuan dan mengelola komunitas | Data bantuan dan komunitas | Pemenuhan kewajiban perjanjian (huruf b); kepentingan yang sah (huruf f) |
 | Mendeteksi, mencegah, dan menyelidiki kecurangan, penyalahgunaan, dan insiden keamanan | Data sesi, keamanan, dan transaksi | Kepentingan yang sah (huruf f); pemenuhan kewajiban hukum (huruf c) |
 | Memahami penggunaan Layanan secara agregat dan menyempurnakannya, dengan memanfaatkan jawaban pendaftaran seperti sektor dan tujuan | Data profil pendaftaran, data pemakaian | Kepentingan yang sah (huruf f) |
+| Menerbitkan profil publik Anda dan menampilkan bidangnya kepada orang yang Anda pilih | Data profil publik | Persetujuan yang sah secara eksplisit (huruf a), yang diberikan saat Anda menerbitkan dan ditarik saat Anda membatalkan penerbitan atau menghapusnya; pemenuhan kewajiban perjanjian (huruf b) untuk permintaan data dan pemberian akses yang Anda lakukan |
+| Menghitung tayangan profil publik untuk Anda dan meninjau profil yang dilaporkan | Data profil publik | Kepentingan yang sah (huruf f) |
 | Mengirimkan pesan layanan (misalnya terkait masuk, keamanan, tagihan, dan perubahan ketentuan) | Data akun | Pemenuhan kewajiban perjanjian (huruf b); pemenuhan kewajiban hukum (huruf c) |
 | Mengirimkan buletin, pengumuman kursus, dan materi pemasaran | Data akun | Persetujuan yang sah secara eksplisit (huruf a), yang dapat Anda tarik kapan saja |
 | Mematuhi hukum dan permintaan otoritas yang berwenang, serta membuktikan atau membela tuntutan hukum | Data yang relevan | Pemenuhan kewajiban hukum (huruf c); kepentingan yang sah (huruf f) |
@@ -82,9 +86,11 @@ Kami juga menggunakan layanan basis data terkelola untuk menyimpan pesanan pemba
 
 4.4. **Kolaborator Anda**: anggota proyek dapat melihat isi proyek serta nama dan alamat surel anggota dan undangan lainnya.
 
-4.5. **Otoritas dan penasihat**: apabila diwajibkan oleh hukum, putusan pengadilan, atau otoritas yang berwenang, serta kepada penasihat profesional Kami yang terikat kewajiban kerahasiaan.
+4.5. **Pengunjung profil publik Anda**: setelah Anda menerbitkan, bidang yang Anda atur *Publik* dapat dilihat siapa pun yang memiliki tautannya dan dapat diindeks mesin pencari. Bidang *Atas permintaan* hanya ditampilkan kepada pengguna Konfersi yang telah masuk dan Anda setujui, selama jangka waktu yang Anda pilih. Bidang *Hanya saya* tidak pernah ditampilkan. Orang yang Anda beri akses hanya dapat melihat bidang tersebut selama akses berlaku. Identitas pelapor suatu profil tidak pernah diungkapkan kepada pemilik profil.
 
-4.6. **Aksi korporasi**: kepada entitas penerus dalam hal penggabungan, reorganisasi, atau pengalihan usaha, dengan tetap tunduk pada Kebijakan Privasi ini.
+4.6. **Otoritas dan penasihat**: apabila diwajibkan oleh hukum, putusan pengadilan, atau otoritas yang berwenang, serta kepada penasihat profesional Kami yang terikat kewajiban kerahasiaan.
+
+4.7. **Aksi korporasi**: kepada entitas penerus dalam hal penggabungan, reorganisasi, atau pengalihan usaha, dengan tetap tunduk pada Kebijakan Privasi ini.
 
 ## 5. Transfer Data Pribadi ke luar wilayah Indonesia
 
@@ -100,6 +106,9 @@ Kami juga menggunakan layanan basis data terkelola untuk menyimpan pesanan pemba
 |---|---|
 | Data akun, profil pendaftaran, dan Data Pelanggan | Selama Akun Anda aktif, kemudian hingga 30 hari setelah penutupan untuk memungkinkan ekspor data, setelah itu dihapus atau dianonimkan dalam 90 hari (kecuali cadangan data, yang ditimpa sesuai siklus normalnya) |
 | Catatan transaksi dan faktur | Selama jangka waktu yang diwajibkan oleh peraturan perundang-undangan di bidang perpajakan, akuntansi, dan dokumen perusahaan di Indonesia, yang pada umumnya sepuluh (10) tahun berdasarkan Undang-Undang Nomor 8 Tahun 1997 tentang Dokumen Perusahaan |
+| Profil publik | Hingga Anda membatalkan penerbitan atau menghapusnya, atau menutup Akun. Handle yang tidak lagi Anda gunakan dialihkan ke handle baru selama 30 hari, kemudian dilepas |
+| Akses yang Anda berikan atas bidang atas permintaan | Hingga kedaluwarsa (30 hari kecuali Anda memilih lain, paling lama 365 hari) atau Anda mencabutnya |
+| Statistik tayangan profil | Jumlah agregat paling lama 400 hari; kode harian untuk menghitung tayangan unik paling lama dua hari |
 | Catatan sesi masuk | Hingga sesi kedaluwarsa atau dicabut (sesi masuk berlaku paling lama 30 hari), kemudian dihapus melalui pembersihan rutin |
 | Permintaan bantuan | Selama diperlukan untuk menyelesaikan permintaan dan paling lama 3 tahun setelah permintaan ditutup |
 | Log teknis dan keamanan | Untuk jangka waktu singkat yang ditetapkan oleh penyedia hosting Kami, kecuali diperlukan untuk menyelidiki suatu insiden |
@@ -129,7 +138,7 @@ Anda juga dapat menyampaikan pengaduan kepada lembaga penyelenggara pelindungan 
 
 ## 9. Cara menggunakan hak Anda
 
-9.1. Kirimkan permintaan Anda ke **support@konfersi.com** dari alamat surel yang terhubung dengan Akun Anda, dengan subjek "Permintaan privasi" dan uraian mengenai hal yang Anda minta. Sebagian besar data akun dan profil dapat Anda perbaiki sendiri melalui Accounts atau Console.
+9.1. Kirimkan permintaan Anda ke **support@konfersi.com** dari alamat surel yang terhubung dengan Akun Anda, dengan subjek "Permintaan privasi" dan uraian mengenai hal yang Anda minta. Sebagian besar data akun dan profil dapat Anda perbaiki sendiri melalui Accounts atau Console. Untuk profil publik, **Unduh data saya** dan **Hapus profil** di Console memberi Anda salinannya atau menghapusnya kapan saja.
 
 9.2. Kami mungkin perlu memverifikasi identitas Anda sebelum menindaklanjuti permintaan. Kami akan mengonfirmasi penerimaan permintaan Anda dan menanggapinya dalam jangka waktu yang ditetapkan oleh UU PDP. Apabila Kami tidak dapat memenuhi permintaan sepenuhnya (misalnya karena Kami wajib menyimpan catatan transaksi berdasarkan hukum), Kami akan menyampaikan alasannya.
 

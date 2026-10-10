@@ -4,10 +4,20 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-10-02
+updated: 2026-10-10
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.2.0 — 10 October 2026
+
+**New**
+
+- [Your public profile](../using-konfersi/public-profile.md): build a CV at io.konfersi.com, choose who sees each field, publish under your own address, answer data requests, and download or delete your profile data.
+
+**Updated**
+
+- [Privacy Policy](../legal/privacy.md), version 2 draft: public profile data, why we process it, who can see it, and how long we keep it. This part is awaiting legal review like the rest of the draft.
 
 ## 1.1.0 — 2 October 2026
 

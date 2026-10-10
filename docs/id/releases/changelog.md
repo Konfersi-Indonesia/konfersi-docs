@@ -4,10 +4,20 @@ description: Perubahan pada setiap rilis Dokumentasi Konfersi, dari yang terbaru
 tags: [catatan rilis, changelog, rilis, versi]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-10-02
+updated: 2026-10-10
 ---
 
 Setiap rilis Dokumentasi Konfersi memiliki nomor versi. Versi yang tampil di sidebar dokumentasi adalah rilis yang sedang Anda baca. Rilis yang lebih baru ditampilkan di bagian atas halaman ini.
+
+## 1.2.0 — 10 Oktober 2026
+
+**Baru**
+
+- [Profil publik Anda](../using-konfersi/public-profile.md): susun CV di io.konfersi.com, tentukan siapa yang melihat setiap bidang, terbitkan dengan alamat Anda sendiri, tanggapi permintaan data, serta unduh atau hapus data profil Anda.
+
+**Diperbarui**
+
+- [Kebijakan Privasi](../legal/privacy.md), draf versi 2: data profil publik, alasan Kami memprosesnya, siapa yang dapat melihatnya, dan berapa lama disimpan. Bagian ini menunggu tinjauan hukum seperti bagian draf lainnya.
 
 ## 1.1.0 — 2 Oktober 2026
 
