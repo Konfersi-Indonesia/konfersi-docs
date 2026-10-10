@@ -26,7 +26,7 @@ See [Payments](payments.md) for what each status means.
 This covers Konfersi Course Series, Web Series and Private Course purchases.
 
 - **Courses with live sessions:** full refund if you cancel **at least 7 days before the first live session**.
-- **Self-paced courses:** full refund if you cancel **before you have completed 20% of the course content** (your lesson progress in [My Courses](../using-konfersi/courses.md#my-courses) shows how far you are).
+- **Self-paced courses:** full refund if you cancel **within 14 days of purchase and before you have completed 20% of the course content** (your lesson progress in [My Courses](../using-konfersi/courses.md#my-courses) shows how far you are).
 - After that, course fees are not refunded, unless we cancel or reschedule the course and you can't attend the new date.
 - A **Private Course** is scheduled and tailored for you, so changes and cancellations are usually agreed with the course team directly. Get in touch as early as you can.
 
@@ -35,6 +35,7 @@ This covers Konfersi Course Series, Web Series and Private Course purchases.
 This covers plans and add-ons bought for a Console project.
 
 - Plan and add-on resources, such as storage, compute and AI credits, are applied to your project as soon as payment is confirmed.
+- **Full refund within 7 days of purchase if none of its quota has been used.**
 - **Once any of a plan's or add-on's quota has been used, it is not refundable.**
 - If we fail to provide the service as described and don't fix it in reasonable time, we refund the **unused part pro-rata**.
 - If you were **charged twice**, or charged but your order never completed, that is a payment problem rather than a refund request. Contact us and we'll investigate. See [Payments](payments.md#something-went-wrong).

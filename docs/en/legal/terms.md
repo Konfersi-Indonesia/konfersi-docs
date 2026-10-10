@@ -126,11 +126,11 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 
 (a) for a Course with live sessions, if you cancel **at least 7 days before the first live session**; or
 
-(b) for a self-paced Course, if you cancel **before you have consumed 20% of the Course content**, as recorded by your lesson progress in the Services.
+(b) for a self-paced Course, if you cancel **within 14 days of purchase and before you have consumed 20% of the Course content**, as recorded by your lesson progress in the Services.
 
 After that, Course fees are not refundable, except as set out in section 12.4. A Private Course follows the cancellation terms agreed for it in writing.
 
-12.3. **Platform Plans and add-ons.** Plan and add-on resources (such as compute hours, storage or credits) are made available to your project as soon as payment is confirmed. Once any of the quota granted by a Plan or add-on has been used, its fees are not refundable, except that we will make a **pro-rated refund for the unused part** where we fail to provide the Services as described (section 12.4(c)). Enterprise customers follow the refund terms in their signed agreement.
+12.3. **Platform Plans and add-ons.** Plan and add-on resources (such as compute hours, storage or credits) are made available to your project as soon as payment is confirmed. You may cancel a Plan or add-on and receive a full refund **within 7 days of purchase if none of its quota has been used**. Once any of the quota granted by a Plan or add-on has been used, its fees are not refundable, except that we will make a **pro-rated refund for the unused part** where we fail to provide the Services as described (section 12.4(c)). Enterprise customers follow the refund terms in their signed agreement.
 
 12.4. **When we will refund.** We will refund the amount concerned if: (a) you were charged more than once for the same order, or charged for an order that was not completed; (b) we cancel a Course, or reschedule it and you cannot attend the new date; (c) we fail to provide paid Services as described and do not remedy the failure within a reasonable time after you notify us; or (d) a refund is required by law.
 

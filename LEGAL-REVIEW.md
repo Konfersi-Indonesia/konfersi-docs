@@ -23,8 +23,8 @@ Open items on each page are listed in its `review:` frontmatter. The id `lawyer-
 
 ## Points for the lawyer
 
-- [ ] **Terms §12.2(b):** a self-paced course with less than 20% consumed is fully refundable with no time limit. Is a time cap (for example, 14 days after purchase) needed?
-- [ ] **Terms §12.3:** a plan or add-on bought but with **no** quota used yet. The decision implies it is refundable, but no window is stated. Decide on a window, or confirm "refundable until first use".
+- [ ] **Terms §12.2(b), default, confirm:** a self-paced course is refundable within **14 days of purchase**, and only while less than 20% of it has been consumed.
+- [ ] **Terms §12.3, default, confirm:** a plan or add-on is refundable within **7 days of purchase** if none of its quota has been used.
 - [ ] **Private Course:** follows its own written terms. Confirm that's sufficient.
 - [ ] **Bilingual clause:** the Indonesian version prevails (UU 24/2009 on language). Confirm both versions say the same.
 - [ ] **Changes clause:** at least 14 days' notice for material changes (Terms §20, Privacy §14). Confirm the notice method (email plus an in-app banner).

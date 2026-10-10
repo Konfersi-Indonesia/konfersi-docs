@@ -26,7 +26,7 @@ Lihat [Pembayaran](payments.md) untuk arti setiap status.
 Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Private Course.
 
 - **Kursus dengan sesi langsung:** pengembalian dana penuh jika Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**.
-- **Kursus mandiri (*self-paced*):** pengembalian dana penuh jika Anda membatalkan **sebelum menyelesaikan 20% materi kursus** (kemajuan pelajaran Anda terlihat di [Kursus Saya](../using-konfersi/courses.md#kursus-saya)).
+- **Kursus mandiri (*self-paced*):** pengembalian dana penuh jika Anda membatalkan **dalam 14 hari sejak pembelian dan sebelum menyelesaikan 20% materi kursus** (kemajuan pelajaran Anda terlihat di [Kursus Saya](../using-konfersi/courses.md#kursus-saya)).
 - Setelah itu, biaya kursus tidak dikembalikan, kecuali Kami membatalkan atau menjadwalkan ulang kursus dan Anda tidak dapat hadir pada tanggal baru.
 - **Private Course** dijadwalkan dan disesuaikan khusus untuk Anda, sehingga perubahan dan pembatalan biasanya disepakati langsung dengan tim kursus. Hubungi kami sedini mungkin.
 
@@ -35,6 +35,7 @@ Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Priva
 Bagian ini berlaku untuk paket dan add-on yang dibeli untuk proyek Console.
 
 - Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi.
+- **Pengembalian dana penuh dalam 7 hari sejak pembelian jika belum ada kuota yang digunakan.**
 - **Setelah sebagian kuota paket atau add-on digunakan, pembeliannya tidak dapat dikembalikan dananya.**
 - Jika Kami gagal menyediakan layanan sebagaimana diuraikan dan tidak memperbaikinya dalam waktu yang wajar, Kami mengembalikan **bagian yang belum digunakan secara proporsional**.
 - Jika Anda **tertagih dua kali**, atau dana sudah terpotong tetapi pesanan tidak pernah selesai, itu termasuk masalah pembayaran, bukan permintaan pengembalian dana. Hubungi kami dan kami akan menelusurinya. Lihat [Pembayaran](payments.md#ada-kendala).

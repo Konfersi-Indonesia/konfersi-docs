@@ -126,11 +126,11 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 (a) untuk Kursus dengan sesi langsung, apabila Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**; atau
 
-(b) untuk Kursus mandiri (*self-paced*), apabila Anda membatalkan **sebelum Anda menyelesaikan 20% materi Kursus**, sebagaimana tercatat dalam kemajuan pelajaran Anda di Layanan.
+(b) untuk Kursus mandiri (*self-paced*), apabila Anda membatalkan **dalam 14 hari sejak pembelian dan sebelum Anda menyelesaikan 20% materi Kursus**, sebagaimana tercatat dalam kemajuan pelajaran Anda di Layanan.
 
 Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4. Private Course tunduk pada ketentuan pembatalan yang disepakati secara tertulis untuknya.
 
-12.3. **Paket platform dan tambahan.** Sumber daya Paket dan tambahan (seperti jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Setelah sebagian kuota yang diberikan oleh suatu Paket atau tambahan digunakan, biayanya tidak dapat dikembalikan, kecuali bahwa Kami akan memberikan **pengembalian dana secara proporsional untuk bagian yang belum digunakan** apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)). Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
+12.3. **Paket platform dan tambahan.** Sumber daya Paket dan tambahan (seperti jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Anda dapat membatalkan Paket atau tambahan dan memperoleh pengembalian dana penuh **dalam 7 hari sejak pembelian apabila belum ada kuota yang digunakan**. Setelah sebagian kuota yang diberikan oleh suatu Paket atau tambahan digunakan, biayanya tidak dapat dikembalikan, kecuali bahwa Kami akan memberikan **pengembalian dana secara proporsional untuk bagian yang belum digunakan** apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)). Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
 
 12.4. **Keadaan Kami mengembalikan dana.** Kami akan mengembalikan jumlah yang bersangkutan apabila: (a) Anda dikenai tagihan lebih dari satu kali untuk pesanan yang sama, atau dikenai tagihan untuk pesanan yang tidak terselesaikan; (b) Kami membatalkan suatu Kursus, atau menjadwalkan ulang Kursus dan Anda tidak dapat hadir pada tanggal yang baru; (c) Kami gagal menyediakan Layanan berbayar sebagaimana diuraikan dan tidak memperbaiki kegagalan tersebut dalam jangka waktu yang wajar setelah Anda memberi tahu Kami; atau (d) pengembalian dana diwajibkan oleh hukum.
 
