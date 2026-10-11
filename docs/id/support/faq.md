@@ -47,7 +47,7 @@ Kartu kredit atau debit, ATM/transfer bank melalui virtual account, serta QRIS/e
 
 ### Pembayaran saya berhasil, tetapi paket tidak berubah. Apa yang harus dilakukan?
 
-Buka **Pembayaran & Tagihan → Transaksi** dan periksa status pesanan. Jika statusnya masih **Dalam Proses** beberapa menit setelah Anda membayar, atau dana terpotong tetapi pesanan gagal, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) beserta ID pesanan Anda. Lihat [Pembayaran](../billing/payments.md#ada-kendala).
+Buka **Pembayaran & Tagihan → Transaksi** dan periksa status pesanan. Jika statusnya masih **Menunggu Pembayaran** beberapa menit setelah Anda membayar, atau dana terpotong tetapi pesanan gagal, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) beserta ID pesanan Anda. Lihat [Pembayaran](../billing/payments.md#ada-kendala).
 
 ### Bagaimana cara mengajukan pengembalian dana?
 

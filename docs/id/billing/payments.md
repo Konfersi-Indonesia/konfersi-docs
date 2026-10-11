@@ -41,7 +41,7 @@ Pantau pesanan Anda di **Pembayaran & Tagihan → Transaksi**. Status yang mungk
 
 | Status di Console | Artinya | Yang perlu dilakukan |
 |---|---|---|
-| **Dalam Proses** | Pesanan sudah dibuat dan menunggu pembayaran | Selesaikan pembayaran lewat **Lanjutkan Pembayaran** (atau, jika tersedia, ganti ke metode pembayaran lain) |
+| **Menunggu Pembayaran** | Pesanan sudah dibuat dan menunggu pembayaran | Selesaikan pembayaran lewat **Lanjutkan Pembayaran** (atau, jika tersedia, ganti ke metode pembayaran lain) |
 | **Selesai** | Midtrans telah mengonfirmasi pembayaran dan sumber daya sudah diterapkan | Tidak ada, semuanya beres |
 | **Gagal** | Pembayaran ditolak atau gagal | Buat pesanan baru, bila perlu dengan metode lain |
 | **Kedaluwarsa** | Batas waktu pembayaran habis sebelum Anda membayar | Buat pesanan baru |
@@ -57,7 +57,7 @@ Anda mendaftar kursus dari **Kursus → Marketplace** di Console (lihat [Kursus]
 
 - Midtrans mengirimkan notifikasi pembayaran ke Konfersi setiap kali status berubah. Konfersi memeriksa tanda tangan kriptografis notifikasi tersebut sebelum memprosesnya, sehingga pesan "sudah dibayar" yang dipalsukan akan ditolak.
 - Sumber daya hanya diterapkan setelah Midtrans melaporkan pembayaran berstatus settlement atau capture.
-- Jika Anda menutup jendela pembayaran, pesanan mungkin tetap berstatus **Dalam Proses** sampai Midtrans mengirimkan hasil akhir. Periksa kembali halaman **Transaksi** beberapa menit kemudian.
+- Jika Anda menutup jendela pembayaran, pesanan mungkin tetap berstatus **Menunggu Pembayaran** sampai Midtrans mengirimkan hasil akhir. Periksa kembali halaman **Transaksi** beberapa menit kemudian.
 
 ## Faktur dan bukti pembayaran
 

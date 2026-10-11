@@ -32,6 +32,8 @@ To remove orders, tick them and select **Remove Selected Order**, then confirm. 
 
 **Transactions** lists every plan and add-on order with its payment status. Select **Load more** to see more.
 
+![Transactions in the Console: an add-on order awaiting payment, with its countdown and Continue Payment](../../../assets/screenshots/en/console-transactions.png)
+
 - **Continue Payment** reopens a pending payment before it expires; the countdown shows how long is left.
 - **View Details** opens the order with its items, amounts and status.
 

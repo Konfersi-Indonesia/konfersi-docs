@@ -47,7 +47,7 @@ Credit or debit card, ATM/bank transfer through a virtual account, and QRIS / e-
 
 ### My payment went through but my plan didn't change. What now?
 
-Open **Payment & Billing → Transactions** and check the order status. If it still shows **In Progress** a few minutes after you paid, or you were charged but the order failed, email [support@konfersi.com](mailto:support@konfersi.com) with your order ID. See [Payments](../billing/payments.md#something-went-wrong).
+Open **Payment & Billing → Transactions** and check the order status. If it still shows **Awaiting Payment** a few minutes after you paid, or you were charged but the order failed, email [support@konfersi.com](mailto:support@konfersi.com) with your order ID. See [Payments](../billing/payments.md#something-went-wrong).
 
 ### How do I get a refund?
 

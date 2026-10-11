@@ -41,7 +41,7 @@ Track your orders in **Payment & Billing → Transactions**. You'll see these st
 
 | Status in the Console | What it means | What to do |
 |---|---|---|
-| **In Progress** | The order exists and is waiting for your payment | Finish paying with **Continue Payment** (or, where offered, switch to another payment method) |
+| **Awaiting Payment** | The order exists and is waiting for your payment | Finish paying with **Continue Payment** (or, where offered, switch to another payment method) |
 | **Completed** | Midtrans confirmed the payment and your resources were applied | Nothing, you're all set |
 | **Failed** | The payment was declined or failed | Place a new order, if needed with a different method |
 | **Expired** | The payment window closed before you paid | Place a new order |
@@ -57,7 +57,7 @@ You enrol in a course from **Courses → Marketplace** in the Console (see [Cour
 
 - Midtrans sends Konfersi a payment notification for every status change. Konfersi checks the notification's cryptographic signature before acting on it, so a forged "paid" message is rejected.
 - Resources are only applied once Midtrans reports the payment as settled or captured.
-- If you closed the payment window, your order may still show **In Progress** until Midtrans sends a final result. Check **Transactions** again after a few minutes.
+- If you closed the payment window, your order may still show **Awaiting Payment** until Midtrans sends a final result. Check **Transactions** again after a few minutes.
 
 ## Invoices and receipts
 

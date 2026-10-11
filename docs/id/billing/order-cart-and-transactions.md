@@ -32,6 +32,8 @@ Untuk menghapus pesanan, centang lalu pilih **Hapus Pesanan Dipilih**, kemudian 
 
 **Transaksi** menampilkan setiap pesanan paket dan add-on beserta status pembayarannya. Pilih muat lebih banyak untuk melihat pesanan lainnya.
 
+![Transaksi di Console: pesanan add-on yang menunggu pembayaran, dengan hitung mundur dan Lanjutkan Pembayaran](../../../assets/screenshots/id/console-transactions.png)
+
 - **Lanjutkan Pembayaran** membuka kembali pembayaran tertunda sebelum kedaluwarsa; hitung mundur menunjukkan sisa waktunya.
 - **Lihat Detail** membuka pesanan beserta item, jumlah, dan statusnya.
 
