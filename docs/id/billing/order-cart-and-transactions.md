@@ -16,7 +16,7 @@ Kedua halaman ini ada di **Pembayaran & Tagihan** pada menu samping Console. Men
 - **Paket proyek lab & add-on** yang Anda atur di **Proyek Lab → Paket Proyek & Add-on**
 - **Tiket kursus** yang Anda simpan dengan **Simpan ke keranjang, bayar nanti** (lihat [Kursus](../using-konfersi/courses.md))
 
-Paket dan add-on dibayar bersama dalam satu checkout. Setiap tiket kursus didaftarkan dan dibayar tersendiri.
+Paket dan add-on dibayar bersama dalam satu checkout. Setiap tiket kursus didaftarkan dan dibayar tersendiri. Semua yang ada dalam satu checkout dihargai dalam mata uang tagihan Anda (lihat [Paket & harga](plans-and-pricing.md#mata-uang-tagihan-anda)).
 
 ### Membayar paket dan add-on
 

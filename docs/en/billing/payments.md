@@ -4,7 +4,7 @@ description: How paying for Konfersi plans, add-ons and courses works through Mi
 tags: [billing, payments, midtrans, qris, virtual-account, card]
 related: [billing/plans-and-pricing, billing/refunds-and-cancellation, support/contact-support]
 status: published
-updated: 2026-10-01
+updated: 2026-10-11
 ---
 
 Konfersi takes payments through **Midtrans**, an Indonesian payment gateway. You pay on a Midtrans payment screen, and Konfersi is told the result directly by Midtrans. This page explains the steps, the payment methods and what each status means.
@@ -17,7 +17,7 @@ Konfersi takes payments through **Midtrans**, an Indonesian payment gateway. You
 4. Finish the payment in the Midtrans window, for example by scanning the QR code or paying the virtual account number from your bank.
 5. When Midtrans confirms the payment, your order is marked **Completed**. The plan or add-on resources are applied to your project automatically.
 
-Your payment is processed in **Indonesian Rupiah (IDR)**, even if the Console shows you prices in USD.
+You pay in your account's **billing currency**, which is the currency every price in the Console is shown in (see [Plans & pricing](plans-and-pricing.md#your-billing-currency)). Midtrans takes payments in **Indonesian Rupiah (IDR)**. Payment in other currencies, such as USD, isn't available yet: checkout shows **Payment in USD is coming soon — contact us**, no order is charged, and our team can arrange the purchase with you.
 
 ## Supported payment methods
 

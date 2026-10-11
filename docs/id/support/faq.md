@@ -35,7 +35,7 @@ Ada. Tingkatan **Akademik & Riset** gratis dan ditujukan bagi pelajar, peneliti,
 
 ### Di mana saya bisa melihat harga?
 
-Harga terkini ditampilkan di Console pada menu **Proyek Lab → Paket Proyek & Add-on** dan saat checkout. Harga ditampilkan dalam IDR untuk organisasi di Indonesia dan dalam USD untuk negara lain. Pembayaran diproses dalam IDR.
+Harga terkini ditampilkan di Console pada menu **Proyek Lab → Paket Proyek & Add-on** dan saat checkout. Semua harga ditampilkan dalam mata uang tagihan akun Anda, yang ditetapkan dari negara Anda saat mendaftar (misalnya IDR untuk Indonesia). Hanya tim dukungan yang dapat mengubahnya. Pembayaran diproses dalam IDR melalui Midtrans; pembayaran dalam USD segera hadir. Lihat [Paket & harga](../billing/plans-and-pricing.md#mata-uang-pajak-dan-harga-terkini).
 
 ### Apakah paket berlaku per akun atau per proyek?
 

@@ -35,7 +35,7 @@ Yes. The **Academic & Research** tier is free and aimed at students, researchers
 
 ### Where can I see prices?
 
-Current prices are shown in the Console under **Lab Project → Project Plans & Add-ons**, and at checkout. Prices appear in IDR for organisations in Indonesia and in USD elsewhere. Payments are processed in IDR.
+Current prices are shown in the Console under **Lab Project → Project Plans & Add-ons**, and at checkout. Every price is shown in your account's billing currency, which is set from your country when you sign up (for example, IDR for Indonesia). Only support can change it. Payments are processed in IDR through Midtrans; payment in USD is coming soon. See [Plans & pricing](../billing/plans-and-pricing.md#currency-tax-and-current-prices).
 
 ### Is a plan per account or per project?
 

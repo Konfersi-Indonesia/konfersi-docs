@@ -71,7 +71,7 @@ When a refund is made, Konfersi updates your order and tells you:
 
 You also get a notification (**Payment Refunded**, **Course refunded** or **Partial refund**) in the Console and, unless you turned it off, by email. See [Notifications](../account/notifications.md).
 
-The money goes back through the payment channel you used, or by the method agreed with you. The transaction in **Payment & Billing → Transactions** keeps a record of the refund.
+The money goes back through the payment channel you used, or by the method agreed with you, in the **currency the order was paid in**. The transaction in **Payment & Billing → Transactions** keeps a record of the refund.
 
 ## Your consumer rights
 

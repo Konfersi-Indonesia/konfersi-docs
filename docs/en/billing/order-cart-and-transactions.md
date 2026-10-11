@@ -16,7 +16,7 @@ The **Order Cart** keeps what you saved to pay for later:
 - **Lab project plans & add-ons** you configured under **Lab Project → Project Plans & Add-ons**
 - **Course tickets** you saved with **Save to cart, pay later** (see [Courses](../using-konfersi/courses.md))
 
-Plans and add-ons are paid together in one checkout. Each course ticket is enrolled and paid on its own.
+Plans and add-ons are paid together in one checkout. Each course ticket is enrolled and paid on its own. Everything in a checkout is priced in your billing currency (see [Plans & pricing](plans-and-pricing.md#your-billing-currency)).
 
 ### Pay for plans and add-ons
 

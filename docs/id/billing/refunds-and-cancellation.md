@@ -71,7 +71,7 @@ Saat dana dikembalikan, Konfersi memperbarui pesanan Anda dan memberi tahu Anda:
 
 Anda juga menerima notifikasi (**Pembayaran Dikembalikan**, **Kursus dikembalikan**, atau **Pengembalian sebagian**) di Console dan, kecuali Anda mematikannya, lewat email. Lihat [Notifikasi](../account/notifications.md).
 
-Dana dikembalikan melalui kanal pembayaran yang Anda pakai, atau dengan metode yang disepakati bersama Anda. Transaksi di **Pembayaran & Tagihan → Transaksi** tetap menyimpan catatan pengembaliannya.
+Dana dikembalikan melalui kanal pembayaran yang Anda pakai, atau dengan metode yang disepakati bersama Anda, dalam **mata uang yang dipakai untuk membayar pesanan**. Transaksi di **Pembayaran & Tagihan → Transaksi** tetap menyimpan catatan pengembaliannya.
 
 ## Hak Anda sebagai konsumen
 

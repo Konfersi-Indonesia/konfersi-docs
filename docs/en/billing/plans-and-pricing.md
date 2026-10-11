@@ -4,7 +4,7 @@ description: The Konfersi plan tiers, how plans and add-ons attach to Console pr
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 Konfersi plans are built around how much of the platform you use: Lab compute, storage, AI credits and access to the Metocean Analytics tools. This page explains the tiers, how plans and add-ons work inside the Console, and where you can see current prices.
@@ -58,7 +58,7 @@ See [Order cart & transactions](order-cart-and-transactions.md).
 The **Pricing** page on the Konfersi website (select **Pricing** in the top bar) lists the same plans and prices as the Console, read live from the same plan catalog. You don't need an account to see it.
 
 - Each plan shows its price, or **Free**, or **Custom pricing**, and what it includes, such as compute hours, storage and AI credits.
-- Prices are in **IDR** when the website is in Indonesian and in **USD** in English. The note under the plans gives the VAT (PPN) that is added at checkout.
+- Prices are shown in **one currency**. Signed in, it's your account's billing currency. Signed out, it's the currency for the country you are browsing from, which is detected from your connection, not from the website language. The note under the plans gives the VAT (PPN) that is added at checkout.
 - **Get started** opens the Console's **Project Plans & Add-ons** page. If you are signed out, you create an account first (see [Create an account](../getting-started/create-account.md)). After you verify your email in the same browser and finish your profile, Konfersi takes you straight to that page.
 - **Contact sales** (on plans with custom pricing) opens a support request in the Console with the plan already filled in. Sign in first if you are asked to.
 
@@ -67,8 +67,25 @@ The price you pay is always the one shown at checkout in the Console.
 ## Currency, tax and current prices
 
 - **Current prices are shown in the Console at checkout.** This documentation deliberately doesn't list numbers, because they can change.
-- Prices are shown in **Indonesian Rupiah (IDR)** if your organisation's country is Indonesia, and in **US Dollars (USD)** otherwise. The currency follows the country in your profile.
-- Payments themselves are processed in **IDR** through our payment partner, Midtrans. If you view prices in USD, treat the USD figure as an estimate. The IDR amount at checkout is what you are charged.
+
+### Your billing currency
+
+- **Every account has one billing currency**, set automatically when you create your account, from the country you give. For example, Indonesia, Malaysia and Singapore are billed in **Indonesian Rupiah (IDR)**. You see every price in the Console in that currency, with no conversion and no currency switch.
+- Your profile shows it as **Billing currency**. Changing the country in your profile later **doesn't** change it. To change it, [contact support](../support/contact-support.md); every change is recorded.
+- If you signed up with Google, Microsoft, GitHub or your organisation's sign-in and haven't given a country yet, add it to your profile before you check out. Checkout can't continue without one.
+- Accounts created before per-account currencies were introduced keep **IDR**, which is what they were charged before.
+- When you buy for an **organisation**, the price is in the billing currency of the organisation's billing manager (the owner, unless the owner chose someone else).
+
+### Prices in each currency
+
+- Konfersi sets each plan's, add-on's and course ticket's price **separately for each currency**. Prices are not converted from IDR at an exchange rate, so the amount you see is the amount you are charged.
+- If an item has no price in your currency, you see its price in Konfersi's default currency instead. If it has neither, it shows **Not available in your region — contact us**, and you can [contact sales](../support/contact-support.md).
+- An order keeps the currency and amounts it was created with, even if prices change later. One order or checkout is always in a single currency.
+
+### Paying and tax
+
+- Payments in **IDR** are processed through our payment partner, Midtrans (see [Payments](payments.md)).
+- **Payment in other currencies, such as USD, isn't available yet.** If your billing currency is one of them, checkout shows **Payment in USD is coming soon — contact us**, and nothing is charged. Contact us and we'll arrange your purchase.
 - Value-added tax (PPN) is added on top of the subtotal. The checkout breakdown shows the subtotal, tax and grand total before you pay.
 
 To learn how paying works, see [Payments](payments.md).
