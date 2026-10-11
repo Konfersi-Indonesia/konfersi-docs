@@ -2,12 +2,12 @@
 title: Analyses & charts
 description: Every analysis Konfersi Lab produces for a point — time series, statistics, roses, joint distributions, extreme values, tides and cyclones — and how to read, customise, export and explain the charts.
 tags: [lab, analysis, chart, statistics, rose, extreme value, return period, gev, pot, tides, cyclones, export]
-related: [lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
+related: [lab/analysis/reading-results, lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
-Once a point is [processed](../points/process-points.md), its analyses are ready to open.
+Once a point is [processed](../points/process-points.md), its analyses are ready to open. To understand what each one shows, see [Reading the results](reading-results.md).
 
 ## Open an analysis
 
@@ -20,18 +20,21 @@ An analysis marked **Ready · older analysis** was made by an earlier version of
 
 ## Point analyses
 
-For each processed variable (wind, waves, currents, sea surface temperature, salinity, precipitation, air temperature, air pressure):
+For each processed variable (wind, waves, currents, sea surface height, sea surface temperature, salinity, precipitation, air temperature, air pressure):
 
 | Group | Analyses |
 |---|---|
-| **Time series** | Daily, monthly, annual and seasonal time series; monthly climatology |
+| **Time series** | Daily, monthly and annual time series; monthly climatology (mean, maximum and the P10–P90 band) |
+| **Seasonal** | A [box plot per season](reading-results.md#seasonal-box-plot) (DJF, MAM, JJA, SON): quartiles, whiskers, mean and outliers, with the numbers in a table |
 | **Statistics** | Overall, monthly and seasonal statistics |
 | **Roses** | Wind rose, wave rose, current rose: how often each direction and strength occur |
 | **Joint distributions** | Overall and seasonal joint distributions, including wave height against period (Hs–Tm, Hs–Tp). Joint frequency results are shown for **All seasons** and for each season (DJF, MAM, JJA, SON): a rose, an occurrence heatmap by direction and class, a frequency table (%) and statistics by direction |
-| **Extreme values** | Return levels for chosen return periods, with 90% confidence bands, by **Block Maxima (GEV)** or **Peaks Over Threshold (GPD)**. Where available: a **Return level plot**, a **Q-Q plot** and the **Fitted density** to judge the fit |
-| **Monsoonal surges** | Surge events linked to the monsoon, where relevant |
+| **Extreme values** | Return levels up to 1,000 years with 90% confidence bands. **Block maxima** (GEV or Gumbel, the design values) and **Peaks over threshold** (GPD, the cross-check), with the fit's checks and diagnostic plots. **Extreme values by direction** for wind, waves and currents. See [Extreme values](reading-results.md#extreme-values) |
+| **Monsoonal surges** | Wind: the December–March days with wind of at least 8 m/s, and a rose of those hours |
 
-Extreme value settings, such as the method and the threshold for Peaks Over Threshold, come from **Project Details → Thresholds**. Use **Fill Suggested Thresholds** for a starting point, then save. If the fit doesn't converge for the data, the chart says so.
+For **Water level**, the point analysis is the [tidal datums](reading-results.md#tidal-datums): HAT, MHHW, MHW, MSL, MLW, MLLW, LAT and the others, the tidal ranges and the Formzahl tide type.
+
+The stored extreme values always run both methods and choose the peaks-over-threshold threshold themselves (about 3 storms a year). The thresholds in **Project Details → Thresholds** record your project's criteria for the briefing and the AI assistant; they don't change the stored results. If the fit doesn't converge for the data, the chart says so.
 
 ### Tropical cyclones on daily series
 
@@ -45,7 +48,7 @@ To see the storm tracks themselves, use [Cyclone tracks near a point](../map/ind
 |---|---|
 | **Tides** | Predicted tide for a year you choose, tidal levels (mean high and low water springs and neaps, relative to mean sea level) and constituents, from the FES2022 model, compared with the nearest UHSLC tide gauge where available. A **Station baseline** table names the tide gauge and the FES2022 model cell, with their positions and distance. When the gauge validates the model: **Observed vs predicted**, the **Residual (observed − predicted)** and a scatter of **Observed against predicted** |
 | **Tropical cyclones by month** | Storms within a search radius you choose, by month and category, from IBTrACS, with a **Monthly occurrences by category** table |
-| **Storm audit (500 km)** | Every tropical cyclone that passed within 500 km |
+| **Storm audit (500 km)** | Every tropical cyclone that passed within 500 km at tropical-storm strength: closest approach, strongest storm, a timeline and a table. See [Storm audit](reading-results.md#storm-audit-500-km) |
 
 ## Extremes along a route
 

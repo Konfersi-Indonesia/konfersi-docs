@@ -2,9 +2,9 @@
 title: Metocean data sources
 description: The global datasets Konfersi calibrates and validates against, ERA5, CMEMS, FES2022 and CMIP6, and how to credit them.
 tags: [data, era5, cmems, fes2022, cmip6, attribution]
-related: [using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
+related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
 status: published
-updated: 2026-09-27
+updated: 2026-10-11
 ---
 
 Konfersi calibrates and validates its models and analyses against industry-standard global datasets. This page explains the main datasets we reference, what each one is, and what to keep in mind when you use results based on them.
@@ -13,18 +13,18 @@ Konfersi calibrates and validates its models and analyses against industry-stand
 
 | Dataset | What it is | Typical use at Konfersi |
 |---|---|---|
-| **ERA5** | The fifth-generation atmospheric reanalysis from ECMWF (European Centre for Medium-Range Weather Forecasts), distributed through the Copernicus Climate Data Store | Hourly wind, pressure, temperature and ocean-wave history (hindcast) |
-| **CMEMS** | The Copernicus Marine Service, which provides satellite- and model-derived ocean products | Currents, salinity, sea state and biogeochemistry |
-| **FES2022** | A global ocean tide model | Tidal constituents and tidal elevations |
+| **ERA5** | The fifth-generation atmospheric reanalysis from ECMWF (European Centre for Medium-Range Weather Forecasts), distributed through the Copernicus Climate Data Store | Hourly precipitation, air temperature and surface pressure history in Lab |
+| **CMEMS** | The Copernicus Marine Service, which provides satellite- and model-derived ocean products | Wind, waves, currents, sea surface height, sea surface temperature and salinity in Lab |
+| **FES2022** | A global ocean tide model | Tidal constituents, the predicted tide and tidal datums |
 | **CMIP6** | The Coupled Model Intercomparison Project, Phase 6: a coordinated set of global climate model experiments | Future climate scenarios, such as SSP pathways, for climate-risk work |
 
 ### ERA5
 
-ERA5 combines model data with observations from across the world to produce a consistent, hourly record of the atmosphere and ocean waves going back decades. It's a common baseline for wind and wave statistics, operational limits and return periods.
+ERA5 combines model data with observations from across the world to produce a consistent, hourly record of the atmosphere and ocean waves going back decades. In Lab it provides precipitation, air temperature and air pressure at a point, over 2015 to 2025.
 
 ### CMEMS
 
-The Copernicus Marine Service publishes ocean analyses, forecasts and reanalyses. Konfersi uses CMEMS products for ocean state parameters such as currents and salinity.
+The Copernicus Marine Service publishes ocean analyses, forecasts and reanalyses. In Lab, wind comes from its observation-based L4 wind product, waves from its global wave reanalysis, currents and sea surface height from the GLORYS12 reanalysis, and sea surface temperature and salinity from its observation products. The dataset for each variable is listed in [Variables & sources](../lab/data/variables-and-sources.md).
 
 ### FES2022
 

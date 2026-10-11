@@ -1,0 +1,131 @@
+---
+title: Membaca hasil
+description: Cara Lab memproses sebuah titik dan cara membaca setiap analisis, dari statistik, box plot musiman, dan mawar hingga nilai ekstrem, datum pasang surut, dan audit badai.
+tags: [lab, analisis, statistik, box plot, mawar, distribusi gabungan, nilai ekstrem, eva, periode ulang, datum pasang surut, formzahl, audit badai, siklon, kontrol kualitas]
+related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
+status: published
+updated: 2026-10-11
+---
+
+Saat Anda [memproses titik](../points/process-points.md), Lab mengunduh rekaman setiap variabel untuk titik itu, memeriksa kualitasnya, lalu menjalankan serangkaian analisis. Halaman ini menjelaskan cara membaca setiap analisis. Asal setiap variabel, beserta rekaman dan resolusinya, ada di [Variabel & sumber](../data/variables-and-sources.md); cara membuka dan mengekspor grafik ada di [Analisis & grafik](index.md).
+
+## Cara titik diproses
+
+- **Sel laut terdekat.** Setiap dataset berbentuk grid. Hasil dibaca dari sel grid terdekat dengan titik Anda yang memiliki data laut. Jarak ke sel itu ikut diperiksa: lebih dari 30 km diberi peringatan, lebih dari 75 km dinyatakan gagal.
+- **Kontrol kualitas.** Setiap rekaman diperiksa untuk nilai di luar batas fisik, nilai yang datar terlalu lama, lonjakan satu langkah yang terisolasi, celah data, dan kelengkapan (peringatan di bawah 99 %, gagal di bawah 90 %). Untuk gelombang, lonjakan terisolasi dibuang sebelum analisis, karena reanalisis gelombang memiliki artefak satu langkah yang diketahui dan bisa menjadi nilai rekor atau ekor ekstrem.
+- **Tiga kondisi.** Setiap analisis tersedia untuk **Semua kondisi**, **Hanya siklonik**, dan **Hanya non-siklonik**. Periode siklonik adalah tanggal-tanggal ketika siklon tropis (dari catatan IBTrACS) berada dalam 500 km dari titik, ditambah 2 hari di setiap sisinya. Jika tidak ada siklon yang sedekat itu, *Hanya siklonik* kosong dan *Hanya non-siklonik* berisi seluruh rekaman. Muka air tidak dibagi per kondisi siklon.
+- **Versi analisis.** Hasil membawa versi pipeline analisis yang membuatnya. Saat metodenya berubah, Lab memproses titik itu lagi saat Anda memakainya berikutnya.
+
+## Catatan yang mengubah cara membaca hasil
+
+Beberapa variabel membawa catatan yang tampil bersama setiap hasilnya. Catatan ini tercantum per variabel di [Variabel & sumber](../data/variables-and-sources.md#baca-catatannya). Yang paling mengubah cara membaca angka:
+
+- **Arus** adalah arus residual (non-pasang surut): arus pasang surut tidak termasuk.
+- **Muka air** hanya pasang surut astronomis: tanpa siklus muka laut rata-rata musiman dan tanpa gelombang badai (storm surge).
+- **Presipitasi, suhu udara, dan tekanan udara** mencakup 2015 hingga 2025, sehingga nilai ekstremnya selalu ditandai kepercayaan rendah.
+
+## Deret waktu dan statistik
+
+- **Deret waktu harian, bulanan, dan tahunan**: rekaman pada interval tersebut.
+- **Klimatologi bulanan**: untuk setiap bulan kalender, rata-rata, maksimum, dan pita antara persentil ke-10 dan ke-90 (P10–P90), sehingga Anda melihat rentang yang umum, bukan hanya rata-ratanya.
+- **Statistik keseluruhan, bulanan, dan musiman**: tabel statistik rekaman untuk seluruh rekaman, per bulan kalender, dan per musim. **Statistik (semua)** menampilkan ketiga tabel sekaligus.
+
+![Klimatologi bulanan angin di titik QA Java Sea: rata-rata bulanan, maksimum, dan pita P10–P90](../../../../assets/screenshots/en/lab-analysis-climatology.png)
+
+*Klimatologi bulanan: angin di sebuah titik di Laut Jawa.*
+
+## Box plot musiman
+
+Tampilan musiman menampilkan satu kotak per musim (DJF Desember–Februari, MAM Maret–Mei, JJA Juni–Agustus, SON September–November):
+
+- kotak membentang dari kuartil pertama (Q1) hingga ketiga (Q3), dengan garis di median;
+- ◆ adalah rata-rata;
+- whisker menjangkau nilai terjauh dalam 1,5 × tinggi kotak (rentang antarkuartil, aturan Tukey);
+- titik di luar whisker adalah pencilan. Rekaman panjang memiliki ribuan pencilan, jadi hanya 50 yang paling ekstrem di setiap sisi yang digambar, dan jumlah lengkapnya ada saat Anda mengarahkan kursor.
+
+Statistiknya dihitung tepat dari seluruh rekaman. Kotak presipitasi memakai total harian (mm/hari); variabel lain memakai setiap sampel. Arahkan kursor ke kotak untuk melihat semua angkanya, atau baca di tabel di bawah grafik.
+
+![Box plot musiman tinggi gelombang signifikan di titik QA Java Sea, dengan tabel statistik musiman](../../../../assets/screenshots/en/lab-analysis-seasonal-box.png)
+
+*Box plot musiman: tinggi gelombang signifikan, dengan angkanya di tabel di bawahnya.*
+
+## Mawar dan distribusi gabungan
+
+- **Mawar angin, Mawar gelombang, Mawar arus**: seberapa sering variabel datang dari (angin, gelombang) atau mengalir ke (arus) setiap arah, dibagi per kelas kecepatan atau tinggi. Ini konvensi oseanografi yang lazim. Untuk angin, kecepatan di bawah 0,5 m/s dianggap tenang (calm): tidak punya arah yang bermakna dan ditampilkan sebagai bagian tersendiri, sehingga sektor dan calm berjumlah 100 %.
+- **Distribusi gabungan (keseluruhan, musiman)**: tabel frekuensi arah terhadap kelas kecepatan atau tinggi, di samping mawarnya, dengan statistik per arah (rata-rata, P50, P75, P95, P99, maksimum). Versi musiman memberi satu set per musim.
+- **Distribusi gabungan Hs–Tm dan Hs–Tp** (gelombang): seberapa sering setiap kombinasi tinggi gelombang signifikan (Hs) dan periode gelombang terjadi. Tampilan Hs–Tp juga menggambar **kontur lingkungan** (IFORM) untuk periode ulang 1 hingga 1.000 tahun. Konturnya nominal (tanpa faktor penambah), konsisten dengan hasil nilai ekstrem, dan kondisi laut yang sangat curam dibatasi pada kecuraman 1/15. Kontur memakai tinggi gelombang hindcast sebelum kalibrasi altimetri; tingkat yang sudah dikalibrasi ada di hasil nilai ekstrem.
+- **Seruak monsun** (angin): hari-hari Desember hingga Maret dengan angin minimal 8 m/s, beserta mawar dari jam-jam tersebut. Ini menunjukkan seberapa sering dan dari arah mana angin monsun yang kuat bertiup.
+
+![Mawar angin di titik QA Java Sea per kelas kecepatan](../../../../assets/screenshots/en/lab-analysis-windrose.png)
+
+*Mawar angin: seberapa sering angin datang dari setiap arah, per kelas kecepatan.*
+
+![Distribusi gabungan angin keseluruhan: arah terhadap kelas kecepatan, dengan mawar dan statistik per arah](../../../../assets/screenshots/en/lab-analysis-joint.png)
+
+*Distribusi gabungan: tabel frekuensi di samping mawarnya, dan statistik per arah.*
+
+![Distribusi gabungan Hs–Tp dengan kontur lingkungan IFORM 1 hingga 1.000 tahun dan batas kecuraman](../../../../assets/screenshots/en/lab-analysis-hs-tp.png)
+
+*Distribusi gabungan Hs–Tp dengan kontur lingkungan dan batas kecuraman 1/15.*
+
+## Nilai ekstrem
+
+Analisis nilai ekstrem (EVA) memperkirakan tingkat yang dicapai sebuah variabel sekali dalam periode ulang tertentu, misalnya kecepatan angin 100 tahunan. Konfersi mengikuti standar metode DNV-RP-C205 / ISO 19901-1 dan melaporkan periode ulang hingga 1.000 tahun dengan selang kepercayaan 90 %.
+
+- **Block maxima (nilai desain).** Nilai tertinggi setiap tahun penuh (sebuah tahun dihitung jika memuat minimal 80 % sampelnya; minimal 10 tahun seperti itu dibutuhkan) dicocokkan dengan distribusi GEV dan Gumbel. Yang dilaporkan adalah yang statistik Anderson–Darling-nya (A²) paling kecil, dengan galat Q-Q sebagai penentu jika seri. GEV hanya menggantikan Gumbel yang lebih sederhana jika parameter bentuk tambahannya signifikan secara statistik (uji rasio kemungkinan pada p < 0,05), dan dengan kurang dari 20 maksima tahunan hanya jika bentuknya tetap dalam ±0,5.
+- **Peaks over threshold (pembanding).** Puncak badai yang saling bebas di atas ambang dicocokkan dengan distribusi Pareto umum (GPD). Ambang dipilih agar memberi sekitar 3 puncak per tahun (antara 1 dan 6, minimal 20 puncak), dan puncak yang lebih dekat daripada jarak antar-badai variabelnya (misalnya 48 jam untuk angin dan gelombang) dihitung sebagai satu badai. Tingkat 100 tahunannya dibandingkan dengan selang block maxima sebagai pemeriksaan.
+- **Nilai ekstrem per arah** (angin, gelombang, arus): block maxima per sektor arah, dalam 8 sektor. Sektor dengan data kurang dari 10 tahun penuh tidak menampilkan tingkat. Sektor yang tingkatnya melebihi hasil desain semua arah (block maxima, tanpa kalibrasi, pada tahun-tahun yang sama) ditandai untuk ditinjau sebelum dipakai sebagai nilai desain: biasanya itu efek sampel kecil di ekor satu sektor.
+- **Pemeriksaan yang menyertai setiap hasil**: kecocokan model, apakah maksima tahunan berubah sepanjang rekaman (homogenitas), dan apakah rekor yang teramati terlalu jarang menurut model. Jika maksima tahunan berubah secara signifikan (uji Pettitt), pencocokan memakai tahun-tahun setelah perubahan, dan hasil seluruh rekaman ditampilkan di sampingnya sebagai pembanding. Data kurang dari 20 tahun penuh memberi tanda kepercayaan rendah, karena periode ulang yang panjang menjadi ekstrapolasi jauh.
+- **Gelombang dikalibrasi dengan altimetri satelit.** Reanalisis gelombang cenderung terlalu rendah pada kondisi laut yang lebih besar, jadi tinggi gelombang di setiap titik dibandingkan dengan lintasan altimeter satelit di dekatnya (SARAL dan Sentinel-3A/B, dari ESA Sea State CCI). Tingkat yang sudah dikalibrasi ditampilkan sebagai sensitivitas di samping tingkat desain, bukan menggantikannya. Jika lintasan yang bisa dipakai kurang dari 20, hasilnya menyebutkan bahwa kalibrasi tidak dilakukan.
+
+Selang kepercayaan berasal dari bootstrap dengan seed tetap, sehingga memproses data yang sama lagi memberi angka yang sama.
+
+![Nilai ekstrem block maxima untuk angin: model, tingkat 100 tahunan, kepercayaan, plot tingkat ulang, plot Q-Q dan P-P, serta pemeriksaannya](../../../../assets/screenshots/en/lab-analysis-eva-bm.png)
+
+*Block maxima: ringkasan hasil dengan A²-nya, plot tingkat ulang dengan pita 90 %, plot Q-Q dan P-P, pemeriksaan termasuk pembanding peaks over threshold, dan pemilihan model. Di sini GEV memiliki A² lebih kecil tetapi bentuknya tidak signifikan, sehingga Gumbel dipertahankan.*
+
+![Tingkat ulang gelombang per arah dalam 8 sektor](../../../../assets/screenshots/en/lab-analysis-eva-dir.png)
+
+*Nilai ekstrem per arah: tingkat ulang per sektor.*
+
+## Datum pasang surut
+
+Untuk muka air, Lab memberikan datum pasang surut standar, mengikuti definisi NOAA CO-OPS, dari 19 tahun penuh terakhir prediksi pasang surut per jam (epoch 19 tahun mencakup siklus nodal 18,6 tahun). Air tinggi dan air rendah diambil dari sampel per jam, sehingga puncaknya bisa terbaca hingga sekitar 3 % dari rentang pasang surut di bawah puncak sebenarnya (sampel bisa meleset setengah jam dari puncak):
+
+| Datum | Arti |
+|---|---|
+| HAT / LAT | Pasang astronomis tertinggi dan surut astronomis terendah |
+| MHHW / MLLW | Rata-rata air tinggi yang lebih tinggi dan rata-rata air rendah yang lebih rendah |
+| MHW / MLW | Rata-rata air tinggi dan rata-rata air rendah |
+| MTL / DTL | Muka pasang surut rata-rata dan muka pasang surut diurnal |
+| MSL | Muka laut rata-rata dari deret tersebut (acuan, 0) |
+
+**Rentang** GT (rentang diurnal besar, MHHW − MLLW) dan MN (rentang rata-rata, MHW − MLW) ikut disertakan. **Formzahl** F = (K1 + O1) / (M2 + S2) menggolongkan tipe pasang surut: di bawah 0,25 ganda (semidiurnal), hingga 1,5 campuran condong ganda, hingga 3 campuran condong tunggal, di atasnya tunggal (diurnal).
+
+Pasang surut per jam untuk periode apa pun hingga 366 hari dibuat saat Anda memintanya.
+
+![Datum pasang surut di titik QA Java Sea: rentang, tipe pasang surut Formzahl, epoch, dan tabel datum](../../../../assets/screenshots/en/lab-analysis-tidal-datums.png)
+
+*Datum pasang surut: di titik Laut Jawa ini pasang surutnya tunggal/diurnal (F = 3,38).*
+
+## Audit badai (500 km)
+
+Audit badai mencantumkan setiap siklon tropis dalam catatan IBTrACS yang melintas dalam 500 km dari titik dengan kekuatan minimal badai tropis: angin berkelanjutan 1 menit AS (`usa_wind`) minimal 34 knot pada titik pengamatan di dalam lingkaran.
+
+- **Jarak terdekat** diukur pada titik pengamatan IBTrACS, yang berselang 3 jam, bukan di sepanjang lintasan yang diinterpolasi.
+- **Kategori** adalah kategori Saffir–Simpson dari angin terkuat di dalam lingkaran. Di grafik, warna mengelompokkan badai menjadi badai tropis, kategori 1–2, dan kategori 3–5; ukuran titik menunjukkan angin.
+- Badai yang hanya dilaporkan dengan angin 10 menit (lembaga di luar AS) tidak dicantumkan.
+
+Tampilannya memuat jumlah badai, jarak terdekat, badai terkuat, linimasa badai menurut tanggal dan jarak terdekat, serta tabel dengan kedua nilai angin, jarak terdekat, dan jumlah jam di dalam lingkaran (dari titik pengamatan pertama hingga terakhir di dalamnya; badai yang keluar lalu masuk lagi dihitung termasuk jedanya). Arahkan kursor ke titik untuk melihat waktu jarak terdekat.
+
+![Audit badai di titik QA Java Sea: empat badai tropis dalam 500 km, linimasa, dan tabelnya](../../../../assets/screenshots/en/lab-analysis-storm-audit.png)
+
+*Audit badai: empat badai tropis melintas dalam 500 km dari titik ini.*
+
+## Memakai hasilnya
+
+Analisis ini adalah alat bantu penyaringan dan perencanaan yang dibangun di atas dataset global, yang resolusinya terbatas dan memiliki bias yang diketahui di dekat pantai. Cantumkan dataset yang mendasarinya saat Anda menerbitkan hasil, seperti dijelaskan di [Atribusi dan lisensi](../../using-konfersi/metocean-data-sources.md#atribusi-dan-lisensi).
+
+<scalar-callout type="warning">Hasil ini bukan kajian bersertifikat khusus lokasi. Baca [Penafian AI & metocean](../../legal/ai-and-metocean-disclaimer.md).</scalar-callout>
+
+Ada pertanyaan tentang variabel atau analisis? [Hubungi dukungan](../../support/contact-support.md).

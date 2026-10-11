@@ -241,6 +241,12 @@
                     "title": "Data validation",
                     "icon": "phosphor/regular/check-circle",
                     "filepath": "docs/en/lab/analysis/data-validation.md"
+                  },
+                  "/reading-results": {
+                    "type": "page",
+                    "title": "Reading the results",
+                    "icon": "phosphor/regular/book-open",
+                    "filepath": "docs/en/lab/analysis/reading-results.md"
                   }
                 }
               },
@@ -657,6 +663,12 @@
                     "title": "Validasi data",
                     "icon": "phosphor/regular/check-circle",
                     "filepath": "docs/id/lab/analysis/data-validation.md"
+                  },
+                  "/reading-results": {
+                    "type": "page",
+                    "title": "Membaca hasil",
+                    "icon": "phosphor/regular/book-open",
+                    "filepath": "docs/id/lab/analysis/reading-results.md"
                   }
                 }
               },

@@ -2,9 +2,9 @@
 title: Sumber data metocean
 description: Dataset global yang menjadi acuan kalibrasi dan validasi Konfersi, yaitu ERA5, CMEMS, FES2022, dan CMIP6, serta cara mencantumkan sumbernya.
 tags: [data, era5, cmems, fes2022, cmip6, atribusi]
-related: [using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
+related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
 status: published
-updated: 2026-09-27
+updated: 2026-10-11
 ---
 
 Konfersi mengkalibrasi dan memvalidasi model serta analisisnya terhadap dataset global berstandar industri. Halaman ini menjelaskan dataset utama yang kami gunakan sebagai acuan, apa isinya, dan hal-hal yang perlu diperhatikan saat Anda memakai hasil yang bersumber darinya.
@@ -13,18 +13,18 @@ Konfersi mengkalibrasi dan memvalidasi model serta analisisnya terhadap dataset 
 
 | Dataset | Penjelasan | Pemakaian umum di Konfersi |
 |---|---|---|
-| **ERA5** | Reanalisis atmosfer generasi kelima dari ECMWF (European Centre for Medium-Range Weather Forecasts), didistribusikan melalui Copernicus Climate Data Store | Riwayat per jam (hindcast) untuk angin, tekanan, suhu, dan gelombang laut |
-| **CMEMS** | Copernicus Marine Service, penyedia produk kelautan berbasis satelit dan model | Arus, salinitas, kondisi laut, dan biogeokimia |
-| **FES2022** | Model pasang surut laut global | Konstituen dan elevasi pasang surut |
+| **ERA5** | Reanalisis atmosfer generasi kelima dari ECMWF (European Centre for Medium-Range Weather Forecasts), didistribusikan melalui Copernicus Climate Data Store | Riwayat per jam untuk presipitasi, suhu udara, dan tekanan permukaan di Lab |
+| **CMEMS** | Copernicus Marine Service, penyedia produk kelautan berbasis satelit dan model | Angin, gelombang, arus, tinggi muka laut, suhu permukaan laut, dan salinitas di Lab |
+| **FES2022** | Model pasang surut laut global | Konstituen, prediksi pasang surut, dan datum pasang surut |
 | **CMIP6** | Coupled Model Intercomparison Project Fase 6: rangkaian eksperimen model iklim global yang terkoordinasi | Skenario iklim masa depan, misalnya jalur SSP, untuk kajian risiko iklim |
 
 ### ERA5
 
-ERA5 menggabungkan data model dengan observasi dari seluruh dunia. Hasilnya adalah rekaman atmosfer dan gelombang laut per jam yang konsisten, mundur hingga beberapa dekade. ERA5 umum dipakai sebagai acuan statistik angin dan gelombang, batas operasional, dan periode ulang.
+ERA5 menggabungkan data model dengan observasi dari seluruh dunia. Hasilnya adalah rekaman atmosfer dan gelombang laut per jam yang konsisten, mundur hingga beberapa dekade. Di Lab, ERA5 menyediakan presipitasi, suhu udara, dan tekanan udara di sebuah titik, untuk periode 2015 hingga 2025.
 
 ### CMEMS
 
-Copernicus Marine Service menerbitkan analisis, prakiraan, dan reanalisis kelautan. Konfersi memanfaatkan produk CMEMS untuk parameter kondisi laut seperti arus dan salinitas.
+Copernicus Marine Service menerbitkan analisis, prakiraan, dan reanalisis kelautan. Di Lab, angin berasal dari produk angin L4 berbasis observasinya, gelombang dari reanalisis gelombang globalnya, arus dan tinggi muka laut dari reanalisis GLORYS12, serta suhu permukaan laut dan salinitas dari produk observasinya. Dataset untuk setiap variabel tercantum di [Variabel & sumber](../lab/data/variables-and-sources.md).
 
 ### FES2022
 
