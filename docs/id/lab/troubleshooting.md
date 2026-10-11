@@ -4,7 +4,7 @@ description: Arti pesan galat Konfersi Lab dan cara mengatasinya — masuk, akse
 tags: [lab, pemecahan masalah, galat, gagal, kuota, pemrosesan, masuk, tidak merespons]
 related: [lab/faq, lab/points/process-points, support/support-tickets]
 status: published
-updated: 2026-10-02
+updated: 2026-10-11
 ---
 
 Sebagian besar masalah menampilkan pesan di notifikasi. Untuk detailnya, buka panel **Log** atau jalankan perintah untuk menampilkan log akuisisi. Jika butuh bantuan, [buat tiket dukungan](../support/support-tickets.md) dengan menyebutkan proyek, titik, dan pesannya.
@@ -16,7 +16,7 @@ Beberapa pesan dari server ditampilkan dalam bahasa Inggris; pesan tersebut diku
 | Pesan | Yang perlu dilakukan |
 |---|---|
 | Tidak ada proyek yang terbuka | Buka proyek dari Console, atau jalankan **Konfersi: Ganti Proyek…** di desktop |
-| Proyek memakai paket Gratis dan perlu ditingkatkan untuk memakai Lab | Tingkatkan paket proyek di Console melalui **Proyek Lab → Paket Proyek & Add-on** |
+| Proyek memakai paket Gratis dan perlu ditingkatkan untuk memakai Lab | Tingkatkan paket proyek di Console melalui **Proyek Lab → Paket Proyek** |
 | **Project … was not found or you do not have access.** | Pastikan Anda masuk dengan akun yang benar dan Anda pemilik proyek, diundang, atau anggota organisasi tempat proyek dibagikan |
 | Sesi Konfersi kedaluwarsa | Pilih **Masuk** |
 | Editor diputus dari akun Konfersi | Seseorang memutusnya di [Perangkat terhubung](../account/security/connected-devices.md). Masuk lagi jika itu Anda |

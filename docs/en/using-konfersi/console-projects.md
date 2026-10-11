@@ -4,7 +4,7 @@ description: Create, open, share and manage projects in the Konfersi Console, an
 tags: [console, projects, plans, collaboration]
 related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 The Console at [app.konfersi.com](https://app.konfersi.com) is where you organise your work. Everything you do in Konfersi happens inside a **project**. Each project has its own plan, its own quotas and its own people. This page shows you how to create a project, find your way around it and share it.
@@ -14,7 +14,7 @@ The Console at [app.konfersi.com](https://app.konfersi.com) is where you organis
 The side menu has these areas:
 
 - **Dashboard**: your recent projects, recent activity, usage at a glance, what **Needs your attention**, and our newest articles.
-- **Lab Project**: **My Projects** (every project you own or have been invited to) and **Project Plans & Add-ons**.
+- **Lab Project**: **My Projects** (every project you own or have been invited to), **Project Plan** and **Add-ons**.
 - **Courses**: the course **Marketplace** and **My Courses**. See [Courses](courses.md).
 - **Community**: **Article Discussions** and **Member Q&A**. See [Community](community.md).
 - **Organization**: your team's members, shared projects and settings, if you belong to one. See [Organizations](organizations/index.md).

@@ -11,11 +11,13 @@ Konfersi takes payments through **Midtrans**, an Indonesian payment gateway. You
 
 ## Paying for a plan or add-on in the Console
 
-1. In the [Console](../using-konfersi/console-projects.md), open **Lab Project → Project Plans & Add-ons** and choose a plan, or extra resources under add-ons. You can collect several orders in the [Order Cart](order-cart-and-transactions.md) first.
+1. In the [Console](../using-konfersi/console-projects.md), open **Lab Project → Project Plan** and choose a plan, with extra resources under add-ons, or buy add-ons alone under **Lab Project → Add-ons**. You can collect several orders in the [Order Cart](order-cart-and-transactions.md) first.
 2. Review the breakdown: plan price, any add-ons, subtotal, tax (PPN) and grand total. See [Plans & pricing](plans-and-pricing.md) for how prices and currency work.
-3. Select a payment method and choose **Pay Now**.
-4. Finish the payment in the Midtrans window, for example by scanning the QR code or paying the virtual account number from your bank.
+3. Select a payment method and choose **Confirm & pay**.
+4. The payment panel opens on the next page. Finish the payment there, for example by scanning the QR code or paying the virtual account number from your bank.
 5. When Midtrans confirms the payment, your order is marked **Completed**. The plan or add-on resources are applied to your project automatically.
+
+![The checkout page: the order, the price breakdown with tax, and the payment methods](../../../assets/screenshots/en/console-payment.png)
 
 You pay in your account's **billing currency**, which is the currency every price in the Console is shown in (see [Plans & pricing](plans-and-pricing.md#your-billing-currency)). Midtrans takes payments in **Indonesian Rupiah (IDR)**. Payment in other currencies, such as USD, isn't available yet: checkout shows **Payment in USD is coming soon — contact us**, no order is charged, and our team can arrange the purchase with you.
 
@@ -49,7 +51,7 @@ An order that failed, expired or was canceled can't be resumed. Create a new ord
 
 ## Paying for a course
 
-You enrol in a course from **Courses → Marketplace** in the Console (see [Courses](../using-konfersi/courses.md)). Each course is paid in its own checkout, separate from plans and add-ons and still powered by Midtrans. After you fill in the enrolment form, you are sent to a Midtrans payment page. The methods offered there are the ones Midtrans enables for that checkout. Once your payment is confirmed, the course team sends your registration confirmation by email.
+You enrol in a course from **Courses → Marketplace** in the Console (see [Courses](../using-konfersi/courses.md)). A course you enrol in from the Marketplace is paid in its own checkout, also powered by Midtrans. A course ticket you saved to the [Order Cart](order-cart-and-transactions.md) can be paid together with plans and add-ons. After you fill in the enrolment form, you are sent to a Midtrans payment page. The methods offered there are the ones Midtrans enables for that checkout. Once your payment is confirmed, the course team sends your registration confirmation by email.
 
 ## How payment results reach Konfersi
 

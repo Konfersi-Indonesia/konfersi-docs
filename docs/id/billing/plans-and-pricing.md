@@ -31,6 +31,8 @@ Paket berlaku **per proyek**, bukan per akun. Setiap proyek yang Anda buat di [C
 - **Upgrade** memindahkan proyek ke paket yang lebih tinggi. Console tidak mengizinkan Anda membeli paket yang sedang digunakan proyek tersebut.
 - **Add-on** menambah satu jenis sumber daya pada sebuah proyek, misalnya penyimpanan atau kredit AI tambahan, tanpa mengubah paketnya.
 
+![Konfigurasi Paket di Console: proyek, paket, add-on, dan ringkasan pesanan](../../../assets/screenshots/id/console-plan-configure.png)
+
 Setiap paket dan add-on memberikan sejumlah sumber daya tertentu:
 
 | Sumber daya | Kegunaan |
@@ -47,11 +49,16 @@ Di menu samping Console:
 
 | Menu | Kegunaan |
 |---|---|
-| **Proyek Lab → Paket Proyek & Add-on** | Membandingkan paket, memilih paket untuk sebuah proyek, dan membeli add-on untuk sumber daya tambahan |
+| **Proyek Lab → Paket Proyek** | Membandingkan paket dan memilih paket untuk sebuah proyek, beserta add-on bila perlu |
+| **Proyek Lab → Add-on** | Membeli sumber daya tambahan untuk sebuah proyek tanpa mengubah paketnya |
 | **Pembayaran & Tagihan → Keranjang Pesanan** | Meninjau beberapa pesanan paket atau add-on sebelum membayar |
 | **Pembayaran & Tagihan → Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
 
 Lihat [Keranjang pesanan & transaksi](order-cart-and-transactions.md).
+
+![Halaman Paket Proyek di Console, dengan harga dalam mata uang tagihan](../../../assets/screenshots/id/console-plans.png)
+
+![Halaman Add-On Proyek di Console](../../../assets/screenshots/id/console-addons.png)
 
 ## Melihat paket di situs web Konfersi
 
@@ -59,7 +66,7 @@ Halaman **Harga** di situs web Konfersi (pilih **Harga** di bilah atas) menampil
 
 - Setiap paket menampilkan harganya, atau **Gratis**, atau **Harga khusus**, beserta isinya, seperti jam komputasi, penyimpanan, dan kredit AI.
 - Harga ditampilkan dalam **satu mata uang**. Jika Anda masuk, itu adalah mata uang tagihan akun Anda. Jika belum masuk, itu adalah mata uang untuk negara tempat Anda membuka situs, yang dideteksi dari koneksi Anda, bukan dari bahasa situs. Catatan di bawah daftar paket menyebutkan PPN yang ditambahkan saat checkout.
-- **Mulai** membuka halaman **Paket Proyek & Add-on** di Console. Jika belum masuk, Anda membuat akun terlebih dahulu (lihat [Membuat akun](../getting-started/create-account.md)). Setelah Anda memverifikasi email di browser yang sama dan melengkapi profil, Konfersi langsung membawa Anda ke halaman tersebut.
+- **Mulai** membuka halaman **Paket Proyek** di Console. Jika belum masuk, Anda membuat akun terlebih dahulu (lihat [Membuat akun](../getting-started/create-account.md)). Setelah Anda memverifikasi email di browser yang sama dan melengkapi profil, Konfersi langsung membawa Anda ke halaman tersebut.
 - **Hubungi sales** (pada paket dengan harga khusus) membuka permintaan dukungan di Console dengan nama paket sudah terisi. Masuk terlebih dahulu jika diminta.
 
 Harga yang Anda bayar selalu yang tampil saat checkout di Console.

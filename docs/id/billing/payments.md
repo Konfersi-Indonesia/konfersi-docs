@@ -11,11 +11,13 @@ Konfersi menerima pembayaran melalui **Midtrans**, payment gateway asal Indonesi
 
 ## Membayar paket atau add-on di Console
 
-1. Di [Console](../using-konfersi/console-projects.md), buka **Proyek Lab → Paket Proyek & Add-on**, lalu pilih paket, atau sumber daya tambahan di bagian add-on. Anda juga dapat mengumpulkan beberapa pesanan di [Keranjang Pesanan](order-cart-and-transactions.md) terlebih dahulu.
+1. Di [Console](../using-konfersi/console-projects.md), buka **Proyek Lab → Paket Proyek**, lalu pilih paket beserta sumber daya tambahan di bagian add-on, atau beli add-on saja di **Proyek Lab → Add-on**. Anda juga dapat mengumpulkan beberapa pesanan di [Keranjang Pesanan](order-cart-and-transactions.md) terlebih dahulu.
 2. Periksa rinciannya: harga paket, add-on (jika ada), subtotal, pajak (PPN), dan total akhir. Lihat [Paket & harga](plans-and-pricing.md) untuk penjelasan tentang harga dan mata uang.
-3. Pilih metode pembayaran, lalu klik **Bayar Sekarang**.
-4. Selesaikan pembayaran di jendela Midtrans, misalnya dengan memindai kode QR atau membayar ke nomor virtual account dari bank Anda.
+3. Pilih metode pembayaran, lalu klik **Konfirmasi & bayar**.
+4. Panel pembayaran terbuka di halaman berikutnya. Selesaikan pembayaran di sana, misalnya dengan memindai kode QR atau membayar ke nomor virtual account dari bank Anda.
 5. Setelah Midtrans mengonfirmasi pembayaran, pesanan Anda berstatus **Selesai** dan sumber daya dari paket atau add-on otomatis diterapkan ke proyek Anda.
+
+![Halaman checkout: pesanan, rincian harga beserta pajak, dan metode pembayaran](../../../assets/screenshots/id/console-payment.png)
 
 Anda membayar dalam **mata uang tagihan** akun Anda, yaitu mata uang yang dipakai untuk semua harga di Console (lihat [Paket & harga](plans-and-pricing.md#mata-uang-tagihan-anda)). Midtrans menerima pembayaran dalam **Rupiah (IDR)**. Pembayaran dalam mata uang lain, seperti USD, belum tersedia: checkout menampilkan **Pembayaran dalam USD segera hadir — hubungi kami**, tidak ada pesanan yang ditagihkan, dan tim kami dapat mengatur pembeliannya bersama Anda.
 
@@ -49,7 +51,7 @@ Pesanan yang gagal, kedaluwarsa, atau dibatalkan tidak dapat dilanjutkan, dan An
 
 ## Membayar kursus
 
-Anda mendaftar kursus dari **Kursus → Marketplace** di Console (lihat [Kursus](../using-konfersi/courses.md)). Setiap kursus dibayar dalam checkout tersendiri, terpisah dari paket dan add-on, dan juga didukung Midtrans. Setelah Anda mengisi formulir pendaftaran, Anda akan diarahkan ke halaman pembayaran Midtrans. Metode yang tersedia di sana adalah metode yang diaktifkan Midtrans untuk checkout tersebut. Setelah pembayaran dikonfirmasi, tim kursus akan mengirimkan konfirmasi pendaftaran melalui email.
+Anda mendaftar kursus dari **Kursus → Marketplace** di Console (lihat [Kursus](../using-konfersi/courses.md)). Kursus yang Anda daftari dari Marketplace dibayar dalam checkout tersendiri, juga didukung Midtrans. Tiket kursus yang Anda simpan di [Keranjang Pesanan](order-cart-and-transactions.md) dapat dibayar bersama paket dan add-on. Setelah Anda mengisi formulir pendaftaran, Anda akan diarahkan ke halaman pembayaran Midtrans. Metode yang tersedia di sana adalah metode yang diaktifkan Midtrans untuk checkout tersebut. Setelah pembayaran dikonfirmasi, tim kursus akan mengirimkan konfirmasi pendaftaran melalui email.
 
 ## Bagaimana hasil pembayaran sampai ke Konfersi
 

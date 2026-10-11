@@ -4,7 +4,7 @@ description: Membuat, membuka, membagikan, dan mengelola proyek di Konfersi Cons
 tags: [console, proyek, paket, kolaborasi]
 related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
 status: published
-updated: 2026-10-09
+updated: 2026-10-11
 ---
 
 Console di [app.konfersi.com](https://app.konfersi.com) adalah tempat Anda mengatur pekerjaan. Semua aktivitas di Konfersi berlangsung di dalam sebuah **proyek**. Setiap proyek memiliki paket, kuota, dan anggotanya sendiri. Halaman ini menjelaskan cara membuat proyek, mengenali isinya, dan membagikannya.
@@ -14,7 +14,7 @@ Console di [app.konfersi.com](https://app.konfersi.com) adalah tempat Anda menga
 Menu samping memiliki bagian berikut:
 
 - **Dasbor**: proyek terkini, aktivitas terbaru, ringkasan pemakaian, hal yang **Perlu perhatian Anda**, dan artikel terbaru kami.
-- **Proyek Lab**: **Proyek Saya** (semua proyek milik Anda atau proyek tempat Anda diundang) dan **Paket Proyek & Add-on**.
+- **Proyek Lab**: **Proyek Saya** (semua proyek milik Anda atau proyek tempat Anda diundang), **Paket Proyek**, dan **Add-on**.
 - **Kursus**: **Marketplace** kursus dan **Kursus Saya**. Lihat [Kursus](courses.md).
 - **Komunitas**: **Diskusi Artikel** dan **Tanya jawab member**. Lihat [Komunitas](community.md).
 - **Organisasi**: anggota, proyek bersama, dan pengaturan tim Anda, jika Anda tergabung di organisasi. Lihat [Organisasi](organizations/index.md).

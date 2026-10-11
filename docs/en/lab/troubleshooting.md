@@ -4,7 +4,7 @@ description: What Konfersi Lab's error messages mean and how to fix them — sig
 tags: [lab, troubleshooting, errors, failed, quota, processing, sign in, not responding]
 related: [lab/faq, lab/points/process-points, support/support-tickets]
 status: published
-updated: 2026-10-02
+updated: 2026-10-11
 ---
 
 Most problems show a message in a notification. For details, open the **Logs** panel or **Konfersi: Show Acquisition Log**. If you need help, [open a support ticket](../support/support-tickets.md) with the project, the point and the message.
@@ -14,7 +14,7 @@ Most problems show a message in a notification. For details, open the **Logs** p
 | Message | What to do |
 |---|---|
 | **No project is open. Open Lab from a project in Console.** | Open the project from the Console, or run **Konfersi: Switch Project…** on desktop |
-| **"…" is on the Free plan. Upgrade the plan to use Lab.** | Upgrade the project in the Console under **Lab Project → Project Plans & Add-ons** |
+| **"…" is on the Free plan. Upgrade the plan to use Lab.** | Upgrade the project in the Console under **Lab Project → Project Plan** |
 | **Project … was not found or you do not have access.** | Check you're signed in with the right account and that you own the project, were invited, or belong to an organization it's shared with |
 | **Your Konfersi session expired. Sign in again to continue.** | Select **Sign In** |
 | **This editor was disconnected from your Konfersi account.** | Someone disconnected it under [Connected devices](../account/security/connected-devices.md). Sign in again if it was you |

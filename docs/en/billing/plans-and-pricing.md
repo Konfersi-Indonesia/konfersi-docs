@@ -31,6 +31,8 @@ Plans are applied **per project**, not per account. Every project you create in 
 - **Upgrading** a project moves it to a higher plan. The Console won't let you buy the plan the project is already on.
 - **Add-ons** top up a single resource for a project, for example extra storage or extra AI credits, without changing its plan.
 
+![Plan Configuration in the Console: a project, a plan, add-ons and the order summary](../../../assets/screenshots/en/console-plan-configure.png)
+
 Each plan and add-on grants a set amount of one or more resources:
 
 | Resource | What it covers |
@@ -47,11 +49,16 @@ In the Console side menu:
 
 | Menu item | Use it to |
 |---|---|
-| **Lab Project → Project Plans & Add-ons** | Compare plans, choose a plan for a project, and buy add-ons for extra resources |
+| **Lab Project → Project Plan** | Compare plans and choose a plan for a project, with add-ons if you need them |
+| **Lab Project → Add-ons** | Buy extra resources for a project without changing its plan |
 | **Payment & Billing → Order Cart** | Review several plan or add-on orders before paying |
 | **Payment & Billing → Transactions** | Track the status of your orders and continue a pending payment |
 
 See [Order cart & transactions](order-cart-and-transactions.md).
+
+![The Project Plan page in the Console, with prices in the billing currency](../../../assets/screenshots/en/console-plans.png)
+
+![The Project Add-Ons page in the Console](../../../assets/screenshots/en/console-addons.png)
 
 ## See plans on the Konfersi website
 
@@ -59,7 +66,7 @@ The **Pricing** page on the Konfersi website (select **Pricing** in the top bar)
 
 - Each plan shows its price, or **Free**, or **Custom pricing**, and what it includes, such as compute hours, storage and AI credits.
 - Prices are shown in **one currency**. Signed in, it's your account's billing currency. Signed out, it's the currency for the country you are browsing from, which is detected from your connection, not from the website language. The note under the plans gives the VAT (PPN) that is added at checkout.
-- **Get started** opens the Console's **Project Plans & Add-ons** page. If you are signed out, you create an account first (see [Create an account](../getting-started/create-account.md)). After you verify your email in the same browser and finish your profile, Konfersi takes you straight to that page.
+- **Get started** opens the Console's **Project Plan** page. If you are signed out, you create an account first (see [Create an account](../getting-started/create-account.md)). After you verify your email in the same browser and finish your profile, Konfersi takes you straight to that page.
 - **Contact sales** (on plans with custom pricing) opens a support request in the Console with the plan already filled in. Sign in first if you are asked to.
 
 The price you pay is always the one shown at checkout in the Console.
