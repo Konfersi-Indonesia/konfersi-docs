@@ -27,11 +27,15 @@ The first time you open the Console, a [welcome guide](console-guides.md) offers
 ## Create a project
 
 1. Go to **Lab Project → My Projects** and select **Create New Project**.
-2. **Project Information**: enter a **Project Title**. This is required. Adding a **Description** is optional. Select **Continue**.
-3. **Tags**: search for existing tags, or type a new one and select **Create New**. You can add up to 5 new tags. Select **Continue**, or select **Skip for Now** to add tags later.
-4. **Finish Setup**: choose a plan card. Select **See Detail Benefits** to see what each plan includes. Prices are shown excluding VAT.
-5. Select **Preview Setup** and check the **Preview Project Setup** summary.
-6. Finish:
+2. **What kind of project?**: choose **Metocean Lab** for metocean data, analyses and reports with a plan and its quotas, then select **Continue**. (**Notebook**, marked *Experimental*, creates Python notebooks that run in your browser, with no plan or payment. The rest of this guide covers Metocean Lab projects.)
+
+   ![Choosing the project type in the Console](../../../assets/screenshots/en/console-create-project-type.png)
+
+3. **Project Information**: enter a **Project Title**. This is required. **Project photo**, **Location**, **Project type** and **Description** are optional. Select **Continue**.
+4. **Tags**: search for existing tags, or type a new one and select **Create New**. You can add up to 5 new tags. Select **Continue**, or select **Skip for Now** to add tags later.
+5. **Finish Setup**: choose a plan card. Select **See Detail Benefits** to see what each plan includes. Prices are shown excluding VAT.
+6. Select **Preview Setup** and check the **Preview Project Setup** summary.
+7. Finish:
    - For the free trial plan, select **Finish Setup**. The project is created straight away.
    - For a paid plan, select **Proceed Payment** to configure and pay now, or **Add to Cart** to pay later from **Order Cart**.
 
@@ -39,7 +43,7 @@ The first time you open the Console, a [welcome guide](console-guides.md) offers
 
 Plan names, what each plan includes, and current prices come from the live catalogue and are shown in the Console at checkout. For an overview, see [Plans & pricing](../billing/plans-and-pricing.md). For checkout, see [Payments](../billing/payments.md).
 
-![The Create New Project form in the Console](../../../assets/screenshots/en/console-create-project.png)
+![The Project Information step of Create New Project in the Console](../../../assets/screenshots/en/console-create-project.png)
 
 ## Find and open projects
 

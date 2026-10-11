@@ -27,11 +27,15 @@ Saat pertama kali membuka Console, [panduan sambutan](console-guides.md) menawar
 ## Membuat proyek
 
 1. Buka **Proyek Lab → Proyek Saya**, lalu pilih **Buat Proyek Baru**.
-2. **Informasi Proyek**: isi **Judul Proyek** (wajib). **Deskripsi** boleh diisi atau dikosongkan. Pilih **Lanjutkan**.
-3. **Tag**: cari tag yang sudah ada, atau ketik tag baru lalu pilih **Buat Baru**. Anda dapat menambahkan hingga 5 tag baru. Pilih **Lanjutkan**, atau **Lewati untuk Sekarang** jika ingin menambahkan tag nanti.
-4. **Selesaikan Setup**: pilih salah satu kartu paket. Pilih **Lihat Detail Manfaat** untuk melihat isi tiap paket. Harga ditampilkan belum termasuk PPN.
-5. Pilih **Pratinjau Setup**, lalu periksa ringkasan **Pratinjau Setup Proyek**.
-6. Selesaikan:
+2. **Jenis proyek apa?**: pilih **Metocean Lab** untuk data, analisis, dan laporan metocean dengan paket dan kuotanya, lalu pilih **Lanjutkan**. (**Notebook**, bertanda *Eksperimental*, membuat notebook Python yang berjalan di browser Anda, tanpa paket atau pembayaran. Panduan ini selanjutnya membahas proyek Metocean Lab.)
+
+   ![Memilih jenis proyek di Console](../../../assets/screenshots/id/console-create-project-type.png)
+
+3. **Informasi Proyek**: isi **Judul Proyek** (wajib). **Foto proyek**, **Lokasi**, **Jenis proyek**, dan **Deskripsi** boleh diisi atau dikosongkan. Pilih **Lanjutkan**.
+4. **Tag**: cari tag yang sudah ada, atau ketik tag baru lalu pilih **Buat Baru**. Anda dapat menambahkan hingga 5 tag baru. Pilih **Lanjutkan**, atau **Lewati untuk Sekarang** jika ingin menambahkan tag nanti.
+5. **Selesaikan Setup**: pilih salah satu kartu paket. Pilih **Lihat Detail Manfaat** untuk melihat isi tiap paket. Harga ditampilkan belum termasuk PPN.
+6. Pilih **Pratinjau Setup**, lalu periksa ringkasan **Pratinjau Setup Proyek**.
+7. Selesaikan:
    - Untuk paket uji coba gratis, pilih **Selesaikan Setup**. Proyek langsung dibuat.
    - Untuk paket berbayar, pilih **Lanjutkan Pembayaran** untuk mengatur dan membayar sekarang, atau **Masukkan ke Keranjang** untuk membayar nanti dari **Keranjang Pesanan**.
 
@@ -39,7 +43,7 @@ Saat pertama kali membuka Console, [panduan sambutan](console-guides.md) menawar
 
 Nama paket, isi paket, dan harga terkini diambil dari katalog yang berlaku dan ditampilkan di Console saat checkout. Untuk gambaran umum, lihat [Paket & harga](../billing/plans-and-pricing.md). Untuk proses pembayaran, lihat [Pembayaran](../billing/payments.md).
 
-![Formulir Create New Project di Console (antarmuka bahasa Inggris)](../../../assets/screenshots/en/console-create-project.png)
+![Langkah Informasi Proyek pada Buat Proyek Baru di Console](../../../assets/screenshots/id/console-create-project.png)
 
 ## Mencari dan membuka proyek
 
@@ -51,7 +55,7 @@ Di **Proyek Saya**, Anda dapat:
 
 Untuk membuka detail proyek, buka menu proyek lalu pilih **Detail**. Untuk langsung ke Lab, pilih **Lab Platform** atau klik ganda proyek tersebut.
 
-![Daftar Projects Management di Console (antarmuka bahasa Inggris)](../../../assets/screenshots/en/console-projects.png)
+![Daftar Manajemen Proyek di Console](../../../assets/screenshots/id/console-projects.png)
 
 ## Isi halaman proyek
 
