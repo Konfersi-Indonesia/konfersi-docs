@@ -4,7 +4,7 @@ description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek C
 tags: [tagihan, paket, harga, add-on, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Paket Konfersi disusun berdasarkan seberapa banyak Anda menggunakan platform: komputasi Lab, penyimpanan, kredit AI, dan akses ke fitur Metocean Analytics. Halaman ini menjelaskan tiap tingkatan paket, cara kerja paket dan add-on di Console, serta tempat Anda dapat melihat harga terkini.
@@ -86,13 +86,13 @@ Harga yang Anda bayar selalu yang tampil saat checkout di Console.
 ### Harga dalam setiap mata uang
 
 - Konfersi menetapkan harga setiap paket, add-on, dan tiket kursus **secara terpisah untuk setiap mata uang**. Harga tidak dikonversi dari IDR dengan kurs, sehingga nominal yang Anda lihat adalah nominal yang ditagihkan.
-- Jika suatu item tidak memiliki harga dalam mata uang Anda, yang tampil adalah harganya dalam mata uang utama Konfersi. Jika keduanya tidak ada, item tersebut menampilkan **Tidak tersedia di wilayah Anda — hubungi kami**, dan Anda dapat [menghubungi tim penjualan](../support/contact-support.md).
+- Jika suatu item tidak memiliki harga dalam mata uang Anda, yang tampil adalah harganya dalam mata uang utama Konfersi. Jika keduanya tidak ada, halaman paket menampilkan **Tidak tersedia dalam mata uang Anda**, dan halaman keranjang atau kursus menampilkan **Tidak tersedia dalam mata uang tagihan Anda. Hubungi dukungan jika Anda membutuhkannya.** Anda dapat [menghubungi tim dukungan](../support/contact-support.md) untuk membelinya.
 - Pesanan tetap memakai mata uang dan nominal saat pesanan dibuat, meskipun harga berubah kemudian. Satu pesanan atau checkout selalu dalam satu mata uang.
 
 ### Pembayaran dan pajak
 
 - Pembayaran dalam **IDR** diproses melalui mitra pembayaran kami, Midtrans (lihat [Pembayaran](payments.md)).
-- **Pembayaran dalam mata uang lain, seperti USD, belum tersedia.** Jika mata uang tagihan Anda salah satunya, checkout menampilkan **Pembayaran dalam USD segera hadir — hubungi kami**, dan tidak ada yang ditagihkan. Hubungi kami dan kami akan mengatur pembelian Anda.
+- **Pembayaran dalam mata uang lain, seperti USD, belum tersedia.** Jika mata uang tagihan Anda salah satunya, checkout menampilkan **Pembayaran dalam USD belum tersedia. Hubungi dukungan untuk menyelesaikan pesanan ini.**, dan tidak ada yang ditagihkan. Hubungi kami dan kami akan mengatur pembelian Anda.
 - Pajak Pertambahan Nilai (PPN) ditambahkan di atas subtotal. Rincian checkout menampilkan subtotal, pajak, dan total akhir sebelum Anda membayar.
 
 Untuk mengetahui cara pembayaran, lihat [Pembayaran](payments.md).

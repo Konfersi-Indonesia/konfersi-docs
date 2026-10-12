@@ -4,7 +4,7 @@ description: Jawaban atas pertanyaan umum seputar akun Konfersi, cara masuk, pak
 tags: [faq, bantuan, akun, tagihan, lab, mission-planning]
 related: [support/contact-support, getting-started/what-is-konfersi, billing/plans-and-pricing, legal/privacy]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Jawaban singkat untuk pertanyaan yang paling sering kami terima. Jika pertanyaan Anda belum terjawab, [hubungi tim bantuan](contact-support.md).
@@ -35,7 +35,7 @@ Ada. Tingkatan **Akademik & Riset** gratis dan ditujukan bagi pelajar, peneliti,
 
 ### Di mana saya bisa melihat harga?
 
-Harga terkini ditampilkan di Console pada menu **Proyek Lab → Paket Proyek** dan saat checkout. Semua harga ditampilkan dalam mata uang tagihan akun Anda, yang ditetapkan dari negara Anda saat mendaftar (misalnya IDR untuk Indonesia). Hanya tim dukungan yang dapat mengubahnya. Pembayaran diproses dalam IDR melalui Midtrans; pembayaran dalam USD segera hadir. Lihat [Paket & harga](../billing/plans-and-pricing.md#mata-uang-pajak-dan-harga-terkini).
+Harga terkini ditampilkan di Console pada menu **Proyek Lab → Paket Proyek** dan saat checkout. Semua harga ditampilkan dalam mata uang tagihan akun Anda, yang ditetapkan dari negara Anda saat mendaftar (misalnya IDR untuk Indonesia). Hanya tim dukungan yang dapat mengubahnya. Pembayaran diproses dalam IDR melalui Midtrans; pembayaran dalam USD belum tersedia. Lihat [Paket & harga](../billing/plans-and-pricing.md#mata-uang-pajak-dan-harga-terkini).
 
 ### Apakah paket berlaku per akun atau per proyek?
 

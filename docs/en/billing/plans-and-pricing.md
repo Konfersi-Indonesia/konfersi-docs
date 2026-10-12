@@ -4,7 +4,7 @@ description: The Konfersi plan tiers, how plans and add-ons attach to Console pr
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Konfersi plans are built around how much of the platform you use: Lab compute, storage, AI credits and access to the Metocean Analytics tools. This page explains the tiers, how plans and add-ons work inside the Console, and where you can see current prices.
@@ -86,13 +86,13 @@ The price you pay is always the one shown at checkout in the Console.
 ### Prices in each currency
 
 - Konfersi sets each plan's, add-on's and course ticket's price **separately for each currency**. Prices are not converted from IDR at an exchange rate, so the amount you see is the amount you are charged.
-- If an item has no price in your currency, you see its price in Konfersi's default currency instead. If it has neither, it shows **Not available in your region — contact us**, and you can [contact sales](../support/contact-support.md).
+- If an item has no price in your currency, you see its price in Konfersi's default currency instead. If it has neither, the plan page shows **Not available in your currency**, and the cart or course page shows **Not available in your billing currency. Contact support if you need it.** You can [contact support](../support/contact-support.md) to buy it.
 - An order keeps the currency and amounts it was created with, even if prices change later. One order or checkout is always in a single currency.
 
 ### Paying and tax
 
 - Payments in **IDR** are processed through our payment partner, Midtrans (see [Payments](payments.md)).
-- **Payment in other currencies, such as USD, isn't available yet.** If your billing currency is one of them, checkout shows **Payment in USD is coming soon — contact us**, and nothing is charged. Contact us and we'll arrange your purchase.
+- **Payment in other currencies, such as USD, isn't available yet.** If your billing currency is one of them, checkout shows **Payment in USD is not available yet. Contact support to complete this order.**, and nothing is charged. Contact us and we'll arrange your purchase.
 - Value-added tax (PPN) is added on top of the subtotal. The checkout breakdown shows the subtotal, tax and grand total before you pay.
 
 To learn how paying works, see [Payments](payments.md).

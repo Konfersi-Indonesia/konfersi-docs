@@ -4,7 +4,7 @@ description: Cara membayar paket, add-on, dan kursus Konfersi melalui Midtrans, 
 tags: [tagihan, pembayaran, midtrans, qris, virtual-account, kartu]
 related: [billing/plans-and-pricing, billing/refunds-and-cancellation, support/contact-support]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Konfersi menerima pembayaran melalui **Midtrans**, payment gateway asal Indonesia. Anda membayar di halaman pembayaran Midtrans, lalu Midtrans langsung memberi tahu Konfersi hasilnya. Halaman ini menjelaskan langkah-langkahnya, metode pembayaran, dan arti setiap status.
@@ -19,7 +19,7 @@ Konfersi menerima pembayaran melalui **Midtrans**, payment gateway asal Indonesi
 
 ![Halaman checkout: pesanan, rincian harga beserta pajak, dan metode pembayaran](../../../assets/screenshots/id/console-payment.png)
 
-Anda membayar dalam **mata uang tagihan** akun Anda, yaitu mata uang yang dipakai untuk semua harga di Console (lihat [Paket & harga](plans-and-pricing.md#mata-uang-tagihan-anda)). Midtrans menerima pembayaran dalam **Rupiah (IDR)**. Pembayaran dalam mata uang lain, seperti USD, belum tersedia: checkout menampilkan **Pembayaran dalam USD segera hadir — hubungi kami**, tidak ada pesanan yang ditagihkan, dan tim kami dapat mengatur pembeliannya bersama Anda.
+Anda membayar dalam **mata uang tagihan** akun Anda, yaitu mata uang yang dipakai untuk semua harga di Console (lihat [Paket & harga](plans-and-pricing.md#mata-uang-tagihan-anda)). Midtrans menerima pembayaran dalam **Rupiah (IDR)**. Pembayaran dalam mata uang lain, seperti USD, belum tersedia: checkout menampilkan **Pembayaran dalam USD belum tersedia. Hubungi dukungan untuk menyelesaikan pesanan ini.**, tidak ada pesanan yang ditagihkan, dan tim kami dapat mengatur pembeliannya bersama Anda.
 
 ## Metode pembayaran yang didukung
 

@@ -4,7 +4,7 @@ description: Answers to common questions about Konfersi accounts, sign-in, plans
 tags: [faq, help, account, billing, lab, mission-planning]
 related: [support/contact-support, getting-started/what-is-konfersi, billing/plans-and-pricing, legal/privacy]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Quick answers to the questions we hear most. If yours isn't here, [contact support](contact-support.md).
@@ -35,7 +35,7 @@ Yes. The **Academic & Research** tier is free and aimed at students, researchers
 
 ### Where can I see prices?
 
-Current prices are shown in the Console under **Lab Project → Project Plan**, and at checkout. Every price is shown in your account's billing currency, which is set from your country when you sign up (for example, IDR for Indonesia). Only support can change it. Payments are processed in IDR through Midtrans; payment in USD is coming soon. See [Plans & pricing](../billing/plans-and-pricing.md#currency-tax-and-current-prices).
+Current prices are shown in the Console under **Lab Project → Project Plan**, and at checkout. Every price is shown in your account's billing currency, which is set from your country when you sign up (for example, IDR for Indonesia). Only support can change it. Payments are processed in IDR through Midtrans; payment in USD isn't available yet. See [Plans & pricing](../billing/plans-and-pricing.md#currency-tax-and-current-prices).
 
 ### Is a plan per account or per project?
 
