@@ -4,7 +4,7 @@ description: Isi detail proyek, brief, operasi, dan penilaian risiko di Konfersi
 tags: [lab, laporan, docx, word, metocean design basis, brief, penilaian risiko, perencanaan, detail proyek, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 ## Detail Proyek
@@ -45,10 +45,25 @@ Lab menghasilkan laporan **Metocean Design Basis** sebagai dokumen Word (`.docx`
    - **Teks AI siap**, atau teks AI belum disintesis.
    - **Teks standar** (teks tetap) atau **Grafik dari analisis**.
 3. Opsional: pilih sebuah bagian lalu **Sintesis dengan AI** agar AI menulis teksnya dari analisis titik tersebut. Baca hasilnya di **Teks bagian**, atau pilih **Buka sebagai Markdown**. **Sintesis ulang** menulis ulang teksnya. Bagian yang belum disintesis tampil di laporan sebagai "Section Not Yet Ready".
-4. Pilih **Buat laporan Word**. Progresnya ditampilkan dan Anda bisa **Batal**. Jika ada bagian yang belum punya data atau teks AI, Lab memberi tahu jumlahnya sebelum menandainya sebagai belum siap di laporan.
-5. Setelah **Laporan … sudah siap**, pilih **Unduh** lalu simpan `.docx`-nya.
+4. Opsional: centang **Tulis ulang teks AI**, di samping **Buat laporan Word**, agar AI menulis ulang teks tersimpan dari bagian yang dipilih untuk titik ini. Lihat [Tulis ulang teks AI](#tulis-ulang-teks-ai).
+5. Pilih **Buat laporan Word**. Progresnya ditampilkan dan Anda bisa **Batal**. Jika ada bagian yang belum punya data atau teks AI, Lab memberi tahu jumlahnya sebelum menandainya sebagai belum siap di laporan.
+6. Setelah **Laporan … sudah siap**, pilih **Unduh** lalu simpan `.docx`-nya.
 
 Laporan sebelumnya ada di **Laporan yang dibuat**; pilih **Unduh .docx** untuk mengunduhnya lagi.
+
+### Tulis ulang teks AI
+
+Lab menyimpan teks tulisan AI untuk setiap bagian di titik tersebut, dan memakainya ulang di laporan berikutnya selama analisis bagian itu tidak berubah. Dengan begitu laporan tetap konsisten dan jatah AI tidak terpakai lagi.
+
+![Bagian atas Pembuatan Laporan: titik observasi, Refresh, kotak centang Write the AI text again (tidak dicentang) dan Generate Word report](../../../assets/screenshots/en/lab-report-write-again.png)
+
+*Bagian atas Pembuatan Laporan (tampilan bahasa Inggris): **Tulis ulang teks AI** (Write the AI text again) ada di antara **Segarkan** (Refresh) dan **Buat laporan Word**, tidak tercentang secara bawaan.*
+
+Centang **Tulis ulang teks AI** jika Anda tetap ingin teks baru, misalnya setelah data titik diambil ulang. Laporan berikutnya yang Anda buat akan menulis ulang teks AI dari bagian yang disertakan:
+
+- Berlaku untuk satu laporan itu saja. Kotaknya tidak tetap tercentang untuk laporan berikutnya.
+- Hanya bagian tulisan AI yang ditulis ulang. Teks standar (keterbatasan, ketergantungan, satuan, dan sebagainya) dan teks yang Anda isi sendiri tetap seperti semula.
+- Laporannya dihitung satu laporan, seperti biasa, dan penulisan ulang memakai token AI dari jatah proyek seperti sintesis pertama.
 
 Laporan berisi profil proyek, grafik dan tabel dari analisis, serta bagian standar seperti keterbatasan, ketergantungan, dan satuan. Sunting di Word sebelum dibagikan.
 

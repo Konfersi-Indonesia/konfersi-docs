@@ -4,7 +4,7 @@ description: Fill in the project details, briefing, operations and risk assessme
 tags: [lab, report, docx, word, metocean design basis, briefing, risk assessment, planning, project details, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-09
+updated: 2026-10-12
 ---
 
 ## Project Details
@@ -45,10 +45,25 @@ Lab produces a **Metocean Design Basis** report as a Word document (`.docx`) for
    - **AI text ready**, or **AI text not synthesized yet**.
    - **Standard text** (fixed wording) or **Charts from analyses**.
 3. Optional: pick a section and select **Synthesize with AI** to have AI write its text from the point's analyses. Read the result under **Section text**, or select **Open as Markdown**. **Synthesize again** rewrites it. A section that isn't synthesized appears in the report as "Section Not Yet Ready".
-4. Select **Generate Word report**. Progress is shown and you can **Cancel**. If some included sections have no data or AI text, Lab tells you how many before it marks them as not ready in the report.
-5. When **Report … is ready**, select **Download** and save the `.docx`.
+4. Optional: tick **Write the AI text again**, beside **Generate Word report**, to have AI rewrite the stored text of the included sections for this point. See [Write the AI text again](#write-the-ai-text-again).
+5. Select **Generate Word report**. Progress is shown and you can **Cancel**. If some included sections have no data or AI text, Lab tells you how many before it marks them as not ready in the report.
+6. When **Report … is ready**, select **Download** and save the `.docx`.
 
 Earlier reports are listed under **Generated reports**; select **Download .docx** to get one again.
+
+### Write the AI text again
+
+Lab keeps the AI-written text of each section for the point, and reuses it in later reports for as long as the section's analysis is unchanged. That keeps reports consistent and doesn't use your AI allowance again.
+
+![Report Generation header: the observation point, Refresh, the Write the AI text again checkbox (unticked) and Generate Word report](../../../assets/screenshots/en/lab-report-write-again.png)
+
+*The top of Report Generation: **Write the AI text again** sits between **Refresh** and **Generate Word report**, unticked by default.*
+
+Tick **Write the AI text again** when you want fresh text anyway, for example after the point's data was fetched again. The next report you generate then rewrites the AI text of the sections it includes:
+
+- It applies to that one report. The box doesn't stay ticked for later reports.
+- Only AI-written sections are rewritten. Standard text (limitations, reliance, units and so on) and text you entered yourself stay as they are.
+- The report counts as one report, as usual, and the rewrite uses AI tokens from your project's allowance like a first synthesis.
 
 The report contains the project profile, the analyses' charts and tables, and standard sections such as limitations, reliance and units. Edit it in Word before you share it.
 

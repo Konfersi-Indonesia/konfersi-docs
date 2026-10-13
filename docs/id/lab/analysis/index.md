@@ -4,7 +4,7 @@ description: Setiap analisis Konfersi Lab untuk sebuah titik — deret waktu, st
 tags: [lab, analisis, grafik, statistik, mawar, nilai ekstrem, periode ulang, gev, pot, pasang surut, siklon, ekspor]
 related: [lab/analysis/reading-results, lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Setelah titik [diproses](../points/process-points.md), analisisnya siap dibuka. Untuk memahami isi setiap analisis, lihat [Membaca hasil](reading-results.md).
@@ -76,6 +76,9 @@ Pilih **Jelaskan** agar Konfersi Agent membaca angka pada grafik dan menjelaskan
 
 - Setiap penjelasan adalah satu giliran Konfersi Agent dan memakai jatah AI proyek. Sebelum mulai, Lab menampilkan sisa jatah. Sesudahnya, Lab menampilkan berapa token yang terpakai. Jika jatah sudah habis, Lab menampilkan **Jatah AI sudah habis** dan penjelasan tidak dibuat.
 - Hanya ringkasan singkat angka yang dikirim, bukan seluruh data Anda. Penjelasan mengikuti bahasa Lab Anda.
+- **Angkanya sama dengan laporan.** Jelaskan membaca ringkasan grafik yang sama dengan yang dipakai [laporan](../reports-and-documents.md): berapa banyak nilai dan pada periode apa, rata-rata, simpangan baku, persentil ke-25, ke-50 dan ke-75, serta maksimum dan minimum beserta tanggalnya. Jadi angka yang dikutip sama dengan angka di bagian laporan untuk grafik tersebut. Jika ringkasan itu tidak bisa dimuat, Jelaskan memakai angka grafik itu sendiri.
+- **Kedua ujung musim.** Pada grafik klimatologi bulanan atau musiman, penjelasan menyebut bulan tertinggi **dan** terendah, misalnya Januari (6,2 m/s) sebagai bulan tertinggi dan Oktober (3,48 m/s) sebagai terendah.
+- **Hanya yang ditampilkan grafik.** Penjelasan membahas angka pada grafik. Penjelasan tidak mengomentari hal yang tidak ada di grafik, seperti "periode puncak tidak diberikan".
 - Jika Konfersi Agent dinonaktifkan untuk Lab Anda, tombol ini menjelaskannya.
 
 Tombol yang sama ada di hasil Perencanaan Misi sebagai **Jelaskan hasil**. Lihat [Perencanaan Misi](../../using-konfersi/mission-planning.md).

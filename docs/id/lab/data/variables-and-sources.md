@@ -1,10 +1,10 @@
 ---
 title: Variabel & sumber
 description: Setiap variabel metocean yang diambil Konfersi Lab untuk sebuah titik — penyedia, dataset, resolusi, dan periode — serta cara mengunduhnya sebagai NetCDF.
-tags: [lab, variabel, sumber, cmems, era5, copernicus, fes2022, angin, gelombang, arus, tinggi muka laut, sst, salinitas, muka air, netcdf, resolusi, catatan]
+tags: [lab, variabel, sumber, cmems, era5, copernicus, fes2022, angin, gelombang, wind sea, swell, arus, tinggi muka laut, sst, salinitas, muka air, muka air total, netcdf, resolusi, catatan]
 related: [lab/data, lab/analysis/reading-results, using-konfersi/metocean-data-sources, lab/points/process-points]
 status: published
-updated: 2026-10-11
+updated: 2026-10-13
 ---
 
 Memproses titik mengambil hingga sepuluh variabel. Pilih titik lalu buka **Konfersi Lab → Data** untuk melihat variabel yang sudah diakuisisi, sedang berjalan, atau belum diakuisisi, beserta waktu pembaruannya.
@@ -23,12 +23,15 @@ Memproses titik mengambil hingga sepuluh variabel. Pilih titik lalu buka **Konfe
 | **Suhu udara** (2 m) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | 2015 – 2025 |
 | **Tekanan udara** (permukaan) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | 2015 – 2025 |
 | **Muka air** (pasang surut astronomis) | AVISO | Model pasang surut FES2022b, 34 konstituen | prediksi per jam | Jan 1993 – Des 2025 |
+| **Muka air total** (pasang surut ditambah muka laut non-pasang surut, dihitung) | AVISO + Copernicus Marine | Pasang surut FES2022b ditambah tinggi muka laut GLORYS12 (`cmems_mod_glo_phy_my_0.083deg_P1D-m`) | per jam | Jan 1993 – Des 2025 |
 
 Setiap periode adalah rentang yang diminta Lab; data yang Anda dapat bergantung pada ketersediaan di penyedia untuk lokasi tersebut. Variabel ERA5 memakai rentang sepuluh tahun agar permintaan tetap dalam batas penyedia.
 
 **Muka air** adalah pasang surut yang diprediksi di titik dari konstituen FES2022b, bukan hasil pengukuran. Analisis titiknya adalah [datum pasang surut](../analysis/reading-results.md#datum-pasang-surut), dan pasang surut per jam untuk periode pilihan Anda dibuat saat Anda memintanya. Analisis lokasi **Pasang surut** membandingkan model dengan stasiun pasang surut terdekat; lihat [Cara data diproses](index.md#analisis-lokasi).
 
-**Gelombang (wind sea)** dan **Gelombang (swell)** dianalisis dari unduhan gelombang, sehingga ikut bersamanya.
+**Muka air total** dihitung, bukan diunduh: pasang surut FES2022b per jam ditambah muka laut non-pasang surut hari itu, yaitu tinggi muka laut GLORYS12 dikurangi rata-ratanya selama 1993–2025. Muka air total dianalisis dari unduhan tinggi muka laut, jadi memproses tinggi muka laut juga menghasilkan muka air total. Analisisnya sama dengan variabel bernilai tunggal lainnya: deret waktu, statistik, klimatologi, dan [nilai ekstrem](../analysis/reading-results.md#muka-air-total). Variabel ini tidak punya berkas NetCDF sendiri: unduh tinggi muka laut sebagai gantinya.
+
+**Gelombang (wind sea)** dan **Gelombang (swell)** dianalisis dari unduhan gelombang, sehingga ikut bersamanya. Wind sea memakai partisi wind sea (`VHM0_WW`, `VMDR_WW`, `VTM01_WW`) dan swell memakai sistem swell utama (`VHM0_SW1`, `VMDR_SW1`, `VTM01_SW1`); sistem swell kedua tidak dianalisis tersendiri. Keduanya punya analisis yang sama dengan gelombang total, termasuk mawarnya sendiri. Setiap hasil menyebut dataset, versinya, dan variabel-variabel ini.
 
 ## Baca catatannya
 
@@ -39,6 +42,7 @@ Beberapa variabel membawa catatan yang ditampilkan Lab bersama setiap hasilnya:
 | **Arus** | Arus residual (non-pasang surut): kecepatan permukaan rata-rata harian dari reanalisis GLORYS12. **Arus pasang surut tidak termasuk**, sehingga arus puncak di paparan yang dipengaruhi pasang surut lebih tinggi daripada nilai ini. Jangan dipakai sendirian untuk desain. |
 | **Tinggi muka laut** | Tinggi di atas geoid (rata-rata harian non-pasang surut), bukan anomali terhadap muka laut rata-rata. Jangan langsung ditambahkan ke pasang surut astronomis: kurangi dulu rata-rata jangka panjangnya. |
 | **Muka air** | Hanya pasang surut astronomis: tidak termasuk siklus muka laut rata-rata musiman dan gelombang badai (storm surge). Muka air total yang teramati bisa sekitar 0,25 m lebih tinggi. Jangan dipakai sendirian sebagai muka air desain. |
+| **Muka air total** | Pasang surut astronomis ditambah muka laut non-pasang surut rata-rata harian dari reanalisis laut (siklus muka laut rata-rata musiman dan wind set-up yang lambat). Storm surge singkat (hitungan jam) dan wave set-up tidak termasuk, sehingga puncaknya lebih rendah daripada storm tide yang teramati: jangan dipakai sendirian sebagai muka air storm tide desain. |
 | **Presipitasi, suhu udara, tekanan udara** | Rentang 2015–2025 lebih pendek dari 20 tahun yang dibutuhkan metode nilai ekstrem, sehingga nilai ekstremnya ditandai kepercayaan rendah. |
 
 <scalar-callout type="info">Produk reanalisis dan satelit menggambarkan kondisi di satu sel grid, bukan di satu titik persis. Di dekat pantai, di pelabuhan, atau di dasar laut yang kompleks, kondisi bisa berbeda dari sel terdekat. Untuk desain teknik, validasi dengan pengukuran lokal.</scalar-callout>

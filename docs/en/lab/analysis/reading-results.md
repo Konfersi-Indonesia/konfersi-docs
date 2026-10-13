@@ -1,10 +1,10 @@
 ---
 title: Reading the results
 description: How Lab processes a point and how to read each analysis, from statistics, seasonal boxes and roses to extreme values, tidal datums and the storm audit.
-tags: [lab, analysis, statistics, box plot, rose, joint distribution, extreme value, eva, return period, tidal datums, formzahl, storm audit, cyclones, quality control]
+tags: [lab, analysis, statistics, box plot, rose, wind sea, swell, joint distribution, extreme value, eva, directional, return period, tidal datums, formzahl, total water level, storm audit, cyclones, quality control]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-11
+updated: 2026-10-13
 ---
 
 When you [process a point](../points/process-points.md), Lab downloads each variable's record for it, checks its quality and runs a set of analyses on it. This page explains how to read each analysis. Where each variable comes from, and its record and resolution, is in [Variables & sources](../data/variables-and-sources.md); how to open and export charts is in [Analyses & charts](index.md).
@@ -22,6 +22,7 @@ Some variables come with a caveat, shown with every result. They're listed with 
 
 - **Current** is the residual (non-tidal) current: tidal currents are not included.
 - **Water level** is the astronomical tide only: no seasonal mean-sea-level cycle or storm surge.
+- **Total water level** adds the daily non-tidal sea level to the tide, but not short storm surge or wave set-up: it isn't a design storm-tide level.
 - **Precipitation, air temperature and air pressure** cover 2015 to 2025, so their extreme values are always flagged as low confidence.
 
 ## Timeseries and statistics
@@ -52,6 +53,7 @@ The statistics are exact on the whole record. Precipitation boxes use daily tota
 ## Roses and joint distributions
 
 - **Wind rose, Wave rose, Current rose**: how often the variable comes from (wind, waves) or flows towards (currents) each direction, split by speed or height class. This is the usual oceanographic convention. For wind, speeds below 0.5 m/s are calm: they have no meaningful direction and are shown as a separate share, so the sectors and calm add up to 100 %.
+- **Wave (wind sea) and Wave (swell) roses**: the same rose for each wave partition, from its own height and direction. A partition below 0.05 m is calm, outside the sectors: wind sea is often absent in calm seasons, so its calm share can be large (about half the time at a Java Sea point).
 - **Joint distribution (overall, seasonal)**: the frequency table of direction against speed or height class, beside its rose, with the directional statistics (mean, P50, P75, P95, P99, maximum) for each sector. The seasonal version gives one set per season.
 - **Joint distribution Hs–Tm and Hs–Tp** (waves): how often each combination of significant wave height (Hs) and wave period occurs. The Hs–Tp view also draws **environmental contours** (IFORM) for return periods from 1 to 1,000 years. They are nominal (no inflation factor) and consistent with the extreme-value fit, and very steep sea states are limited to a steepness of 1/15. The contours use the hindcast wave heights before the altimetry calibration; the calibrated levels are in the extreme-value results.
 - **Monsoonal surges** (wind): the days from December to March with wind of at least 8 m/s, with a rose of those hours. It shows how often and from where strong monsoon winds blow.
@@ -74,7 +76,7 @@ Extreme-value analysis (EVA) estimates the level a variable reaches once in a gi
 
 - **Block maxima (the design values).** The highest value of each full year (a year counts when it holds at least 80 % of its samples; at least 10 such years are needed) is fitted with a GEV and a Gumbel distribution. The one with the smallest Anderson–Darling statistic (A²) is reported, with the Q-Q error breaking a tie. A GEV only replaces the simpler Gumbel when its extra shape parameter is statistically significant (a likelihood-ratio test at p < 0.05), and with fewer than 20 annual maxima only when that shape stays within ±0.5.
 - **Peaks over threshold (the cross-check).** Independent storm peaks above a threshold are fitted with a generalised Pareto distribution. The threshold is chosen to give about 3 peaks a year (between 1 and 6, at least 20 peaks), and peaks closer together than the variable's storm separation (for example 48 hours for wind and waves) count as one storm. Its 100-year level is compared with the block-maxima interval as a check.
-- **Extreme values by direction** (wind, waves, currents): block maxima per direction sector, in 8 sectors. A sector with fewer than 10 full years of data shows no levels. A sector whose levels come out above the all-directions design fit (block maxima, uncalibrated, over the same years) is flagged to review before you use it as a design value: that's usually a small-sample effect in the tail of one sector.
+- **Extreme values by direction** (wind, waves, currents): block maxima per direction sector, in 8 sectors. See [Reading the directional table](#reading-the-directional-table) below.
 - **Checks shown with each fit**: the goodness of fit, whether the annual maxima change over the record (homogeneity), and whether the observed record is unusually rare under the fit. When the annual maxima change significantly (a Pettitt test), the fit uses the years after the change, and the full-record fit is shown beside it for comparison. Fewer than 20 full years of data gives a low-confidence flag, because the long return periods are then long extrapolations.
 - **Waves are calibrated to satellite altimetry.** The wave reanalysis runs low in larger sea states, so each point's wave heights are compared with satellite altimeter passes nearby (SARAL and Sentinel-3A/B, from the ESA Sea State CCI). The calibrated levels are shown as a sensitivity beside the design levels, not in their place. If there are fewer than 20 usable passes, the result says it isn't calibrated.
 
@@ -84,9 +86,20 @@ Confidence intervals come from a fixed-seed bootstrap, so processing the same da
 
 *Block maxima: the fit summary with its A², the return level plot with its 90 % band, the Q-Q and P-P plots, the checks including the peaks-over-threshold cross-check, and the model selection. Here GEV had the smaller A² but its shape wasn't significant, so Gumbel was kept.*
 
-![Directional return levels for waves in 8 sectors](../../../../assets/screenshots/en/lab-analysis-eva-dir.png)
+### Reading the directional table
 
-*Extreme values by direction: return levels per sector.*
+**Extreme values by direction** fits block maxima separately for each of the 8 direction sectors (N, NE, E, SE, S, SW, W, NW). The **Direction** tile says which convention the sectors use: waves and wind are *coming from*. The table has the return periods down the side and the sectors across.
+
+- **All directions (reference)** is the first column: the all-directions design fit (block maxima, before the altimetry calibration) over the same years. The note under the table names the basis and the years, for example "Reference: design block maxima (not calibrated), 1993–2025".
+- **Enough samples in each sector.** A year counts for a sector only when that sector holds at least 5 % of the year's samples. A sector needs at least 10 such years. Otherwise it shows **–** instead of levels, and a note gives the reason, for example "S: insufficient samples in this direction: 0 of 31 years hold at least 5% of the year's samples; at least 10 are needed". No level is safer than a level fitted to a handful of ordinary values.
+- **A bounded tail in every sector.** A sector's GEV is used only when its shape parameter stays within ±0.5. Otherwise the sector uses Gumbel, and its model selection says why.
+- **⚠ marks a sector to review.** When a sector's level is above the all-directions reference at the same return period, its column header and those cells get **⚠**, and a warning names the sector: "a sector level exceeds the omnidirectional level at the same return period; do not use it as a design value without review". It is usually a small-sample effect in one sector's tail.
+
+These rules apply from analysis version 8. A point processed earlier is processed again the next time you use it.
+
+![Directional return levels for waves at the QA Java Sea point: an All directions (reference) column, NE, SE, S and SW shown as dashes, NW flagged with warning signs](../../../../assets/screenshots/en/lab-analysis-eva-dir.png)
+
+*Wave extreme values by direction at a Java Sea point. The All directions (reference) column reads 2.21 m at 100 years. NE, SE, S and SW show "–", because too few years have enough samples from those directions; the note under the table gives each one's count. NW is flagged ⚠ from 25 years up (2.34 m at 100 years against the 2.21 m reference), with the review warning above the note.*
 
 ## Tidal datums
 
@@ -107,6 +120,15 @@ The hourly tide for any period of up to 366 days is generated when you ask for i
 ![Tidal datums at the QA Java Sea point: ranges, Formzahl tide type, epoch and the datum table](../../../../assets/screenshots/en/lab-analysis-tidal-datums.png)
 
 *Tidal datums: at this Java Sea point the tide is diurnal (F = 3.38).*
+
+## Total water level
+
+**Total water level** is the hourly astronomical tide plus that day's non-tidal sea level (the GLORYS12 sea surface height minus its 1993–2025 mean). It shows how high the water gets with the seasonal mean-sea-level cycle on top of the tide, so its maximum is above HAT. At a Java Sea point it peaks at 0.84 m, against a HAT of 0.66 m.
+
+It has timeseries, statistics, climatology and extreme values (block maxima and peaks over threshold), read like those of any other variable. Two things to keep in mind:
+
+- **Short surges aren't in it.** The non-tidal part is a daily mean, so storm surge lasting hours and wave set-up are missing. Treat its extremes as a lower bound for a storm tide, not as a design storm-tide level.
+- **Sea level rises over the record.** The homogeneity check often finds a change in the annual maxima. The fit then uses the years after it, so the return levels describe recent mean sea level, with no allowance for future rise.
 
 ## Storm audit (500 km)
 

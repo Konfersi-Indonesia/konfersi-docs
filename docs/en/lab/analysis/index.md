@@ -4,7 +4,7 @@ description: Every analysis Konfersi Lab produces for a point — time series, s
 tags: [lab, analysis, chart, statistics, rose, extreme value, return period, gev, pot, tides, cyclones, export]
 related: [lab/analysis/reading-results, lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-11
+updated: 2026-10-12
 ---
 
 Once a point is [processed](../points/process-points.md), its analyses are ready to open. To understand what each one shows, see [Reading the results](reading-results.md).
@@ -69,6 +69,9 @@ Select **Explain** to have Konfersi Agent read the chart's numbers and explain t
 
 - Each explanation is one Konfersi Agent turn and uses your project's AI allowance. Before you start, Lab shows how much is left. Afterwards, it shows how many tokens the explanation used. When the allowance is used up, Lab says so and no explanation is made.
 - Only a short summary of the numbers is sent, not your whole dataset. The explanation follows your Lab language.
+- **The numbers match the report.** Explain reads the same summary of the chart that the [report](../reports-and-documents.md) uses: how many values and over which period, the mean, the standard deviation, the 25th, 50th and 75th percentiles, and the maximum and minimum with their dates. So the figures it quotes are the ones in the report's section for that chart. If that summary can't be loaded, Explain uses the chart's own numbers instead.
+- **Both ends of a season.** On a monthly climatology or a seasonal chart, the explanation names the highest **and** the lowest month, for example "Highest: 6.2 m/s (Jan), lowest: 3.48 m/s (Oct)".
+- **Only what the chart shows.** The explanation talks about the chart's numbers. It doesn't comment on what the chart leaves out, such as "peak period not given".
 - If Konfersi Agent is switched off for your Lab, the button explains that instead.
 
 The same button is on Mission Planning results as **Explain results**. See [Mission Planning](../../using-konfersi/mission-planning.md).

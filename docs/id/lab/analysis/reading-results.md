@@ -4,7 +4,7 @@ description: Cara Lab memproses sebuah titik dan cara membaca setiap analisis, d
 tags: [lab, analisis, statistik, box plot, mawar, distribusi gabungan, nilai ekstrem, eva, periode ulang, datum pasang surut, formzahl, audit badai, siklon, kontrol kualitas]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-11
+updated: 2026-10-13
 ---
 
 Saat Anda [memproses titik](../points/process-points.md), Lab mengunduh rekaman setiap variabel untuk titik itu, memeriksa kualitasnya, lalu menjalankan serangkaian analisis. Halaman ini menjelaskan cara membaca setiap analisis. Asal setiap variabel, beserta rekaman dan resolusinya, ada di [Variabel & sumber](../data/variables-and-sources.md); cara membuka dan mengekspor grafik ada di [Analisis & grafik](index.md).
@@ -22,6 +22,7 @@ Beberapa variabel membawa catatan yang tampil bersama setiap hasilnya. Catatan i
 
 - **Arus** adalah arus residual (non-pasang surut): arus pasang surut tidak termasuk.
 - **Muka air** hanya pasang surut astronomis: tanpa siklus muka laut rata-rata musiman dan tanpa gelombang badai (storm surge).
+- **Muka air total** menambahkan muka laut non-pasang surut harian ke pasang surut, tetapi tanpa storm surge singkat dan wave set-up: ini bukan muka air storm tide desain.
 - **Presipitasi, suhu udara, dan tekanan udara** mencakup 2015 hingga 2025, sehingga nilai ekstremnya selalu ditandai kepercayaan rendah.
 
 ## Deret waktu dan statistik
@@ -52,6 +53,7 @@ Statistiknya dihitung tepat dari seluruh rekaman. Kotak presipitasi memakai tota
 ## Mawar dan distribusi gabungan
 
 - **Mawar angin, Mawar gelombang, Mawar arus**: seberapa sering variabel datang dari (angin, gelombang) atau mengalir ke (arus) setiap arah, dibagi per kelas kecepatan atau tinggi. Ini konvensi oseanografi yang lazim. Untuk angin, kecepatan di bawah 0,5 m/s dianggap tenang (calm): tidak punya arah yang bermakna dan ditampilkan sebagai bagian tersendiri, sehingga sektor dan calm berjumlah 100 %.
+- **Mawar Gelombang (wind sea) dan Gelombang (swell)**: mawar yang sama untuk setiap partisi gelombang, dari tinggi dan arahnya sendiri. Partisi di bawah 0,05 m dianggap tenang (calm), di luar sektor: wind sea sering tidak ada pada musim tenang, sehingga porsi calm-nya bisa besar (sekitar separuh waktu di sebuah titik Laut Jawa).
 - **Distribusi gabungan (keseluruhan, musiman)**: tabel frekuensi arah terhadap kelas kecepatan atau tinggi, di samping mawarnya, dengan statistik per arah (rata-rata, P50, P75, P95, P99, maksimum). Versi musiman memberi satu set per musim.
 - **Distribusi gabungan Hs–Tm dan Hs–Tp** (gelombang): seberapa sering setiap kombinasi tinggi gelombang signifikan (Hs) dan periode gelombang terjadi. Tampilan Hs–Tp juga menggambar **kontur lingkungan** (IFORM) untuk periode ulang 1 hingga 1.000 tahun. Konturnya nominal (tanpa faktor penambah), konsisten dengan hasil nilai ekstrem, dan kondisi laut yang sangat curam dibatasi pada kecuraman 1/15. Kontur memakai tinggi gelombang hindcast sebelum kalibrasi altimetri; tingkat yang sudah dikalibrasi ada di hasil nilai ekstrem.
 - **Seruak monsun** (angin): hari-hari Desember hingga Maret dengan angin minimal 8 m/s, beserta mawar dari jam-jam tersebut. Ini menunjukkan seberapa sering dan dari arah mana angin monsun yang kuat bertiup.
@@ -74,7 +76,7 @@ Analisis nilai ekstrem (EVA) memperkirakan tingkat yang dicapai sebuah variabel 
 
 - **Block maxima (nilai desain).** Nilai tertinggi setiap tahun penuh (sebuah tahun dihitung jika memuat minimal 80 % sampelnya; minimal 10 tahun seperti itu dibutuhkan) dicocokkan dengan distribusi GEV dan Gumbel. Yang dilaporkan adalah yang statistik Anderson–Darling-nya (A²) paling kecil, dengan galat Q-Q sebagai penentu jika seri. GEV hanya menggantikan Gumbel yang lebih sederhana jika parameter bentuk tambahannya signifikan secara statistik (uji rasio kemungkinan pada p < 0,05), dan dengan kurang dari 20 maksima tahunan hanya jika bentuknya tetap dalam ±0,5.
 - **Peaks over threshold (pembanding).** Puncak badai yang saling bebas di atas ambang dicocokkan dengan distribusi Pareto umum (GPD). Ambang dipilih agar memberi sekitar 3 puncak per tahun (antara 1 dan 6, minimal 20 puncak), dan puncak yang lebih dekat daripada jarak antar-badai variabelnya (misalnya 48 jam untuk angin dan gelombang) dihitung sebagai satu badai. Tingkat 100 tahunannya dibandingkan dengan selang block maxima sebagai pemeriksaan.
-- **Nilai ekstrem per arah** (angin, gelombang, arus): block maxima per sektor arah, dalam 8 sektor. Sektor dengan data kurang dari 10 tahun penuh tidak menampilkan tingkat. Sektor yang tingkatnya melebihi hasil desain semua arah (block maxima, tanpa kalibrasi, pada tahun-tahun yang sama) ditandai untuk ditinjau sebelum dipakai sebagai nilai desain: biasanya itu efek sampel kecil di ekor satu sektor.
+- **Nilai ekstrem per arah** (angin, gelombang, arus): block maxima per sektor arah, dalam 8 sektor. Lihat [Membaca tabel per arah](#membaca-tabel-per-arah) di bawah.
 - **Pemeriksaan yang menyertai setiap hasil**: kecocokan model, apakah maksima tahunan berubah sepanjang rekaman (homogenitas), dan apakah rekor yang teramati terlalu jarang menurut model. Jika maksima tahunan berubah secara signifikan (uji Pettitt), pencocokan memakai tahun-tahun setelah perubahan, dan hasil seluruh rekaman ditampilkan di sampingnya sebagai pembanding. Data kurang dari 20 tahun penuh memberi tanda kepercayaan rendah, karena periode ulang yang panjang menjadi ekstrapolasi jauh.
 - **Gelombang dikalibrasi dengan altimetri satelit.** Reanalisis gelombang cenderung terlalu rendah pada kondisi laut yang lebih besar, jadi tinggi gelombang di setiap titik dibandingkan dengan lintasan altimeter satelit di dekatnya (SARAL dan Sentinel-3A/B, dari ESA Sea State CCI). Tingkat yang sudah dikalibrasi ditampilkan sebagai sensitivitas di samping tingkat desain, bukan menggantikannya. Jika lintasan yang bisa dipakai kurang dari 20, hasilnya menyebutkan bahwa kalibrasi tidak dilakukan.
 
@@ -84,9 +86,20 @@ Selang kepercayaan berasal dari bootstrap dengan seed tetap, sehingga memproses 
 
 *Block maxima: ringkasan hasil dengan A²-nya, plot tingkat ulang dengan pita 90 %, plot Q-Q dan P-P, pemeriksaan termasuk pembanding peaks over threshold, dan pemilihan model. Di sini GEV memiliki A² lebih kecil tetapi bentuknya tidak signifikan, sehingga Gumbel dipertahankan.*
 
-![Tingkat ulang gelombang per arah dalam 8 sektor](../../../../assets/screenshots/en/lab-analysis-eva-dir.png)
+### Membaca tabel per arah
 
-*Nilai ekstrem per arah: tingkat ulang per sektor.*
+**Nilai ekstrem per arah** mencocokkan block maxima secara terpisah untuk setiap 8 sektor arah (N, NE, E, SE, S, SW, W, NW). Kotak **Arah** menyebut konvensi sektornya: gelombang dan angin memakai *datang dari*. Tabelnya berisi periode ulang ke bawah dan sektor ke samping.
+
+- **Semua arah (acuan)** adalah kolom pertama: hasil desain semua arah (block maxima, sebelum kalibrasi altimetri) pada tahun-tahun yang sama. Catatan di bawah tabel menyebut dasarnya dan tahunnya, misalnya "Acuan: design block maxima (not calibrated), 1993–2025".
+- **Sampel cukup di setiap sektor.** Satu tahun dihitung untuk sebuah sektor hanya jika sektor itu memuat minimal 5 % sampel tahun tersebut. Sebuah sektor perlu minimal 10 tahun seperti itu. Jika tidak, sektor menampilkan **–** sebagai ganti nilai, dan catatan menyebut alasannya (dalam bahasa Inggris), misalnya "S: insufficient samples in this direction: 0 of 31 years hold at least 5% of the year's samples; at least 10 are needed". Tidak ada nilai lebih aman daripada nilai yang dicocokkan pada segelintir nilai biasa.
+- **Ekor yang terbatas di setiap sektor.** GEV sebuah sektor hanya dipakai jika parameter bentuknya tetap dalam ±0,5. Jika tidak, sektor memakai Gumbel, dan pemilihan modelnya menyebut alasannya.
+- **⚠ menandai sektor yang perlu ditinjau.** Jika nilai sebuah sektor melebihi acuan semua arah pada periode ulang yang sama, judul kolom dan sel-sel tersebut diberi **⚠**, dan sebuah peringatan menyebut sektornya: "nilai sektor melebihi nilai semua arah pada periode ulang yang sama; jangan dipakai sebagai nilai desain tanpa ditinjau". Biasanya ini efek sampel kecil di ekor satu sektor.
+
+Aturan ini berlaku sejak versi analisis 8. Titik yang diproses sebelumnya diproses ulang saat berikutnya Anda memakainya.
+
+![Nilai periode ulang per arah untuk gelombang di titik QA Java Sea: kolom Semua arah (acuan), NE, SE, S dan SW berisi tanda pisah, NW ditandai peringatan](../../../../assets/screenshots/en/lab-analysis-eva-dir.png)
+
+*Nilai ekstrem gelombang per arah di sebuah titik Laut Jawa. Kolom Semua arah (acuan) bernilai 2,21 m pada 100 tahun. NE, SE, S dan SW berisi "–", karena terlalu sedikit tahun dengan sampel cukup dari arah tersebut; catatan di bawah tabel menyebut jumlah tiap sektor. NW ditandai ⚠ mulai 25 tahun (2,34 m pada 100 tahun dibanding acuan 2,21 m), dengan peringatan tinjauan di atas catatan.*
 
 ## Datum pasang surut
 
@@ -107,6 +120,15 @@ Pasang surut per jam untuk periode apa pun hingga 366 hari dibuat saat Anda memi
 ![Datum pasang surut di titik QA Java Sea: rentang, tipe pasang surut Formzahl, epoch, dan tabel datum](../../../../assets/screenshots/en/lab-analysis-tidal-datums.png)
 
 *Datum pasang surut: di titik Laut Jawa ini pasang surutnya tunggal/diurnal (F = 3,38).*
+
+## Muka air total
+
+**Muka air total** adalah pasang surut astronomis per jam ditambah muka laut non-pasang surut hari itu (tinggi muka laut GLORYS12 dikurangi rata-ratanya selama 1993–2025). Ini menunjukkan setinggi apa air naik dengan siklus muka laut rata-rata musiman di atas pasang surut, sehingga maksimumnya di atas HAT. Di sebuah titik Laut Jawa puncaknya 0,84 m, sedangkan HAT-nya 0,66 m.
+
+Muka air total punya deret waktu, statistik, klimatologi, dan nilai ekstrem (block maxima dan peaks over threshold), dibaca sama seperti variabel lain. Dua hal yang perlu diingat:
+
+- **Storm surge singkat tidak termasuk.** Bagian non-pasang surutnya adalah rata-rata harian, sehingga storm surge yang berlangsung beberapa jam dan wave set-up tidak ada. Anggap nilai ekstremnya sebagai batas bawah storm tide, bukan muka air storm tide desain.
+- **Muka laut naik sepanjang rekaman.** Uji homogenitas sering menemukan perubahan pada maksimum tahunan. Fit lalu memakai tahun-tahun setelah perubahan itu, sehingga level periode ulang menggambarkan muka laut rata-rata terkini, tanpa tambahan untuk kenaikan di masa depan.
 
 ## Audit badai (500 km)
 
