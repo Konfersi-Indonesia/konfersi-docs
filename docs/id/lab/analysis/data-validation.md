@@ -4,7 +4,7 @@ description: Jalankan kontrol kualitas otomatis pada data titik — rentang fisi
 tags: [lab, validasi, qc, kontrol kualitas, lonjakan, celah, kelengkapan]
 related: [lab/analysis, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-12
+updated: 2026-10-13
 ---
 
 Validasi menjalankan kontrol kualitas (QC) otomatis pada data yang diambil untuk sebuah titik, sehingga Anda tahu seberapa jauh data itu bisa dipercaya sebelum memakai analisisnya.
@@ -23,13 +23,13 @@ Setiap pemeriksaan melaporkan **pass** (lulus), **warn** (peringatan), atau **fa
 
 | Pemeriksaan | Yang dicari |
 |---|---|
-| **Physical range limits** | Nilai di luar batas fisik, misalnya angin 0–75 m/s, tinggi gelombang 0–30 m, arus 0–5 m/s, suhu permukaan laut −2,5–40 °C, salinitas 0–42 PSU |
-| **Gradient & spike filter** | Lompatan antarnilai berurutan yang jauh lebih besar dari biasanya untuk deret tersebut |
-| **Signal flatline test** | Nilai yang sama berulang selama 24 jam atau lebih, tanda sensor macet atau data yang diisi |
-| **Completeness & gaps** | Proporsi langkah waktu yang memiliki data, dan periode kosong yang lebih panjang dari tiga kali langkah waktu normal |
-| **Satellite altimetry collocation** | Perbandingan dengan pengukuran satelit di sepanjang lintasannya |
+| **Batas rentang fisik** | Nilai di luar batas fisik, misalnya angin 0–75 m/s, tinggi gelombang 0–30 m, arus 0–5 m/s, suhu permukaan laut −2,5–40 °C, salinitas 0–42 PSU |
+| **Lonjakan terisolasi** | Lonjakan satu langkah yang menonjol dari kedua nilai di sebelahnya, setidaknya sebesar batas ukuran variabel. Tidak diperiksa jika puncak satu langkah memang nyata |
+| **Uji sinyal datar** | Nilai yang sama berulang selama 24 jam atau lebih, tanda sensor macet atau data yang diisi |
+| **Kelengkapan & celah** | Proporsi langkah waktu yang memiliki data, dan periode kosong yang lebih panjang dari tiga kali langkah waktu normal |
+| **Kolokasi altimetri satelit** | Perbandingan dengan pengukuran satelit di sepanjang lintasannya |
 
-**Satellite altimetry collocation** membutuhkan data lintasan yang belum diambil Lab, jadi ditampilkan sebagai tidak tersedia, tidak pernah sebagai lulus. Pemeriksaan juga tidak tersedia jika deret datanya terlalu pendek untuk diuji.
+**Kolokasi altimetri satelit** membutuhkan data lintasan yang belum diambil Lab, jadi ditampilkan sebagai tidak tersedia, tidak pernah sebagai lulus. Pemeriksaan juga tidak tersedia jika deret datanya terlalu pendek untuk diuji.
 
 
 ## Pemeriksaan kualitas setelah pemrosesan

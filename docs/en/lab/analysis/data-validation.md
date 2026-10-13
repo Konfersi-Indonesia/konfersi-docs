@@ -4,7 +4,7 @@ description: Run automated quality control on a point's acquired data — physic
 tags: [lab, validation, qc, quality control, spikes, gaps, completeness, data availability]
 related: [lab/analysis, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-12
+updated: 2026-10-13
 ---
 
 Validation runs automated quality control (QC) on the data acquired for a point, so you know how far you can trust it before using the analyses.
@@ -24,7 +24,7 @@ Each check reports **pass**, **warn** or **fail**, with the value it measured:
 | Check | What it looks for |
 |---|---|
 | **Physical range limits** | Values outside physical limits, for example wind 0–75 m/s, wave height 0–30 m, current 0–5 m/s, sea surface temperature −2.5–40 °C, salinity 0–42 PSU |
-| **Gradient & spike filter** | Jumps between consecutive values far larger than usual for the series |
+| **Isolated spikes** | One-step excursions that stand out from both neighbours by at least a size limit for the variable. Not checked where single-step peaks are real |
 | **Signal flatline test** | The same value repeated for 24 hours or more, a sign of a stuck sensor or filled data |
 | **Completeness & gaps** | The share of expected time steps that have data, and missing periods longer than three times the normal time step |
 | **Satellite altimetry collocation** | Comparison with satellite measurements along their tracks |
