@@ -4,7 +4,7 @@ description: Perkirakan berapa lama rangkaian operasi laut berlangsung setelah c
 tags: [mission-planning, downtime, operations, metocean, weather-window]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 Perencanaan Misi memperkirakan seberapa jauh cuaca memperpanjang operasi laut. Anda menjelaskan **di mana** pekerjaan dilakukan, **batas** kondisi yang masih bisa dikerjakan kapal dan kru, lalu **urutan** pekerjaannya. Konfersi menjalankan ulang urutan itu terhadap data metocean per jam selama puluhan tahun, dari setiap tanggal mulai yang mungkin. Hasilnya menunjukkan berapa lama operasi kemungkinan berlangsung, bulan mana yang terbaik, dan batas mana yang menyebabkan waktu tunggu.
@@ -33,10 +33,12 @@ Semua perubahan tersimpan otomatis. Jika rekan tim menyimpan rencana yang sama s
 | Batas | Arti |
 |---|---|
 | Tinggi gelombang (Hs), Periode gelombang (Tp) | Batas atas, dalam m dan s |
-| Kecepatan angin, Kecepatan arus | Batas atas, dalam m/s |
+| Kecepatan angin, Kecepatan arus | Batas atas. Ditampilkan dan diketik dalam m/s atau knot: pilih satuannya di header kolom. Rencana selalu menyimpan m/s (1 kn = 0,5144 m/s). |
 | Arah gelombang / angin / arus | Sektor yang masih bisa dikerjakan, searah jarum jam dari utara (mis. 300°–60°). Kompas kecil menunjukkan sektornya. |
 | Ketinggian angin | Ketinggian tempat batas angin berlaku (mis. ujung crane di 100 m). Angin 10 m diskalakan dengan hukum pangkat 1/7. |
 | Jam kerja | Jam per hari pekerjaan diizinkan, berpusat pada tengah hari setempat (24 = sepanjang hari). |
+
+Untuk memulai dari nilai umum, pilih **Terapkan preset…** di kolom **Preset** sebuah lingkungan (atau di inspektur Kontrol saat lingkungan dipilih). Preset mengaktifkan batas-batasnya dan mengisi nilainya, sebagai satu langkah yang bisa dibatalkan. Satu-satunya preset saat ini adalah **Batas bawaan (Hs dan angin)**, yang mengatur tinggi gelombang dan kecepatan angin. Preset hanyalah titik awal sebagai acuan: periksa batasnya dan ubah sesuai operasi Anda.
 
 Kolom **Data** menunjukkan apakah data angin, gelombang, dan arus sudah diakuisisi di lokasi tiap lingkungan. Jika ada yang belum, pilih **Akuisisi** untuk memulainya dari titik observasi yang sesuai.
 
@@ -62,7 +64,7 @@ Setiap run memakai jam CPU proyek sesuai lama run berjalan; sisa jam diperbarui 
 
 **Pengaturan run**:
 
-- **Persistensi jendela cuaca**: berapa jam cuaca layak kerja berturut-turut yang dibutuhkan sebelum aktivitas bisa dimulai (bawaan 24).
+- **Persistensi jendela cuaca**: berapa jam cuaca layak kerja berturut-turut yang dibutuhkan sebelum aktivitas bisa dimulai (bawaan 24). Ketik dalam **jam** atau **hari** dengan satuan di sebelah kolom; nilainya disimpan dalam jam utuh, dan nilai yang bukan jam utuh ditandai dan tidak diterapkan.
 - **Lanjutan › Kondisi cuaca**: semua cuaca (bawaan), hanya periode siklon, atau di luar periode siklon.
 - **Lanjutan › Estimasi downtime**: *Rata-rata (diharapkan)* secara bawaan. *Konservatif, 1-dalam-N* menaikkan setiap nilai downtime ke batas atas kepercayaannya pada 1 − 1/N. Gunakan untuk perencanaan yang berhati-hati; pilihan ini dicantumkan di setiap hasil.
 

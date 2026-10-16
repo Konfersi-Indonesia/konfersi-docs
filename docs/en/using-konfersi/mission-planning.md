@@ -4,7 +4,7 @@ description: Estimate how long a sequence of marine operations takes once weathe
 tags: [mission-planning, downtime, operations, metocean, weather-window]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace, using-konfersi/metocean-data-sources, using-konfersi/risk-assessment, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-09
+updated: 2026-10-16
 ---
 
 Mission Planning estimates how weather stretches a marine operation. You describe **where** the work happens and **what limits** the vessel and crew can work in, then the **sequence** of work. Konfersi replays that sequence against decades of hourly metocean data from every possible start date. It then shows how long the operation is likely to take, which months are best, and which limit causes the waiting.
@@ -33,10 +33,12 @@ An **environment** is a set of operability limits at a location, for example *Po
 | Limit | Meaning |
 |---|---|
 | Wave height (Hs), Wave period (Tp) | Upper limits, in m and s |
-| Wind speed, Current speed | Upper limits, in m/s |
+| Wind speed, Current speed | Upper limits. Shown and typed in m/s or knots: pick the unit in the column header. The plan always stores m/s (1 kn = 0.5144 m/s). |
 | Wave / wind / current direction | The sector that is workable, clockwise from north (for example 300°–60°). A small compass shows the sector. |
 | Wind height | The height the wind limit applies at (for example a crane tip at 100 m). The 10 m wind is scaled with the 1/7 power law. |
 | Working hours | Hours per day work is allowed, centred on local noon (24 = round the clock). |
+
+To start from typical values, choose **Apply preset…** in an environment's **Preset** column (or in the Control inspector when you select the environment). The preset switches its limits on and fills in the values, as one step you can undo. The only preset today is **Default limits (Hs and wind)**, which sets wave height and wind speed. Presets are indicative starting points: check the limits and edit them for your operation.
 
 The **Data** column shows whether wind, wave and current data are acquired at each environment's location. If something is missing, select **Acquire** to start it from the matching observation point.
 
@@ -62,7 +64,7 @@ Runs use the project's CPU hours, charged for the time each run takes; the hours
 
 **Run settings**:
 
-- **Weather-window persistence**: how many hours of continuous workable weather an activity needs before it can start (default 24).
+- **Weather-window persistence**: how many hours of continuous workable weather an activity needs before it can start (default 24). Type it in **hours** or **days** with the unit next to the field; it is stored in whole hours, and a value that is not a whole number of hours is marked and not applied.
 - **Advanced › Weather condition**: all weather (default), cyclone periods only, or outside cyclone periods.
 - **Advanced › Downtime estimate**: *Mean (expected)* by default. *Conservative, 1-in-N* raises each downtime value to its upper confidence bound at 1 − 1/N. Use it for cautious planning; it is labelled on every result.
 
