@@ -4,7 +4,7 @@ description: The global datasets Konfersi calibrates and validates against, ERA5
 tags: [data, era5, cmems, fes2022, cmip6, attribution]
 related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
 status: published
-updated: 2026-10-11
+updated: 2026-10-21
 ---
 
 Konfersi calibrates and validates its models and analyses against industry-standard global datasets. This page explains the main datasets we reference, what each one is, and what to keep in mind when you use results based on them.
@@ -20,7 +20,7 @@ Konfersi calibrates and validates its models and analyses against industry-stand
 
 ### ERA5
 
-ERA5 combines model data with observations from across the world to produce a consistent, hourly record of the atmosphere and ocean waves going back decades. In Lab it provides precipitation, air temperature and air pressure at a point, over 2015 to 2025.
+ERA5 combines model data with observations from across the world to produce a consistent, hourly record of the atmosphere and ocean waves going back decades. In Lab it provides precipitation, air temperature and air pressure at a point, over 1993 to 2025. If Copernicus CDS refuses or fails that request, Lab asks one time for 2015 to 2025 instead; if that request fails too, the variable reports an error.
 
 ### CMEMS
 

@@ -4,7 +4,7 @@ description: Dataset global yang menjadi acuan kalibrasi dan validasi Konfersi, 
 tags: [data, era5, cmems, fes2022, cmip6, atribusi]
 related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
 status: published
-updated: 2026-10-11
+updated: 2026-10-21
 ---
 
 Konfersi mengkalibrasi dan memvalidasi model serta analisisnya terhadap dataset global berstandar industri. Halaman ini menjelaskan dataset utama yang kami gunakan sebagai acuan, apa isinya, dan hal-hal yang perlu diperhatikan saat Anda memakai hasil yang bersumber darinya.
@@ -20,7 +20,7 @@ Konfersi mengkalibrasi dan memvalidasi model serta analisisnya terhadap dataset 
 
 ### ERA5
 
-ERA5 menggabungkan data model dengan observasi dari seluruh dunia. Hasilnya adalah rekaman atmosfer dan gelombang laut per jam yang konsisten, mundur hingga beberapa dekade. Di Lab, ERA5 menyediakan presipitasi, suhu udara, dan tekanan udara di sebuah titik, untuk periode 2015 hingga 2025.
+ERA5 menggabungkan data model dengan observasi dari seluruh dunia. Hasilnya adalah rekaman atmosfer dan gelombang laut per jam yang konsisten, mundur hingga beberapa dekade. Di Lab, ERA5 menyediakan presipitasi, suhu udara, dan tekanan udara di sebuah titik, untuk periode 1993 hingga 2025. Jika Copernicus CDS menolak permintaan itu atau permintaan itu gagal, Lab meminta satu kali untuk 2015 hingga 2025 sebagai gantinya; jika permintaan itu juga gagal, variabel tersebut melaporkan galat.
 
 ### CMEMS
 

@@ -4,7 +4,7 @@ description: Cara Lab memproses sebuah titik dan cara membaca setiap analisis, d
 tags: [lab, analisis, statistik, box plot, mawar, distribusi gabungan, nilai ekstrem, eva, periode ulang, datum pasang surut, formzahl, audit badai, siklon, kontrol kualitas]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-13
+updated: 2026-10-21
 ---
 
 Saat Anda [memproses titik](../points/process-points.md), Lab mengunduh rekaman setiap variabel untuk titik itu, memeriksa kualitasnya, lalu menjalankan serangkaian analisis. Halaman ini menjelaskan cara membaca setiap analisis. Asal setiap variabel, beserta rekaman dan resolusinya, ada di [Variabel & sumber](../data/variables-and-sources.md); cara membuka dan mengekspor grafik ada di [Analisis & grafik](index.md).
@@ -23,7 +23,7 @@ Beberapa variabel membawa catatan yang tampil bersama setiap hasilnya. Catatan i
 - **Arus** adalah arus residual (non-pasang surut): arus pasang surut tidak termasuk.
 - **Muka air** hanya pasang surut astronomis: tanpa siklus muka laut rata-rata musiman dan tanpa gelombang badai (storm surge).
 - **Muka air total** menambahkan muka laut non-pasang surut harian ke pasang surut, tetapi tanpa storm surge singkat dan wave set-up: ini bukan muka air storm tide desain.
-- **Presipitasi, suhu udara, dan tekanan udara** mencakup 2015 hingga 2025, sehingga nilai ekstremnya selalu ditandai kepercayaan rendah.
+- **Presipitasi, suhu udara, dan tekanan udara** mencakup 1993 hingga 2025. Jika penyedia menolak permintaan itu atau permintaan itu gagal, Lab meminta satu kali untuk 2015 hingga 2025 sebagai gantinya, dan nilai ekstrem dari rekaman yang lebih pendek itu ditandai kepercayaan rendah.
 
 ## Deret waktu dan statistik
 

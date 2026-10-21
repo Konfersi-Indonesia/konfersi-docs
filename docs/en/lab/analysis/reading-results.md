@@ -4,7 +4,7 @@ description: How Lab processes a point and how to read each analysis, from stati
 tags: [lab, analysis, statistics, box plot, rose, wind sea, swell, joint distribution, extreme value, eva, directional, return period, tidal datums, formzahl, total water level, storm audit, cyclones, quality control]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
 status: published
-updated: 2026-10-13
+updated: 2026-10-21
 ---
 
 When you [process a point](../points/process-points.md), Lab downloads each variable's record for it, checks its quality and runs a set of analyses on it. This page explains how to read each analysis. Where each variable comes from, and its record and resolution, is in [Variables & sources](../data/variables-and-sources.md); how to open and export charts is in [Analyses & charts](index.md).
@@ -23,7 +23,7 @@ Some variables come with a caveat, shown with every result. They're listed with 
 - **Current** is the residual (non-tidal) current: tidal currents are not included.
 - **Water level** is the astronomical tide only: no seasonal mean-sea-level cycle or storm surge.
 - **Total water level** adds the daily non-tidal sea level to the tide, but not short storm surge or wave set-up: it isn't a design storm-tide level.
-- **Precipitation, air temperature and air pressure** cover 2015 to 2025, so their extreme values are always flagged as low confidence.
+- **Precipitation, air temperature and air pressure** cover 1993 to 2025. If the provider refuses or fails that request, Lab asks one time for 2015 to 2025 instead, and the extreme values from that shorter record are flagged as low confidence.
 
 ## Timeseries and statistics
 

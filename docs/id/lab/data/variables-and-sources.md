@@ -4,7 +4,7 @@ description: Setiap variabel metocean yang diambil Konfersi Lab untuk sebuah tit
 tags: [lab, variabel, sumber, cmems, era5, copernicus, fes2022, angin, gelombang, wind sea, swell, arus, tinggi muka laut, sst, salinitas, muka air, muka air total, netcdf, resolusi, catatan]
 related: [lab/data, lab/analysis/reading-results, using-konfersi/metocean-data-sources, lab/points/process-points]
 status: published
-updated: 2026-10-13
+updated: 2026-10-21
 ---
 
 Memproses titik mengambil hingga sepuluh variabel. Pilih titik lalu buka **Konfersi Lab → Data** untuk melihat variabel yang sudah diakuisisi, sedang berjalan, atau belum diakuisisi, beserta waktu pembaruannya.
@@ -19,13 +19,13 @@ Memproses titik mengambil hingga sepuluh variabel. Pilih titik lalu buka **Konfe
 | **Tinggi muka laut** (non-pasang surut, di atas geoid) | Copernicus Marine | Reanalisis laut GLORYS12, rata-rata harian (`cmems_mod_glo_phy_my_0.083deg_P1D-m`) | 1/12° (0,083°) · harian | Jan 1993 – Des 2025 |
 | **Suhu permukaan laut** | Copernicus Marine | SST OSTIA reprocessed (`METOFFICE-GLO-SST-L4-REP-OBS-SST`) | harian | Okt 1981 – Des 2025 |
 | **Salinitas** (permukaan laut) | Copernicus Marine | Salinitas permukaan multi-observasi (`cmems_obs-mob_glo_phy-sss_my_multi_P1D`) | harian | Jan 1993 – Des 2024 |
-| **Presipitasi** | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | 2015 – 2025 |
-| **Suhu udara** (2 m) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | 2015 – 2025 |
-| **Tekanan udara** (permukaan) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | 2015 – 2025 |
+| **Presipitasi** | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | Jan 1993 – Des 2025 |
+| **Suhu udara** (2 m) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | Jan 1993 – Des 2025 |
+| **Tekanan udara** (permukaan) | Copernicus CDS | Deret waktu titik ERA5 per jam | 0,25° · per jam | Jan 1993 – Des 2025 |
 | **Muka air** (pasang surut astronomis) | AVISO | Model pasang surut FES2022b, 34 konstituen | prediksi per jam | Jan 1993 – Des 2025 |
 | **Muka air total** (pasang surut ditambah muka laut non-pasang surut, dihitung) | AVISO + Copernicus Marine | Pasang surut FES2022b ditambah tinggi muka laut GLORYS12 (`cmems_mod_glo_phy_my_0.083deg_P1D-m`) | per jam | Jan 1993 – Des 2025 |
 
-Setiap periode adalah rentang yang diminta Lab; data yang Anda dapat bergantung pada ketersediaan di penyedia untuk lokasi tersebut. Variabel ERA5 memakai rentang sepuluh tahun agar permintaan tetap dalam batas penyedia.
+Setiap periode adalah rentang yang diminta Lab; data yang Anda dapat bergantung pada ketersediaan di penyedia untuk lokasi tersebut. Variabel ERA5 diminta untuk 1993 hingga 2025. Jika Copernicus CDS menolak permintaan itu atau permintaan itu gagal, Lab meminta satu kali untuk 2015 hingga 2025 sebagai gantinya; jika permintaan itu juga gagal, variabel tersebut melaporkan galat. Permintaan yang lebih pendek tidak dipakai setelah gangguan singkat di penyedia (Lab meminta 1993 hingga 2025 lagi nanti) atau masalah kredensial (variabel tersebut melaporkan galat). Di laporan, paragraf sumber data pada profil proyek menyebut tahun yang dimiliki titik tersebut; profil yang ditulis sebelum permintaan yang lebih pendek tetap memakai tahunnya sampai dibuat ulang.
 
 **Muka air** adalah pasang surut yang diprediksi di titik dari konstituen FES2022b, bukan hasil pengukuran. Analisis titiknya adalah [datum pasang surut](../analysis/reading-results.md#datum-pasang-surut), dan pasang surut per jam untuk periode pilihan Anda dibuat saat Anda memintanya. Analisis lokasi **Pasang surut** membandingkan model dengan stasiun pasang surut terdekat; lihat [Cara data diproses](index.md#analisis-lokasi).
 
@@ -43,7 +43,7 @@ Beberapa variabel membawa catatan yang ditampilkan Lab bersama setiap hasilnya:
 | **Tinggi muka laut** | Tinggi di atas geoid (rata-rata harian non-pasang surut), bukan anomali terhadap muka laut rata-rata. Jangan langsung ditambahkan ke pasang surut astronomis: kurangi dulu rata-rata jangka panjangnya. |
 | **Muka air** | Hanya pasang surut astronomis: tidak termasuk siklus muka laut rata-rata musiman dan gelombang badai (storm surge). Muka air total yang teramati bisa sekitar 0,25 m lebih tinggi. Jangan dipakai sendirian sebagai muka air desain. |
 | **Muka air total** | Pasang surut astronomis ditambah muka laut non-pasang surut rata-rata harian dari reanalisis laut (siklus muka laut rata-rata musiman dan wind set-up yang lambat). Storm surge singkat (hitungan jam) dan wave set-up tidak termasuk, sehingga puncaknya lebih rendah daripada storm tide yang teramati: jangan dipakai sendirian sebagai muka air storm tide desain. |
-| **Presipitasi, suhu udara, tekanan udara** | Rentang 2015–2025 lebih pendek dari 20 tahun yang dibutuhkan metode nilai ekstrem, sehingga nilai ekstremnya ditandai kepercayaan rendah. |
+| **Presipitasi, suhu udara, tekanan udara** | Jika permintaan beralih ke 2015–2025, rentang itu lebih pendek dari 20 tahun yang dibutuhkan metode nilai ekstrem, sehingga nilai ekstremnya ditandai kepercayaan rendah. Rentang penuh 1993–2025 tidak ditandai karena panjangnya. |
 
 <scalar-callout type="info">Produk reanalisis dan satelit menggambarkan kondisi di satu sel grid, bukan di satu titik persis. Di dekat pantai, di pelabuhan, atau di dasar laut yang kompleks, kondisi bisa berbeda dari sel terdekat. Untuk desain teknik, validasi dengan pengukuran lokal.</scalar-callout>
 
