@@ -4,7 +4,7 @@ description: Use the Lab project map — basemaps, overlays, live forecasts, shi
 tags: [lab, map, layers, overlays, basemap, climatology, forecast, open-meteo, ais, shipping, eez, boundaries, cyclone, ibtracs, tide gauge, uhslc, export, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 The **Project Map** shows your observation points and project boundaries over a basemap, with optional data overlays. Open it from **Map Explorer** or with **Konfersi: Open Map**.
@@ -98,7 +98,7 @@ Tracks come from the **IBTrACS** best-track record, the full record with no date
 | Magenta | Category 4 |
 | Purple | Category 5 |
 
-If no storm passed close enough, Lab tells you so: *No tropical cyclone passed within 500 km of (point) in the IBTrACS record.*
+If no storm passed close enough, Lab tells you so: *No tropical cyclone passed within (radius) km of (point) in the IBTrACS record.* The distance is the radius you choose (250, 500 or 1000 km).
 
 ## Tide gauge near a point
 

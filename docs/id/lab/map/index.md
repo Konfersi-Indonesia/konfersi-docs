@@ -4,7 +4,7 @@ description: Pakai peta proyek di Lab — peta dasar, overlay, prakiraan langsun
 tags: [lab, peta, lapisan, overlay, peta dasar, klimatologi, prakiraan, open-meteo, ais, kapal, zee, batas, siklon, ibtracs, stasiun pasut, uhslc, ekspor, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-22
+updated: 2026-10-23
 ---
 
 **Peta proyek** menampilkan titik observasi dan batas proyek di atas peta dasar, dengan overlay data opsional. Buka dari **Penjelajah Peta** atau dengan **Konfersi: Buka Peta**.
@@ -98,7 +98,7 @@ Lintasan berasal dari catatan best-track **IBTrACS**, seluruh catatan tanpa filt
 | Magenta | Kategori 4 |
 | Ungu | Kategori 5 |
 
-Jika tidak ada badai yang cukup dekat, Lab memberi tahu: *Tidak ada siklon tropis yang melintas dalam 500 km dari (titik) dalam catatan IBTrACS.*
+Jika tidak ada badai yang cukup dekat, Lab memberi tahu: *Tidak ada siklon tropis yang melintas dalam (radius) km dari (titik) dalam catatan IBTrACS.* Jaraknya adalah radius yang Anda pilih (250, 500, atau 1000 km).
 
 ## Stasiun pasut di sekitar titik
 
