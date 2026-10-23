@@ -4,7 +4,7 @@ description: Pakai peta proyek di Lab — peta dasar, overlay, prakiraan langsun
 tags: [lab, peta, lapisan, overlay, peta dasar, klimatologi, prakiraan, open-meteo, ais, kapal, zee, batas, siklon, ibtracs, stasiun pasut, uhslc, ekspor, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-09
+updated: 2026-10-22
 ---
 
 **Peta proyek** menampilkan titik observasi dan batas proyek di atas peta dasar, dengan overlay data opsional. Buka dari **Penjelajah Peta** atau dengan **Konfersi: Buka Peta**.
@@ -104,7 +104,7 @@ Jika tidak ada badai yang cukup dekat, Lab memberi tahu: *Tidak ada siklon tropi
 
 Klik kanan sebuah titik lalu pilih **Tampilkan Stasiun Pasut di Peta** (atau jalankan **Konfersi: Tampilkan Stasiun Pasut di Peta**). Lab menandai stasiun pasut **UHSLC** yang dipakai analisis pasut untuk titik ini dengan titik hijau, lalu memperbesar peta agar keduanya terlihat. Pilih titik hijau itu untuk melihat nama stasiunnya.
 
-Jika tidak ada stasiun di dekatnya, Lab memberi tahu bahwa pasut di sana berasal dari model **FES2022**, dan tidak ada yang ditandai. Lihat [Cara data diproses](../data/index.md) untuk cara pasut dimodelkan dan divalidasi.
+Jika tidak ada stasiun di dekatnya, tidak ada yang ditandai dan Lab memberi tahu: *Tidak ditemukan stasiun pasut UHSLC untuk (titik); pasut di sana berasal dari model FES2022.* Lihat [Cara data diproses](../data/index.md) untuk cara pasut dimodelkan dan divalidasi.
 
 **Hapus Anotasi Peta**, di bilah judul peta, menghapus lintasan siklon dan stasiun pasut. Menampilkan salah satunya akan menggantikan yang lain.
 

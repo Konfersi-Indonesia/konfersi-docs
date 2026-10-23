@@ -4,7 +4,7 @@ description: Use the Lab project map — basemaps, overlays, live forecasts, shi
 tags: [lab, map, layers, overlays, basemap, climatology, forecast, open-meteo, ais, shipping, eez, boundaries, cyclone, ibtracs, tide gauge, uhslc, export, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-09
+updated: 2026-10-22
 ---
 
 The **Project Map** shows your observation points and project boundaries over a basemap, with optional data overlays. Open it from **Map Explorer** or with **Konfersi: Open Map**.
@@ -104,7 +104,7 @@ If no storm passed close enough, Lab tells you so: *No tropical cyclone passed w
 
 Right-click a point and choose **Show Tide Gauge on Map** (or run **Konfersi: Show Tide Gauge on Map**). Lab pins the **UHSLC** tide gauge that the tide analysis uses for this point as a green dot and zooms to show both. Select the dot to see the station name.
 
-If there's no gauge nearby, Lab tells you that tides there come from the **FES2022** model instead, and nothing is pinned. See [How data is processed](../data/index.md) for how tides are modelled and validated.
+If there's no gauge nearby, nothing is pinned and Lab tells you so: *No UHSLC tide gauge was found for (point); tides there come from the FES2022 model.* See [How data is processed](../data/index.md) for how tides are modelled and validated.
 
 **Clear Map Annotations**, in the map's title bar, removes cyclone tracks and the tide gauge. Showing one replaces the other.
 
