@@ -4,7 +4,7 @@ description: Run automated quality control on a point's acquired data — physic
 tags: [lab, validation, qc, quality control, spikes, gaps, completeness, data availability]
 related: [lab/analysis, lab/data/variables-and-sources]
 status: published
-updated: 2026-10-13
+updated: 2026-10-23
 ---
 
 Validation runs automated quality control (QC) on the data acquired for a point, so you know how far you can trust it before using the analyses.
@@ -27,9 +27,9 @@ Each check reports **pass**, **warn** or **fail**, with the value it measured:
 | **Isolated spikes** | One-step excursions that stand out from both neighbours by at least a size limit for the variable. Not checked where single-step peaks are real |
 | **Signal flatline test** | The same value repeated for 24 hours or more, a sign of a stuck sensor or filled data |
 | **Completeness & gaps** | The share of expected time steps that have data, and missing periods longer than three times the normal time step |
-| **Satellite altimetry collocation** | Comparison with satellite measurements along their tracks |
+| **Satellite altimetry collocation** (waves) | Comparison of the wave height with satellite altimeter passes near the point (SARAL and Sentinel-3A/B, from the ESA Sea State CCI) |
 
-Satellite altimetry collocation needs along-track data that Lab doesn't acquire yet, so it's shown as **not available**, never as a pass. A check is also **not available** when a series is too short to test.
+The altimetry check pairs each pass with the model in time and reports the bias (model minus altimeter) and the root-mean-square error (RMSE), with the number of passes and the passes per mission. It **warns** when the bias is beyond 0.15 m or the RMSE beyond 0.30 m, and **fails** beyond 0.30 m or 0.50 m. With fewer than 20 usable passes, or when the passes can't be read, it is shown as **not available**, never as a pass. A check is also **not available** when a series is too short to test.
 
 ## Quality checks after processing
 
@@ -44,7 +44,7 @@ Every variable is also checked when a point is processed. Open **Data Analytics 
 | **Completeness & gaps** | Samples received against expected, the time step and window, and gaps longer than three times the step |
 | **Grid cell at the point** | The nearest grid cell with data, its distance from the point and how much of its record is present |
 | **Analyses produced** | How many of the variable's analyses were produced, and which are missing |
-| **Satellite altimetry collocation** | Shown as not acquired |
+| **Satellite altimetry collocation** (waves) | The bias and RMSE against altimeter passes, how many passes and how many came from each mission; or how many passes were found when there are too few |
 
 The check names and sentences follow the Lab's display language (English or Indonesian), with numbers and decimals written the way that language writes them. In the desktop extension that's VS Code's display language. The web Lab shows them in English.
 
