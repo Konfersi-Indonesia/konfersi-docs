@@ -58,7 +58,7 @@ Rilis publik pertama Dokumentasi Konfersi, dalam Bahasa Indonesia dan bahasa Ing
 
 Halaman hukum berlaku sejak 27 September 2026 sebagai versi awal:
 
-- [Syarat & Ketentuan](../legal/terms.md)
+- [Ketentuan Layanan](../legal/terms.md)
 - [Kebijakan Privasi](../legal/privacy.md)
 - [Pemberitahuan Cookie](../legal/cookies.md)
 - [Kebijakan Penggunaan yang Wajar](../legal/acceptable-use.md)

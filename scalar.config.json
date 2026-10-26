@@ -784,7 +784,7 @@
             "children": {
               "/terms": {
                 "type": "page",
-                "title": "Syarat & Ketentuan",
+                "title": "Ketentuan Layanan",
                 "icon": "phosphor/regular/scroll",
                 "filepath": "docs/id/legal/terms.md"
               },
