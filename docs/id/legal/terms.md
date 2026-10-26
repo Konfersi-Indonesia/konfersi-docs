@@ -8,21 +8,21 @@ review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum, dengan pemberitahuan paling lambat 14 hari sebelumnya. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku.</scalar-callout>
+<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum, dengan pemberitahuan paling lambat 14 hari sebelumnya. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku. Tunduk pada tinjauan pemilik dan tinjauan hukum sebelum produksi.</scalar-callout>
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Ketentuan Layanan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 
-Ketentuan Layanan ini ("**Syarat**") mengatur akses dan penggunaan Anda atas platform, situs web, dan kursus Konfersi. Mohon baca dengan saksama. Dengan membuat Akun, mencentang kotak persetujuan saat pendaftaran, atau menggunakan Layanan, Anda menyatakan setuju untuk terikat pada Syarat ini. Apabila Anda tidak setuju, mohon untuk tidak menggunakan Layanan.
+Ketentuan Layanan ini ("**Ketentuan Layanan**") mengatur akses dan penggunaan Anda atas platform, situs web, dan kursus Konfersi. Mohon baca dengan saksama. Dengan membuat Akun, mencentang kotak persetujuan saat pendaftaran, atau menggunakan Layanan, Anda menyatakan setuju untuk terikat pada Ketentuan Layanan ini. Apabila Anda tidak setuju, mohon untuk tidak menggunakan Layanan.
 
 ## 1. Para pihak
 
-1.1. Syarat ini merupakan perjanjian antara **PT Konfersi Metocean Climate Consultant**, suatu perseroan terbatas yang didirikan berdasarkan hukum Negara Republik Indonesia dengan Nomor Induk Berusaha (NIB) 2009240105369, berkantor di Jl. Percetakan Negara No. C230, Rawasari, Jakarta Pusat, DKI Jakarta, Indonesia ("**Konfersi**" atau "**Kami**"), dan orang perseorangan atau badan yang menggunakan Layanan ("**Pengguna**" atau "**Anda**").
+1.1. Ketentuan Layanan ini merupakan perjanjian antara **PT Konfersi Metocean Climate Consultant**, suatu perseroan terbatas yang didirikan berdasarkan hukum Negara Republik Indonesia dengan Nomor Induk Berusaha (NIB) 2009240105369, berkantor di Jl. Percetakan Negara No. C230, Rawasari, Jakarta Pusat, DKI Jakarta, Indonesia ("**Konfersi**" atau "**Kami**"), dan orang perseorangan atau badan yang menggunakan Layanan ("**Pengguna**" atau "**Anda**").
 
-1.2. Apabila Anda menggunakan Layanan untuk dan atas nama suatu perusahaan, lembaga, atau badan hukum lainnya, maka "Anda" juga mencakup badan tersebut, dan Anda menyatakan bahwa Anda berwenang untuk mengikatkan badan tersebut pada Syarat ini.
+1.2. Apabila Anda menggunakan Layanan untuk dan atas nama suatu perusahaan, lembaga, atau badan hukum lainnya, maka "Anda" juga mencakup badan tersebut, dan Anda menyatakan bahwa Anda berwenang untuk mengikatkan badan tersebut pada Ketentuan Layanan ini.
 
 ## 2. Definisi
 
-Dalam Syarat ini:
+Dalam Ketentuan Layanan ini:
 
 - **Akun** adalah akun pengguna yang Anda buat melalui Konfersi Accounts (accounts.konfersi.com) dan gunakan untuk masuk ke Layanan.
 - **Layanan** adalah platform Konfersi beserta situs web dan fitur terkait yang Kami sediakan bagi Anda, termasuk Accounts, Console, Lab, Mission Planning, Kursus, dokumentasi, dan layanan bantuan, sebagaimana ditawarkan dari waktu ke waktu.
@@ -32,14 +32,14 @@ Dalam Syarat ini:
 - **Data Pelanggan** adalah data, berkas, koordinat, konfigurasi, detail proyek, dan konten lain yang Anda atau kolaborator Anda sampaikan ke dalam Layanan.
 - **Data Metocean** adalah himpunan data meteorologi, oseanografi, dan iklim yang digunakan atau disediakan oleh Layanan, termasuk data yang diturunkan dari sumber pihak ketiga seperti ERA5, CMEMS, FES2022, dan CMIP6.
 - **Keluaran** adalah analisis, statistik, grafik, tabel, laporan, teks yang dihasilkan kecerdasan artifisial (AI), dan hasil lain yang dihasilkan Layanan dari Data Pelanggan dan Data Metocean.
-- **Kursus** adalah produk edukasi Konfersi, termasuk Konfersi Course Series, Web Series, dan Private Course, beserta materinya.
+- **Kursus** adalah produk edukasi Konfersi, termasuk Konfersi Course Series, Web Series, dan Kursus Privat, beserta materinya.
 - **Paket** adalah tingkatan langganan, tambahan (*add-on*), atau pendaftaran kursus yang Anda pilih, sebagaimana diuraikan di Console atau pada saat pembayaran.
 
 ## 3. Persyaratan pengguna
 
-3.1. Untuk membuat Akun atau membeli Paket, Anda wajib berusia sekurang-kurangnya 18 tahun, atau memperoleh persetujuan dan pengawasan dari orang tua atau wali yang sah yang menyetujui Syarat ini untuk dan atas nama Anda.
+3.1. Untuk membuat Akun atau membeli Paket, Anda wajib berusia sekurang-kurangnya 18 tahun, atau memperoleh persetujuan dan pengawasan dari orang tua atau wali yang sah yang menyetujui Ketentuan Layanan ini untuk dan atas nama Anda.
 
-3.2. Apabila Anda mendaftar atas nama suatu organisasi, Anda menyatakan bahwa Anda berwenang menerima Syarat ini untuk organisasi tersebut dan bahwa data organisasi yang Anda berikan adalah benar.
+3.2. Apabila Anda mendaftar atas nama suatu organisasi, Anda menyatakan bahwa Anda berwenang menerima Ketentuan Layanan ini untuk organisasi tersebut dan bahwa data organisasi yang Anda berikan adalah benar.
 
 3.3. Kami dapat membatasi akses atas Layanan tertentu, termasuk Mission Planning selama masa peluncurannya, hanya bagi pengguna yang diundang atau bagi Paket tertentu. Undangan bersifat pribadi dan tidak dapat dialihkan.
 
@@ -55,7 +55,7 @@ Dalam Syarat ini:
 
 ## 5. Lisensi penggunaan Layanan
 
-5.1. Dengan tunduk pada Syarat ini dan pembayaran biaya yang berlaku, Kami memberikan kepada Anda lisensi yang terbatas, noneksklusif, tidak dapat dialihkan, tidak dapat disublisensikan, dan dapat dicabut untuk mengakses dan menggunakan Layanan yang termasuk dalam Paket Anda, untuk keperluan internal usaha, penelitian, atau pembelajaran Anda, selama jangka waktu Paket Anda.
+5.1. Dengan tunduk pada Ketentuan Layanan ini dan pembayaran biaya yang berlaku, Kami memberikan kepada Anda lisensi yang terbatas, noneksklusif, tidak dapat dialihkan, tidak dapat disublisensikan, dan dapat dicabut untuk mengakses dan menggunakan Layanan yang termasuk dalam Paket Anda, untuk keperluan internal usaha, penelitian, atau pembelajaran Anda, selama jangka waktu Paket Anda.
 
 5.2. Ruang lingkup penggunaan (misalnya penggunaan komersial atau nonkomersial, jam komputasi, atau pengunduhan data) ditentukan oleh Paket Anda sebagaimana ditampilkan di Console atau pada saat pembayaran. Paket yang dinyatakan nonkomersial hanya boleh digunakan untuk keperluan akademik atau penelitian yang bersifat nonkomersial.
 
@@ -70,15 +70,15 @@ Dalam Syarat ini:
 3. saran navigasi, rute pelayaran, atau keselamatan jiwa, maupun pengganti peringatan cuaca resmi;
 4. sertifikasi, persetujuan, atau verifikasi dari badan klasifikasi, surveyor penjamin kelautan (*marine warranty surveyor*), atau lembaga sertifikasi lainnya.
 
-6.2. Jasa konsultansi (seperti kajian metocean, pemodelan laut, atau pemodelan kebisingan bawah air) hanya diberikan berdasarkan SOW terpisah. SOW tersebut, dan bukan Syarat ini, yang mengatur hasil kerja konsultansi, jaminannya, dan ketentuan tanggung jawabnya.
+6.2. Jasa konsultansi (seperti kajian metocean, pemodelan laut, atau pemodelan kebisingan bawah air) hanya diberikan berdasarkan SOW terpisah. SOW tersebut, dan bukan Ketentuan Layanan ini, yang mengatur hasil kerja konsultansi, jaminannya, dan ketentuan tanggung jawabnya.
 
 6.3. Risk Assessment, *weather routing*, dan modul lain yang belum Kami rilis tidak termasuk dalam Layanan. Penyebutan modul tersebut dalam materi pemasaran bukan merupakan penawaran maupun komitmen untuk menyediakannya.
 
-6.4. Mohon baca juga [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami, yang merupakan bagian dari Syarat ini.
+6.4. Mohon baca juga [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami, yang merupakan bagian dari Ketentuan Layanan ini.
 
 ## 7. Penggunaan yang wajar
 
-Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, yang merupakan bagian dari Syarat ini.
+Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, yang merupakan bagian dari Ketentuan Layanan ini.
 
 ## 8. Data Pelanggan
 
@@ -92,7 +92,7 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 ## 9. Keluaran dan konten yang dihasilkan AI
 
-9.1. Dengan tunduk pada Syarat ini, hak pemberi lisensi data pihak ketiga, dan pembayaran biaya yang berlaku, Anda dapat menggunakan, menyalin, dan membagikan Keluaran yang dihasilkan untuk proyek Anda bagi keperluan Anda sendiri.
+9.1. Dengan tunduk pada Ketentuan Layanan ini, hak pemberi lisensi data pihak ketiga, dan pembayaran biaya yang berlaku, Anda dapat menggunakan, menyalin, dan membagikan Keluaran yang dihasilkan untuk proyek Anda bagi keperluan Anda sendiri.
 
 9.2. Keluaran dihasilkan secara otomatis dari model, metode statistik, dan data pihak ketiga, dan sebagian Keluaran dapat memuat teks yang dihasilkan oleh kecerdasan artifisial. Keluaran dapat tidak lengkap, tidak akurat, atau tidak sesuai dengan tujuan Anda. Keluaran bukan merupakan nasihat profesional di bidang teknik, navigasi, hukum, maupun lingkungan. Anda bertanggung jawab untuk meninjau Keluaran dan atas setiap keputusan yang Anda ambil berdasarkan Keluaran tersebut.
 
@@ -126,23 +126,25 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 (a) untuk Kursus dengan sesi langsung, apabila Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**; atau
 
-(b) untuk Kursus mandiri (*self-paced*), apabila Anda membatalkan **dalam 14 hari sejak pembelian dan sebelum Anda menyelesaikan 20% materi Kursus**, sebagaimana tercatat dalam kemajuan pelajaran Anda di Layanan.
+(b) untuk Kursus belajar mandiri (*self-paced*), apabila Anda membatalkan **sebelum Anda menyelesaikan 20% materi Kursus**, sebagaimana tercatat dalam kemajuan pelajaran Anda di Layanan. Tidak ada batas waktu sejak pembelian.
 
-Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4. Private Course tunduk pada ketentuan pembatalan yang disepakati secara tertulis untuknya.
+Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4. Kursus Privat tunduk pada ketentuan pembatalan yang disepakati secara tertulis untuknya.
 
-12.3. **Paket platform dan tambahan.** Sumber daya Paket dan tambahan (seperti jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Anda dapat membatalkan Paket atau tambahan dan memperoleh pengembalian dana penuh **dalam 7 hari sejak pembelian apabila belum ada kuota yang digunakan**. Setelah sebagian kuota yang diberikan oleh suatu Paket atau tambahan digunakan, biayanya tidak dapat dikembalikan, kecuali bahwa Kami akan memberikan **pengembalian dana secara proporsional untuk bagian yang belum digunakan** apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)). Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
+12.3. **Paket platform dan tambahan.** Paket yang tersedia adalah Free, Lite, Professional Researcher, dan Enterprise, ditambah tambahan (*add-on*) seperti komputasi XCP. Sumber daya Paket dan tambahan (seperti XCP, jam komputasi, penyimpanan, atau kredit) tersedia bagi proyek Anda segera setelah pembayaran dikonfirmasi. Anda dapat membatalkan Paket atau tambahan dan memperoleh pengembalian dana penuh **dalam 7 hari sejak pembelian apabila belum ada kuota yang digunakan**. Setelah sebagian kuota yang diberikan oleh suatu Paket atau tambahan digunakan, biayanya tidak dapat dikembalikan, kecuali bahwa Kami akan memberikan **pengembalian dana secara proporsional untuk bagian yang belum digunakan** apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)). Paket Free tidak dikenai biaya. Pelanggan Enterprise tunduk pada ketentuan pengembalian dana dalam perjanjian yang telah ditandatangani.
+
+12.3A. **Komputasi XCP.** XCP yang belum digunakan mengikuti ketentuan Paket atau tambahan tempat XCP tersebut diperoleh (angka 12.3). XCP yang sudah digunakan tidak dapat dikembalikan dananya, kecuali pengembalian dana secara proporsional apabila Kami gagal menyediakan Layanan sebagaimana diuraikan (angka 12.4(c)).
 
 12.4. **Keadaan Kami mengembalikan dana.** Kami akan mengembalikan jumlah yang bersangkutan apabila: (a) Anda dikenai tagihan lebih dari satu kali untuk pesanan yang sama, atau dikenai tagihan untuk pesanan yang tidak terselesaikan; (b) Kami membatalkan suatu Kursus, atau menjadwalkan ulang Kursus dan Anda tidak dapat hadir pada tanggal yang baru; (c) Kami gagal menyediakan Layanan berbayar sebagaimana diuraikan dan tidak memperbaiki kegagalan tersebut dalam jangka waktu yang wajar setelah Anda memberi tahu Kami; atau (d) pengembalian dana diwajibkan oleh hukum.
 
 12.5. Pengembalian dana yang disetujui dikembalikan melalui kanal pembayaran semula atau metode lain yang disepakati dengan Anda. Lamanya dana diterima bergantung pada bank atau penyedia pembayaran Anda.
 
-12.6. Tidak ada ketentuan dalam Syarat ini yang membatasi hak Anda sebagai konsumen berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen yang tidak dapat dikesampingkan melalui perjanjian.
+12.6. Tidak ada ketentuan dalam Ketentuan Layanan ini yang membatasi hak Anda sebagai konsumen berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen yang tidak dapat dikesampingkan melalui perjanjian.
 
 ## 13. Penangguhan dan pengakhiran
 
 13.1. Anda dapat berhenti menggunakan Layanan dan meminta penutupan Akun Anda kapan saja dengan menghubungi support@konfersi.com.
 
-13.2. Kami dapat menangguhkan atau mengakhiri akses Anda atas seluruh atau sebagian Layanan, dengan pemberitahuan sepanjang dapat dilakukan secara wajar, apabila: (a) Anda melakukan pelanggaran material atas Syarat ini atau Kebijakan Penggunaan yang Wajar; (b) penggunaan Anda menimbulkan risiko keamanan, hukum, atau operasional terhadap Layanan atau pihak lain; (c) terdapat pembayaran yang telah jatuh tempo; atau (d) Kami diwajibkan oleh hukum atau oleh otoritas yang berwenang. Kami juga dapat mengakhiri akses berbasis undangan atau masa uji coba pada akhir periode yang ditetapkan.
+13.2. Kami dapat menangguhkan atau mengakhiri akses Anda atas seluruh atau sebagian Layanan, dengan pemberitahuan sepanjang dapat dilakukan secara wajar, apabila: (a) Anda melakukan pelanggaran material atas Ketentuan Layanan ini atau Kebijakan Penggunaan yang Wajar; (b) penggunaan Anda menimbulkan risiko keamanan, hukum, atau operasional terhadap Layanan atau pihak lain; (c) terdapat pembayaran yang telah jatuh tempo; atau (d) Kami diwajibkan oleh hukum atau oleh otoritas yang berwenang. Kami juga dapat mengakhiri akses berbasis undangan atau masa uji coba pada akhir periode yang ditetapkan.
 
 13.3. Apabila Kami menghentikan suatu Layanan yang telah Anda bayar di muka, Kami akan memberikan pemberitahuan yang wajar dan mengembalikan biaya yang telah dibayar di muka secara proporsional untuk periode yang belum digunakan.
 
@@ -152,7 +154,7 @@ Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur d
 
 ## 14. Kerahasiaan
 
-14.1. Masing-masing pihak wajib menjaga kerahasiaan informasi nonpublik yang diungkapkan oleh pihak lainnya yang ditandai rahasia atau yang secara wajar patut dipahami sebagai rahasia, termasuk detail proyek dan masukan misi Anda, serta informasi produk nonpublik dan detail undangan Kami. Masing-masing pihak hanya dapat menggunakan informasi tersebut untuk melaksanakan kewajiban atau menggunakan haknya berdasarkan Syarat ini.
+14.1. Masing-masing pihak wajib menjaga kerahasiaan informasi nonpublik yang diungkapkan oleh pihak lainnya yang ditandai rahasia atau yang secara wajar patut dipahami sebagai rahasia, termasuk detail proyek dan masukan misi Anda, serta informasi produk nonpublik dan detail undangan Kami. Masing-masing pihak hanya dapat menggunakan informasi tersebut untuk melaksanakan kewajiban atau menggunakan haknya berdasarkan Ketentuan Layanan ini.
 
 14.2. Kewajiban tersebut tidak berlaku terhadap informasi yang telah atau kemudian menjadi informasi publik bukan karena pelanggaran, telah diketahui secara sah oleh penerima sebelum pengungkapan, dikembangkan secara mandiri, atau wajib diungkapkan berdasarkan hukum atau perintah otoritas yang berwenang (dalam hal demikian, pihak yang mengungkapkan sepatutnya diberi tahu sepanjang diizinkan oleh hukum).
 
@@ -160,7 +162,7 @@ Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur d
 
 ## 15. Hak kekayaan intelektual
 
-15.1. Konfersi dan para pemberi lisensinya memiliki seluruh hak atas Layanan, termasuk perangkat lunak, model, metode, antarmuka pengguna, dokumentasi, materi Kursus, serta nama dan logo "Konfersi". Syarat ini tidak mengalihkan hak-hak tersebut kepada Anda.
+15.1. Konfersi dan para pemberi lisensinya memiliki seluruh hak atas Layanan, termasuk perangkat lunak, model, metode, antarmuka pengguna, dokumentasi, materi Kursus, serta nama dan logo "Konfersi". Ketentuan Layanan ini tidak mengalihkan hak-hak tersebut kepada Anda.
 
 15.2. Materi Kursus dilisensikan kepada Anda hanya untuk pembelajaran pribadi. Anda dilarang menyalin, merekam, menjual kembali, atau membagikannya secara publik tanpa izin tertulis dari Kami.
 
@@ -170,7 +172,7 @@ Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur d
 
 ## 16. Penafian jaminan
 
-16.1. Kami akan menyediakan Layanan dengan keahlian dan kecermatan yang wajar. Kecuali sebagaimana dinyatakan secara tegas dalam Syarat ini, dan sepanjang diizinkan oleh hukum, Layanan, Data Metocean, dan Keluaran disediakan "sebagaimana adanya" dan "sebagaimana tersedia", tanpa jaminan lain apa pun, baik tersurat maupun tersirat, termasuk jaminan kelayakan untuk diperdagangkan, kesesuaian untuk tujuan tertentu, akurasi, atau ketersediaan tanpa gangguan.
+16.1. Kami akan menyediakan Layanan dengan keahlian dan kecermatan yang wajar. Kecuali sebagaimana dinyatakan secara tegas dalam Ketentuan Layanan ini, dan sepanjang diizinkan oleh hukum, Layanan, Data Metocean, dan Keluaran disediakan "sebagaimana adanya" dan "sebagaimana tersedia", tanpa jaminan lain apa pun, baik tersurat maupun tersirat, termasuk jaminan kelayakan untuk diperdagangkan, kesesuaian untuk tujuan tertentu, akurasi, atau ketersediaan tanpa gangguan.
 
 16.2. Layanan, fitur, atau modul yang diberi label beta, pratinjau, uji coba, atau khusus undangan dapat mengandung cacat dan dapat berubah atau ditarik.
 
@@ -180,13 +182,13 @@ Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur d
 
 17.1. Sepanjang diizinkan oleh hukum, Konfersi tidak bertanggung jawab atas kerugian tidak langsung, insidental, khusus, atau konsekuensial, maupun atas hilangnya keuntungan, pendapatan, produksi, kontrak, peluang usaha, data (kecuali akibat pelanggaran Kami atas kewajiban keamanan Kami), atau terlewatnya jendela operasional atau jendela cuaca, meskipun Kami telah diberi tahu mengenai kemungkinan kerugian tersebut.
 
-17.2. Sepanjang diizinkan oleh hukum, total tanggung jawab Konfersi yang timbul dari atau sehubungan dengan Syarat ini dan Layanan dalam setiap periode 12 bulan dibatasi sebesar total biaya yang telah Anda bayarkan kepada Konfersi untuk Layanan dalam **12 bulan sebelum terjadinya peristiwa yang menimbulkan tuntutan**. Apabila Anda hanya menggunakan Layanan gratis, total tanggung jawab Kami dibatasi sebesar jumlah yang diwajibkan oleh hukum yang berlaku.
+17.2. Sepanjang diizinkan oleh hukum, total tanggung jawab Konfersi yang timbul dari atau sehubungan dengan Ketentuan Layanan ini dan Layanan dalam setiap periode 12 bulan dibatasi sebesar total biaya yang telah Anda bayarkan kepada Konfersi untuk Layanan dalam **12 bulan sebelum terjadinya peristiwa yang menimbulkan tuntutan**. Apabila Anda hanya menggunakan Layanan gratis, total tanggung jawab Kami dibatasi sebesar jumlah yang diwajibkan oleh hukum yang berlaku.
 
-17.3. Tidak ada ketentuan dalam Syarat ini yang mengecualikan atau membatasi tanggung jawab yang tidak dapat dikecualikan atau dibatasi berdasarkan hukum yang berlaku, termasuk tanggung jawab atas kesengajaan atau kelalaian berat, serta hak Anda berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen atau Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.
+17.3. Tidak ada ketentuan dalam Ketentuan Layanan ini yang mengecualikan atau membatasi tanggung jawab yang tidak dapat dikecualikan atau dibatasi berdasarkan hukum yang berlaku, termasuk tanggung jawab atas kesengajaan atau kelalaian berat, serta hak Anda berdasarkan Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen atau Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.
 
 ## 18. Ganti rugi
 
-Anda setuju untuk membebaskan dan mengganti kerugian Konfersi atas kerugian, tuntutan, dan biaya yang wajar (termasuk biaya jasa hukum) yang timbul dari tuntutan pihak ketiga yang disebabkan oleh: (a) pelanggaran Anda atas Syarat ini atau Kebijakan Penggunaan yang Wajar; (b) Data Pelanggan yang melanggar hak pihak ketiga atau melanggar hukum; atau (c) penyajian atau penggunaan Keluaran oleh Anda yang melanggar angka 9. Ketentuan ini tidak berlaku sepanjang kerugian tersebut disebabkan oleh pelanggaran atau kelalaian Kami sendiri.
+Anda setuju untuk membebaskan dan mengganti kerugian Konfersi atas kerugian, tuntutan, dan biaya yang wajar (termasuk biaya jasa hukum) yang timbul dari tuntutan pihak ketiga yang disebabkan oleh: (a) pelanggaran Anda atas Ketentuan Layanan ini atau Kebijakan Penggunaan yang Wajar; (b) Data Pelanggan yang melanggar hak pihak ketiga atau melanggar hukum; atau (c) penyajian atau penggunaan Keluaran oleh Anda yang melanggar angka 9. Ketentuan ini tidak berlaku sepanjang kerugian tersebut disebabkan oleh pelanggaran atau kelalaian Kami sendiri.
 
 ## 19. Keadaan kahar
 
@@ -194,11 +196,11 @@ Anda setuju untuk membebaskan dan mengganti kerugian Konfersi atas kerugian, tun
 
 19.2. Untuk menghindari keraguan, akurasi atau ketidakakuratan suatu prakiraan, *hindcast*, statistik, atau Keluaran lainnya, serta terjadinya kondisi cuaca atau laut yang menjadi objek analisis, bukan merupakan keadaan kahar. Hal-hal tersebut diatur dalam angka 9, 16, dan 17 serta dalam [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami.
 
-## 20. Perubahan Layanan dan Syarat
+## 20. Perubahan Layanan dan Ketentuan Layanan
 
 20.1. Kami dapat menyempurnakan, mengubah, atau menghentikan fitur Layanan. Kami tidak akan mengurangi secara material fungsi inti suatu Paket berbayar selama periode berbayar yang sedang berjalan tanpa pemberitahuan dan pemulihan sebagaimana dimaksud dalam angka 13.3.
 
-20.2. Kami dapat memperbarui Syarat ini. Untuk perubahan yang bersifat material, Kami akan memberikan pemberitahuan sekurang-kurangnya **14 hari** sebelum perubahan berlaku, melalui surel atau di dalam Layanan. Tanggal versi di bagian atas halaman ini menunjukkan kapan Syarat terakhir diperbarui. Apabila Anda tetap menggunakan Layanan setelah perubahan berlaku, Anda dianggap menyetujui Syarat yang telah diperbarui. Apabila Anda tidak setuju, Anda dapat berhenti menggunakan Layanan dan menutup Akun Anda sebelum tanggal tersebut.
+20.2. Kami dapat memperbarui Ketentuan Layanan ini. Untuk perubahan yang bersifat material, Kami akan memberikan pemberitahuan sekurang-kurangnya **14 hari** sebelum perubahan berlaku, melalui surel atau di dalam Layanan. Tanggal versi di bagian atas halaman ini menunjukkan kapan Ketentuan Layanan terakhir diperbarui. Apabila Anda tetap menggunakan Layanan setelah perubahan berlaku, Anda dianggap menyetujui Ketentuan Layanan yang telah diperbarui. Apabila Anda tidak setuju, Anda dapat berhenti menggunakan Layanan dan menutup Akun Anda sebelum tanggal tersebut.
 
 ## 21. Pemberitahuan
 
@@ -208,15 +210,15 @@ Anda setuju untuk membebaskan dan mengganti kerugian Konfersi atas kerugian, tun
 
 ## 22. Pengalihan
 
-Anda tidak dapat mengalihkan hak atau kewajiban Anda berdasarkan Syarat ini tanpa persetujuan tertulis terlebih dahulu dari Kami. Kami dapat mengalihkan Syarat ini sehubungan dengan penggabungan, reorganisasi, atau pengalihan seluruh atau sebagian usaha Kami, dengan ketentuan bahwa hak Anda berdasarkan Syarat ini tidak berkurang.
+Anda tidak dapat mengalihkan hak atau kewajiban Anda berdasarkan Ketentuan Layanan ini tanpa persetujuan tertulis terlebih dahulu dari Kami. Kami dapat mengalihkan Ketentuan Layanan ini sehubungan dengan penggabungan, reorganisasi, atau pengalihan seluruh atau sebagian usaha Kami, dengan ketentuan bahwa hak Anda berdasarkan Ketentuan Layanan ini tidak berkurang.
 
 ## 23. Hukum yang berlaku
 
-Syarat ini tunduk pada dan ditafsirkan berdasarkan hukum Negara Republik Indonesia.
+Ketentuan Layanan ini tunduk pada dan ditafsirkan berdasarkan hukum Negara Republik Indonesia.
 
 ## 24. Penyelesaian sengketa
 
-24.1. Para pihak akan terlebih dahulu berupaya menyelesaikan setiap sengketa yang timbul dari atau sehubungan dengan Syarat ini melalui musyawarah dengan iktikad baik dalam jangka waktu **30 hari** sejak salah satu pihak memberitahukan sengketa tersebut secara tertulis kepada pihak lainnya.
+24.1. Para pihak akan terlebih dahulu berupaya menyelesaikan setiap sengketa yang timbul dari atau sehubungan dengan Ketentuan Layanan ini melalui musyawarah dengan iktikad baik dalam jangka waktu **30 hari** sejak salah satu pihak memberitahukan sengketa tersebut secara tertulis kepada pihak lainnya.
 
 24.2. Apabila sengketa tidak dapat diselesaikan dalam jangka waktu tersebut, masing-masing pihak dapat mengajukan sengketa tersebut ke **Pengadilan Negeri Jakarta Pusat**.
 
@@ -226,18 +228,18 @@ Syarat ini tunduk pada dan ditafsirkan berdasarkan hukum Negara Republik Indones
 
 ## 25. Bahasa
 
-Syarat ini dibuat dalam Bahasa Indonesia dan bahasa Inggris sesuai dengan Undang-Undang Nomor 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan. Apabila terdapat pertentangan atau ketidaksesuaian antara kedua versi, **versi Bahasa Indonesia yang berlaku**.
+Ketentuan Layanan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris sesuai dengan Undang-Undang Nomor 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan. Apabila terdapat pertentangan atau ketidaksesuaian antara kedua versi, **versi Bahasa Indonesia yang berlaku**.
 
 ## 26. Keseluruhan perjanjian dan keterpisahan
 
-26.1. Syarat ini, bersama dengan dokumen yang dirujuk di dalamnya (Kebijakan Privasi, Pemberitahuan Cookie, Kebijakan Penggunaan yang Wajar, Penafian AI & metocean, halaman Pengembalian dana & pembatalan, serta detail pesanan atau pembayaran Anda), merupakan keseluruhan perjanjian antara Anda dan Konfersi mengenai Layanan.
+26.1. Ketentuan Layanan ini, bersama dengan dokumen yang dirujuk di dalamnya (Kebijakan Privasi, Pemberitahuan Cookie, Kebijakan Penggunaan yang Wajar, Penafian AI & metocean, halaman Pengembalian dana & pembatalan, serta detail pesanan atau pembayaran Anda), merupakan keseluruhan perjanjian antara Anda dan Konfersi mengenai Layanan.
 
-26.2. Apabila Anda dan Konfersi telah menandatangani perjanjian, SOW, atau formulir pesanan terpisah, dokumen tersebut berlaku di atas Syarat ini sepanjang terdapat pertentangan, namun hanya untuk hal-hal yang diaturnya.
+26.2. Apabila Anda dan Konfersi telah menandatangani perjanjian, SOW, atau formulir pesanan terpisah, dokumen tersebut berlaku di atas Ketentuan Layanan ini sepanjang terdapat pertentangan, namun hanya untuk hal-hal yang diaturnya.
 
-26.3. Apabila suatu ketentuan dalam Syarat ini dinyatakan tidak sah atau tidak dapat dilaksanakan, ketentuan lainnya tetap berlaku, dan ketentuan yang tidak sah tersebut akan digantikan dengan ketentuan yang sah yang paling mendekati maksudnya.
+26.3. Apabila suatu ketentuan dalam Ketentuan Layanan ini dinyatakan tidak sah atau tidak dapat dilaksanakan, ketentuan lainnya tetap berlaku, dan ketentuan yang tidak sah tersebut akan digantikan dengan ketentuan yang sah yang paling mendekati maksudnya.
 
 26.4. Kelalaian atau keterlambatan salah satu pihak dalam menegakkan suatu ketentuan tidak berarti pengesampingan atas ketentuan tersebut.
 
 ## 27. Kontak
 
-Untuk pertanyaan mengenai Syarat ini, hubungi Kami melalui support@konfersi.com atau lihat [Hubungi tim bantuan](../support/contact-support.md).
+Untuk pertanyaan mengenai Ketentuan Layanan ini, hubungi Kami melalui support@konfersi.com atau lihat [Hubungi tim bantuan](../support/contact-support.md).

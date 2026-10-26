@@ -8,7 +8,7 @@ review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profi
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Versi 2: DRAF, belum disetujui oleh pengacara Kami.** Teks ini adalah draf hukum. Teks ini memerlukan persetujuan pengacara Kami sebelum diterbitkan ke produksi, dan baru berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan tersebut. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku. Klausul yang ditambahkan dalam draf ini antara lain penghapusan dan pembersihan akun (§6), ekspor data akun (§9.1), serta impor CV dengan AI (§2.9, §4.2, §12.4).</scalar-callout>
+<scalar-callout type="warning">**Versi 2: DRAF, belum disetujui oleh pengacara Kami.** Teks ini adalah draf hukum. Teks ini memerlukan persetujuan pengacara Kami sebelum diterbitkan ke produksi, dan baru berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan tersebut. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku. Tunduk pada tinjauan pemilik dan tinjauan hukum sebelum produksi. Klausul yang ditambahkan dalam draf ini antara lain penghapusan dan pembersihan akun (§6), ekspor data akun (§9.1), serta impor CV dengan AI (§2.9, §4.2, §12.4).</scalar-callout>
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Kebijakan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
 

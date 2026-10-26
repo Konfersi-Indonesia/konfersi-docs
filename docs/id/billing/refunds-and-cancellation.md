@@ -10,7 +10,9 @@ updated: 2026-10-10
 
 Halaman ini menjelaskan secara praktis cara membatalkan pesanan dan mengajukan pengembalian dana (refund). Ketentuan yang mengikat tercantum di bagian pengembalian dana dalam [Ketentuan Layanan](../legal/terms.md). Jika ada perbedaan antara halaman ini dan Ketentuan Layanan, yang berlaku adalah Ketentuan Layanan.
 
-<scalar-callout type="warning">Ketentuan ini mengikuti versi 2 [Ketentuan Layanan](../legal/terms.md) yang sedang dalam tinjauan hukum. Ketentuan ini berlaku setelah versi tersebut berlaku; halaman Ketentuan Layanan mencantumkan tanggal berlakunya.</scalar-callout>
+<scalar-callout type="warning">**Versi 2 (draf untuk tinjauan hukum).** Ketentuan ini mengikuti versi 2 [Ketentuan Layanan](../legal/terms.md). Berlaku pada tanggal yang dicantumkan di sini setelah lolos tinjauan hukum, dengan pemberitahuan paling lambat 14 hari sebelumnya. Sampai saat itu, versi yang berlaku sejak 27 September 2026 tetap berlaku. Tunduk pada tinjauan pemilik dan tinjauan hukum sebelum produksi.</scalar-callout>
+
+<scalar-callout type="info">**Draf versi 2, diperbarui 26 Oktober 2026.** Tanggal berlaku: tanggal Ketentuan Layanan versi 2 mulai berlaku (belum ditetapkan).</scalar-callout>
 
 ## Membatalkan sebelum membayar
 
@@ -23,21 +25,23 @@ Lihat [Pembayaran](payments.md) untuk arti setiap status.
 
 ## Kursus
 
-Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Private Course.
+Bagian ini berlaku untuk pembelian Konfersi Course Series, Web Series, dan Kursus Privat.
 
 - **Kursus dengan sesi langsung:** pengembalian dana penuh jika Anda membatalkan **paling lambat 7 hari sebelum sesi langsung pertama**.
-- **Kursus mandiri (*self-paced*):** pengembalian dana penuh jika Anda membatalkan **dalam 14 hari sejak pembelian dan sebelum menyelesaikan 20% materi kursus** (kemajuan pelajaran Anda terlihat di [Kursus Saya](../using-konfersi/courses.md#kursus-saya)).
+- **Kursus belajar mandiri (*self-paced*):** pengembalian dana penuh jika Anda membatalkan **sebelum menyelesaikan 20% materi kursus**, tanpa batas waktu sejak pembelian (kemajuan pelajaran Anda terlihat di [Kursus Saya](../using-konfersi/courses.md#kursus-saya)).
 - Setelah itu, biaya kursus tidak dikembalikan, kecuali Kami membatalkan atau menjadwalkan ulang kursus dan Anda tidak dapat hadir pada tanggal baru.
-- **Private Course** dijadwalkan dan disesuaikan khusus untuk Anda, sehingga perubahan dan pembatalan biasanya disepakati langsung dengan tim kursus. Hubungi kami sedini mungkin.
+- **Kursus Privat** dijadwalkan dan disesuaikan khusus untuk Anda, sehingga perubahan dan pembatalan biasanya disepakati langsung dengan tim kursus. Hubungi kami sedini mungkin.
 
 ## Paket platform dan add-on
 
-Bagian ini berlaku untuk paket dan add-on yang dibeli untuk proyek Console.
+Bagian ini berlaku untuk paket dan add-on yang dibeli untuk proyek Console. Paket yang tersedia adalah Free, Lite, Professional Researcher, dan Enterprise; add-on mencakup komputasi XCP.
 
-- Sumber daya dari paket dan add-on, seperti penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi.
+- Sumber daya dari paket dan add-on, seperti XCP, penyimpanan, komputasi, dan kredit AI, langsung diterapkan ke proyek Anda setelah pembayaran dikonfirmasi.
 - **Pengembalian dana penuh dalam 7 hari sejak pembelian jika belum ada kuota yang digunakan.**
 - **Setelah sebagian kuota paket atau add-on digunakan, pembeliannya tidak dapat dikembalikan dananya.**
+- **Komputasi XCP:** XCP yang belum digunakan mengikuti ketentuan paket atau add-on tempat XCP tersebut diperoleh. XCP yang sudah digunakan tidak dapat dikembalikan dananya, kecuali secara proporsional jika Kami gagal menyediakan layanan.
 - Jika Kami gagal menyediakan layanan sebagaimana diuraikan dan tidak memperbaikinya dalam waktu yang wajar, Kami mengembalikan **bagian yang belum digunakan secara proporsional**.
+- Paket Free tidak dikenai biaya, sehingga tidak ada yang dikembalikan.
 - Jika Anda **tertagih dua kali**, atau dana sudah terpotong tetapi pesanan tidak pernah selesai, itu termasuk masalah pembayaran, bukan permintaan pengembalian dana. Hubungi kami dan kami akan menelusurinya. Lihat [Pembayaran](payments.md#ada-kendala).
 - Perjanjian **Perusahaan & Operasi** mengikuti ketentuan pembatalan dan pengembalian dana dalam perjanjian yang Anda tanda tangani.
 

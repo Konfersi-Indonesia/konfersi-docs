@@ -10,7 +10,9 @@ updated: 2026-10-10
 
 This page explains, in practical terms, how to cancel an order and how to ask for a refund. The binding rules are in the refund section of our [Terms of Service](../legal/terms.md). If this page and the Terms ever disagree, the Terms apply.
 
-<scalar-callout type="warning">These rules follow version 2 of the [Terms of Service](../legal/terms.md), which is in legal review. They apply once that version takes effect; the Terms page shows the effective date.</scalar-callout>
+<scalar-callout type="warning">**Version 2 (draft for legal review).** These rules follow version 2 of the [Terms of Service](../legal/terms.md). They take effect on the date shown here once they have passed legal review, with at least 14 days' notice. Until then, the version effective 27 September 2026 applies. Subject to owner review and lawyer review before production.</scalar-callout>
+
+<scalar-callout type="info">**Version 2 draft, updated 26 October 2026.** Effective date: the date the Terms of Service version 2 takes effect (not yet set).</scalar-callout>
 
 ## Cancelling before you pay
 
@@ -26,18 +28,20 @@ See [Payments](payments.md) for what each status means.
 This covers Konfersi Course Series, Web Series and Private Course purchases.
 
 - **Courses with live sessions:** full refund if you cancel **at least 7 days before the first live session**.
-- **Self-paced courses:** full refund if you cancel **within 14 days of purchase and before you have completed 20% of the course content** (your lesson progress in [My Courses](../using-konfersi/courses.md#my-courses) shows how far you are).
+- **Self-paced courses:** full refund if you cancel **before you have completed 20% of the course content**, with no time limit from purchase (your lesson progress in [My Courses](../using-konfersi/courses.md#my-courses) shows how far you are).
 - After that, course fees are not refunded, unless we cancel or reschedule the course and you can't attend the new date.
 - A **Private Course** is scheduled and tailored for you, so changes and cancellations are usually agreed with the course team directly. Get in touch as early as you can.
 
 ## Platform plans and add-ons
 
-This covers plans and add-ons bought for a Console project.
+This covers plans and add-ons bought for a Console project. The plans are Free, Lite, Professional Researcher and Enterprise; add-ons include XCP compute.
 
-- Plan and add-on resources, such as storage, compute and AI credits, are applied to your project as soon as payment is confirmed.
+- Plan and add-on resources, such as XCP, storage, compute and AI credits, are applied to your project as soon as payment is confirmed.
 - **Full refund within 7 days of purchase if none of its quota has been used.**
 - **Once any of a plan's or add-on's quota has been used, it is not refundable.**
+- **XCP compute:** unused XCP follows the rule of the plan or add-on it came with. Used XCP is not refundable, except pro-rata if we fail to provide the service.
 - If we fail to provide the service as described and don't fix it in reasonable time, we refund the **unused part pro-rata**.
+- The Free plan carries no charge, so there is nothing to refund.
 - If you were **charged twice**, or charged but your order never completed, that is a payment problem rather than a refund request. Contact us and we'll investigate. See [Payments](payments.md#something-went-wrong).
 - **Enterprise & Operations** agreements follow the cancellation and refund terms in your signed agreement.
 

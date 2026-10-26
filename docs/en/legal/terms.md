@@ -8,7 +8,7 @@ review: [terms-6.3-risk-assessment-released, terms-scope-mcp-and-io-certificates
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Version 2 (draft for legal review).** Takes effect on the date shown here once it has passed legal review, with at least 14 days' notice. Until then, the version effective 27 September 2026 applies.</scalar-callout>
+<scalar-callout type="warning">**Version 2 (draft for legal review).** Takes effect on the date shown here once it has passed legal review, with at least 14 days' notice. Until then, the version effective 27 September 2026 applies. Subject to owner review and lawyer review before production.</scalar-callout>
 
 <scalar-callout type="info">**Effective 27 September 2026.** These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
@@ -126,11 +126,13 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 
 (a) for a Course with live sessions, if you cancel **at least 7 days before the first live session**; or
 
-(b) for a self-paced Course, if you cancel **within 14 days of purchase and before you have consumed 20% of the Course content**, as recorded by your lesson progress in the Services.
+(b) for a self-paced Course, if you cancel **before you have consumed 20% of the Course content**, as recorded by your lesson progress in the Services. There is no time limit counted from purchase.
 
 After that, Course fees are not refundable, except as set out in section 12.4. A Private Course follows the cancellation terms agreed for it in writing.
 
-12.3. **Platform Plans and add-ons.** Plan and add-on resources (such as compute hours, storage or credits) are made available to your project as soon as payment is confirmed. You may cancel a Plan or add-on and receive a full refund **within 7 days of purchase if none of its quota has been used**. Once any of the quota granted by a Plan or add-on has been used, its fees are not refundable, except that we will make a **pro-rated refund for the unused part** where we fail to provide the Services as described (section 12.4(c)). Enterprise customers follow the refund terms in their signed agreement.
+12.3. **Platform Plans and add-ons.** The Plans are Free, Lite, Professional Researcher and Enterprise, plus add-ons such as XCP compute. Plan and add-on resources (such as XCP, compute hours, storage or credits) are made available to your project as soon as payment is confirmed. You may cancel a Plan or add-on and receive a full refund **within 7 days of purchase if none of its quota has been used**. Once any of the quota granted by a Plan or add-on has been used, its fees are not refundable, except that we will make a **pro-rated refund for the unused part** where we fail to provide the Services as described (section 12.4(c)). The Free Plan carries no charge. Enterprise customers follow the refund terms in their signed agreement.
+
+12.3A. **XCP compute.** Unused XCP follows the rule of the Plan or add-on it came with (section 12.3). Used XCP is not refundable, except that we will make a pro-rated refund where we fail to provide the Services as described (section 12.4(c)).
 
 12.4. **When we will refund.** We will refund the amount concerned if: (a) you were charged more than once for the same order, or charged for an order that was not completed; (b) we cancel a Course, or reschedule it and you cannot attend the new date; (c) we fail to provide paid Services as described and do not remedy the failure within a reasonable time after you notify us; or (d) a refund is required by law.
 

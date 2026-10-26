@@ -8,7 +8,7 @@ review: [privacy-course-orders-processor, lawyer-review-v2, privacy-public-profi
 updated: 2026-10-10
 ---
 
-<scalar-callout type="warning">**Version 2: DRAFT, not yet approved by our lawyer.** This text is a legal draft. It needs sign-off from our lawyer before it is published to production, and it takes effect only on the date shown here once it has passed that review. Until then, the version effective 27 September 2026 applies. Clauses added in this draft include account deletion and purge (§6), the account data export (§9.1) and AI CV import (§2.9, §4.2, §12.4).</scalar-callout>
+<scalar-callout type="warning">**Version 2: DRAFT, not yet approved by our lawyer.** This text is a legal draft. It needs sign-off from our lawyer before it is published to production, and it takes effect only on the date shown here once it has passed that review. Until then, the version effective 27 September 2026 applies. Subject to owner review and lawyer review before production. Clauses added in this draft include account deletion and purge (§6), the account data export (§9.1) and AI CV import (§2.9, §4.2, §12.4).</scalar-callout>
 
 <scalar-callout type="info">**Effective 27 September 2026.** This policy is published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
 
