@@ -128,7 +128,7 @@ The hourly tide for any period of up to 366 days is generated when you ask for i
 It has timeseries, statistics, climatology and extreme values (block maxima and peaks over threshold), read like those of any other variable. Two things to keep in mind:
 
 - **Short surges aren't in it.** The non-tidal part is a daily mean, so storm surge lasting hours and wave set-up are missing. Treat its extremes as a lower bound for a storm tide, not as a design storm-tide level.
-- **Sea level rises over the record.** The homogeneity check often finds a change in the annual maxima. The fit then uses the years after it, so the return levels describe recent mean sea level, with no allowance for future rise.
+- **Sea level rises over the record.** The homogeneity check often finds a change in the annual maxima. The fit then uses the years after it, so the return levels describe recent mean sea level. They do not include future rise. Beside them, an **Allowance for future rise (sensitivity)** block shows the projected rise per scenario and horizon, and the 100-year level with that rise added. It is a sensitivity only and is not added into the return levels. Until a source for the projections is configured, it reads **Not available**, never 0. The Lab does not show this block yet; it comes in a later release.
 
 ## Storm audit (500 km)
 

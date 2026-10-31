@@ -128,7 +128,7 @@ Pasang surut per jam untuk periode apa pun hingga 366 hari dibuat saat Anda memi
 Muka air total punya deret waktu, statistik, klimatologi, dan nilai ekstrem (block maxima dan peaks over threshold), dibaca sama seperti variabel lain. Dua hal yang perlu diingat:
 
 - **Storm surge singkat tidak termasuk.** Bagian non-pasang surutnya adalah rata-rata harian, sehingga storm surge yang berlangsung beberapa jam dan wave set-up tidak ada. Anggap nilai ekstremnya sebagai batas bawah storm tide, bukan muka air storm tide desain.
-- **Muka laut naik sepanjang rekaman.** Uji homogenitas sering menemukan perubahan pada maksimum tahunan. Fit lalu memakai tahun-tahun setelah perubahan itu, sehingga level periode ulang menggambarkan muka laut rata-rata terkini, tanpa tambahan untuk kenaikan di masa depan.
+- **Muka laut naik sepanjang rekaman.** Uji homogenitas sering menemukan perubahan pada maksimum tahunan. Fit lalu memakai tahun-tahun setelah perubahan itu, sehingga level periode ulang menggambarkan muka laut rata-rata terkini. Kenaikan di masa depan tidak termasuk di dalamnya. Di sampingnya, blok **Tambahan untuk kenaikan muka laut (sensitivitas)** menampilkan proyeksi kenaikan per skenario dan horizon, serta level 100 tahun dengan kenaikan itu ditambahkan. Ini hanya sensitivitas dan tidak ditambahkan ke level periode ulang. Selama sumber proyeksi belum dikonfigurasi, blok ini menampilkan **Tidak tersedia**, bukan 0. Lab belum menampilkan blok ini; blok ini hadir di rilis berikutnya.
 
 ## Audit badai (500 km)
 
