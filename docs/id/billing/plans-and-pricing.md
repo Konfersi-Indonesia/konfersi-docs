@@ -4,7 +4,7 @@ description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek C
 tags: [tagihan, paket, harga, add-on, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
 status: published
-updated: 2026-09-27
+updated: 2026-10-12
 ---
 
 Paket Konfersi disusun berdasarkan seberapa banyak Anda menggunakan platform: komputasi Lab, penyimpanan, kredit AI, dan akses ke fitur Metocean Analytics. Halaman ini menjelaskan tiap tingkatan paket, cara kerja paket dan add-on di Console, serta tempat Anda dapat melihat harga terkini.
@@ -31,6 +31,8 @@ Paket berlaku **per proyek**, bukan per akun. Setiap proyek yang Anda buat di [C
 - **Upgrade** memindahkan proyek ke paket yang lebih tinggi. Console tidak mengizinkan Anda membeli paket yang sedang digunakan proyek tersebut.
 - **Add-on** menambah satu jenis sumber daya pada sebuah proyek, misalnya penyimpanan atau kredit AI tambahan, tanpa mengubah paketnya.
 
+![Konfigurasi Paket di Console: proyek, paket, add-on, dan ringkasan pesanan](../../../assets/screenshots/id/console-plan-configure.png)
+
 Setiap paket dan add-on memberikan sejumlah sumber daya tertentu:
 
 | Sumber daya | Kegunaan |
@@ -43,20 +45,54 @@ Setelah pembayaran selesai, sumber daya dari paket atau add-on otomatis ditambah
 
 ## Tempat mengelola paket
 
-Di Console, buka **Kelola Paket** di sidebar:
+Di menu samping Console:
 
 | Menu | Kegunaan |
 |---|---|
-| **Paket Proyek** | Melihat paket tiap proyek dan memilih paket untuk upgrade |
-| **Add-Ons** | Membeli sumber daya tambahan untuk sebuah proyek |
-| **Keranjang Pesanan** | Meninjau beberapa pesanan paket atau add-on sebelum membayar |
-| **Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
+| **Proyek Lab → Paket Proyek** | Membandingkan paket dan memilih paket untuk sebuah proyek, beserta add-on bila perlu |
+| **Proyek Lab → Add-on** | Membeli sumber daya tambahan untuk sebuah proyek tanpa mengubah paketnya |
+| **Pembayaran & Tagihan → Keranjang Pesanan** | Meninjau beberapa pesanan paket atau add-on sebelum membayar |
+| **Pembayaran & Tagihan → Transaksi** | Memantau status pesanan dan melanjutkan pembayaran yang tertunda |
+
+Lihat [Keranjang pesanan & transaksi](order-cart-and-transactions.md).
+
+![Halaman Paket Proyek di Console, dengan harga dalam mata uang tagihan](../../../assets/screenshots/id/console-plans.png)
+
+![Halaman Add-On Proyek di Console](../../../assets/screenshots/id/console-addons.png)
+
+## Melihat paket di situs web Konfersi
+
+Halaman **Harga** di situs web Konfersi (pilih **Harga** di bilah atas) menampilkan paket dan harga yang sama dengan di Console, langsung dari katalog paket yang sama. Anda tidak perlu akun untuk melihatnya.
+
+- Setiap paket menampilkan harganya, atau **Gratis**, atau **Harga khusus**, beserta isinya, seperti jam komputasi, penyimpanan, dan kredit AI.
+- Harga ditampilkan dalam **satu mata uang**. Jika Anda masuk, itu adalah mata uang tagihan akun Anda. Jika belum masuk, itu adalah mata uang untuk negara tempat Anda membuka situs, yang dideteksi dari koneksi Anda, bukan dari bahasa situs. Catatan di bawah daftar paket menyebutkan PPN yang ditambahkan saat checkout.
+- **Mulai** membuka halaman **Paket Proyek** di Console. Jika belum masuk, Anda membuat akun terlebih dahulu (lihat [Membuat akun](../getting-started/create-account.md)). Setelah Anda memverifikasi email di browser yang sama dan melengkapi profil, Konfersi langsung membawa Anda ke halaman tersebut.
+- **Hubungi sales** (pada paket dengan harga khusus) membuka permintaan dukungan di Console dengan nama paket sudah terisi. Masuk terlebih dahulu jika diminta.
+
+Harga yang Anda bayar selalu yang tampil saat checkout di Console.
 
 ## Mata uang, pajak, dan harga terkini
 
 - **Harga terkini ditampilkan di Console saat checkout.** Dokumentasi ini sengaja tidak mencantumkan angka karena harga dapat berubah.
-- Harga ditampilkan dalam **Rupiah (IDR)** jika negara organisasi Anda adalah Indonesia, dan dalam **Dolar AS (USD)** untuk negara lain. Mata uang mengikuti negara yang tercantum di profil Anda.
-- Pembayaran diproses dalam **IDR** melalui mitra pembayaran kami, Midtrans. Jika Anda melihat harga dalam USD, anggap angka tersebut sebagai perkiraan. Jumlah yang ditagihkan adalah nominal IDR saat checkout.
+
+### Mata uang tagihan Anda
+
+- **Setiap akun memiliki satu mata uang tagihan**, yang ditetapkan otomatis saat Anda membuat akun berdasarkan negara yang Anda isi. Misalnya, Indonesia, Malaysia, dan Singapura ditagih dalam **Rupiah (IDR)**. Semua harga di Console tampil dalam mata uang tersebut, tanpa konversi dan tanpa pilihan untuk mengganti mata uang.
+- Profil Anda menampilkannya sebagai **Mata uang tagihan**. Mengubah negara di profil kemudian **tidak** mengubahnya. Untuk menggantinya, [hubungi dukungan](../support/contact-support.md); setiap perubahan dicatat.
+- Jika Anda mendaftar dengan Google, Microsoft, GitHub, atau login organisasi Anda dan belum mengisi negara, isi negara di profil Anda sebelum checkout. Checkout tidak dapat dilanjutkan tanpa negara.
+- Akun yang dibuat sebelum mata uang per akun diberlakukan tetap memakai **IDR**, seperti yang ditagihkan sebelumnya.
+- Saat Anda membeli untuk **organisasi**, harganya mengikuti mata uang tagihan pengelola tagihan organisasi (pemilik, kecuali pemilik menunjuk orang lain).
+
+### Harga dalam setiap mata uang
+
+- Konfersi menetapkan harga setiap paket, add-on, dan tiket kursus **secara terpisah untuk setiap mata uang**. Harga tidak dikonversi dari IDR dengan kurs, sehingga nominal yang Anda lihat adalah nominal yang ditagihkan.
+- Jika suatu item tidak memiliki harga dalam mata uang Anda, yang tampil adalah harganya dalam mata uang utama Konfersi. Jika keduanya tidak ada, halaman paket menampilkan **Tidak tersedia dalam mata uang Anda**, dan halaman keranjang atau kursus menampilkan **Tidak tersedia dalam mata uang tagihan Anda. Hubungi dukungan jika Anda membutuhkannya.** Anda dapat [menghubungi tim dukungan](../support/contact-support.md) untuk membelinya.
+- Pesanan tetap memakai mata uang dan nominal saat pesanan dibuat, meskipun harga berubah kemudian. Satu pesanan atau checkout selalu dalam satu mata uang.
+
+### Pembayaran dan pajak
+
+- Pembayaran dalam **IDR** diproses melalui mitra pembayaran kami, Midtrans (lihat [Pembayaran](payments.md)).
+- **Pembayaran dalam mata uang lain, seperti USD, belum tersedia.** Jika mata uang tagihan Anda salah satunya, checkout menampilkan **Pembayaran dalam USD belum tersedia. Hubungi dukungan untuk menyelesaikan pesanan ini.**, dan tidak ada yang ditagihkan. Hubungi kami dan kami akan mengatur pembelian Anda.
 - Pajak Pertambahan Nilai (PPN) ditambahkan di atas subtotal. Rincian checkout menampilkan subtotal, pajak, dan total akhir sebelum Anda membayar.
 
 Untuk mengetahui cara pembayaran, lihat [Pembayaran](payments.md).
@@ -64,4 +100,4 @@ Untuk mengetahui cara pembayaran, lihat [Pembayaran](payments.md).
 ## Pertanyaan seputar paket
 
 - Membutuhkan sesuatu di luar tingkatan yang ada, seperti komputasi lebih besar atau lisensi kustom? Tanyakan tentang paket Perusahaan & Operasi melalui [Hubungi tim bantuan](../support/contact-support.md).
-- Untuk cara Konfersi dapat menggunakan data proyek Anda, lihat [Kebijakan Privasi](../legal/privacy.md). Untuk ketentuan kontrak yang berlaku bagi paket berbayar, lihat [Syarat & Ketentuan](../legal/terms.md).
+- Untuk cara Konfersi dapat menggunakan data proyek Anda, lihat [Kebijakan Privasi](../legal/privacy.md). Untuk ketentuan kontrak yang berlaku bagi paket berbayar, lihat [Ketentuan Layanan](../legal/terms.md).

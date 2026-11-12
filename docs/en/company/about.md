@@ -4,7 +4,7 @@ description: Who we are. PT Konfersi Metocean Climate Consultant provides metoce
 tags: [company, about, konfersi, metocean]
 related: [getting-started/what-is-konfersi, support/contact-support, trust/security]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Konfersi delivers metocean, climate and environmental intelligence for offshore, coastal, energy and infrastructure projects, through digital platforms and expert consulting.
@@ -40,18 +40,16 @@ Practical training in ocean and climate data:
 
 Announced topics include ocean physics reanalysis data processing, CMIP6 climate data analysis, Argo float data processing, and tide analysis and prediction, all in Python.
 
-### 3. Metocean digital platform
+### 3. Digital platform
 
-Our software for working with metocean data yourself:
+Our apps, which share one Konfersi account:
 
 | Product | Where |
 |---|---|
 | **Accounts**: one sign-in for every Konfersi app | accounts.konfersi.com |
-| **Console**: projects, plans and analysis modules | app.konfersi.com |
-| **Lab**: a workspace for ocean and climate data | lab.konfersi.com |
-| **MCP**: coming soon | |
+| **Console**: courses, payments, your profile and your organization | app.konfersi.com |
 
-**Mission Planning** is the first platform module to be released externally, with its launch planned for the end of October 2026. See [Mission Planning](../using-konfersi/mission-planning.md) and [Products & surfaces](../getting-started/products-and-surfaces.md).
+More Konfersi products will be added to the Console over time. See [Products & surfaces](../getting-started/products-and-surfaces.md).
 
 ## Our story
 

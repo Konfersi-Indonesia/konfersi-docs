@@ -124,10 +124,22 @@ for (const lang of ["en", "id"]) {
   const first = nav.groups[0].pages[0].slug;
   const page = await getJson(`/v1/public/docs/pages/${first}?lang=${lang}`);
   if (!page.html || page.locale !== lang) throw new Error(`page ${first} (${lang}) did not render in ${lang}`);
-  const q = page.title.split(/\s+/)[0];
-  const search = await getJson(`/v1/public/docs/search?q=${encodeURIComponent(q)}&lang=${lang}`);
-  if (!search.results.length) throw new Error(`search "${q}" (${lang}) returned nothing`);
-  console.log(`docs-sync: ${lang} ok — ${pages} pages, "${first}" renders, search "${q}" → ${search.results.length}`);
+  // Search for a word of that page's title, longest first: the backend drops stop words ("What", "Apa"), so the
+  // title's first word alone made every publish fail after a successful sync.
+  const words = [...new Set(page.title.split(/\s+/).map((w) => w.replace(/[^\p{L}\p{N}-]/gu, "")).filter((w) => w.length > 1))]
+    .sort((a, b) => b.length - a.length);
+  let q = "";
+  let found = 0;
+  for (const word of words) {
+    const search = await getJson(`/v1/public/docs/search?q=${encodeURIComponent(word)}&lang=${lang}`);
+    if (search.results.length) {
+      q = word;
+      found = search.results.length;
+      break;
+    }
+  }
+  if (!found) throw new Error(`search for the words of "${page.title}" (${lang}) returned nothing`);
+  console.log(`docs-sync: ${lang} ok — ${pages} pages, "${first}" renders, search "${q}" → ${found}`);
 }
 const graph = await getJson("/v1/public/docs/graph?lang=en");
 if (!graph.nodes.length) throw new Error("graph has no nodes");

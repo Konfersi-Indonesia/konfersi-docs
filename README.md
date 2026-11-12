@@ -13,7 +13,7 @@ The repo can be made public or mirrored anywhere. Point the backend at the new l
 
 ```
 scalar.config.json     Scalar Docs 2.0 config — navigation.routes has one root per locale (/en, /id)
-docs/<locale>/<group>/<page>.md
+docs/<locale>/<section>/[<folder>/…]<page>.md
 assets/                Images; reference them with a relative path (../../../assets/x.png)
 stable-slugs.json      Slugs apps link to directly (mirrored by DOCS_PAGE in @konfersi/shared)
 scripts/validate.mjs   Run by CI and before every push: npm run validate
@@ -23,6 +23,26 @@ scripts/validate.mjs   Run by CI and before every push: npm run validate
 
 - A page's slug is its route path without the locale root. For example, `/en` + `/legal` + `/terms` gives `legal/terms`, and the file is `docs/en/legal/terms.md`.
 - The same slug in every locale forms a translation pair. The validator fails if a page exists in one language only.
+
+**Sections, folders and overview pages**
+
+- Top-level groups under a locale root are **sections** (the sidebar headings and docs home cards).
+- Groups inside a section are **folders**, and can nest to any depth. The slug and file path follow the route: `/en` + `/using-konfersi` + `/organizations` + `/settings` → `using-konfersi/organizations/settings` → `docs/en/using-konfersi/organizations/settings.md`.
+- A folder can have its own **overview page**: give the group a `filepath` of `docs/<locale>/<path>/index.md`. Its slug is the folder path (`using-konfersi/organizations`), and links to it use `…/organizations/index.md`. Sections can't have one.
+- Breadcrumbs on each page show the section and the folders above it, linking folders that have an overview page.
+
+```json
+"/organizations": {
+  "type": "group",
+  "title": "Organizations",
+  "filepath": "docs/en/using-konfersi/organizations/index.md",
+  "children": {
+    "/settings": { "type": "page", "title": "Organization settings", "filepath": "docs/en/using-konfersi/organizations/settings.md" }
+  }
+}
+```
+
+Keep a page's slug stable once published (apps and other sites may link to it); add new folders for new content rather than moving existing pages.
 
 ## Writing a page
 
@@ -95,6 +115,8 @@ CI does the rest (see below). An hourly cron re-syncs each backend from its `DOC
 | `publish` | push / dispatch on `stg`, `uat` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key (`scripts/mirror-push.sh`). 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>` + `DOCS_SYNC_COMMIT=<sha>` (`scripts/sync-envs.sh`). Without that variable the branch is only mirrored. |
 | `release` | Gitea release **published** with tag `vX.Y.Z` (or a dispatch on that tag) | 1. `scripts/check-release.mjs <tag>`: the tag must equal `v` + `package.json` version and every locale's changelog needs its `## X.Y.Z` entry; the tagged commit must be on `main`; `validate.mjs` runs again. 2. Mirrors `refs/tags/<tag>` to GitHub (same deploy key, no `--force`: a release tag never moves). 3. For each env in `DOCS_SYNC_ENVS_RELEASE`, runs `trigger-sync.mjs` with `DOCS_SYNC_TAG=<tag>`. Unset → a notice, the tag is only mirrored. Pre-releases are skipped with a notice. |
 
+**Reverse pull (GitHub → Gitea):** `.gitea/workflows/pull-from-github.yml` runs once daily (06:00) and on manual dispatch. It fast-forwards `stg` / `uat` / `main` from the public GitHub mirror when Gitea's tip is an ancestor of GitHub's (or the branch is missing on Gitea). Matching tips are skipped (loop break with `publish`). Diverged branches warn and are **not** force-pushed. Uses the same Alpine inline-git pattern as `ci.yml`; push auth is `${{ github.token }}` as oauth2. Optional var: `DOCS_GITHUB_MIRROR` (defaults to `Konfersi-Indonesia/konfersi-docs`).
+
 Branch syncs are signed webhooks **pinned to the pushed commit**, so raw.githubusercontent.com's roughly 5-minute branch cache can't serve stale files. Release syncs are pinned to the tag (`refs/tags/<tag>`); only a backend whose `DOCS_SOURCE_REF` is a release tag accepts them, and it keeps a newer tag the release flow pinned until the release pipeline moves `DOCS_SOURCE_REF` up to it. Requests carry `X-Docs-Sync-Wait: 1`, so the job gets the sync result and fails if the sync fails, or if the backend shows a different docs version than the one it was pinned to. The script then smoke-tests nav, page, search and graph in both languages.
 
 The apps check links in the other direction. The landing page and accounts CI run `scripts/check-docs-links.mjs` before every build. It fails the build if any `DOCS_PAGE` slug from `@konfersi/shared` is missing from this repo's published navigation, in any locale. So renaming a page that an app links to breaks the app's CI, not production.
@@ -133,6 +155,7 @@ A missing secret fails the deploy **before** anything is deployed.
 - **Re-run a release:** dispatch the workflow on the tag (`refs/tags/vX.Y.Z`); mirroring an unchanged tag is a no-op.
 - **Rotate the webhook secret:** update `DOCS_WEBHOOK_SECRET_<ENV>` in both repos, redeploy the backend, then re-run `publish`.
 - **Rotate the mirror key:** add a new write deploy key on GitHub, replace `GH_MIRROR_DEPLOY_KEY`, then delete the old key.
+- **Pull from GitHub:** Actions → **Pull from GitHub** → Run workflow (or wait for the daily cron).
 
 ## Legal pages
 
@@ -140,6 +163,25 @@ The `legal/*` pages are drafted from the facts in the internal "TnC / legal chec
 
 - Apps link to them (`stable-slugs.json`), so they must stay `status: published`; the validator fails otherwise.
 - Draft a substantial rewrite on a branch. When it is ready, bump `updated`, update the effective-date callout, and note the change in the changelog.
+
+## Release scope
+
+`stg` publishes every page, including products that are not released yet. `release-scope.json` lists the pages a
+release leaves out (an entry ending in `/` covers a whole folder), each with the reason.
+
+- On the release branches (`uat`, `main`) those pages are `status: draft`, so the backend never publishes them.
+  `node scripts/release-scope.mjs apply` sets them; `node scripts/release-scope.mjs list` shows their status.
+- CI validates `uat`, `main`, release tags and PRs into `uat` / `main` with `validate.mjs --release`. It fails when a
+  page in the scope is published there, or when a published page still has open `review` items (unapproved legal
+  text). Links to a page left out of the release are warnings: the backend renders them as plain text.
+- A later `stg` → `uat` merge keeps those drafts unless `stg` changed the same lines; if one comes back published,
+  CI fails and `apply` fixes it.
+- To release a product's docs, remove its entries from `release-scope.json` on `stg`, then promote. On `uat`,
+  set the pages back to `status: published` in the same promotion.
+- Apps must not link to a left-out page in a released build (`stable-slugs.json` keys in the scope are warned about).
+
+Legal rewrites are drafted on their own branch (version 2 lives on `draft/legal-v2`) and reach `stg` only after legal
+approval, so a release never carries unapproved legal text.
 
 ## Versions
 
@@ -158,5 +200,10 @@ Release tags are **`vX.Y.Z`** (no prefix, no suffix) and must equal `v` + `packa
 
 1. Bump `version` in `package.json`: patch for fixes and wording, minor for new pages or sections, major for restructures or renamed slugs.
 2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
-3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`.
+3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`. On the `stg` → `uat` promotion, run
+   `node scripts/release-scope.mjs apply` and commit the result (see **Release scope**).
 4. On git.konfersi.com, publish a release on `main` with tag `v<version>`. CI checks it, mirrors the tag and syncs `DOCS_SYNC_ENVS_RELEASE`; the release pipeline sets production's `DOCS_SOURCE_REF` to the tag.
+
+### Open legal clauses
+
+Published legal pages may also carry `review`. It lists clauses a human still has to decide (tracked in platform/konfersi-universe#15). Agents do not write legal wording; they keep the page structurally consistent and list the open clause here until the decision lands.

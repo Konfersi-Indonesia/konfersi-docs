@@ -1,13 +1,13 @@
 ---
 title: Security
-description: How Konfersi protects your account, sessions, project data and payments, and how to report a security vulnerability.
+description: How Konfersi protects your account, sessions, data and payments, and how to report a security vulnerability.
 tags: [security, trust, authentication, encryption, disclosure]
 related: [legal/privacy, support/contact-support, getting-started/sign-in, billing/payments]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
-This page describes the security measures built into the Konfersi platform today (Accounts, Console, Lab and the API behind them) and explains how to report a vulnerability. For how we handle personal data, see the [Privacy Policy](../legal/privacy.md).
+This page describes the security measures built into the Konfersi platform today (Accounts, Console and the API behind them) and explains how to report a vulnerability. For how we handle personal data, see the [Privacy Policy](../legal/privacy.md).
 
 ## Infrastructure and encryption
 
@@ -34,7 +34,6 @@ All Konfersi apps use one central sign-in at accounts.konfersi.com. See [Sign in
 
 ## Access control
 
-- **Your projects are private by default.** Only a project's owner and the collaborators they invite can see it. Only the owner can invite or remove collaborators. See [Console & projects](../using-konfersi/console-projects.md).
 - **Konfersi staff access** to internal tools requires a separate single sign-on through our identity provider (Authentik, using OpenID Connect) and a separate staff session. Staff permissions are granted through a role-based permission system with groups, page-level and workspace-level access, and create/read/update/delete rights.
 
 ## Payments

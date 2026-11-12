@@ -4,7 +4,7 @@ description: Konfersi menghadirkan intelijen metocean, iklim, dan lingkungan mel
 tags: [ikhtisar, metocean, iklim, platform]
 related: [getting-started/products-and-surfaces, getting-started/create-account, company/about]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Konfersi menghadirkan intelijen metocean, iklim, dan lingkungan untuk proyek lepas pantai, pesisir, energi, dan infrastruktur. Anda dapat memanfaatkannya melalui platform digital kami, melalui layanan konsultasi ahli, atau dengan mempelajari metodenya sendiri lewat kursus kami.
@@ -22,14 +22,14 @@ Hasil kerja kami digunakan oleh tim di berbagai industri berikut:
 
 ## Tiga cara bekerja dengan Konfersi
 
-### 1. Platform digital metocean
+### 1. Platform digital
 
-Satu akun untuk membuka beberapa aplikasi:
+Satu akun Konfersi membuka aplikasi kami:
 
-- **Console** adalah tempat Anda mengelola proyek, paket, dan profil.
-- **Lab** adalah ruang kerja berbasis browser untuk proyek yang sedang Anda buka.
 - **Accounts** menangani pendaftaran dan proses masuk untuk semua aplikasi Konfersi.
-- **Mission Planning** adalah modul analisis pertama yang dirilis untuk publik. Modul ini mulai diluncurkan akhir Oktober 2026. Lihat [Mission Planning](../using-konfersi/mission-planning.md).
+- **Console** adalah tempat Anda mendaftar kursus, membayar pesanan, mengelola profil, dan bekerja bersama organisasi Anda.
+
+Produk Konfersi lainnya akan ditambahkan ke Console seiring waktu.
 
 Halaman [Produk & layanan](products-and-surfaces.md) menjelaskan fungsi dan alamat setiap aplikasi.
 
@@ -43,13 +43,11 @@ Konfersi Course Series, Web Series, dan Private Course mengajarkan pengolahan da
 
 ## Asal data kami
 
-Model dan analisis kami dikalibrasi serta divalidasi terhadap dataset global yang banyak digunakan, termasuk ERA5, CMEMS, FES2022, dan CMIP6. Penjelasan tiap dataset ada di [Sumber data metocean](../using-konfersi/metocean-data-sources.md).
-
-<scalar-callout type="warning">Hasil dari platform mendukung keputusan rekayasa dan perencanaan, tetapi tidak menggantikan studi tapak yang tersertifikasi. Baca [Penafian AI & metocean](../legal/ai-and-metocean-disclaimer.md) sebelum mengandalkan hasilnya.</scalar-callout>
+Model dan analisis kami dikalibrasi serta divalidasi terhadap dataset global yang banyak digunakan, termasuk ERA5, CMEMS, FES2022, dan CMIP6.
 
 ## Langkah berikutnya
 
 1. [Buat akun](create-account.md).
 2. [Masuk](sign-in.md) dan buka Console.
-3. [Buat proyek pertama Anda](../using-konfersi/console-projects.md).
-4. Bandingkan [paket & harga](../billing/plans-and-pricing.md).
+3. Temukan kursus di **Kursus → Marketplace**. Lihat [Kursus](../using-konfersi/courses.md).
+4. Pelajari cara kerja [pembayaran](../billing/payments.md).

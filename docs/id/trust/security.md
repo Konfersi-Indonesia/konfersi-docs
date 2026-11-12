@@ -1,13 +1,13 @@
 ---
 title: Keamanan
-description: Cara Konfersi melindungi akun, sesi, data proyek, dan pembayaran Anda, serta cara melaporkan celah keamanan.
+description: Cara Konfersi melindungi akun, sesi, data, dan pembayaran Anda, serta cara melaporkan celah keamanan.
 tags: [keamanan, kepercayaan, autentikasi, enkripsi, pelaporan]
 related: [legal/privacy, support/contact-support, getting-started/sign-in, billing/payments]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
-Halaman ini menjelaskan langkah-langkah keamanan yang saat ini diterapkan di platform Konfersi (Accounts, Console, Lab, dan API di baliknya), serta cara melaporkan celah keamanan. Untuk cara kami menangani data pribadi, lihat [Kebijakan Privasi](../legal/privacy.md).
+Halaman ini menjelaskan langkah-langkah keamanan yang saat ini diterapkan di platform Konfersi (Accounts, Console, dan API di baliknya), serta cara melaporkan celah keamanan. Untuk cara kami menangani data pribadi, lihat [Kebijakan Privasi](../legal/privacy.md).
 
 ## Infrastruktur dan enkripsi
 
@@ -34,7 +34,6 @@ Semua aplikasi Konfersi menggunakan satu halaman masuk terpusat di accounts.konf
 
 ## Kontrol akses
 
-- **Proyek Anda bersifat privat secara bawaan.** Hanya pemilik proyek dan kolaborator yang diundangnya yang dapat melihat proyek tersebut. Hanya pemilik yang dapat mengundang atau menghapus kolaborator. Lihat [Console & proyek](../using-konfersi/console-projects.md).
 - **Akses staf Konfersi** ke alat internal memerlukan single sign-on terpisah melalui penyedia identitas kami (Authentik, dengan OpenID Connect) dan sesi staf tersendiri. Hak akses staf diberikan melalui sistem izin berbasis peran, dengan grup, akses tingkat halaman dan workspace, serta hak buat/baca/ubah/hapus.
 
 ## Pembayaran
