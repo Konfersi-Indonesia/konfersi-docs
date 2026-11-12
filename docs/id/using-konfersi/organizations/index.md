@@ -1,13 +1,13 @@
 ---
 title: Organisasi
-description: Cara organisasi membantu tim berbagi proyek Lab, mengelola anggota bersama, dan masuk dengan single sign-on perusahaan.
+description: Cara organisasi menyatukan tim di Console, memungkinkan pemilik mengelola anggota, dan memungkinkan anggota masuk dengan single sign-on perusahaan.
 tags: [organisasi, tim, anggota, pemilik, kontributor, undangan]
 related: [using-konfersi/organizations/members-and-invitations, using-konfersi/organizations/shared-projects-and-courses, using-konfersi/organizations/settings]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
-Organisasi menyatukan tim di Console. Anggotanya bisa mengerjakan semua proyek yang dibagikan ke organisasi, pemilik mengatur siapa saja yang tergabung, dan detail organisasi dapat tampil di profil setiap anggota.
+Organisasi menyatukan tim di Console. Pemilik mengatur siapa saja yang tergabung, dan detail organisasi dapat tampil di profil setiap anggota.
 
 ## Mendapatkan organisasi
 
@@ -20,7 +20,7 @@ Jika Anda belum tergabung di organisasi mana pun, halaman **Organisasi** di Cons
 | Peran | Yang bisa dilakukan |
 |---|---|
 | **Pemilik** | Semua yang bisa dilakukan kontributor, ditambah mengundang dan mengeluarkan anggota, mengubah peran, mengubah detail organisasi, serta mengelola domain email, permintaan bergabung, single sign-on, dan log aktivitas |
-| **Kontributor** | Mengerjakan semua proyek yang dibagikan ke organisasi, melihat anggota dan proyek bersama, serta keluar kapan saja |
+| **Kontributor** | Melihat organisasi dan anggotanya, serta keluar kapan saja |
 
 Organisasi selalu memiliki minimal satu pemilik. Pemilik terakhir tidak bisa menjadi kontributor atau keluar sebelum ada anggota lain yang dijadikan pemilik.
 
@@ -38,11 +38,10 @@ Buka **Organisasi** di menu samping. Jika Anda anggota lebih dari satu organisas
 
 | Bagian | Siapa yang melihat | Isinya |
 |---|---|---|
-| **Ringkasan** | Semua anggota | Deskripsi, proyek bersama terbaru, dan detail seperti peran Anda, jumlah anggota, jenis, sektor, ukuran, dan lokasi |
+| **Ringkasan** | Semua anggota | Deskripsi dan detail seperti peran Anda, jumlah anggota, jenis, sektor, ukuran, dan lokasi |
 | **Anggota** | Semua anggota | Daftar anggota dan perannya; pemilik juga mengundang orang dan mengelola undangan tertunda |
-| **Proyek Bersama** | Semua anggota | Semua proyek Lab yang dibagikan ke organisasi |
-| **Kursus Bersama** | Semua anggota | Kursus yang Anda ikuti |
-| **Pengaturan** | Pemilik | Profil organisasi, domain email, permintaan bergabung, dan single sign-on |
+| **Kursus Bersama** | Semua anggota | Kursus yang Anda ikuti. Lihat [Kursus bersama](shared-projects-and-courses.md) |
+| **Pengaturan** | Pemilik | Profil organisasi, pengelola tagihan, domain email, permintaan bergabung, dan single sign-on |
 | **Aktivitas** | Pemilik | Catatan permanen semua perubahan pada organisasi |
 
 ## Profil Anda dan organisasi
@@ -51,4 +50,4 @@ Saat Anda bergabung dengan organisasi, detail organisasi di profil Anda (nama, j
 
 ## Keluar dari organisasi
 
-Di bagian **Ringkasan**, pilih **Keluar dari organisasi**. Anda kehilangan akses ke proyek yang dibagikan ke organisasi tersebut, dan pemilik bisa mengundang Anda lagi nanti. Profil Anda tetap menyimpan detail organisasi yang terakhir, dan Anda bisa mengubahnya sendiri.
+Di bagian **Ringkasan**, pilih **Keluar dari organisasi**. Pemilik bisa mengundang Anda lagi nanti. Profil Anda tetap menyimpan detail organisasi yang terakhir, dan Anda bisa mengubahnya sendiri.

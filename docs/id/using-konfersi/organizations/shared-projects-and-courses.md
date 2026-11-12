@@ -1,31 +1,36 @@
 ---
-title: Proyek & kursus bersama
-description: Bagikan proyek Lab ke organisasi agar semua anggota bisa mengerjakannya, dan temukan kursus Anda di organisasi.
-tags: [organisasi, bagikan, proyek, kolaborasi, kursus]
-related: [using-konfersi/organizations, using-konfersi/console-projects, using-konfersi/courses]
+title: Kursus bersama
+description: Temukan kursus Anda di organisasi, dan cara pengelola tagihan organisasi membeli kursi kursus serta membagikannya kepada anggota.
+tags: [organisasi, kursus, kursi, pengelola tagihan, daftar]
+related: [using-konfersi/organizations, using-konfersi/courses, billing/payments]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
-## Proyek bersama
+Buka **Organisasi → Kursus Bersama** di menu samping Console. Bagian ini terdiri dari dua bagian: kursus Anda sendiri, dan kursi kursus milik organisasi.
 
-Saat proyek Lab dibagikan ke [organisasi](index.md), semua anggota organisasi itu bisa membuka dan mengerjakannya, dengan akses yang sama seperti kolaborator yang diundang satu per satu. Anggota yang bergabung kemudian juga mendapat akses, dan anggota yang keluar kehilangan akses.
+## Kursus Anda
 
-Bagian **Proyek Bersama** menampilkan semua proyek yang dibagikan ke organisasi beserta pemiliknya. Bagian **Ringkasan** menampilkan yang terbaru.
+**Kursus bersama** menampilkan kursus yang Anda ikuti beserta statusnya (**Menunggu pembayaran** atau **Terdaftar**). Pilih **Jelajahi marketplace** untuk menemukan kursus lain. Lihat [Kursus](../courses.md).
 
-### Membagikan proyek
+## Kumpulan kursi kursus
 
-Hanya pemilik proyek yang bisa membagikannya, dan hanya ke organisasi tempat ia menjadi anggota.
+Organisasi dapat membeli kursi kursus untuk anggotanya. Anggota yang mendapat kursi bergabung ke kursus tanpa membayar.
 
-1. Buka proyek dari **Proyek Lab → Proyek Saya**, lalu pilih **Kelola Akses Proyek**.
-2. Di bagian **Organisasi**, pilih organisasinya lalu pilih **Bagikan**.
+Hanya **pengelola tagihan** organisasi yang dapat membeli dan mengelola kursi. Anggota lain melihat siapa pengelola tagihannya, dan tombol-tombolnya dinonaktifkan.
 
-Anda juga bisa membagikan proyek sejak awal: saat [membuat proyek](../console-projects.md#membuat-proyek), pilih organisasi di **Buat sebagai**. Anda tetap menjadi pemilik, dan semua anggota organisasi bisa membukanya.
+### Membeli kursi (pengelola tagihan)
 
-### Berhenti membagikan
+1. Di **Beli kursi**, pilih **Kursus**, **Tiket**, dan jumlah **Kursi**. **Harga per kursi** ditampilkan; total beserta pajak ditampilkan saat Anda membayar.
+2. Pilih **Beli kursi**. Konfersi membuat pesanan dan membukanya di **Pembayaran & Tagihan → Transaksi**, lalu jendela pembayaran terbuka. Lihat [Pembayaran](../../billing/payments.md).
 
-Di **Kelola Akses Proyek**, pilih **Berhenti membagikan** di samping organisasi. Anggotanya lalu kehilangan akses, kecuali mereka juga diundang langsung ke proyek tersebut.
+Harga kursi mengikuti mata uang tagihan pengelola tagihan. Setelah pesanan dibayar, kumpulan untuk kursi tersebut muncul di **Kumpulan kursi kursus**, beserta kursusnya, jumlah kursi yang dibeli dan tanggal pembeliannya, serta jumlah kursi yang terpakai.
 
-## Kursus bersama
+### Memberikan dan melepas kursi (pengelola tagihan)
 
-Bagian **Kursus Bersama** menampilkan kursus yang Anda ikuti beserta statusnya (**Menunggu pembayaran** atau **Terdaftar**). Berbagi kursi kursus untuk satu organisasi belum tersedia, jadi setiap orang mendaftar sendiri. Lihat [Kursus](../courses.md).
+- Untuk memberikan kursi, pilih anggota lalu pilih **Berikan kursi**. Anggota itu langsung terdaftar di kursus. Jika semua kursi sudah dipakai, kumpulan menampilkan **Semua kursi sudah terpakai.**
+- Untuk menarik kembali kursi, pilih **Lepas kursi** di samping anggota lalu konfirmasi. Pendaftaran anggota itu di kursus dibatalkan, dan kursinya dapat diberikan kepada orang lain. Kursi yang pemegangnya sudah hadir tidak dapat dilepas.
+
+### Mengganti pengelola tagihan (pemilik)
+
+Secara bawaan, pengelola tagihan adalah pemilik organisasi paling awal. Jika pengelola tagihan keluar, perannya berpindah ke pemilik paling awal yang tersisa. Pemilik dapat memilih pengelola tagihan lain di **Pengaturan → Pengelola tagihan**. Lihat [Pengaturan organisasi](settings.md).

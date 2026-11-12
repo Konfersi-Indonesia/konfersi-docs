@@ -1,10 +1,10 @@
 ---
 title: Profil publik Anda
-description: Susun profil publik bergaya CV di io.konfersi.com, tentukan siapa yang melihat setiap bidang, bagikan, unduh sebagai CV, impor CV dengan AI, dan buat kartu nama.
-tags: [profil, profil publik, cv, resume, handle, privasi, visibilitas, permintaan data, io, kartu nama, kode qr, gambar berbagi, ekspor cv, ats, impor ai]
+description: Susun profil publik bergaya CV di io.konfersi.com, tentukan siapa yang melihat setiap bidang, bagikan, unduh sebagai CV, dan buat kartu nama.
+tags: [profil, profil publik, cv, resume, handle, privasi, visibilitas, permintaan data, io, kartu nama, kode qr, gambar berbagi, ekspor cv, ats]
 related: [account/profile, legal/privacy, using-konfersi/certificates, using-konfersi/courses]
 status: published
-updated: 2026-10-10
+updated: 2026-11-12
 ---
 
 Profil publik Anda adalah CV yang tampil di **io.konfersi.com/handle-anda**. Anda menentukan apa yang dapat dilihat semua orang, apa yang harus diminta orang lain kepada Anda, dan apa yang tetap pribadi. Profil tetap pribadi sampai Anda menerbitkannya.
@@ -29,7 +29,7 @@ Nama, judul singkat, satu tautan atau kontak, dan ringkasan wajib diisi sebelum 
 
 Deskripsi mendukung **Markdown**: judul, daftar, tautan, tebal, miring, dan tabel.
 
-Di **Di Konfersi** Anda dapat menampilkan apa yang telah Anda lakukan di Konfersi: kursus yang telah selesai, sertifikat aktif (masing-masing tertaut ke halaman verifikasinya), dan proyek Lab milik Anda. Pilih mana yang ingin ditampilkan.
+Di **Di Konfersi** Anda dapat menampilkan apa yang telah Anda lakukan di Konfersi: kursus yang telah selesai dan sertifikat aktif (masing-masing tertaut ke halaman verifikasinya). Pilih mana yang ingin ditampilkan.
 
 Pilih **Simpan perubahan** untuk menyimpan. Perubahan yang belum disimpan tetap ada di peramban bila Anda memuat ulang halaman, dan **Pratinjau** menampilkan persis apa yang dilihat pengunjung.
 
@@ -43,7 +43,7 @@ Setiap bidang dan bagian memiliki pengaturannya sendiri:
 | **Atas permintaan** | Hanya orang yang Anda setujui, setelah mereka meminta (lihat [Permintaan data](#permintaan-data)) |
 | **Hanya saya** | Tidak ada orang lain selain Anda |
 
-Nama Anda selalu publik. Secara bawaan, email, email perusahaan, nomor telepon, dan lokasi Anda diatur **Atas permintaan**, kursus yang telah selesai dan proyek Lab diatur **Hanya saya**, dan selebihnya **Publik**. Entri baru menampilkan pengaturan bawaannya sampai Anda menyimpan; ubah kapan saja.
+Nama Anda selalu publik. Secara bawaan, email, email perusahaan, nomor telepon, dan lokasi Anda diatur **Atas permintaan**, kursus yang telah selesai diatur **Hanya saya**, dan selebihnya **Publik**. Entri baru menampilkan pengaturan bawaannya sampai Anda menyimpan; ubah kapan saja.
 
 ## Alamat Anda
 
@@ -99,18 +99,6 @@ Hanya bidang **Publik** yang tampil di halaman dan di gambar.
 
 <scalar-callout type="warning">CV Anda sendiri memuat **semua** isi profil, termasuk detail yang diatur **Atas permintaan** atau **Hanya saya**. Periksa sebelum mengirimkannya kepada siapa pun. Simpan perubahan terlebih dahulu agar CV memuat teks terbaru.</scalar-callout>
 
-## Impor dari CV
-
-Sudah punya CV? **Impor dari CV** membacanya dengan AI dan mengisi draf profil Anda.
-
-1. Di **Bayar dengan**, pilih proyek yang token AI-nya membayar impor: salah satu proyek Anda, atau proyek organisasi yang menanggung impor. Konfersi menampilkan perkiraan token AI per impor dan sisa token di proyek tersebut.
-2. Pilih **Berkas CV**: PDF, PNG, JPEG, atau WebP, sampai ukuran yang ditampilkan.
-3. Pilih **Impor dengan AI**.
-4. Di **Tinjau hasil impor**, periksa apa yang ditemukan. Jika profil Anda sudah punya nilainya, centang yang ingin diambil dari CV. Lalu pilih **Tambahkan ke draf**.
-5. Periksa bidang yang kurang yakin dibaca AI, lalu **Simpan perubahan** untuk menyimpannya. Tidak ada yang disimpan atau diterbitkan sebelum itu.
-
-Berkas dibaca sekali dan tidak pernah disimpan. PDF tanpa teks yang dapat dibaca (dokumen hasil pindai) ditolak sebelum AI dipakai, dan Anda tidak dikenai biaya; unggah sebagai gambar. CV yang panjang mungkin hanya dibaca sebagian. Jumlah impor per jam dibatasi.
-
 ## Kartu nama
 
 Anda mendapat satu kartu nama untuk setiap organisasi tempat Anda bergabung. Buka **Kartu nama** di menu samping Console.
@@ -119,15 +107,9 @@ Anda mendapat satu kartu nama untuk setiap organisasi tempat Anda bergabung. Buk
 - Pilih **Templat** dan **Ukuran**, lalu **Simpan kartu**.
 - Unduh sebagai **PNG**, **PDF cetak** (dengan bleed 3 mm dan tanda potong untuk percetakan), atau **vCard**. Simpan kartu terlebih dahulu.
 
-Kode QR di kartu membuka profil publik Anda, jadi baru muncul setelah profil terbit. Saat seseorang memindainya, kunjungan itu dihitung sebagai pindaian kartu dalam statistik profil Anda.
+Kode QR di kartu membuka profil publik Anda, jadi baru muncul setelah profil terbit. Saat seseorang memindainya, kunjungan itu dihitung sebagai pindaian kartu.
 
 ## Untuk pemilik organisasi
 
-Pemilik organisasi dapat mengatur di pengaturan organisasi:
+Pemilik organisasi dapat mengatur **Bawaan organisasi** untuk kartu nama di pengaturan organisasi: templat dan **Warna kartu** awal setiap anggota. Anggota tetap dapat memilih templat sendiri.
 
-- **Bawaan organisasi** untuk kartu nama: templat dan **Warna kartu** awal setiap anggota. Anggota tetap dapat memilih templat sendiri.
-- **Impor CV dengan AI**: **Anggota dapat mengimpor CV dengan AI**, dibayar dari salah satu proyek organisasi (**Dibayar dari**). Setiap impor memakai token AI proyek tersebut. Bagikan proyek dengan organisasi terlebih dahulu.
-
-## Segera hadir
-
-Statistik profil untuk Anda (jumlah tayangan, pengunjung unik, klik tautan, dan pindaian kartu) sudah dihitung; halaman untuk melihatnya sedang disiapkan. Panduan ini akan menjelaskannya saat tersedia.

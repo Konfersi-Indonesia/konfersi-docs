@@ -4,7 +4,7 @@ description: Discuss Konfersi articles with other members and ask questions in t
 tags: [community, discussion, q&a, questions, answers, articles, forum]
 related: [support/support-tickets, support/faq]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 **Community** in the Console side menu has two parts:
@@ -50,4 +50,4 @@ The Konfersi team can lock a thread. A **Locked** thread can still be read, but 
 
 ### Need a private answer?
 
-For billing, account or project-specific problems, use a [support ticket](../support/support-tickets.md) instead. On your own question you can also select **Ask support**: Konfersi copies the question into a private ticket, links it to the thread, and replies in **Support** and by email.
+For billing, account or other personal problems, use a [support ticket](../support/support-tickets.md) instead. On your own question you can also select **Ask support**: Konfersi copies the question into a private ticket, links it to the thread, and replies in **Support** and by email.

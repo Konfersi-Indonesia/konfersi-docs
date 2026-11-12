@@ -1,17 +1,17 @@
 ---
 title: Masuk
-description: Masuk ke Konfersi dengan email atau penyedia, atur ulang kata sandi yang terlupa, dan setujui proses masuk Konfersi Lab.
+description: Masuk ke Konfersi dengan email atau penyedia, atur ulang kata sandi yang terlupa, dan keluar dari akun.
 tags: [akun, masuk, kata-sandi, sso]
-related: [getting-started/create-account, using-konfersi/lab-workspace, support/contact-support]
+related: [getting-started/create-account, account/security, support/contact-support]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
-Konfersi memakai satu proses masuk untuk semua aplikasinya. Setelah Anda masuk di Accounts, sesi yang sama berlaku di Console, Lab, dan ruang kerja metocean Anda.
+Konfersi memakai satu proses masuk untuk semua aplikasinya. Setelah Anda masuk di Accounts, sesi yang sama berlaku di Console dan situs Konfersi lainnya.
 
 ## Masuk dengan email dan kata sandi
 
-1. Buka [accounts.konfersi.com](https://accounts.konfersi.com). Jika Anda membuka [app.konfersi.com](https://app.konfersi.com) atau [lab.konfersi.com](https://lab.konfersi.com) tanpa sesi aktif, Anda akan diarahkan ke sana secara otomatis.
+1. Buka [accounts.konfersi.com](https://accounts.konfersi.com). Jika Anda membuka [app.konfersi.com](https://app.konfersi.com) tanpa sesi aktif, Anda akan diarahkan ke sana secara otomatis.
 2. Isi **Email** lalu pilih **Lanjut**. Pilih **Ubah** jika email yang Anda ketik salah.
 3. Jika tautan masuk lewat email aktif untuk akun Anda (bawaan untuk akun baru), Konfersi mengirim tautan masuk ke email Anda. Buka tautan itu dalam 10 menit untuk masuk. Anda juga bisa:
    - memilih **Masukkan kode secara manual** untuk mengetik kode dari email
@@ -55,17 +55,6 @@ Anda dapat menambahkan penyedia ke akun yang sudah ada, sehingga Anda bisa masuk
 Layar konfirmasi selalu tampil sama, baik ada maupun tidak ada akun untuk alamat yang Anda masukkan. Ini untuk melindungi privasi Anda.
 
 <scalar-callout type="neutral">Akun yang dibuat melalui penyedia masuk tidak memiliki kata sandi Konfersi yang bisa diatur ulang atau diubah. Masuklah melalui penyedia tersebut.</scalar-callout>
-
-## Menyetujui proses masuk Konfersi Lab
-
-Saat Anda masuk dari ekstensi Konfersi Lab di VS Code desktop, tab browser akan terbuka di Accounts.
-
-1. Masuk jika diminta.
-2. Di halaman **Masuk ke Konfersi Lab**, pastikan alamat email yang tertera adalah milik Anda.
-3. Pilih **Setujui perangkat** hanya jika Anda sendiri yang memulai proses masuk ini.
-4. Saat muncul **Perangkat sudah masuk**, tutup tab dan kembali ke VS Code.
-
-Informasi lebih lanjut tentang ekstensi ini ada di [Ruang kerja Lab](../using-konfersi/lab-workspace.md).
 
 ## Keluar
 

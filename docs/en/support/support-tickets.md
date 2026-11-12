@@ -4,7 +4,7 @@ description: Open a support ticket in the Console, follow replies, attach files,
 tags: [support, ticket, help, sales, consulting, contact]
 related: [support/contact-support, support/faq, using-konfersi/community]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Open **Support** in the Console side menu. A ticket keeps your whole conversation with the Konfersi team in one place, and we email you on every update.
@@ -16,14 +16,14 @@ Open **Support** in the Console side menu. A ticket keeps your whole conversatio
 
    | Category | For |
    |---|---|
-   | **Sales Support** | Plans, pricing, quotes, enterprise needs and setting up an organization |
-   | **Operational Support** | Problems using the Console, Lab, projects or compute |
+   | **Sales Support** | Pricing, quotes, enterprise needs and setting up an organization |
+   | **Operational Support** | Problems using the Console, courses or payments |
    | **Consultant Support** | Metocean expertise, methods and study guidance |
    | **Other** | Anything else, including merging two accounts |
 
 3. Optional: pick a **Description template**. It fills in the **Subject** and the questions we need answered.
 4. Write the **Subject** and **Description**: what happened, what you expected, and any steps or IDs that help us reproduce it.
-5. Optional: choose the **Related project**, and **Attach files**: up to 5 files of 10 MB each (images, PDF, text, CSV, Office files or ZIP).
+5. Optional: **Attach files**: up to 5 files of 10 MB each (images, PDF, text, CSV, Office files or ZIP).
 6. Select **Open ticket** (or **Send to Sales** for sales requests).
 
 We email you a copy and reply on the ticket as soon as someone picks it up.

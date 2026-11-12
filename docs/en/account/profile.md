@@ -4,10 +4,10 @@ description: Edit your personal and organization details, photos and preferences
 tags: [profile, account, avatar, cover, language, theme, organization, delete account]
 related: [account/security, using-konfersi/organizations, getting-started/create-account]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
-Open **Profile & Settings → My Profile** in the Console side menu. Your profile is shared across Konfersi: the Console, Lab and other Konfersi services all use it.
+Open **Profile & Settings → My Profile** in the Console side menu. Your profile is shared across Konfersi: the Console and other Konfersi services all use it.
 
 ## Photos
 
@@ -62,4 +62,4 @@ Select **Delete Account**, type `DELETE MY ACCOUNT` (or `HAPUS AKUN SAYA` if the
 1. Select the link within **24 hours** to schedule the deletion. Your account is deactivated straight away.
 2. Your data is permanently deleted **30 days** later.
 
-Projects you created are left without an owner. [Contact support](../support/contact-support.md) to transfer them first, or to recover your account if you deleted it by mistake.
+[Contact support](../support/contact-support.md) to recover your account if you deleted it by mistake.

@@ -2,12 +2,12 @@
 title: Membuat akun
 description: Daftar ke Konfersi, verifikasi alamat email, dan lengkapi profil Anda dalam beberapa menit.
 tags: [akun, daftar, registrasi, onboarding]
-related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
+related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/courses]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
-Satu akun Konfersi membuka Console, Lab, dan semua layanan data Konfersi. Penyiapannya hanya empat langkah singkat: buat akun, verifikasi email, lengkapi profil, lalu mulai menjelajah.
+Satu akun Konfersi membuka Console dan semua aplikasi Konfersi lainnya. Penyiapannya hanya empat langkah singkat: buat akun, verifikasi email, lengkapi profil, lalu temukan kursus pertama Anda.
 
 ## Sebelum memulai
 
@@ -29,7 +29,7 @@ Dengan mendaftar, Anda menyetujui [Ketentuan Layanan](../legal/terms.md) dan [Ke
 
 Setelah itu, layar **Periksa kotak masuk Anda** muncul dan menampilkan alamat tujuan tautan verifikasi.
 
-<scalar-callout type="neutral">Mulai dari situs web Konfersi? Pilih **Daftar** di bilah atas, **Buat akun gratis** di beranda, atau **Mulai** pada salah satu paket di halaman [Harga](../billing/plans-and-pricing.md#melihat-paket-di-situs-web-konfersi). Masing-masing langsung membuka halaman **Buat Akun**. Jika Anda memverifikasi email di browser yang sama, lalu masuk dan melengkapi profil, Anda kembali ke halaman asal, bukan ke beranda Console.</scalar-callout>
+<scalar-callout type="neutral">Mulai dari situs web Konfersi? Pilih **Daftar** di bilah atas atau **Buat akun gratis** di beranda. Keduanya langsung membuka halaman **Buat Akun**. Jika Anda memverifikasi email di browser yang sama, lalu masuk dan melengkapi profil, Anda kembali ke halaman asal, bukan ke beranda Console.</scalar-callout>
 
 ### Mendaftar dengan penyedia
 
@@ -78,9 +78,13 @@ Saat muncul **Semua siap**, Anda akan diarahkan ke Console dalam beberapa detik.
 
 ![Langkah 1 formulir Lengkapi Profil](../../../assets/screenshots/id/accounts-complete-profile.png)
 
-## Langkah 4: Mulai menjelajah
+## Langkah 4: Temukan kursus
 
-Console terbuka dengan panduan sambutan singkat. Anda dapat mengikuti tur, mengatur profil, atau membuat proyek pertama. Lanjutkan ke [Console & proyek](../using-konfersi/console-projects.md).
+1. Di menu samping Console, buka **Kursus → Marketplace**.
+2. Buka sebuah kursus untuk melihat jadwal, instruktur, dan tiketnya.
+3. Pilih tiket, lalu pilih **Daftar**.
+
+Lihat [Kursus](../using-konfersi/courses.md) untuk langkah pendaftaran selengkapnya, dan [Pembayaran](../billing/payments.md) untuk cara membayar.
 
 ## Pemecahan masalah
 
@@ -101,5 +105,5 @@ Masih mengalami kendala? [Hubungi tim bantuan](../support/contact-support.md).
 ## Terkait
 
 - [Masuk](sign-in.md)
-- [Paket & harga](../billing/plans-and-pricing.md)
+- [Kursus](../using-konfersi/courses.md)
 - [Kebijakan Privasi](../legal/privacy.md)

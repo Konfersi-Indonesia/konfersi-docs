@@ -1,13 +1,13 @@
 ---
 title: Organizations
-description: How organizations let a team share Lab projects, manage members together and sign in with company single sign-on.
+description: How organizations bring a team together in the Console, let owners manage members, and let people sign in with company single sign-on.
 tags: [organization, team, members, owner, contributor, invitation]
 related: [using-konfersi/organizations/members-and-invitations, using-konfersi/organizations/shared-projects-and-courses, using-konfersi/organizations/settings]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
-An organization brings a team together in the Console. Its members can work on every project shared with it, owners manage who belongs, and the organization's details can appear on each member's profile.
+An organization brings a team together in the Console. Owners manage who belongs, and the organization's details can appear on each member's profile.
 
 ## Getting an organization
 
@@ -20,7 +20,7 @@ If you don't belong to an organization yet, the **Organization** page in the Con
 | Role | What they can do |
 |---|---|
 | **Owner** | Everything a contributor can do, plus invite and remove members, change roles, edit the organization's details, and manage email domains, join requests, single sign-on and the activity log |
-| **Contributor** | Work on every project shared with the organization, see members and shared projects, and leave at any time |
+| **Contributor** | See the organization and its members, and leave at any time |
 
 An organization always keeps at least one owner. The last owner can't become a contributor or leave until someone else is made an owner.
 
@@ -38,11 +38,10 @@ Open **Organization** in the side menu. If you belong to more than one organizat
 
 | Section | Who sees it | What's there |
 |---|---|---|
-| **Overview** | Everyone | About text, recent shared projects, and details such as your role, member count, type, sector, size and location |
+| **Overview** | Everyone | About text and details such as your role, member count, type, sector, size and location |
 | **Members** | Everyone | Members and their roles; owners also invite people and manage pending invitations |
-| **Shared Projects** | Everyone | Every Lab project shared with the organization |
-| **Shared Courses** | Everyone | Courses you are enrolled in |
-| **Settings** | Owners | Organization profile, email domains, join requests and single sign-on |
+| **Shared Courses** | Everyone | Courses you are enrolled in. See [Shared courses](shared-projects-and-courses.md) |
+| **Settings** | Owners | Organization profile, billing manager, email domains, join requests and single sign-on |
 | **Activity** | Owners | A permanent record of changes to the organization |
 
 ## Your profile and the organization
@@ -51,4 +50,4 @@ When you join an organization, your profile's organization details (name, type, 
 
 ## Leaving an organization
 
-On the **Overview** section, select **Leave organization**. You lose access to the projects shared with it, and an owner can invite you again later. Your profile keeps the organization details it had, which you can then edit yourself.
+On the **Overview** section, select **Leave organization**. An owner can invite you again later. Your profile keeps the organization details it had, which you can then edit yourself.

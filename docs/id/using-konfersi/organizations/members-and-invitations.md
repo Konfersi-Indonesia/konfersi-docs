@@ -4,7 +4,7 @@ description: Mengundang orang ke organisasi, menerima undangan, mengubah peran, 
 tags: [organisasi, anggota, undangan, pemilik, kontributor, peran]
 related: [using-konfersi/organizations, using-konfersi/organizations/settings]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
 Bagian **Anggota** pada [organisasi](index.md) menampilkan semua anggota beserta peran dan tanggal bergabungnya. Gunakan **Cari anggota** untuk menemukan seseorang di tim yang besar.
@@ -40,14 +40,14 @@ Anda bergabung sebagai **kontributor**. Jika tautan menyatakan undangan sudah di
 
 Di **Anggota**, buka menu peran di samping orang tersebut lalu pilih **Pemilik** atau **Kontributor**. Console meminta konfirmasi lewat **Ubah peran?**:
 
-- Menjadi **Pemilik**: orang itu bisa mengelola anggota, domain, single sign-on, dan proyek bersama.
+- Menjadi **Pemilik**: orang itu bisa mengelola anggota, detail organisasi, domain, dan single sign-on.
 - Menjadi **Kontributor**: orang itu tidak bisa lagi mengelola organisasi.
 
 Pilih **Ubah peran** untuk mengonfirmasi. Organisasi selalu memiliki minimal satu pemilik, jadi pemilik terakhir tidak bisa dijadikan kontributor.
 
 ## Mengeluarkan anggota (pemilik)
 
-Pilih tombol keluarkan di samping orang tersebut, lalu **Keluarkan** pada **Keluarkan anggota?**. Untuk mengeluarkan pemilik, ubah dulu perannya menjadi **Kontributor**. Mereka langsung kehilangan akses ke proyek yang dibagikan ke organisasi. Pemilik bisa mengundang mereka lagi nanti.
+Pilih tombol keluarkan di samping orang tersebut, lalu **Keluarkan** pada **Keluarkan anggota?**. Untuk mengeluarkan pemilik, ubah dulu perannya menjadi **Kontributor**. Mereka langsung keluar dari organisasi. Pemilik bisa mengundang mereka lagi nanti.
 
 ## Keluar dari organisasi
 

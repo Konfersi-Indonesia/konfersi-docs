@@ -4,7 +4,7 @@ description: Buat tiket dukungan di Console, ikuti balasannya, lampirkan berkas,
 tags: [dukungan, tiket, bantuan, penjualan, konsultasi, kontak]
 related: [support/contact-support, support/faq, using-konfersi/community]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Buka **Dukungan** di menu samping Console. Tiket menyimpan seluruh percakapan Anda dengan tim Konfersi di satu tempat, dan kami mengirim email setiap kali ada pembaruan.
@@ -16,14 +16,14 @@ Buka **Dukungan** di menu samping Console. Tiket menyimpan seluruh percakapan An
 
    | Kategori | Untuk |
    |---|---|
-   | **Dukungan Penjualan** | Paket, harga, penawaran, kebutuhan enterprise, dan penyiapan organisasi |
-   | **Dukungan Operasional** | Kendala memakai Console, Lab, proyek, atau komputasi |
+   | **Dukungan Penjualan** | Harga, penawaran, kebutuhan enterprise, dan penyiapan organisasi |
+   | **Dukungan Operasional** | Kendala memakai Console, kursus, atau pembayaran |
    | **Dukungan Konsultan** | Keahlian metocean, metode, dan arahan studi |
    | **Lainnya** | Hal lain, termasuk menggabungkan dua akun |
 
 3. Opsional: pilih **Templat deskripsi**. Templat mengisi **Subjek** dan pertanyaan yang perlu Anda jawab.
 4. Tulis **Subjek** dan **Deskripsi**: apa yang terjadi, apa yang Anda harapkan, serta langkah atau ID yang membantu kami mereproduksinya.
-5. Opsional: pilih **Proyek terkait**, dan **Lampirkan berkas**: hingga 5 berkas, masing-masing 10 MB (gambar, PDF, teks, CSV, berkas Office, atau ZIP).
+5. Opsional: **Lampirkan berkas**: hingga 5 berkas, masing-masing 10 MB (gambar, PDF, teks, CSV, berkas Office, atau ZIP).
 6. Pilih **Buat tiket** (atau **Kirim ke Penjualan** untuk permintaan penjualan).
 
 Kami mengirim salinannya ke email Anda dan membalas di tiket begitu ada agen yang menanganinya.

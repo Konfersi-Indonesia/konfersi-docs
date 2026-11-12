@@ -4,7 +4,7 @@ description: Browse the course marketplace, enrol in a live or self-paced course
 tags: [courses, training, marketplace, enrol, tickets, webinar, lessons, progress]
 related: [billing/payments, billing/order-cart-and-transactions, using-konfersi/certificates, using-konfersi/organizations/shared-projects-and-courses]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
 Konfersi runs live and self-paced courses. You find them under **Courses** in the Console side menu:
@@ -27,17 +27,21 @@ Open a course to see **About this course**, the **Schedule** (times are shown in
 
 ## Enrol
 
-1. On the course page, choose a ticket and select **Enrol**.
-2. Check the **Attendee** details. They are filled in from your profile, and the confirmation is sent to the email shown.
-3. Fill in any other fields the course asks for. If the course asks for **Documents**, upload a JPG, PNG or WebP photo for each; photos are compressed to under 2 MB before upload.
-4. Review the **Summary**, then:
-   - **Enrol for free** for a free ticket, or
-   - **Continue to payment** to pay now, or
+1. On the course page, choose a ticket and select **Enroll**. For a paid ticket you can also select **Add to cart** to save it to your [Order Cart](../billing/order-cart-and-transactions.md) and pay later.
+2. On the enrol page, check the **Ticket** you chose.
+3. Check the **Attendee** details. They are filled in from your profile, and the confirmation is sent to the email shown.
+4. Fill in any other fields the course asks for. If the course asks for **Documents**, upload a JPG, PNG or WebP photo for each; photos are compressed to under 2 MB before upload.
+5. For a paid ticket, choose a payment method under **Select Payment Method**.
+6. Review the **Summary**: the ticket price, tax (PPN) and **Grand Total**. The total is an estimate; the final amount is set when your order is created. Then select:
+   - **Enroll for free** for a free ticket. You're enrolled straight away and taken to **My Courses**.
+   - **Continue to payment** to pay now. Konfersi creates your order and opens it in **Payment & Billing → Transactions**, where the payment window opens. See [Payments](../billing/payments.md).
    - **Save to cart, pay later** to keep the ticket in your [Order Cart](../billing/order-cart-and-transactions.md).
 
-If you're already enrolled, or already have a seat waiting for payment, you can't enrol in the same course again. The course page shows **Complete payment** for a seat that is waiting.
+If you haven't set your country yet, the enrol page asks you to **Set your country** before you pay. Your country sets your billing currency (see [Payments](../billing/payments.md#your-billing-currency)).
 
-Paid seats are held until the payment deadline shown on the course and in **My Courses**. Courses are paid on their own, separately from Lab plans and add-ons. See [Payments](../billing/payments.md).
+If you're already enrolled, or already have a seat waiting for payment, you can't enrol in the same course again. The course page shows **Complete payment** for a seat that is waiting; it opens the order so you can pay.
+
+Paid seats are held until the payment deadline shown on the course and in **My Courses**. You can pay for one course from its enrol page, or for several saved course tickets together from the Order Cart.
 
 ## My Courses
 
@@ -54,7 +58,7 @@ Once you're enrolled in a course that has lessons online, the enrolment shows yo
 
 **Join meeting** and **Join community** links appear here when the course team shares them; they're also emailed to you before the course starts. **Copy meeting link** copies the link, for example to add to your calendar.
 
-For refunds, see [Refunds & cancellation](../billing/refunds-and-cancellation.md).
+For refund questions, [contact support](../support/contact-support.md) with your order ID.
 
 ## Follow the lessons
 
