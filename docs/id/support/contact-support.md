@@ -4,7 +4,7 @@ description: Cara menghubungi tim Konfersi melalui email atau komunitas Discord,
 tags: [bantuan, dukungan, kontak, helpdesk, discord]
 related: [support/faq, trust/security, billing/payments]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Butuh bantuan? Berikut cara menghubungi kami dan mendapatkan jawaban secepat mungkin.
@@ -14,7 +14,7 @@ Butuh bantuan? Berikut cara menghubungi kami dan mendapatkan jawaban secepat mun
 | Kanal | Paling cocok untuk |
 |---|---|
 | **Email: [support@konfersi.com](mailto:support@konfersi.com)** | Akun, masuk (sign-in), tagihan, pengembalian dana, data, dan laporan bug. Setiap email otomatis menjadi tiket di helpdesk kami, sehingga seluruh tim dapat menindaklanjutinya |
-| **Komunitas Discord** | Bertanya kepada sesama pengguna, berbagi tips seputar Lab dan dataset, serta mengikuti pengumuman produk. Minta undangan melalui support@konfersi.com |
+| **Komunitas Discord** | Bertanya kepada sesama pengguna, berbagi tips seputar kursus dan dataset, serta mengikuti pengumuman produk. Minta undangan melalui support@konfersi.com |
 
 Untuk hal yang menyangkut akun, pembayaran, atau data pribadi, gunakan email, bukan Discord. Jangan pernah membagikan kata sandi, token, ID pesanan, atau detail pembayaran di kanal publik.
 
@@ -23,8 +23,8 @@ Untuk hal yang menyangkut akun, pembayaran, atau data pribadi, gunakan email, bu
 Detail berikut membantu kami menjawab tanpa perlu bertanya ulang:
 
 - **Email akun Anda**: alamat yang Anda gunakan untuk masuk di accounts.konfersi.com
-- **Lokasi masalah**: Console (app.konfersi.com), Lab (lab.konfersi.com), halaman masuk, atau situs web
-- **Nama proyek**, jika masalahnya terkait proyek Console tertentu
+- **Lokasi masalah**: Console (app.konfersi.com), halaman masuk, atau situs web
+- **Nama kursus**, jika masalahnya terkait kursus tertentu
 - **Apa yang Anda lakukan, apa yang Anda harapkan, dan apa yang terjadi**
 - **Tangkapan layar atau pesan galat (error) yang persis**
 - **Tanggal, jam, dan zona waktu Anda**
@@ -37,12 +37,12 @@ Jika layar galat menampilkan request ID atau kode referensi, sertakan juga. Deng
 
 Kami menjawab email bantuan sesuai urutan masuknya, secepat yang kami bisa. Balasan mungkin lebih lama pada akhir pekan dan hari libur nasional Indonesia.
 
-Beberapa paket mencantumkan tingkat dukungan tertentu. Misalnya, tingkatan **Profesional & Proyek** disebutkan mencakup dukungan email pada hari kerja berikutnya. Ketentuan dukungan untuk paket Perusahaan diatur dalam perjanjian dengan organisasi Anda. Lihat [Paket & harga](../billing/plans-and-pricing.md).
+Jika organisasi Anda memiliki perjanjian tersendiri dengan Konfersi, ketentuan dukungan dalam perjanjian tersebut yang berlaku.
 
 ## Tagihan dan pengembalian dana
 
 - Untuk masalah pembayaran, lihat [Pembayaran](../billing/payments.md).
-- Untuk mengajukan pengembalian dana, lihat [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md).
+- Untuk menanyakan pengembalian dana, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) beserta ID pesanan dan alasan permintaan Anda.
 
 ## Permintaan terkait privasi
 

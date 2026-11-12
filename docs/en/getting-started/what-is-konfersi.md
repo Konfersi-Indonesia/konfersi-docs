@@ -4,7 +4,7 @@ description: Konfersi provides metocean, climate and environmental intelligence 
 tags: [overview, metocean, climate, platform]
 related: [getting-started/products-and-surfaces, getting-started/create-account, company/about]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Konfersi delivers metocean, climate and environmental intelligence for offshore, coastal, energy and infrastructure projects. You can work with it through our digital platform, through expert consulting, or by learning the methods yourself in our courses.
@@ -22,14 +22,14 @@ Teams in these industries use our work:
 
 ## Three ways to work with Konfersi
 
-### 1. The metocean digital platform
+### 1. The digital platform
 
-This is one account that opens several apps:
+One Konfersi account opens our apps:
 
-- **Console** is where you manage projects, plans and your profile.
-- **Lab** is a browser-based workbench for the project you have open.
 - **Accounts** handles sign-up and sign-in for every Konfersi app.
-- **Mission Planning** is the first analysis module to be released publicly. It is rolling out from the end of October 2026. See [Mission Planning](../using-konfersi/mission-planning.md).
+- **Console** is where you enrol in courses, pay for your orders, manage your profile and work with your organization.
+
+More Konfersi products will be added to the Console over time.
 
 [Products & surfaces](products-and-surfaces.md) explains what each app does and where to find it.
 
@@ -43,13 +43,11 @@ The Konfersi Course Series, Web Series and Private Courses teach practical metoc
 
 ## Where the data comes from
 
-Our models and analyses are calibrated and validated against widely used global datasets, including ERA5, CMEMS, FES2022 and CMIP6. [Metocean data sources](../using-konfersi/metocean-data-sources.md) describes each one.
-
-<scalar-callout type="warning">Platform outputs support engineering and planning decisions. They do not replace a certified site-specific study. Read the [AI & metocean disclaimer](../legal/ai-and-metocean-disclaimer.md) before relying on results.</scalar-callout>
+Our models and analyses are calibrated and validated against widely used global datasets, including ERA5, CMEMS, FES2022 and CMIP6.
 
 ## Next steps
 
 1. [Create an account](create-account.md).
 2. [Sign in](sign-in.md) and open the Console.
-3. [Create your first project](../using-konfersi/console-projects.md).
-4. Compare [plans & pricing](../billing/plans-and-pricing.md).
+3. Find a course under **Courses → Marketplace**. See [Courses](../using-konfersi/courses.md).
+4. Learn how [payments](../billing/payments.md) work.

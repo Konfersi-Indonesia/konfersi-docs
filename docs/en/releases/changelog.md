@@ -4,10 +4,53 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.4.0 — 12 November 2026
+
+**Updated**
+
+- [Courses](../using-konfersi/courses.md), [Payments](../billing/payments.md) and [Order cart & transactions](../billing/order-cart-and-transactions.md): how you enrol in and pay for a course today. Course orders open in Transactions and go straight to payment; the billing currency, prices per currency and tax are now explained in Payments.
+- [Shared courses](../using-konfersi/organizations/shared-projects-and-courses.md) and [Organization settings](../using-konfersi/organizations/settings.md): course seats bought by an organization's billing manager and given to members.
+- [Create an account](../getting-started/create-account.md), [Sign in](../getting-started/sign-in.md), [What is Konfersi?](../getting-started/what-is-konfersi.md), [Products & surfaces](../getting-started/products-and-surfaces.md), the account, organization, support and FAQ pages: rewritten around Konfersi Accounts and the Console.
+- The legal pages in force are the versions effective 27 September 2026.
+
+## 1.3.0 — 10 October 2026
+
+**Updated**
+
+- [Your public profile](../using-konfersi/public-profile.md): share your profile with a QR code or images for stories and posts, download an ATS-friendly CV (PDF or Markdown, English or Indonesian), import your CV with AI, make business cards (PNG, print PDF, vCard), and set organisation defaults for cards and AI CV import.
+- [Privacy Policy](../legal/privacy.md), version 2 draft: account deletion and purge, the account data export, AI CV import and files generated from your profile. This is a legal draft awaiting our lawyer's sign-off, like the rest of version 2.
+
+## 1.2.0 — 10 October 2026
+
+**New**
+
+- [Your public profile](../using-konfersi/public-profile.md): build a CV at io.konfersi.com, choose who sees each field, publish under your own address, answer data requests, and download or delete your profile data.
+
+**Updated**
+
+- [Privacy Policy](../legal/privacy.md), version 2 draft: public profile data, why we process it, who can see it, and how long we keep it. This part is awaiting legal review like the rest of the draft.
+
+## 1.1.0 — 2 October 2026
+
+Guides for every part of the Console, and docs organised in sub-folders.
+
+**New**
+
+- [Organizations](../using-konfersi/organizations/index.md): [members & invitations](../using-konfersi/organizations/members-and-invitations.md), [shared projects & courses](../using-konfersi/organizations/shared-projects-and-courses.md) and [organization settings](../using-konfersi/organizations/settings.md) for owners — email domains, joining rules, join requests, single sign-on and activity.
+- [Courses](../using-konfersi/courses.md) and [Community](../using-konfersi/community.md) (article discussions and Member Q&A).
+- A new Account & security section: [Your profile](../account/profile.md), [Security](../account/security/index.md) and [Connected devices](../account/security/connected-devices.md).
+- [Order cart & transactions](../billing/order-cart-and-transactions.md) and [Support tickets](../support/support-tickets.md).
+- A new Konfersi Lab section: [get started](../lab/get-started.md), [desktop editors](../lab/desktop/index.md) (installing the extension in VS Code and Antigravity, sign-in and updates), [observation points](../lab/points/index.md) and [processing](../lab/points/process-points.md), [map & layers](../lab/map/index.md), [how data is processed](../lab/data/index.md) and [variables & sources](../lab/data/variables-and-sources.md), [analyses & charts](../lab/analysis/index.md), [data validation](../lab/analysis/data-validation.md), [reports](../lab/reports-and-documents.md), [troubleshooting](../lab/troubleshooting.md) and a [Lab FAQ](../lab/faq.md).
+
+**Updated**
+
+- Menu names now match the Console: **Lab Project**, **Payment & Billing** and **Profile & Settings**.
+- [Create an account](../getting-started/create-account.md): the organization step is optional, and you can use an organization you belong to or were invited to.
 
 ## 1.0.0 — 27 September 2026
 

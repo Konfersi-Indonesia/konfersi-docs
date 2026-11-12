@@ -7,11 +7,21 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname, relative, resolve, posix } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { splitFrontmatter } from './lib/frontmatter.mjs'
+import { loadScope, hiddenBy } from './release-scope.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const errors = []
 const warnings = []
 const fail = (msg) => errors.push(msg)
+// Release mode (uat, main and vX.Y.Z tags): the pages in release-scope.json must be drafts there, and nothing
+// still under legal review may be published. stg runs without it and publishes everything.
+const RELEASE = process.argv.includes('--release') || process.env.DOCS_RELEASE === '1'
+let scope = []
+try {
+  scope = loadScope(ROOT)
+} catch (err) {
+  fail(String(err.message ?? err))
+}
 
 const config = JSON.parse(readFileSync(join(ROOT, 'scalar.config.json'), 'utf8'))
 const ext = config['x-konfersi']
@@ -19,11 +29,18 @@ if (!ext?.locales?.length) fail('scalar.config.json: x-konfersi.locales is requi
 const locales = ext?.locales ?? []
 
 // ── Walk the route tree per locale ────────────────────────
-function collectPages(node, prefix, out, groupTitle) {
+// Groups nest to any depth. A nested group with a filepath is a folder with its own
+// overview page at docs/<locale>/<folder>/index.md; top-level sections cannot have one.
+function collectPages(node, prefix, out, groupTitle, depth = 0) {
   for (const [key, child] of Object.entries(node.children ?? {})) {
     const path = `${prefix}${key}`
-    if (child.type === 'group') collectPages(child, path, out, child.title)
-    else if (child.type === 'page') out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle })
+    if (child.type === 'group') {
+      if (child.filepath) {
+        if (depth === 0) fail(`${path}: a top-level section cannot have a filepath; give a nested folder the overview page instead`)
+        else out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle, folder: true })
+      }
+      collectPages(child, path, out, depth === 0 ? child.title : groupTitle, depth + 1)
+    } else if (child.type === 'page') out.push({ path, filepath: child.filepath, title: child.title, group: groupTitle })
     else if (child.type !== 'link' && child.type !== 'spacer') fail(`${path}: unsupported node type "${child.type}"`)
   }
   return out
@@ -49,6 +66,11 @@ for (const locale of others) {
   for (const s of slugs) if (!baseSlugs.has(s)) fail(`[${locale}] "${s}" has no ${base} counterpart`)
 }
 
+// ── Release scope entries name real pages ─────────────────
+for (const entry of scope) {
+  if (![...baseSlugs].some((slug) => hiddenBy(slug, [entry]))) fail(`release-scope.json: "${entry}" matches no page`)
+}
+
 // ── Stable slugs used by apps ─────────────────────────────
 const stable = JSON.parse(readFileSync(join(ROOT, 'stable-slugs.json'), 'utf8'))
 for (const [name, slug] of Object.entries(stable)) {
@@ -69,6 +91,9 @@ if (existsSync(sharedDocs)) {
   for (const k of Object.keys(shared)) if (!(k in ours)) fail(`konfersi-shared DOCS_PAGE.${k} is not in stable-slugs.json`)
 }
 
+/** `folder/index.md` is the folder's overview page, so its slug is `folder`. */
+const slugFromPath = (relativePath) => relativePath.replace(/\.md$/, '').replace(/(^|\/)index$/, '')
+
 // ── Per-file checks ───────────────────────────────────────
 const STATUSES = new Set(['draft', 'published'])
 const ALLOWED_TAG = /^<\/?scalar-callout(\s+type="(neutral|info|success|warning|danger)")?\s*>$/
@@ -82,7 +107,7 @@ for (const locale of locales) {
   const slugSet = new Set((pagesByLocale[locale] ?? []).map((p) => p.slug))
   for (const page of pagesByLocale[locale] ?? []) {
     const where = `[${locale}] ${page.filepath}`
-    const expected = `docs/${locale}/${page.slug}.md`
+    const expected = page.folder ? `docs/${locale}/${page.slug}/index.md` : `docs/${locale}/${page.slug}.md`
     if (page.filepath !== expected) fail(`${where}: filepath must be ${expected}`)
     const abs = join(ROOT, page.filepath)
     referenced.add(relative(ROOT, abs))
@@ -100,6 +125,12 @@ for (const locale of locales) {
     }
     if (data.status && !STATUSES.has(data.status)) fail(`${where}: status must be draft|published`)
     statusBySlug[locale][page.slug] = data.status
+    if (RELEASE && data.status !== 'draft' && hiddenBy(page.slug, scope)) {
+      fail(`${where}: out of the release scope (release-scope.json) but published; run node scripts/release-scope.mjs apply`)
+    }
+    if (RELEASE && data.status !== 'draft' && (data.review ?? []).length) {
+      fail(`${where}: still under review (${data.review.join(', ')}); a release may only publish approved text`)
+    }
     if (data.updated && !/^\d{4}-\d{2}-\d{2}$/.test(data.updated)) fail(`${where}: updated must be YYYY-MM-DD`)
     if (data.description && data.description.length > 200) warnings.push(`${where}: description over 200 chars`)
     for (const key of ['tags', 'related', 'review']) {
@@ -107,9 +138,9 @@ for (const locale of locales) {
     }
     for (const rel of data.related ?? []) {
       if (!slugSet.has(rel)) fail(`${where}: related "${rel}" does not exist`)
-      else edges.push({ locale, where, to: rel, kind: 'related' })
+      else edges.push({ locale, where, from: page.slug, to: rel, kind: 'related' })
     }
-    if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length) {
+    if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length && !hiddenBy(page.slug, scope)) {
       fail(`${where}: draft legal pages must list open clause IDs in "review"`)
     }
     if (/^#\s/m.test(body)) fail(`${where}: do not use an H1 in the body; the title comes from frontmatter`)
@@ -127,9 +158,9 @@ for (const locale of locales) {
       const [pathPart] = target.split('#')
       const resolved = posix.normalize(posix.join(posix.dirname(page.filepath), pathPart))
       if (pathPart.endsWith('.md')) {
-        const slug = resolved.replace(`docs/${locale}/`, '').replace(/\.md$/, '')
+        const slug = slugFromPath(resolved.replace(`docs/${locale}/`, ''))
         if (!slugSet.has(slug)) fail(`${where}: broken link ${target}`)
-        else edges.push({ locale, where, to: slug, kind: 'link' })
+        else edges.push({ locale, where, from: page.slug, to: slug, kind: 'link' })
       } else if (!existsSync(join(ROOT, resolved))) {
         fail(`${where}: missing asset ${target}`)
       }
@@ -138,16 +169,19 @@ for (const locale of locales) {
 }
 
 // ── Drafts are never published, so nothing public may point at one ──
-for (const { locale, where, to, kind } of edges) {
-  const from = where.replace(/^\[\w+\] docs\/\w+\//, '').replace(/\.md$/, '')
+for (const { locale, where, from, to, kind } of edges) {
   if (statusBySlug[locale][to] === 'draft' && statusBySlug[locale][from] !== 'draft') {
-    fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
+    // A page left out by the release scope: the backend renders the link as plain text, so it is only a warning.
+    if (RELEASE && hiddenBy(to, scope)) warnings.push(`${where}: ${kind} to "${to}", left out of this release (shown as plain text)`)
+    else fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
   }
 }
 for (const [name, slug] of Object.entries(stable)) {
   if (name.startsWith('$') || slug === '') continue
   for (const locale of locales) {
-    if (statusBySlug[locale]?.[slug] === 'draft') fail(`stable-slugs.json: ${name} → "${slug}" is a draft in ${locale}; apps link to it, so it must be published`)
+    if (statusBySlug[locale]?.[slug] !== 'draft') continue
+    if (RELEASE && hiddenBy(slug, scope)) warnings.push(`stable-slugs.json: ${name} → "${slug}" is left out of this release; apps must not link to it in released builds`)
+    else fail(`stable-slugs.json: ${name} → "${slug}" is a draft in ${locale}; apps link to it, so it must be published`)
   }
 }
 
@@ -183,4 +217,4 @@ if (errors.length) {
   process.exit(1)
 }
 const total = Object.values(pagesByLocale).reduce((n, p) => n + p.length, 0)
-console.log(`ok  ${total} pages across ${locales.join(', ')}`)
+console.log(`ok  ${total} pages across ${locales.join(', ')}${RELEASE ? ` (release mode, ${scope.length} scope entries)` : ''}`)

@@ -1,19 +1,27 @@
 ---
 title: Sign in
-description: Sign in to Konfersi with email or a provider, reset a forgotten password, and approve Konfersi Lab sign-ins.
+description: Sign in to Konfersi with email or a provider, reset a forgotten password, and sign out.
 tags: [account, sign-in, password, sso]
-related: [getting-started/create-account, using-konfersi/lab-workspace, support/contact-support]
+related: [getting-started/create-account, account/security, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
-Konfersi uses one sign-in for all of its apps. When you sign in at Accounts, the same session works in the Console, in Lab and in your metocean workspaces.
+Konfersi uses one sign-in for all of its apps. When you sign in at Accounts, the same session works in the Console and on the other Konfersi sites.
 
 ## Sign in with email and password
 
-1. Go to [accounts.konfersi.com](https://accounts.konfersi.com). If you open [app.konfersi.com](https://app.konfersi.com) or [lab.konfersi.com](https://lab.konfersi.com) without a session, you're sent there automatically.
-2. Enter your **Email** and **Password**.
-3. Select **Sign In**.
+1. Go to [accounts.konfersi.com](https://accounts.konfersi.com). If you open [app.konfersi.com](https://app.konfersi.com) without a session, you're sent there automatically.
+2. Enter your **Email** and select **Continue**. Select **Change** if you typed the wrong email.
+3. If email sign-in links are on for your account (the default for new accounts), Konfersi emails you a sign-in link. Open it within 10 minutes to sign in. You can also:
+   - select **Enter the code manually** to type the code from the email
+   - wait and select **Send a new link**
+   - select **Use password instead**
+4. Otherwise, or after **Use password instead**, enter your **Password** and select **Sign In**.
+
+You can turn email sign-in links on or off in your account's security settings.
+
+![The Sign In page in Konfersi Accounts](../../../assets/screenshots/en/accounts-sign-in.png)
 
 Once you're signed in, Konfersi takes you back to the page you started from. If you came straight to Accounts, you land in the Console.
 
@@ -47,17 +55,6 @@ You can add a provider to an account you already have, so that either method sig
 The confirmation screen always looks the same, whether or not an account exists for the address you entered. This protects your privacy.
 
 <scalar-callout type="neutral">Accounts created with a sign-in provider don't have a Konfersi password to reset or change. Sign in with that provider instead.</scalar-callout>
-
-## Approve a Konfersi Lab sign-in
-
-When you sign in from the Konfersi Lab extension in desktop VS Code, a browser tab opens at Accounts.
-
-1. Sign in if you're asked to.
-2. On **Sign in to Konfersi Lab**, check that the email address is yours.
-3. Select **Approve device** only if you started this sign-in yourself.
-4. When you see **Device signed in**, close the tab and return to VS Code.
-
-See [Lab workspace](../using-konfersi/lab-workspace.md) for more on the extension.
 
 ## Sign out
 

@@ -3,7 +3,7 @@ title: AI & metocean disclaimer
 description: Konfersi Outputs, including Mission Planning results and AI-generated text, are decision support, not certified engineering, navigation or EIA advice.
 tags: [legal, disclaimer, ai, metocean, mission-planning]
 related: [legal/terms, legal/acceptable-use, legal/privacy, support/contact-support]
-status: published
+status: draft
 updated: 2026-09-27
 ---
 

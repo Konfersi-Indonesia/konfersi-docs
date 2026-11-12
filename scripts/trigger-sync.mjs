@@ -10,6 +10,8 @@
  * Optional:
  *   DOCS_SYNC_BRANCH       branch the backend follows (default payload ref: refs/heads/<branch>; must match DOCS_SOURCE_REF)
  *   DOCS_SYNC_COMMIT       40-hex commit SHA to pin the sync to (bypasses raw-host branch caching)
+ *   DOCS_SYNC_TAG          release tag vX.Y.Z to pin the sync to (payload ref: refs/tags/<tag>); only a backend whose
+ *                          DOCS_SOURCE_REF is a release tag accepts it. Not combined with DOCS_SYNC_BRANCH / DOCS_SYNC_COMMIT.
  */
 import { createHmac } from "node:crypto";
 
@@ -32,6 +34,15 @@ const branch = process.env.DOCS_SYNC_BRANCH?.trim();
 const commit = process.env.DOCS_SYNC_COMMIT?.trim();
 if (commit && !/^[0-9a-f]{40}$/.test(commit)) {
   console.error("docs-sync: DOCS_SYNC_COMMIT must be a 40-hex SHA");
+  process.exit(1);
+}
+const tag = process.env.DOCS_SYNC_TAG?.trim();
+if (tag && !/^v\d+\.\d+\.\d+$/.test(tag)) {
+  console.error("docs-sync: DOCS_SYNC_TAG must be a release tag vX.Y.Z");
+  process.exit(1);
+}
+if (tag && (branch || commit)) {
+  console.error("docs-sync: DOCS_SYNC_TAG cannot be combined with DOCS_SYNC_BRANCH / DOCS_SYNC_COMMIT");
   process.exit(1);
 }
 
@@ -57,7 +68,9 @@ async function getJson(path) {
 }
 
 // 1) Signed, synchronous sync.
-const payload = JSON.stringify({ ...(branch ? { ref: `refs/heads/${branch}` } : {}), ...(commit ? { after: commit } : {}) });
+const payload = JSON.stringify(
+  tag ? { ref: `refs/tags/${tag}` } : { ...(branch ? { ref: `refs/heads/${branch}` } : {}), ...(commit ? { after: commit } : {}) },
+);
 const signature = createHmac("sha256", secret).update(payload).digest("hex");
 const sync = await withRetry("sync", async () => {
   const res = await fetch(`${base}/v1/webhooks/docs`, {
@@ -75,13 +88,28 @@ const sync = await withRetry("sync", async () => {
     process.exit(1);
   }
   if (res.status === 202 && body?.result?.accepted === false) {
-    console.error(`docs-sync: backend ignored the push (${body.result.ignored}); DOCS_SYNC_BRANCH must equal DOCS_SOURCE_REF`);
+    console.error(
+      `docs-sync: backend ignored the push (${body.result.ignored}); ${tag ? "that backend's DOCS_SOURCE_REF must be a release tag" : "DOCS_SYNC_BRANCH must equal DOCS_SOURCE_REF"}`,
+    );
     process.exit(1);
   }
   if (res.status !== 200 || !body?.result) throw new Error(`webhook → ${res.status} ${body?.err_message ?? ""}`);
   return body.result;
 });
-console.log(`docs-sync: ${sync.changed ? "updated" : "unchanged"} ref=${sync.ref ?? "-"} version=${String(sync.version).slice(0, 12)} pages=${sync.pages} warnings=${sync.warnings?.length ?? 0}`);
+console.log(
+  `docs-sync: ${sync.changed ? "updated" : "unchanged"} ref=${sync.ref ?? "-"} docs=${sync.release?.version ?? "-"} version=${String(sync.version).slice(0, 12)} pages=${sync.pages} warnings=${sync.warnings?.length ?? 0}`,
+);
+// Backends that report the displayed docs version must show exactly the tag / <release>+<short sha> they were pinned to.
+if (sync.release) {
+  if (tag && sync.release.version !== tag) {
+    console.error(`docs-sync: pinned to ${tag} but the backend shows docs version ${sync.release.version}`);
+    process.exit(1);
+  }
+  if (commit && sync.ref === commit && !sync.release.version.endsWith(`+${commit.slice(0, 7)}`)) {
+    console.error(`docs-sync: pinned to ${commit} but the backend shows docs version ${sync.release.version}`);
+    process.exit(1);
+  }
+}
 if (!sync.pages) {
   console.error("docs-sync: backend reports 0 pages");
   process.exit(1);
@@ -96,10 +124,22 @@ for (const lang of ["en", "id"]) {
   const first = nav.groups[0].pages[0].slug;
   const page = await getJson(`/v1/public/docs/pages/${first}?lang=${lang}`);
   if (!page.html || page.locale !== lang) throw new Error(`page ${first} (${lang}) did not render in ${lang}`);
-  const q = page.title.split(/\s+/)[0];
-  const search = await getJson(`/v1/public/docs/search?q=${encodeURIComponent(q)}&lang=${lang}`);
-  if (!search.results.length) throw new Error(`search "${q}" (${lang}) returned nothing`);
-  console.log(`docs-sync: ${lang} ok — ${pages} pages, "${first}" renders, search "${q}" → ${search.results.length}`);
+  // Search for a word of that page's title, longest first: the backend drops stop words ("What", "Apa"), so the
+  // title's first word alone made every publish fail after a successful sync.
+  const words = [...new Set(page.title.split(/\s+/).map((w) => w.replace(/[^\p{L}\p{N}-]/gu, "")).filter((w) => w.length > 1))]
+    .sort((a, b) => b.length - a.length);
+  let q = "";
+  let found = 0;
+  for (const word of words) {
+    const search = await getJson(`/v1/public/docs/search?q=${encodeURIComponent(word)}&lang=${lang}`);
+    if (search.results.length) {
+      q = word;
+      found = search.results.length;
+      break;
+    }
+  }
+  if (!found) throw new Error(`search for the words of "${page.title}" (${lang}) returned nothing`);
+  console.log(`docs-sync: ${lang} ok — ${pages} pages, "${first}" renders, search "${q}" → ${found}`);
 }
 const graph = await getJson("/v1/public/docs/graph?lang=en");
 if (!graph.nodes.length) throw new Error("graph has no nodes");

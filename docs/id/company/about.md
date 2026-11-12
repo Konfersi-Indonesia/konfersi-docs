@@ -4,7 +4,7 @@ description: Mengenal PT Konfersi Metocean Climate Consultant, penyedia informas
 tags: [perusahaan, tentang, konfersi, metocean]
 related: [getting-started/what-is-konfersi, support/contact-support, trust/security]
 status: published
-updated: 2026-09-27
+updated: 2026-11-12
 ---
 
 Konfersi menghadirkan informasi metocean, iklim, dan lingkungan untuk proyek lepas pantai, pesisir, energi, dan infrastruktur, melalui platform digital dan layanan konsultasi ahli.
@@ -40,18 +40,16 @@ Pelatihan praktis pengolahan data laut dan iklim:
 
 Topik yang telah diumumkan meliputi pengolahan data reanalisis fisika laut global, analisis data iklim CMIP6, pengolahan data Argo float, serta analisis dan prediksi pasang surut, semuanya dengan Python.
 
-### 3. Platform digital metocean
+### 3. Platform digital
 
-Perangkat lunak untuk mengolah data metocean secara mandiri:
+Aplikasi kami, yang memakai satu akun Konfersi yang sama:
 
 | Produk | Alamat |
 |---|---|
 | **Accounts**: satu akun untuk semua aplikasi Konfersi | accounts.konfersi.com |
-| **Console**: proyek, paket, dan modul analisis | app.konfersi.com |
-| **Lab**: ruang kerja untuk data laut dan iklim | lab.konfersi.com |
-| **MCP**: segera hadir | |
+| **Console**: kursus, pembayaran, profil, dan organisasi Anda | app.konfersi.com |
 
-**Mission Planning** adalah modul platform pertama yang dirilis untuk publik, dengan rencana peluncuran pada akhir Oktober 2026. Lihat [Mission Planning](../using-konfersi/mission-planning.md) dan [Produk & layanan](../getting-started/products-and-surfaces.md).
+Produk Konfersi lainnya akan ditambahkan ke Console seiring waktu. Lihat [Produk & layanan](../getting-started/products-and-surfaces.md).
 
 ## Perjalanan kami
 
@@ -73,4 +71,4 @@ Konfersi sudah dikenal sebagai merek sejak sekitar 2021, lalu resmi berbadan huk
 
 Untuk bantuan produk, pertanyaan tagihan, kemitraan, atau kebutuhan konsultasi, kirim email ke [support@konfersi.com](mailto:support@konfersi.com) atau lihat [Hubungi tim bantuan](../support/contact-support.md).
 
-[Syarat & Ketentuan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md) kami menjelaskan cara kami bekerja sama dengan Anda dan menangani data Anda.
+[Ketentuan Layanan](../legal/terms.md) dan [Kebijakan Privasi](../legal/privacy.md) kami menjelaskan cara kami bekerja sama dengan Anda dan menangani data Anda.

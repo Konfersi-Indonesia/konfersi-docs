@@ -3,8 +3,8 @@ title: Plans & pricing
 description: The Konfersi plan tiers, how plans and add-ons attach to Console projects, and where to see current prices.
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
-status: published
-updated: 2026-09-27
+status: draft
+updated: 2026-10-12
 ---
 
 Konfersi plans are built around how much of the platform you use: Lab compute, storage, AI credits and access to the Metocean Analytics tools. This page explains the tiers, how plans and add-ons work inside the Console, and where you can see current prices.
@@ -31,6 +31,8 @@ Plans are applied **per project**, not per account. Every project you create in 
 - **Upgrading** a project moves it to a higher plan. The Console won't let you buy the plan the project is already on.
 - **Add-ons** top up a single resource for a project, for example extra storage or extra AI credits, without changing its plan.
 
+![Plan Configuration in the Console: a project, a plan, add-ons and the order summary](../../../assets/screenshots/en/console-plan-configure.png)
+
 Each plan and add-on grants a set amount of one or more resources:
 
 | Resource | What it covers |
@@ -43,20 +45,54 @@ When a payment completes, the plan's or add-on's resources are added to the proj
 
 ## Where to manage your plan
 
-In the Console, open **Manage Plan** in the sidebar:
+In the Console side menu:
 
 | Menu item | Use it to |
 |---|---|
-| **Project Plan** | See each project's current plan and choose a plan to upgrade to |
-| **Add-Ons** | Buy extra resources for a project |
-| **Order Cart** | Review several plan or add-on orders before paying |
-| **Transactions** | Track the status of your orders and continue a pending payment |
+| **Lab Project → Project Plan** | Compare plans and choose a plan for a project, with add-ons if you need them |
+| **Lab Project → Add-ons** | Buy extra resources for a project without changing its plan |
+| **Payment & Billing → Order Cart** | Review several plan or add-on orders before paying |
+| **Payment & Billing → Transactions** | Track the status of your orders and continue a pending payment |
+
+See [Order cart & transactions](order-cart-and-transactions.md).
+
+![The Project Plan page in the Console, with prices in the billing currency](../../../assets/screenshots/en/console-plans.png)
+
+![The Project Add-Ons page in the Console](../../../assets/screenshots/en/console-addons.png)
+
+## See plans on the Konfersi website
+
+The **Pricing** page on the Konfersi website (select **Pricing** in the top bar) lists the same plans and prices as the Console, read live from the same plan catalog. You don't need an account to see it.
+
+- Each plan shows its price, or **Free**, or **Custom pricing**, and what it includes, such as compute hours, storage and AI credits.
+- Prices are shown in **one currency**. Signed in, it's your account's billing currency. Signed out, it's the currency for the country you are browsing from, which is detected from your connection, not from the website language. The note under the plans gives the VAT (PPN) that is added at checkout.
+- **Get started** opens the Console's **Project Plan** page. If you are signed out, you create an account first (see [Create an account](../getting-started/create-account.md)). After you verify your email in the same browser and finish your profile, Konfersi takes you straight to that page.
+- **Contact sales** (on plans with custom pricing) opens a support request in the Console with the plan already filled in. Sign in first if you are asked to.
+
+The price you pay is always the one shown at checkout in the Console.
 
 ## Currency, tax and current prices
 
 - **Current prices are shown in the Console at checkout.** This documentation deliberately doesn't list numbers, because they can change.
-- Prices are shown in **Indonesian Rupiah (IDR)** if your organisation's country is Indonesia, and in **US Dollars (USD)** otherwise. The currency follows the country in your profile.
-- Payments themselves are processed in **IDR** through our payment partner, Midtrans. If you view prices in USD, treat the USD figure as an estimate. The IDR amount at checkout is what you are charged.
+
+### Your billing currency
+
+- **Every account has one billing currency**, set automatically when you create your account, from the country you give. For example, Indonesia, Malaysia and Singapore are billed in **Indonesian Rupiah (IDR)**. You see every price in the Console in that currency, with no conversion and no currency switch.
+- Your profile shows it as **Billing currency**. Changing the country in your profile later **doesn't** change it. To change it, [contact support](../support/contact-support.md); every change is recorded.
+- If you signed up with Google, Microsoft, GitHub or your organisation's sign-in and haven't given a country yet, add it to your profile before you check out. Checkout can't continue without one.
+- Accounts created before per-account currencies were introduced keep **IDR**, which is what they were charged before.
+- When you buy for an **organisation**, the price is in the billing currency of the organisation's billing manager (the owner, unless the owner chose someone else).
+
+### Prices in each currency
+
+- Konfersi sets each plan's, add-on's and course ticket's price **separately for each currency**. Prices are not converted from IDR at an exchange rate, so the amount you see is the amount you are charged.
+- If an item has no price in your currency, you see its price in Konfersi's default currency instead. If it has neither, the plan page shows **Not available in your currency**, and the cart or course page shows **Not available in your billing currency. Contact support if you need it.** You can [contact support](../support/contact-support.md) to buy it.
+- An order keeps the currency and amounts it was created with, even if prices change later. One order or checkout is always in a single currency.
+
+### Paying and tax
+
+- Payments in **IDR** are processed through our payment partner, Midtrans (see [Payments](payments.md)).
+- **Payment in other currencies, such as USD, isn't available yet.** If your billing currency is one of them, checkout shows **Payment in USD is not available yet. Contact support to complete this order.**, and nothing is charged. Contact us and we'll arrange your purchase.
 - Value-added tax (PPN) is added on top of the subtotal. The checkout breakdown shows the subtotal, tax and grand total before you pay.
 
 To learn how paying works, see [Payments](payments.md).
