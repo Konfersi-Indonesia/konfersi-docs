@@ -77,7 +77,13 @@ jobs:
           fi
           node -v
       - name: Validate docs
-        run: node scripts/validate.mjs
+        run: |
+          set -euo pipefail
+          # Release branches (uat, main), release tags and PRs into them publish only release-scope.json's scope.
+          case "${GITHUB_REF}|${GITHUB_BASE_REF:-}" in
+            refs/heads/uat\|*|refs/heads/main\|*|refs/tags/v*|*\|uat|*\|main) node scripts/validate.mjs --release ;;
+            *) node scripts/validate.mjs ;;
+          esac
 
   publish:
     needs: validate
@@ -244,7 +250,7 @@ jobs:
         run: |
           set -euo pipefail
           node scripts/check-release.mjs "${TAG}"
-          node scripts/validate.mjs
+          node scripts/validate.mjs --release
 
       - name: Mirror tag → GitHub
         if: env.SKIP != '1'
