@@ -1,10 +1,10 @@
 ---
 title: Security
-description: Choose and order your sign-in methods — emailed codes, authenticator app, passkeys — and manage connected devices.
+description: Choose and order your sign-in methods — emailed codes, authenticator app, passkeys — and change your password.
 tags: [security, sign in, two-factor, 2fa, mfa, passkey, authenticator, totp, passwordless]
-related: [account/security/connected-devices, account/profile, getting-started/sign-in]
+related: [account/profile, getting-started/sign-in, trust/security]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Open **Profile & Settings → Security** in the Console side menu.
@@ -39,8 +39,6 @@ Use the arrows next to each method to move it up or down. The top method that is
 
 To change your password, open **My Profile → Change Password**. Accounts that sign in only through Google, GitHub or Microsoft don't have a Konfersi password.
 
-## Connected devices
+## Something looks wrong?
 
-Code editors you signed in through the Konfersi Lab extension are listed under **Connected devices**. See [Connected devices](connected-devices.md).
-
-If you see a sign-in, device or location you don't recognise, disconnect it and change your password.
+If you notice a sign-in or account change you don't recognise, change your password straight away and [contact support](../../support/contact-support.md).

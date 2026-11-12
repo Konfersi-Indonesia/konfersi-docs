@@ -4,7 +4,7 @@ description: Diskusikan artikel Konfersi dengan member lain dan ajukan pertanyaa
 tags: [komunitas, diskusi, tanya jawab, pertanyaan, jawaban, artikel, forum]
 related: [support/support-tickets, support/faq]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Menu **Komunitas** di menu samping Console terdiri dari dua bagian:
@@ -50,4 +50,4 @@ Tim Konfersi bisa mengunci thread. Thread yang **Dikunci** tetap bisa dibaca, te
 
 ### Butuh jawaban pribadi?
 
-Untuk masalah tagihan, akun, atau proyek tertentu, gunakan [tiket dukungan](../support/support-tickets.md). Pada pertanyaan Anda sendiri, Anda juga bisa memilih **Tanya support**: Konfersi menyalin pertanyaan ke tiket pribadi, menautkannya ke thread, dan membalas di **Dukungan** serta lewat email.
+Untuk masalah tagihan, akun, atau masalah pribadi lainnya, gunakan [tiket dukungan](../support/support-tickets.md). Pada pertanyaan Anda sendiri, Anda juga bisa memilih **Tanya support**: Konfersi menyalin pertanyaan ke tiket pribadi, menautkannya ke thread, dan membalas di **Dukungan** serta lewat email.

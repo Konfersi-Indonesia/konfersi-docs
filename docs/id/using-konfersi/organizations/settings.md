@@ -1,10 +1,10 @@
 ---
 title: Pengaturan organisasi
-description: Untuk pemilik — ubah profil organisasi, verifikasi domain email, atur cara orang bergabung, setujui permintaan, siapkan single sign-on, dan tinjau aktivitas.
+description: Untuk pemilik — ubah profil organisasi, pilih pengelola tagihan, verifikasi domain email, atur cara orang bergabung, setujui permintaan, siapkan single sign-on, dan tinjau aktivitas.
 tags: [organisasi, pemilik, pengaturan, domain, dns, sso, openid connect, permintaan bergabung, audit]
 related: [using-konfersi/organizations, using-konfersi/organizations/members-and-invitations, account/profile]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Hanya pemilik yang melihat **Pengaturan** dan **Aktivitas** pada [organisasi](index.md).
@@ -14,6 +14,12 @@ Hanya pemilik yang melihat **Pengaturan** dan **Aktivitas** pada [organisasi](in
 Di **Pengaturan → Profil**, pemilik mengubah **Nama**, **Situs web**, **Jenis**, **Sektor**, **Ukuran**, **Lokasi**, dan **Deskripsi** organisasi, lalu memilih **Simpan**. Di bagian atas halaman organisasi, pemilik juga bisa menambah atau mengganti logo dan gambar header.
 
 Detail ini ditampilkan kepada anggota dan di undangan. Nama, situs web, jenis, sektor, ukuran, dan lokasi juga tampil di profil setiap anggota yang memakai detail organisasi, dan ikut diperbarui saat Anda menyimpan. Lihat [Profil Anda](../../account/profile.md#informasi-organisasi).
+
+## Pengelola tagihan
+
+**Pengelola tagihan** adalah satu anggota yang membeli [kursi kursus](shared-projects-and-courses.md) untuk organisasi. Secara bawaan, ini adalah pemilik paling awal, dan jika pengelola tagihan keluar, perannya berpindah ke pemilik paling awal yang tersisa.
+
+Untuk menggantinya, pilih anggota di **Pengelola tagihan** lalu konfirmasi dengan **Ganti pengelola tagihan**. Pembelian baru untuk organisasi lalu dihargai dalam mata uang tagihan pengelola tagihan yang baru; pesanan yang sudah dibuat tetap memakai harganya.
 
 ## Domain email dan aturan bergabung
 
@@ -74,4 +80,4 @@ Client secret yang tersimpan tidak pernah ditampilkan lagi. Biarkan kolomnya tid
 
 ## Aktivitas
 
-**Aktivitas** adalah catatan permanen perubahan pada organisasi: anggota diundang, bergabung, keluar, atau berganti peran; domain ditambahkan, diverifikasi, atau kedaluwarsa; perubahan dan login single sign-on; proyek dibagikan atau berhenti dibagikan; serta perubahan profil. Saring berdasarkan **Anggota**, **Domain**, **Login**, **Proyek**, atau **Organisasi**, dan muat lebih banyak untuk melihat yang lebih lama. Perubahan otomatis ditampilkan sebagai dilakukan oleh Konfersi.
+**Aktivitas** adalah catatan permanen perubahan pada organisasi: anggota diundang, bergabung, keluar, atau berganti peran; domain ditambahkan, diverifikasi, atau kedaluwarsa; perubahan dan login single sign-on; serta perubahan profil. Saring berdasarkan **Anggota**, **Domain**, **Login**, atau **Organisasi**, dan muat lebih banyak untuk melihat yang lebih lama. Perubahan otomatis ditampilkan sebagai dilakukan oleh Konfersi.

@@ -4,10 +4,10 @@ description: Ubah detail pribadi dan organisasi, foto, serta preferensi, hubungk
 tags: [profil, akun, foto, sampul, bahasa, tema, organisasi, hapus akun]
 related: [account/security, using-konfersi/organizations, getting-started/create-account]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
-Buka **Profil & Pengaturan → Profil Saya** di menu samping Console. Profil Anda dipakai bersama di seluruh Konfersi: Console, Lab, dan layanan Konfersi lainnya.
+Buka **Profil & Pengaturan → Profil Saya** di menu samping Console. Profil Anda dipakai bersama di seluruh Konfersi: Console dan layanan Konfersi lainnya.
 
 ## Foto
 
@@ -62,4 +62,4 @@ Pilih **Hapus Akun**, ketik `HAPUS AKUN SAYA` (atau `DELETE MY ACCOUNT` jika Con
 1. Pilih tautan itu dalam **24 jam** untuk menjadwalkan penghapusan. Akun Anda langsung dinonaktifkan.
 2. Data Anda dihapus permanen **30 hari** kemudian.
 
-Proyek yang Anda buat akan tidak memiliki pemilik. [Hubungi support](../support/contact-support.md) untuk memindahkannya terlebih dahulu, atau untuk memulihkan akun jika Anda tidak sengaja menghapusnya.
+[Hubungi support](../support/contact-support.md) untuk memulihkan akun jika Anda tidak sengaja menghapusnya.

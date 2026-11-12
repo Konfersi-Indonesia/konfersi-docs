@@ -4,7 +4,7 @@ description: Jelajahi marketplace kursus, daftar kursus langsung atau mandiri, b
 tags: [kursus, pelatihan, marketplace, daftar, tiket, webinar, pelajaran, progres]
 related: [billing/payments, billing/order-cart-and-transactions, using-konfersi/certificates, using-konfersi/organizations/shared-projects-and-courses]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
 Konfersi menyelenggarakan kursus langsung dan mandiri. Anda menemukannya di menu **Kursus** pada menu samping Console:
@@ -27,17 +27,21 @@ Buka kursus untuk melihat deskripsi, **jadwal** (waktu ditampilkan dalam zona wa
 
 ## Mendaftar
 
-1. Di halaman kursus, pilih tiket lalu pilih **Daftar**.
-2. Periksa data peserta. Data ini diisi dari profil Anda, dan konfirmasi dikirim ke email yang tercantum.
-3. Isi kolom lain yang diminta kursus. Jika kursus meminta **Dokumen**, unggah foto JPG, PNG, atau WebP untuk masing-masing; foto dikompres hingga di bawah 2 MB sebelum diunggah.
-4. Periksa ringkasan, lalu:
-   - **Daftar gratis** untuk tiket gratis, atau
-   - **Lanjut ke pembayaran** untuk membayar sekarang, atau
+1. Di halaman kursus, pilih tiket lalu pilih **Daftar**. Untuk tiket berbayar, Anda juga bisa memilih **Tambah ke keranjang** untuk menyimpannya di [Keranjang Pesanan](../billing/order-cart-and-transactions.md) dan membayar nanti.
+2. Di halaman pendaftaran, periksa **Tiket** yang Anda pilih.
+3. Periksa data **Peserta**. Data ini diisi dari profil Anda, dan konfirmasi dikirim ke email yang tercantum.
+4. Isi kolom lain yang diminta kursus. Jika kursus meminta **Dokumen**, unggah foto JPG, PNG, atau WebP untuk masing-masing; foto dikompres hingga di bawah 2 MB sebelum diunggah.
+5. Untuk tiket berbayar, pilih metode pembayaran di **Pilih Metode Pembayaran**.
+6. Periksa **Ringkasan**: harga tiket, pajak (PPN), dan **Total Keseluruhan**. Total ini masih perkiraan; nominal akhirnya ditetapkan saat pesanan dibuat. Lalu pilih:
+   - **Daftar gratis** untuk tiket gratis. Anda langsung terdaftar dan diarahkan ke **Kursus Saya**.
+   - **Lanjut ke pembayaran** untuk membayar sekarang. Konfersi membuat pesanan Anda dan membukanya di **Pembayaran & Tagihan → Transaksi**, lalu jendela pembayaran terbuka. Lihat [Pembayaran](../billing/payments.md).
    - **Simpan ke keranjang, bayar nanti** untuk menyimpan tiket di [Keranjang Pesanan](../billing/order-cart-and-transactions.md).
 
-Jika Anda sudah terdaftar, atau sudah punya kursi yang menunggu pembayaran, Anda tidak bisa mendaftar lagi di kursus yang sama. Halaman kursus menampilkan **Selesaikan pembayaran** untuk kursi yang sedang menunggu.
+Jika Anda belum mengatur negara, halaman pendaftaran meminta Anda mengisi **Atur negara Anda** sebelum membayar. Negara Anda menentukan mata uang tagihan (lihat [Pembayaran](../billing/payments.md#mata-uang-tagihan-anda)).
 
-Kursi berbayar ditahan sampai batas waktu pembayaran yang tertera di kursus dan di **Kursus Saya**. Kursus dibayar tersendiri, terpisah dari paket dan add-on Lab. Lihat [Pembayaran](../billing/payments.md).
+Jika Anda sudah terdaftar, atau sudah punya kursi yang menunggu pembayaran, Anda tidak bisa mendaftar lagi di kursus yang sama. Halaman kursus menampilkan **Selesaikan pembayaran** untuk kursi yang sedang menunggu; tombol ini membuka pesanannya agar Anda bisa membayar.
+
+Kursi berbayar ditahan sampai batas waktu pembayaran yang tertera di kursus dan di **Kursus Saya**. Anda bisa membayar satu kursus dari halaman pendaftarannya, atau membayar beberapa tiket kursus yang tersimpan sekaligus dari Keranjang Pesanan.
 
 ## Kursus Saya
 
@@ -54,11 +58,11 @@ Jika Anda terdaftar di kursus yang materinya sudah tersedia online, pendaftaran 
 
 Setelah Anda terdaftar, tautan **Gabung pertemuan** dan **Gabung komunitas** muncul di sini begitu tim kursus membagikannya; tautan ini juga dikirim lewat email sebelum kursus dimulai. Anda juga bisa menyalin tautan pertemuan, misalnya untuk ditambahkan ke kalender.
 
-Untuk pengembalian dana, lihat [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md).
+Untuk pertanyaan seputar pengembalian dana, [hubungi tim bantuan](../support/contact-support.md) dengan menyertakan ID pesanan Anda.
 
 ## Ikuti pelajaran
 
-Kursus yang pelajarannya sudah online dibuka di pemutar pelajaran. Buka **Courses → Kursus Saya**, lalu pilih **Mulai belajar**, **Lanjutkan belajar**, atau **Tinjau materi** pada pendaftaran berstatus **Terdaftar**. Pemutar langsung membuka pelajaran pertama yang belum Anda selesaikan.
+Kursus yang pelajarannya sudah online dibuka di pemutar pelajaran. Buka **Kursus → Kursus Saya**, lalu pilih **Mulai belajar**, **Lanjutkan belajar**, atau **Tinjau materi** pada pendaftaran berstatus **Terdaftar**. Pemutar langsung membuka pelajaran pertama yang belum Anda selesaikan.
 
 - **Bagian atas** menampilkan judul kursus, progres Anda dalam bentuk **x dari y materi selesai** beserta persentase dan bilah progres, serta **Kursus saya** untuk kembali.
 - **Daftar pelajaran** dikelompokkan per topik. Tanda centang berarti pelajaran sudah selesai, gembok berarti pelajaran belum terbuka untuk Anda, dan tanda tanya menandai langkah kuis. Pilih pelajaran untuk membukanya.

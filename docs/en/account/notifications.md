@@ -2,12 +2,12 @@
 title: Notifications
 description: Read your Console notifications and choose, per category, what reaches you in the Console and what is also sent by email.
 tags: [notifications, email, preferences, bell, inbox, account]
-related: [account/profile, account/security, using-konfersi/project-sharing]
+related: [account/profile, account/security, using-konfersi/certificates]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
-Konfersi tells you about things that need you: payments, course enrolments, invitations, replies to your questions and support tickets, finished Lab jobs and changes to your account. You see them in the Console, and for most categories you also get an email.
+Konfersi tells you about things that need you: payments, course enrolments, invitations, requests to see your public profile, replies to your questions and support tickets, and changes to your account. You see them in the Console, and for most categories you also get an email.
 
 ## The bell
 
@@ -34,14 +34,13 @@ Each switch is saved the moment you flip it; there's no Save button. Your choice
 
 | Category | What it covers | Email when you start |
 |---|---|---|
-| **Projects** | Creating, updating, and deleting a project | Off |
 | **Payments** | Successful payments, failures, expirations, cancellations, and refunds | On |
 | **Courses** | Enrollment, payment reminders, confirmations, and refunds. Includes **Your certificate is ready** | On |
-| **Invitations** | Project and organization invitations, and when someone joins | On |
+| **Invitations** | Organization invitations, and when someone joins | On |
 | **Community** | Answers, accepted answers, and comments on your questions | Off |
 | **Organizations** | Join requests, role changes, new members, and domain verification | On |
 | **Support** | When a ticket is received, replied to, or changes status | On |
-| **Lab** | When a planning, analysis, risk, or report job finishes or fails. Data downloads stay quiet | Off |
+| **Profile** | Requests to see your [public profile](../using-konfersi/public-profile.md)'s on-request fields, and decisions on your requests | On |
 | **Security** | Password and profile changes in the Console | On, can't be turned off |
 
 **In app** is on for every category to start with.
@@ -50,10 +49,10 @@ Each switch is saved the moment you flip it; there's no Save button. Your choice
 
 Some email is needed to keep your account safe and usable, so you can't turn it off: sign-in codes and links, email verification, password resets and account recovery. The **Security** row shows a lock instead of an **Email** switch (**Account security email always sends**).
 
-If someone invites you to a project or an organization before you have a Konfersi account, you still get the invitation email.
+If someone invites you to an organization before you have a Konfersi account, you still get the invitation email.
 
 ## Related
 
-- [Share a project](../using-konfersi/project-sharing.md): the invitation, joined and left notifications.
+- [Members & invitations](../using-konfersi/organizations/members-and-invitations.md): organization invitations.
 - [Certificates](../using-konfersi/certificates.md): the certificate-ready notification.
 - [Your profile](profile.md) and [Security](security/index.md).

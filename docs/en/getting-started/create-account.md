@@ -2,12 +2,12 @@
 title: Create an account
 description: Sign up for Konfersi, verify your email address and complete your profile in a few minutes.
 tags: [account, sign-up, registration, onboarding]
-related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/console-projects]
+related: [getting-started/sign-in, legal/terms, legal/privacy, using-konfersi/courses]
 status: published
-updated: 2026-10-09
+updated: 2026-11-12
 ---
 
-One Konfersi account opens the Console, Lab and every Konfersi data service. Setting it up takes four short steps: create the account, verify your email, complete your profile, and start exploring.
+One Konfersi account opens the Console and every other Konfersi app. Setting it up takes four short steps: create the account, verify your email, complete your profile, and find your first course.
 
 ## Before you start
 
@@ -29,7 +29,7 @@ Signing up means you accept the [Terms of Service](../legal/terms.md) and the [P
 
 You'll see a **Check your inbox** screen confirming the address we sent the verification link to.
 
-<scalar-callout type="neutral">Starting from the Konfersi website? Select **Sign up** in the top bar, **Create free account** on the home page, or **Get started** on a plan on the [Pricing](../billing/plans-and-pricing.md#see-plans-on-the-konfersi-website) page. Each one opens the **Create Account** page directly. When you verify your email in the same browser, sign in and finish your profile, you return to the page you started from instead of the Console home.</scalar-callout>
+<scalar-callout type="neutral">Starting from the Konfersi website? Select **Sign up** in the top bar or **Create free account** on the home page. Each one opens the **Create Account** page directly. When you verify your email in the same browser, sign in and finish your profile, you return to the page you started from instead of the Console home.</scalar-callout>
 
 ### Sign up with a provider instead
 
@@ -78,9 +78,13 @@ When you see **You're all set**, Konfersi takes you to the Console after a few s
 
 ![Step 1 of the Complete Profile form](../../../assets/screenshots/en/accounts-complete-profile.png)
 
-## Step 4: Start exploring
+## Step 4: Find a course
 
-The Console opens with a short welcome guide. You can take a tour, set up your profile, or create your first project. Continue with [Console & projects](../using-konfersi/console-projects.md).
+1. In the Console side menu, open **Courses → Marketplace**.
+2. Open a course to see its schedule, instructor and tickets.
+3. Choose a ticket and select **Enroll**.
+
+See [Courses](../using-konfersi/courses.md) for the full enrolment steps, and [Payments](../billing/payments.md) for how paying works.
 
 ## Troubleshooting
 
@@ -101,5 +105,5 @@ Still stuck? [Contact support](../support/contact-support.md).
 ## Related
 
 - [Sign in](sign-in.md)
-- [Plans & pricing](../billing/plans-and-pricing.md)
+- [Courses](../using-konfersi/courses.md)
 - [Privacy Policy](../legal/privacy.md)

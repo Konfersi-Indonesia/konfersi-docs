@@ -1,10 +1,10 @@
 ---
 title: Keamanan
-description: Pilih dan urutkan cara masuk Anda — kode lewat email, aplikasi autentikator, passkey — dan kelola perangkat terhubung.
+description: Pilih dan urutkan cara masuk Anda — kode lewat email, aplikasi autentikator, passkey — dan ubah kata sandi Anda.
 tags: [keamanan, masuk, verifikasi dua langkah, 2fa, mfa, passkey, autentikator, totp, tanpa kata sandi]
-related: [account/security/connected-devices, account/profile, getting-started/sign-in]
+related: [account/profile, getting-started/sign-in, trust/security]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Buka **Profil & Pengaturan → Keamanan** di menu samping Console.
@@ -39,8 +39,6 @@ Gunakan tanda panah di samping setiap cara untuk menaikkan atau menurunkannya. C
 
 Untuk mengubah kata sandi, buka **Profil Saya → Ubah Kata Sandi**. Akun yang hanya masuk lewat Google, GitHub, atau Microsoft tidak memiliki kata sandi Konfersi.
 
-## Perangkat terhubung
+## Ada yang mencurigakan?
 
-Editor kode yang masuk lewat ekstensi Konfersi Lab tercantum di **Perangkat terhubung**. Lihat [Perangkat terhubung](connected-devices.md).
-
-Jika Anda melihat login, perangkat, atau lokasi yang tidak dikenal, putuskan koneksinya lalu ganti kata sandi Anda.
+Jika Anda melihat login atau perubahan akun yang tidak Anda kenali, segera ganti kata sandi lalu [hubungi tim bantuan](../../support/contact-support.md).

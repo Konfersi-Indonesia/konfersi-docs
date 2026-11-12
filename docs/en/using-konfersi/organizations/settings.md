@@ -1,10 +1,10 @@
 ---
 title: Organization settings
-description: For owners — edit the organization's profile, verify email domains, choose how people join, approve requests, set up single sign-on and review activity.
+description: For owners — edit the organization's profile, choose the billing manager, verify email domains, choose how people join, approve requests, set up single sign-on and review activity.
 tags: [organization, owner, settings, domain, dns, sso, openid connect, join request, audit]
 related: [using-konfersi/organizations, using-konfersi/organizations/members-and-invitations, account/profile]
 status: published
-updated: 2026-10-01
+updated: 2026-11-12
 ---
 
 Only owners see **Settings** and **Activity** in an [organization](index.md).
@@ -14,6 +14,12 @@ Only owners see **Settings** and **Activity** in an [organization](index.md).
 Under **Settings → Profile**, owners edit the organization's **Name**, **Website**, **Type**, **Sector**, **Size**, **Location** and **Description**, then select **Save**. On the organization's page header, owners can also add or change the logo and header image.
 
 These details are shown to members and on invitations. Name, website, type, sector, size and location also appear on the profile of every member who uses the organization's details, and update there when you save. See [Your profile](../../account/profile.md#organization-information).
+
+## Billing manager
+
+The **billing manager** is the one member who buys [course seats](shared-projects-and-courses.md) for the organization. By default it's the earliest owner, and if the billing manager leaves, the role passes to the earliest remaining owner.
+
+To change it, choose a member under **Billing manager** and confirm with **Change billing manager**. New purchases for the organization are then priced in the new billing manager's billing currency; orders already placed keep their price.
 
 ## Email domains and joining rules
 
@@ -74,4 +80,4 @@ The saved client secret is never shown again. Leave the field unchanged to keep 
 
 ## Activity
 
-**Activity** is a permanent record of changes to the organization: members invited, joining, leaving or changing roles; domains added, verified or lapsed; single sign-on changes and sign-ins; projects shared or unshared; and profile edits. Filter it by **Members**, **Domains**, **Sign-in**, **Projects** or **Organization**, and select **Load more** to go further back. Automatic changes are shown as made by Konfersi.
+**Activity** is a permanent record of changes to the organization: members invited, joining, leaving or changing roles; domains added, verified or lapsed; single sign-on changes and sign-ins; and profile edits. Filter it by **Members**, **Domains**, **Sign-in** or **Organization**, and select **Load more** to go further back. Automatic changes are shown as made by Konfersi.
