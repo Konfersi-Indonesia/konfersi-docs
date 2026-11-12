@@ -78,7 +78,7 @@
                   },
                   "/shared-projects-and-courses": {
                     "type": "page",
-                    "title": "Shared projects & courses",
+                    "title": "Shared courses",
                     "icon": "phosphor/regular/folders",
                     "filepath": "docs/en/using-konfersi/organizations/shared-projects-and-courses.md"
                   },
@@ -500,7 +500,7 @@
                   },
                   "/shared-projects-and-courses": {
                     "type": "page",
-                    "title": "Proyek & kursus bersama",
+                    "title": "Kursus bersama",
                     "icon": "phosphor/regular/folders",
                     "filepath": "docs/id/using-konfersi/organizations/shared-projects-and-courses.md"
                   },

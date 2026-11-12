@@ -4,10 +4,19 @@ description: Perubahan pada setiap rilis Dokumentasi Konfersi, dari yang terbaru
 tags: [catatan rilis, changelog, rilis, versi]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-10-10
+updated: 2026-11-12
 ---
 
 Setiap rilis Dokumentasi Konfersi memiliki nomor versi. Versi yang tampil di sidebar dokumentasi adalah rilis yang sedang Anda baca. Rilis yang lebih baru ditampilkan di bagian atas halaman ini.
+
+## 1.4.0 — 12 November 2026
+
+**Diperbarui**
+
+- [Kursus](../using-konfersi/courses.md), [Pembayaran](../billing/payments.md), dan [Keranjang pesanan & transaksi](../billing/order-cart-and-transactions.md): cara mendaftar dan membayar kursus saat ini. Pesanan kursus dibuka di Transaksi dan langsung menuju pembayaran; mata uang penagihan, harga per mata uang, dan pajak kini dijelaskan di Pembayaran.
+- [Kursus bersama](../using-konfersi/organizations/shared-projects-and-courses.md) dan [Pengaturan organisasi](../using-konfersi/organizations/settings.md): kursi kursus yang dibeli oleh pengelola penagihan organisasi dan diberikan kepada anggota.
+- [Membuat akun](../getting-started/create-account.md), [Masuk](../getting-started/sign-in.md), [Apa itu Konfersi?](../getting-started/what-is-konfersi.md), [Produk & layanan](../getting-started/products-and-surfaces.md), serta halaman akun, organisasi, dukungan, dan FAQ: ditulis ulang untuk Konfersi Accounts dan Console.
+- Halaman legal yang berlaku adalah versi yang berlaku sejak 27 September 2026.
 
 ## 1.3.0 — 10 Oktober 2026
 

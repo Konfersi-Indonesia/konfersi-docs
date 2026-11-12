@@ -4,10 +4,19 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-10-10
+updated: 2026-11-12
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.4.0 — 12 November 2026
+
+**Updated**
+
+- [Courses](../using-konfersi/courses.md), [Payments](../billing/payments.md) and [Order cart & transactions](../billing/order-cart-and-transactions.md): how you enrol in and pay for a course today. Course orders open in Transactions and go straight to payment; the billing currency, prices per currency and tax are now explained in Payments.
+- [Shared courses](../using-konfersi/organizations/shared-projects-and-courses.md) and [Organization settings](../using-konfersi/organizations/settings.md): course seats bought by an organization's billing manager and given to members.
+- [Create an account](../getting-started/create-account.md), [Sign in](../getting-started/sign-in.md), [What is Konfersi?](../getting-started/what-is-konfersi.md), [Products & surfaces](../getting-started/products-and-surfaces.md), the account, organization, support and FAQ pages: rewritten around Konfersi Accounts and the Console.
+- The legal pages in force are the versions effective 27 September 2026.
 
 ## 1.3.0 — 10 October 2026
 
