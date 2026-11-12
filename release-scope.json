@@ -1,0 +1,19 @@
+{
+  "$comment": "Pages kept out of releases (the uat and main branches and their vX.Y.Z tags). stg publishes everything; `node scripts/release-scope.mjs apply` marks these pages status: draft on a release branch, and `validate.mjs --release` (CI on uat, main and release tags) fails if one is published there. An entry ending in '/' covers that folder and its overview page. Remove an entry when its product is released.",
+  "hide": [
+    { "slug": "lab/", "why": "Lab platform not released" },
+    { "slug": "using-konfersi/lab-workspace", "why": "Lab platform not released" },
+    { "slug": "using-konfersi/console-projects", "why": "Lab projects not released" },
+    { "slug": "using-konfersi/project-sharing", "why": "Lab projects not released" },
+    { "slug": "using-konfersi/console-guides", "why": "Lab onboarding" },
+    { "slug": "using-konfersi/mission-planning", "why": "Mission Planning not released" },
+    { "slug": "using-konfersi/risk-assessment", "why": "Risk Assessment not released" },
+    { "slug": "using-konfersi/metocean-data-sources", "why": "Lab data not released" },
+    { "slug": "using-konfersi/api-and-integrations", "why": "developer API not released" },
+    { "slug": "using-konfersi/ai-assistants-mcp", "why": "MCP not released" },
+    { "slug": "account/security/connected-devices", "why": "Lab extension not released" },
+    { "slug": "billing/plans-and-pricing", "why": "Lab plans not released" },
+    { "slug": "billing/refunds-and-cancellation", "why": "refund policy pending legal review" },
+    { "slug": "legal/ai-and-metocean-disclaimer", "why": "Lab and metocean outputs not released" }
+  ]
+}

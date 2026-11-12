@@ -164,6 +164,25 @@ The `legal/*` pages are drafted from the facts in the internal "TnC / legal chec
 - Apps link to them (`stable-slugs.json`), so they must stay `status: published`; the validator fails otherwise.
 - Draft a substantial rewrite on a branch. When it is ready, bump `updated`, update the effective-date callout, and note the change in the changelog.
 
+## Release scope
+
+`stg` publishes every page, including products that are not released yet. `release-scope.json` lists the pages a
+release leaves out (an entry ending in `/` covers a whole folder), each with the reason.
+
+- On the release branches (`uat`, `main`) those pages are `status: draft`, so the backend never publishes them.
+  `node scripts/release-scope.mjs apply` sets them; `node scripts/release-scope.mjs list` shows their status.
+- CI validates `uat`, `main`, release tags and PRs into `uat` / `main` with `validate.mjs --release`. It fails when a
+  page in the scope is published there, or when a published page still has open `review` items (unapproved legal
+  text). Links to a page left out of the release are warnings: the backend renders them as plain text.
+- A later `stg` → `uat` merge keeps those drafts unless `stg` changed the same lines; if one comes back published,
+  CI fails and `apply` fixes it.
+- To release a product's docs, remove its entries from `release-scope.json` on `stg`, then promote. On `uat`,
+  set the pages back to `status: published` in the same promotion.
+- Apps must not link to a left-out page in a released build (`stable-slugs.json` keys in the scope are warned about).
+
+Legal rewrites are drafted on their own branch (version 2 lives on `draft/legal-v2`) and reach `stg` only after legal
+approval, so a release never carries unapproved legal text.
+
 ## Versions
 
 The release number is `version` in `package.json` (`MAJOR.MINOR.PATCH`). The backend reads it at sync and the docs
@@ -181,7 +200,8 @@ Release tags are **`vX.Y.Z`** (no prefix, no suffix) and must equal `v` + `packa
 
 1. Bump `version` in `package.json`: patch for fixes and wording, minor for new pages or sections, major for restructures or renamed slugs.
 2. Add a `## <version> — <date>` entry at the top of `docs/<locale>/releases/changelog.md`, in every locale. The validator fails if the current version has no entry.
-3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`.
+3. Merge to `stg` (stg docs), `stg` → `uat` (uat docs), then `uat` → `main`. On the `stg` → `uat` promotion, run
+   `node scripts/release-scope.mjs apply` and commit the result (see **Release scope**).
 4. On git.konfersi.com, publish a release on `main` with tag `v<version>`. CI checks it, mirrors the tag and syncs `DOCS_SYNC_ENVS_RELEASE`; the release pipeline sets production's `DOCS_SOURCE_REF` to the tag.
 
 ### Open legal clauses

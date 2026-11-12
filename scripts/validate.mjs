@@ -7,11 +7,21 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname, relative, resolve, posix } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { splitFrontmatter } from './lib/frontmatter.mjs'
+import { loadScope, hiddenBy } from './release-scope.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const errors = []
 const warnings = []
 const fail = (msg) => errors.push(msg)
+// Release mode (uat, main and vX.Y.Z tags): the pages in release-scope.json must be drafts there, and nothing
+// still under legal review may be published. stg runs without it and publishes everything.
+const RELEASE = process.argv.includes('--release') || process.env.DOCS_RELEASE === '1'
+let scope = []
+try {
+  scope = loadScope(ROOT)
+} catch (err) {
+  fail(String(err.message ?? err))
+}
 
 const config = JSON.parse(readFileSync(join(ROOT, 'scalar.config.json'), 'utf8'))
 const ext = config['x-konfersi']
@@ -54,6 +64,11 @@ for (const locale of others) {
   const slugs = new Set((pagesByLocale[locale] ?? []).map((p) => p.slug))
   for (const s of baseSlugs) if (!slugs.has(s)) fail(`[${locale}] missing translation for "${s}"`)
   for (const s of slugs) if (!baseSlugs.has(s)) fail(`[${locale}] "${s}" has no ${base} counterpart`)
+}
+
+// ── Release scope entries name real pages ─────────────────
+for (const entry of scope) {
+  if (![...baseSlugs].some((slug) => hiddenBy(slug, [entry]))) fail(`release-scope.json: "${entry}" matches no page`)
 }
 
 // ── Stable slugs used by apps ─────────────────────────────
@@ -110,6 +125,12 @@ for (const locale of locales) {
     }
     if (data.status && !STATUSES.has(data.status)) fail(`${where}: status must be draft|published`)
     statusBySlug[locale][page.slug] = data.status
+    if (RELEASE && data.status !== 'draft' && hiddenBy(page.slug, scope)) {
+      fail(`${where}: out of the release scope (release-scope.json) but published; run node scripts/release-scope.mjs apply`)
+    }
+    if (RELEASE && data.status !== 'draft' && (data.review ?? []).length) {
+      fail(`${where}: still under review (${data.review.join(', ')}); a release may only publish approved text`)
+    }
     if (data.updated && !/^\d{4}-\d{2}-\d{2}$/.test(data.updated)) fail(`${where}: updated must be YYYY-MM-DD`)
     if (data.description && data.description.length > 200) warnings.push(`${where}: description over 200 chars`)
     for (const key of ['tags', 'related', 'review']) {
@@ -119,7 +140,7 @@ for (const locale of locales) {
       if (!slugSet.has(rel)) fail(`${where}: related "${rel}" does not exist`)
       else edges.push({ locale, where, from: page.slug, to: rel, kind: 'related' })
     }
-    if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length) {
+    if (page.slug.startsWith('legal/') && data.status === 'draft' && !(data.review ?? []).length && !hiddenBy(page.slug, scope)) {
       fail(`${where}: draft legal pages must list open clause IDs in "review"`)
     }
     if (/^#\s/m.test(body)) fail(`${where}: do not use an H1 in the body; the title comes from frontmatter`)
@@ -150,13 +171,17 @@ for (const locale of locales) {
 // ── Drafts are never published, so nothing public may point at one ──
 for (const { locale, where, from, to, kind } of edges) {
   if (statusBySlug[locale][to] === 'draft' && statusBySlug[locale][from] !== 'draft') {
-    fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
+    // A page left out by the release scope: the backend renders the link as plain text, so it is only a warning.
+    if (RELEASE && hiddenBy(to, scope)) warnings.push(`${where}: ${kind} to "${to}", left out of this release (shown as plain text)`)
+    else fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
   }
 }
 for (const [name, slug] of Object.entries(stable)) {
   if (name.startsWith('$') || slug === '') continue
   for (const locale of locales) {
-    if (statusBySlug[locale]?.[slug] === 'draft') fail(`stable-slugs.json: ${name} → "${slug}" is a draft in ${locale}; apps link to it, so it must be published`)
+    if (statusBySlug[locale]?.[slug] !== 'draft') continue
+    if (RELEASE && hiddenBy(slug, scope)) warnings.push(`stable-slugs.json: ${name} → "${slug}" is left out of this release; apps must not link to it in released builds`)
+    else fail(`stable-slugs.json: ${name} → "${slug}" is a draft in ${locale}; apps link to it, so it must be published`)
   }
 }
 
@@ -192,4 +217,4 @@ if (errors.length) {
   process.exit(1)
 }
 const total = Object.values(pagesByLocale).reduce((n, p) => n + p.length, 0)
-console.log(`ok  ${total} pages across ${locales.join(', ')}`)
+console.log(`ok  ${total} pages across ${locales.join(', ')}${RELEASE ? ` (release mode, ${scope.length} scope entries)` : ''}`)
