@@ -9,6 +9,12 @@ updated: 2026-11-12
 
 Setiap rilis Dokumentasi Konfersi memiliki nomor versi. Versi yang tampil di sidebar dokumentasi adalah rilis yang sedang Anda baca. Rilis yang lebih baru ditampilkan di bagian atas halaman ini.
 
+## 1.4.1 — 12 November 2026
+
+**Diperbarui**
+
+- Bagian penagihan di sidebar kini bernama **Tagihan**.
+
 ## 1.4.0 — 12 November 2026
 
 **Diperbarui**

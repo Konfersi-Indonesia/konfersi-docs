@@ -9,6 +9,12 @@ updated: 2026-11-12
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
 
+## 1.4.1 — 12 November 2026
+
+**Updated**
+
+- The billing section of the sidebar is now called **Billing**.
+
 ## 1.4.0 — 12 November 2026
 
 **Updated**
