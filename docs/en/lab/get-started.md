@@ -3,7 +3,7 @@ title: Get started with Lab
 description: What Konfersi Lab is, what you need to use it, how to open a project, and a tour of the workspace.
 tags: [lab, get started, workspace, browser, vs code, antigravity, quotas]
 related: [using-konfersi/lab-workspace, lab/desktop, lab/points, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

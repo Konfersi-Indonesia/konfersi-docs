@@ -3,7 +3,7 @@ title: Pengembalian dana & pembatalan
 description: Cara membatalkan pesanan Konfersi dan mengajukan pengembalian dana untuk pembelian kursus maupun platform.
 tags: [tagihan, pengembalian-dana, refund, pembatalan, kursus, paket]
 related: [legal/terms, billing/payments, support/contact-support]
-status: published
+status: draft
 updated: 2026-09-27
 ---
 

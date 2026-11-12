@@ -3,7 +3,7 @@ title: Desktop editors
 description: Use Konfersi Lab inside VS Code or Antigravity on your computer with the Konfersi Lab extension.
 tags: [lab, vs code, antigravity, cursor, desktop, extension]
 related: [lab/desktop/install-the-extension, lab/desktop/sign-in-and-updates, lab/get-started]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

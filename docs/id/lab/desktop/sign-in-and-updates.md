@@ -3,7 +3,7 @@ title: Masuk & pembaruan
 description: Hubungkan ekstensi desktop ke akun Konfersi, ganti proyek, jaga ekstensi tetap terbaru, dan atur pengaturannya.
 tags: [lab, masuk, perangkat, pembaruan, pengaturan, vs code, antigravity]
 related: [lab/desktop, lab/desktop/install-the-extension, account/security/connected-devices]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

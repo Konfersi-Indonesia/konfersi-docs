@@ -3,7 +3,7 @@ title: Plans & pricing
 description: The Konfersi plan tiers, how plans and add-ons attach to Console projects, and where to see current prices.
 tags: [billing, plans, pricing, add-ons, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

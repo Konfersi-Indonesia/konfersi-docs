@@ -3,7 +3,7 @@ title: Memasang ekstensi
 description: Unduh ekstensi Konfersi Lab dari Console dan pasang di VS Code atau Antigravity.
 tags: [lab, pasang, vsix, vs code, antigravity, ekstensi]
 related: [lab/desktop, lab/desktop/sign-in-and-updates, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

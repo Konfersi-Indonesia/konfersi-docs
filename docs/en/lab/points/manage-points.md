@@ -3,7 +3,7 @@ title: Manage points
 description: Rename, move, reorder and delete observation points, show them on the map, and look up the water depth.
 tags: [lab, points, rename, coordinates, depth, bathymetry, delete, reorder]
 related: [lab/points, lab/points/process-points]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

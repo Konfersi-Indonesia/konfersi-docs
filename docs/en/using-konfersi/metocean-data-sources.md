@@ -3,7 +3,7 @@ title: Metocean data sources
 description: The global datasets Konfersi calibrates and validates against, ERA5, CMEMS, FES2022 and CMIP6, and how to credit them.
 tags: [data, era5, cmems, fes2022, cmip6, attribution]
 related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

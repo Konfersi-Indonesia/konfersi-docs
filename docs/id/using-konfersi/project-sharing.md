@@ -3,7 +3,7 @@ title: Membagikan proyek
 description: Undang asisten ke proyek Console, kelola kursi asisten dan undangan yang menunggu, terima undangan, dan keluar dari proyek.
 tags: [proyek, berbagi, kolaborasi, undangan, asisten, kursi, keluar]
 related: [using-konfersi/console-projects, using-konfersi/organizations/shared-projects-and-courses, account/notifications]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

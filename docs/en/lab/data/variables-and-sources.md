@@ -3,7 +3,7 @@ title: Variables & sources
 description: Every metocean variable Konfersi Lab acquires for a point — provider, dataset, resolution and period — and how to download it as NetCDF.
 tags: [lab, variables, sources, cmems, era5, copernicus, fes2022, wind, waves, wind sea, swell, currents, sea surface height, sst, salinity, water level, total water level, netcdf, resolution, caveats]
 related: [lab/data, lab/analysis/reading-results, using-konfersi/metocean-data-sources, lab/points/process-points]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

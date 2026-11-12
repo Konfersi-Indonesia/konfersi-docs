@@ -3,7 +3,7 @@ title: Penafian AI & metocean
 description: Keluaran Konfersi, termasuk hasil Mission Planning dan teks yang dihasilkan AI, adalah alat bantu keputusan, bukan nasihat teknik, navigasi, atau AMDAL tersertifikasi.
 tags: [legal, penafian, ai, metocean, mission-planning]
 related: [legal/terms, legal/acceptable-use, legal/privacy, support/contact-support]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

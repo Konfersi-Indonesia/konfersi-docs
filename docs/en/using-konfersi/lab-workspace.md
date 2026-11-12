@@ -3,7 +3,7 @@ title: Lab workspace
 description: Open a Konfersi project in Lab, the metocean workbench, in your browser or in VS Code and Antigravity, and find the Lab guides.
 tags: [lab, workspace, vs-code, antigravity, extension]
 related: [lab/get-started, lab/desktop, using-konfersi/console-projects, using-konfersi/metocean-data-sources]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

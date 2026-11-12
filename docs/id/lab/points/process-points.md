@@ -3,7 +3,7 @@ title: Memproses titik
 description: Unduh dan analisis data metocean titik observasi, pantau kemajuannya di Proses dan Log, serta batalkan, mulai ulang, atau proses ulang.
 tags: [lab, proses, akuisisi, unduh, analisis, proses, log, proses ulang, batal]
 related: [lab/data, lab/data/variables-and-sources, lab/points, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

@@ -3,7 +3,7 @@ title: Data validation
 description: Run automated quality control on a point's acquired data — physical range, spikes, flat lines, gaps and completeness — and read the results.
 tags: [lab, validation, qc, quality control, spikes, gaps, completeness, data availability]
 related: [lab/analysis, lab/data/variables-and-sources]
-status: published
+status: draft
 updated: 2026-10-23
 ---
 

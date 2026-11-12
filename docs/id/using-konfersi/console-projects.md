@@ -3,7 +3,7 @@ title: Console & proyek
 description: Membuat, membuka, membagikan, dan mengelola proyek di Konfersi Console, serta membukanya di Lab.
 tags: [console, proyek, paket, kolaborasi]
 related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
-status: published
+status: draft
 updated: 2026-10-11
 ---
 

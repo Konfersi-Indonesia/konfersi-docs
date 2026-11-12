@@ -3,7 +3,7 @@ title: Perangkat terhubung
 description: Lihat editor kode mana yang masuk ke akun Anda lewat Konfersi Lab, ganti namanya, dan putuskan yang tidak Anda kenali.
 tags: [perangkat, keamanan, vs code, cursor, antigravity, ekstensi lab, keluar]
 related: [account/security, using-konfersi/lab-workspace]
-status: published
+status: draft
 updated: 2026-10-01
 ---
 

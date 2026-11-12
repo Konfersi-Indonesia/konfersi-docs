@@ -3,7 +3,7 @@ title: Editor desktop
 description: Pakai Konfersi Lab di VS Code atau Antigravity di komputer Anda dengan ekstensi Konfersi Lab.
 tags: [lab, vs code, antigravity, cursor, desktop, ekstensi]
 related: [lab/desktop/install-the-extension, lab/desktop/sign-in-and-updates, lab/get-started]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

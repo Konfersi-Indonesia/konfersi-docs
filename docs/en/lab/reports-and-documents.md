@@ -3,7 +3,7 @@ title: Reports & project documents
 description: Fill in the project details, briefing, operations and risk assessment in Konfersi Lab, and generate the Metocean Design Basis report as a Word document.
 tags: [lab, report, docx, word, metocean design basis, briefing, risk assessment, planning, project details, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

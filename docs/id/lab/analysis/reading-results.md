@@ -3,7 +3,7 @@ title: Membaca hasil
 description: Cara Lab memproses sebuah titik dan cara membaca setiap analisis, dari statistik, box plot musiman, dan mawar hingga nilai ekstrem, datum pasang surut, dan audit badai.
 tags: [lab, analisis, statistik, box plot, mawar, distribusi gabungan, nilai ekstrem, eva, periode ulang, datum pasang surut, formzahl, audit badai, siklon, kontrol kualitas]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

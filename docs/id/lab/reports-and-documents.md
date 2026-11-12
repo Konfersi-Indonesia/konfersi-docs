@@ -3,7 +3,7 @@ title: Laporan & dokumen proyek
 description: Isi detail proyek, brief, operasi, dan penilaian risiko di Konfersi Lab, lalu buat laporan Metocean Design Basis sebagai dokumen Word.
 tags: [lab, laporan, docx, word, metocean design basis, brief, penilaian risiko, perencanaan, detail proyek, ai]
 related: [lab/analysis, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

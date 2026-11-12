@@ -3,7 +3,7 @@ title: Pemecahan masalah
 description: Arti pesan galat Konfersi Lab dan cara mengatasinya — masuk, akses, kuota, kegagalan pemrosesan, impor, lapisan peta, analisis, dan pembaruan.
 tags: [lab, pemecahan masalah, galat, gagal, kuota, pemrosesan, masuk, tidak merespons]
 related: [lab/faq, lab/points/process-points, support/support-tickets]
-status: published
+status: draft
 updated: 2026-10-11
 ---
 

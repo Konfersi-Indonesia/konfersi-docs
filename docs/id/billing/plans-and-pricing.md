@@ -3,7 +3,7 @@ title: Paket & harga
 description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek Console, serta tempat melihat harga terkini.
 tags: [tagihan, paket, harga, add-on, console]
 related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

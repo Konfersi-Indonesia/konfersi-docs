@@ -3,7 +3,7 @@ title: Pertanyaan umum Lab
 description: Jawaban atas pertanyaan umum tentang Konfersi Lab — akses, editor desktop, titik, lama pemrosesan, sumber data, akurasi, kuota, dan berbagi.
 tags: [lab, faq, pertanyaan]
 related: [lab/get-started, lab/troubleshooting, support/faq]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

@@ -3,7 +3,7 @@ title: Validasi data
 description: Jalankan kontrol kualitas otomatis pada data titik — rentang fisik, lonjakan, nilai datar, celah, dan kelengkapan — dan baca hasilnya.
 tags: [lab, validasi, qc, kontrol kualitas, lonjakan, celah, kelengkapan]
 related: [lab/analysis, lab/data/variables-and-sources]
-status: published
+status: draft
 updated: 2026-10-23
 ---
 

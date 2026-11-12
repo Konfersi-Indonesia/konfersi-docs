@@ -3,7 +3,7 @@ title: Batas proyek
 description: Unggah GeoJSON, KML, KMZ, atau Shapefile dalam ZIP untuk menampilkan area proyek di peta Lab, serta atur warna dan visibilitasnya.
 tags: [lab, batas, geojson, kml, kmz, shapefile, peta, area]
 related: [lab/map, lab/points]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

@@ -3,7 +3,7 @@ title: Lab FAQ
 description: Answers to common questions about Konfersi Lab — access, desktop editors, points, processing time, data sources, accuracy, quotas and sharing.
 tags: [lab, faq, questions]
 related: [lab/get-started, lab/troubleshooting, support/faq]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

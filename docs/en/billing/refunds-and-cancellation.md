@@ -3,7 +3,7 @@ title: Refunds & cancellation
 description: How to cancel a Konfersi order and how to request a refund for a course or platform purchase.
 tags: [billing, refunds, cancellation, courses, plans]
 related: [legal/terms, billing/payments, support/contact-support]
-status: published
+status: draft
 updated: 2026-09-27
 ---
 

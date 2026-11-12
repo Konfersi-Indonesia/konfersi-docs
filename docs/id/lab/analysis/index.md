@@ -3,7 +3,7 @@ title: Analisis & grafik
 description: Setiap analisis Konfersi Lab untuk sebuah titik — deret waktu, statistik, mawar, nilai ekstrem, pasang surut, siklon — dan cara membaca, mengekspor, dan menjelaskan grafiknya.
 tags: [lab, analisis, grafik, statistik, mawar, nilai ekstrem, periode ulang, gev, pot, pasang surut, siklon, ekspor]
 related: [lab/analysis/reading-results, lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

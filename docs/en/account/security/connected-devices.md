@@ -3,7 +3,7 @@ title: Connected devices
 description: See which code editors are signed in to your account through Konfersi Lab, rename them, and disconnect any you don't recognise.
 tags: [devices, security, vs code, cursor, antigravity, lab extension, sign out]
 related: [account/security, using-konfersi/lab-workspace]
-status: published
+status: draft
 updated: 2026-10-01
 ---
 

@@ -3,7 +3,7 @@ title: How data is processed
 description: What happens when you process a point in Konfersi Lab — from the request to Copernicus to the analyses you open.
 tags: [lab, data, processing, pipeline, copernicus, era5, cmems, netcdf]
 related: [lab/data/variables-and-sources, lab/points/process-points, using-konfersi/metocean-data-sources]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

@@ -3,7 +3,7 @@ title: Panduan Console
 description: Panduan sambutan dan tur dasbor di Console untuk mengenal tata letak, mengatur profil, dan membuat proyek pertama Anda.
 tags: [console, onboarding, tur, mulai]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace]
-status: published
+status: draft
 updated: 2026-09-27
 ---
 

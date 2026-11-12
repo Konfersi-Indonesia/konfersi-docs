@@ -3,7 +3,7 @@ title: Sign in & updates
 description: Sign the desktop extension in to your Konfersi account, switch projects, keep the extension up to date and adjust its settings.
 tags: [lab, sign in, device, update, settings, vs code, antigravity]
 related: [lab/desktop, lab/desktop/install-the-extension, account/security/connected-devices]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

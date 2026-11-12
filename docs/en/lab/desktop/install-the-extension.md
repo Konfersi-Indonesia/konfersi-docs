@@ -3,7 +3,7 @@ title: Install the extension
 description: Download the Konfersi Lab extension from the Console and install it in VS Code or Antigravity.
 tags: [lab, install, vsix, vs code, antigravity, extension]
 related: [lab/desktop, lab/desktop/sign-in-and-updates, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

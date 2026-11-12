@@ -3,7 +3,7 @@ title: Penilaian Risiko
 description: Susun register bahaya untuk operasi laut Anda di Konfersi Lab — beri skor risiko, pilih dan tolak kontrol, dan tunjukkan ALARP.
 tags: [risk-assessment, hazid, alarp, mae, controls]
 related: [using-konfersi/mission-planning, using-konfersi/lab-workspace, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

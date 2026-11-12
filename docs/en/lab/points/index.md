@@ -3,7 +3,7 @@ title: Observation points
 description: Add observation points to a project in Konfersi Lab — on the map, by coordinates, or from a CSV, Excel, KML, KMZ, GeoJSON or Shapefile.
 tags: [lab, points, observation points, coordinates, import, csv, excel, kml, geojson, shapefile]
 related: [lab/points/manage-points, lab/points/process-points, lab/map]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

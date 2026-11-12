@@ -3,7 +3,7 @@ title: Console guides
 description: The Console's welcome guide and dashboard tour, which help you learn the layout, set up your profile and create your first project.
 tags: [console, onboarding, tour, getting-started]
 related: [using-konfersi/console-projects, using-konfersi/lab-workspace]
-status: published
+status: draft
 updated: 2026-09-27
 ---
 

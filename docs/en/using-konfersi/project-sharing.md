@@ -3,7 +3,7 @@ title: Share a project
 description: Invite assistants to a Console project, manage assistant seats and pending invitations, accept an invitation and leave a project.
 tags: [projects, sharing, collaboration, invitation, assistant, seats, leave]
 related: [using-konfersi/console-projects, using-konfersi/organizations/shared-projects-and-courses, account/notifications]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

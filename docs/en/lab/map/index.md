@@ -3,7 +3,7 @@ title: Map & layers
 description: Use the Lab project map — basemaps, overlays, live forecasts, shipping traffic, boundaries, cyclone tracks, tide gauges and PNG export.
 tags: [lab, map, layers, overlays, basemap, climatology, forecast, open-meteo, ais, shipping, eez, boundaries, cyclone, ibtracs, tide gauge, uhslc, export, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
-status: published
+status: draft
 updated: 2026-10-23
 ---
 

@@ -3,7 +3,7 @@ title: Variabel & sumber
 description: Setiap variabel metocean yang diambil Konfersi Lab untuk sebuah titik — penyedia, dataset, resolusi, dan periode — serta cara mengunduhnya sebagai NetCDF.
 tags: [lab, variabel, sumber, cmems, era5, copernicus, fes2022, angin, gelombang, wind sea, swell, arus, tinggi muka laut, sst, salinitas, muka air, muka air total, netcdf, resolusi, catatan]
 related: [lab/data, lab/analysis/reading-results, using-konfersi/metocean-data-sources, lab/points/process-points]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

@@ -3,7 +3,7 @@ title: Console & projects
 description: Create, open, share and manage projects in the Konfersi Console, and open them in Lab.
 tags: [console, projects, plans, collaboration]
 related: [using-konfersi/project-sharing, using-konfersi/lab-workspace, billing/plans-and-pricing, using-konfersi/mission-planning]
-status: published
+status: draft
 updated: 2026-10-11
 ---
 

@@ -3,7 +3,7 @@ title: Analyses & charts
 description: Every analysis Konfersi Lab produces for a point — time series, statistics, roses, joint distributions, extreme values, tides and cyclones — and how to read, customise, export and explain the charts.
 tags: [lab, analysis, chart, statistics, rose, extreme value, return period, gev, pot, tides, cyclones, export]
 related: [lab/analysis/reading-results, lab/analysis/data-validation, lab/data, lab/reports-and-documents, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-12
 ---
 

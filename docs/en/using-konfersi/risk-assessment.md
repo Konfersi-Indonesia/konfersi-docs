@@ -3,7 +3,7 @@ title: Risk Assessment
 description: Build a hazard register for your marine operations in Konfersi Lab — score risk, select and reject controls, and demonstrate ALARP.
 tags: [risk-assessment, hazid, alarp, mae, controls]
 related: [using-konfersi/mission-planning, using-konfersi/lab-workspace, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

@@ -3,7 +3,7 @@ title: Ruang kerja Lab
 description: Buka proyek Konfersi di Lab, ruang kerja metocean, di browser atau di VS Code dan Antigravity, dan temukan panduan Lab.
 tags: [lab, ruang kerja, vs-code, antigravity, ekstensi]
 related: [lab/get-started, lab/desktop, using-konfersi/console-projects, using-konfersi/metocean-data-sources]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

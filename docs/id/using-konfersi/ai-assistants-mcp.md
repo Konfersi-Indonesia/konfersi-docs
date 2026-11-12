@@ -3,7 +3,7 @@ title: Gunakan Konfersi dengan asisten AI (MCP)
 description: Hubungkan Claude Code, Claude Desktop, Cursor, dan asisten AI lain ke server MCP Konfersi untuk mencari di dokumentasi dan bekerja dengan proyek metocean Anda.
 tags: [mcp, ai, agen, claude, cursor, api, integrasi]
 related: [using-konfersi/api-and-integrations, using-konfersi/console-projects, lab/analysis, billing/plans-and-pricing]
-status: published
+status: draft
 updated: 2026-10-10
 ---
 

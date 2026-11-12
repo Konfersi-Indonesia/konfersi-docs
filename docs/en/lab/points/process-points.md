@@ -3,7 +3,7 @@ title: Process points
 description: Download and analyse the metocean data of observation points, follow progress in Processes and Logs, and cancel, restart or reprocess.
 tags: [lab, process, acquisition, download, analyse, processes, logs, reprocess, cancel]
 related: [lab/data, lab/data/variables-and-sources, lab/points, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

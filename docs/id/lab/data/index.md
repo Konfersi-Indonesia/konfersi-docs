@@ -3,7 +3,7 @@ title: Cara data diproses
 description: Apa yang terjadi saat Anda memproses titik di Konfersi Lab — dari permintaan ke Copernicus hingga analisis yang Anda buka.
 tags: [lab, data, pemrosesan, alur, copernicus, era5, cmems, netcdf]
 related: [lab/data/variables-and-sources, lab/points/process-points, using-konfersi/metocean-data-sources]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

@@ -3,7 +3,7 @@ title: Use Konfersi with AI assistants (MCP)
 description: Connect Claude Code, Claude Desktop, Cursor and other AI assistants to Konfersi's MCP servers to search the docs and work with your metocean projects.
 tags: [mcp, ai, agents, claude, cursor, api, integrations]
 related: [using-konfersi/api-and-integrations, using-konfersi/console-projects, lab/analysis, billing/plans-and-pricing]
-status: published
+status: draft
 updated: 2026-10-10
 ---
 

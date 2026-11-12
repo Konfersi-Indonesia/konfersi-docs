@@ -3,7 +3,7 @@ title: Mengelola titik
 description: Ganti nama, pindahkan, urutkan, dan hapus titik observasi, tampilkan di peta, dan cari kedalaman air.
 tags: [lab, titik, ganti nama, koordinat, kedalaman, batimetri, hapus, urutan]
 related: [lab/points, lab/points/process-points]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

@@ -3,7 +3,7 @@ title: API dan integrasi
 description: Apa yang bisa Anda hubungkan ke Konfersi saat ini, termasuk asisten AI melalui MCP, serta apa yang akan ditawarkan API publik saat diluncurkan.
 tags: [api, mcp, integrasi, agen, vscode]
 related: [using-konfersi/ai-assistants-mcp, getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
-status: published
+status: draft
 updated: 2026-10-10
 ---
 

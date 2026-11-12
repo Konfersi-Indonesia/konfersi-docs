@@ -3,7 +3,7 @@ title: Troubleshooting
 description: What Konfersi Lab's error messages mean and how to fix them — sign-in, access, quotas, processing failures, imports, map layers, analyses and updates.
 tags: [lab, troubleshooting, errors, failed, quota, processing, sign in, not responding]
 related: [lab/faq, lab/points/process-points, support/support-tickets]
-status: published
+status: draft
 updated: 2026-10-11
 ---
 

@@ -3,7 +3,7 @@ title: Peta & lapisan
 description: Pakai peta proyek di Lab — peta dasar, overlay, prakiraan langsung, lalu lintas kapal, batas, lintasan siklon, stasiun pasut, dan ekspor PNG.
 tags: [lab, peta, lapisan, overlay, peta dasar, klimatologi, prakiraan, open-meteo, ais, kapal, zee, batas, siklon, ibtracs, stasiun pasut, uhslc, ekspor, png]
 related: [lab/map/project-boundaries, lab/points, lab/data/variables-and-sources]
-status: published
+status: draft
 updated: 2026-10-23
 ---
 

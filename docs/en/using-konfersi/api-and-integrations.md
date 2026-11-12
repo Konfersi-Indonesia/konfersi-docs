@@ -3,7 +3,7 @@ title: API and integrations
 description: What you can connect to Konfersi today, including AI assistants over MCP, and what the public API will offer when it launches.
 tags: [api, mcp, integrations, agents, vscode]
 related: [using-konfersi/ai-assistants-mcp, getting-started/products-and-surfaces, lab/desktop, account/security/connected-devices, trust/security]
-status: published
+status: draft
 updated: 2026-10-10
 ---
 

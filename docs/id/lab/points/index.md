@@ -3,7 +3,7 @@ title: Titik observasi
 description: Tambahkan titik observasi ke proyek di Konfersi Lab — di peta, dengan koordinat, atau dari berkas CSV, Excel, KML, KMZ, GeoJSON, atau Shapefile.
 tags: [lab, titik, titik observasi, koordinat, impor, csv, excel, kml, geojson, shapefile]
 related: [lab/points/manage-points, lab/points/process-points, lab/map]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 

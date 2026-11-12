@@ -3,7 +3,7 @@ title: Reading the results
 description: How Lab processes a point and how to read each analysis, from statistics, seasonal boxes and roses to extreme values, tidal datums and the storm audit.
 tags: [lab, analysis, statistics, box plot, rose, wind sea, swell, joint distribution, extreme value, eva, directional, return period, tidal datums, formzahl, total water level, storm audit, cyclones, quality control]
 related: [lab/analysis, lab/data/variables-and-sources, lab/analysis/data-validation, legal/ai-and-metocean-disclaimer]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

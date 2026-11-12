@@ -3,7 +3,7 @@ title: Mulai memakai Lab
 description: Apa itu Konfersi Lab, apa yang Anda perlukan, cara membuka proyek, dan tur ruang kerjanya.
 tags: [lab, mulai, ruang kerja, browser, vs code, antigravity, kuota]
 related: [using-konfersi/lab-workspace, lab/desktop, lab/points, lab/troubleshooting]
-status: published
+status: draft
 updated: 2026-10-09
 ---
 

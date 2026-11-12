@@ -3,7 +3,7 @@ title: Sumber data metocean
 description: Dataset global yang menjadi acuan kalibrasi dan validasi Konfersi, yaitu ERA5, CMEMS, FES2022, dan CMIP6, serta cara mencantumkan sumbernya.
 tags: [data, era5, cmems, fes2022, cmip6, atribusi]
 related: [lab/data/variables-and-sources, lab/analysis/reading-results, using-konfersi/mission-planning, legal/ai-and-metocean-disclaimer, billing/plans-and-pricing]
-status: published
+status: draft
 updated: 2026-10-21
 ---
 

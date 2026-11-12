@@ -3,7 +3,7 @@ title: Project boundaries
 description: Upload a GeoJSON, KML, KMZ or zipped Shapefile to show your project area on the Lab map, and manage its colour and visibility.
 tags: [lab, boundary, geojson, kml, kmz, shapefile, map, area]
 related: [lab/map, lab/points]
-status: published
+status: draft
 updated: 2026-10-02
 ---
 
