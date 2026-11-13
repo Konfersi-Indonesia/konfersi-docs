@@ -4,10 +4,23 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-11-12
+updated: 2026-11-13
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.4.2 — 13 November 2026
+
+**Updated**
+
+- Links to the refund rules now go to [section 12 of the Terms of Service](../legal/terms.md#12-refunds-and-cancellation), the binding refund and cancellation rules. Terms 12.1 now says the practical steps for requesting a refund are available from [support](../support/contact-support.md#billing-and-refunds); the rules themselves are unchanged.
+- Links to pages that are not published yet now show as plain text.
+
+## 1.4.1 — 12 November 2026
+
+**Updated**
+
+- The billing section of the sidebar is now called **Billing**.
 
 ## 1.4.0 — 12 November 2026
 
@@ -43,9 +56,9 @@ Guides for every part of the Console, and docs organised in sub-folders.
 
 - [Organizations](../using-konfersi/organizations/index.md): [members & invitations](../using-konfersi/organizations/members-and-invitations.md), [shared projects & courses](../using-konfersi/organizations/shared-projects-and-courses.md) and [organization settings](../using-konfersi/organizations/settings.md) for owners — email domains, joining rules, join requests, single sign-on and activity.
 - [Courses](../using-konfersi/courses.md) and [Community](../using-konfersi/community.md) (article discussions and Member Q&A).
-- A new Account & security section: [Your profile](../account/profile.md), [Security](../account/security/index.md) and [Connected devices](../account/security/connected-devices.md).
+- A new Account & security section: [Your profile](../account/profile.md), [Security](../account/security/index.md) and Connected devices.
 - [Order cart & transactions](../billing/order-cart-and-transactions.md) and [Support tickets](../support/support-tickets.md).
-- A new Konfersi Lab section: [get started](../lab/get-started.md), [desktop editors](../lab/desktop/index.md) (installing the extension in VS Code and Antigravity, sign-in and updates), [observation points](../lab/points/index.md) and [processing](../lab/points/process-points.md), [map & layers](../lab/map/index.md), [how data is processed](../lab/data/index.md) and [variables & sources](../lab/data/variables-and-sources.md), [analyses & charts](../lab/analysis/index.md), [data validation](../lab/analysis/data-validation.md), [reports](../lab/reports-and-documents.md), [troubleshooting](../lab/troubleshooting.md) and a [Lab FAQ](../lab/faq.md).
+- A new Konfersi Lab section: get started, desktop editors (installing the extension in VS Code and Antigravity, sign-in and updates), observation points and processing, map & layers, how data is processed and variables & sources, analyses & charts, data validation, reports, troubleshooting and a Lab FAQ.
 
 **Updated**
 
@@ -59,8 +72,8 @@ The first public release of the Konfersi Docs, in English and Bahasa Indonesia.
 **Guides**
 
 - [Getting started](../getting-started/what-is-konfersi.md): what Konfersi is, its products, and how to [create an account](../getting-started/create-account.md) and [sign in](../getting-started/sign-in.md).
-- Using Konfersi: [Console guides](../using-konfersi/console-guides.md), [Console & projects](../using-konfersi/console-projects.md), [Lab workspace](../using-konfersi/lab-workspace.md), [Mission Planning](../using-konfersi/mission-planning.md) and [metocean data sources](../using-konfersi/metocean-data-sources.md).
-- Plans & billing: [plans and pricing](../billing/plans-and-pricing.md), [payments](../billing/payments.md), and [refunds and cancellation](../billing/refunds-and-cancellation.md).
+- Using Konfersi: Console guides, Console & projects, Lab workspace, Mission Planning and metocean data sources.
+- Plans & billing: plans and pricing, [payments](../billing/payments.md), and [refunds and cancellation](../legal/terms.md#12-refunds-and-cancellation).
 - Support: [contact support](../support/contact-support.md) and the [FAQ](../support/faq.md).
 
 **Policies**

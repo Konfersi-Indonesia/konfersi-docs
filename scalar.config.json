@@ -304,7 +304,7 @@
           },
           "/billing": {
             "type": "group",
-            "title": "Plans & billing",
+            "title": "Billing",
             "children": {
               "/plans-and-pricing": {
                 "type": "page",
@@ -726,7 +726,7 @@
           },
           "/billing": {
             "type": "group",
-            "title": "Paket & tagihan",
+            "title": "Tagihan",
             "children": {
               "/plans-and-pricing": {
                 "type": "page",

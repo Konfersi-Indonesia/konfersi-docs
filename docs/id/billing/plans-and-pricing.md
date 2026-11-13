@@ -2,7 +2,7 @@
 title: Paket & harga
 description: Tingkatan paket Konfersi, cara kerja paket dan add-on pada proyek Console, serta tempat melihat harga terkini.
 tags: [tagihan, paket, harga, add-on, console]
-related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
+related: [billing/payments, legal/terms, using-konfersi/console-projects, support/faq]
 status: draft
 updated: 2026-10-12
 ---
@@ -21,7 +21,7 @@ Paket Konfersi disusun berdasarkan seberapa banyak Anda menggunakan platform: ko
 
 Untuk **Perusahaan & Operasi**, hubungi kami untuk mendapatkan proposal khusus. Cakupan layanan, ketentuan dukungan, dan lisensi disepakati secara tertulis dengan organisasi Anda. Lihat [Hubungi tim bantuan](../support/contact-support.md).
 
-Kursus (Konfersi Course Series, Web Series, dan Private Course) dijual terpisah dari paket platform. Lihat [Pengembalian dana & pembatalan](refunds-and-cancellation.md) untuk mengetahui cara penanganan pembelian kursus.
+Kursus (Konfersi Course Series, Web Series, dan Private Course) dijual terpisah dari paket platform. Lihat [Pengembalian dana dan pembatalan dalam Ketentuan Layanan](../legal/terms.md#12-pengembalian-dana-dan-pembatalan) untuk mengetahui cara penanganan pembelian kursus.
 
 ## Cara kerja paket di Console
 
