@@ -9,16 +9,26 @@ import { fileURLToPath } from 'node:url'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
-/** Hide entries from release-scope.json; [] when the file is absent. */
-export function loadScope(root = ROOT) {
+/**
+ * Hide entries from release-scope.json ({ slug, why, links? }); [] when the file is absent.
+ * `links: "text"` lets released pages keep links to that hidden page: the backend renders them as plain text. Without
+ * it, a released page linking to the hidden page fails validation (a reader would follow a dangling reference).
+ */
+export function loadScopeEntries(root = ROOT) {
   const file = join(root, 'release-scope.json')
   if (!existsSync(file)) return []
   const scope = JSON.parse(readFileSync(file, 'utf8'))
   if (!Array.isArray(scope.hide)) throw new Error('release-scope.json: "hide" must be a list')
   return scope.hide.map((h) => {
     if (typeof h?.slug !== 'string' || !h.slug) throw new Error('release-scope.json: every hide entry needs a "slug"')
-    return h.slug
+    if (h.links !== undefined && h.links !== 'text') throw new Error(`release-scope.json: "${h.slug}": links may only be "text"`)
+    return { slug: h.slug, links: h.links ?? null }
   })
+}
+
+/** Hide entry slugs from release-scope.json; [] when the file is absent. */
+export function loadScope(root = ROOT) {
+  return loadScopeEntries(root).map((h) => h.slug)
 }
 
 /** "lab/" covers the lab folder (its overview page "lab" and everything below); anything else is one page. */
