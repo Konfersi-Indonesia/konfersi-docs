@@ -98,5 +98,5 @@ The action that needs it stops with a message; everything else keeps working. Bu
 ## More help
 
 - [Troubleshooting](troubleshooting.md)
-- [Member Q&A](../using-konfersi/community.md#member-qa) to ask other members
+- [Member Q&A](../using-konfersi/community.md#member-q-a) to ask other members
 - [Support tickets](../support/support-tickets.md) for private help

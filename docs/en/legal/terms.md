@@ -2,7 +2,7 @@
 title: Terms of Service
 description: The agreement between you and PT Konfersi Metocean Climate Consultant for using Konfersi accounts, Console, Lab, Mission Planning and courses.
 tags: [legal, terms, agreement]
-related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
+related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
 updated: 2026-09-27
 ---
@@ -117,7 +117,7 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 
 ## 12. Refunds and cancellation
 
-12.1. This section sets the binding refund rules. The practical steps for requesting a refund are described on the [Refunds & cancellation](../billing/refunds-and-cancellation.md) page. Different rules apply to Courses and to platform Plans.
+12.1. This section sets the binding refund rules. The practical steps for requesting a refund are available from [support](../support/contact-support.md#billing-and-refunds). Different rules apply to Courses and to platform Plans.
 
 12.2. **Courses.** You may cancel a Course enrolment and receive a full refund if you cancel within the cancellation window stated on the course page or at checkout, and before the Course starts or before you access any recorded Course material. After that, Course fees are not refundable, except as set out in section 12.4.
 
