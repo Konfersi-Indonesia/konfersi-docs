@@ -68,7 +68,7 @@ Intro paragraph (no H1 — the title comes from frontmatter).
 |---|---|---|
 | `title` | yes | Shown as the page H1 and in search. |
 | `description` | yes | One sentence, ≤ 200 chars; used for SEO and search snippets. |
-| `status` | yes | `published` or `draft`. Drafts are never published: the backend drops them at sync, so they are not listed, searchable or reachable. Published pages and `stable-slugs.json` pages may not link to a draft. |
+| `status` | yes | `published` or `draft`. Drafts are never published: the backend drops them at sync, so they are not listed, searchable or reachable. Published pages may not link (body or `related`) to a draft, to a missing page or heading anchor, or to a page `release-scope.json` leaves out of releases (checked on stg too, in every locale), unless that scope entry has `"links": "text"`. |
 | `updated` | yes | `YYYY-MM-DD` of the last meaningful change. |
 | `tags` | no | Inline list `[a, b]`; boosts search. |
 | `related` | no | Slugs in the same locale; become explicit graph edges. |
@@ -111,7 +111,7 @@ CI does the rest (see below). An hourly cron re-syncs each backend from its `DOC
 
 | Job | When | What |
 |---|---|---|
-| `validate` | every push / PR | `node scripts/validate.mjs`: frontmatter, en↔id parity, links, allowed HTML, and that every `stable-slugs.json` page exists. |
+| `validate` | every push / PR | `node scripts/validate.mjs`: frontmatter, en↔id parity, links and `#anchors` (heading ids as the backend renders them, `scripts/lib/anchors.mjs`), no published page linking to a draft or release-hidden page, allowed HTML, and that every `stable-slugs.json` page exists. |
 | `publish` | push / dispatch on `stg`, `uat` or `main` | 1. Force-mirrors that branch to the same branch on GitHub over SSH with a repo-scoped deploy key (`scripts/mirror-push.sh`). 2. For each env in `DOCS_SYNC_ENVS_<BRANCH>`, runs `scripts/trigger-sync.mjs` with `DOCS_SYNC_BRANCH=<branch>` + `DOCS_SYNC_COMMIT=<sha>` (`scripts/sync-envs.sh`). Without that variable the branch is only mirrored. |
 | `release` | Gitea release **published** with tag `vX.Y.Z` (or a dispatch on that tag) | 1. `scripts/check-release.mjs <tag>`: the tag must equal `v` + `package.json` version and every locale's changelog needs its `## X.Y.Z` entry; the tagged commit must be on `main`; `validate.mjs` runs again. 2. Mirrors `refs/tags/<tag>` to GitHub (same deploy key, no `--force`: a release tag never moves). 3. For each env in `DOCS_SYNC_ENVS_RELEASE`, runs `trigger-sync.mjs` with `DOCS_SYNC_TAG=<tag>`. Unset → a notice, the tag is only mirrored. Pre-releases are skipped with a notice. |
 
