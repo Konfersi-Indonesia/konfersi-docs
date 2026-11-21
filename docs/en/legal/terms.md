@@ -4,7 +4,7 @@ description: The agreement between you and PT Konfersi Metocean Climate Consulta
 tags: [legal, terms, agreement]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-11-21
 ---
 
 <scalar-callout type="info">**Effective 27 September 2026.** These Terms are published in Bahasa Indonesia and English; if the two versions conflict, the Indonesian version prevails.</scalar-callout>
@@ -62,16 +62,17 @@ In these Terms:
 
 6.1. The Services are digital decision-support tools. Unless we agree otherwise in a separate signed consulting agreement or statement of work ("**SOW**"), the Services do **not** include and must not be represented as:
 
-1. a certified or stamped metocean study, design basis or design criteria;
-2. an environmental impact assessment (including AMDAL) or any document for submission to a regulator;
-3. navigation, routing or safety-of-life advice, or a substitute for official weather warnings;
-4. a certification, approval or verification by a classification society, marine warranty surveyor or other certifying body.
+1. a certified or stamped engineering design basis or engineering design criteria;
+2. navigation, routing or safety-of-life advice, or a substitute for official weather warnings;
+3. a certification, approval or verification by a classification society, marine warranty surveyor or other certifying body.
 
-6.2. Consulting services (such as metocean studies, ocean modelling or underwater noise modelling) are provided only under a separate SOW. That SOW, not these Terms, governs the consulting deliverables, their warranties and their liability terms.
+6.2. Metocean analysis results produced through the Services may not be used as a substitute for official weather warnings issued by the competent authorities (such as BMKG). They may be used only as one additional consideration alongside official weather warnings.
 
-6.3. Risk Assessment, weather routing and other modules that we have not released are not part of the Services. Any reference to them in marketing material is not an offer or a commitment to provide them.
+6.3. Consulting services (such as metocean studies, ocean modelling or underwater noise modelling) are provided only under a separate SOW. That SOW, not these Terms, governs the consulting deliverables, their warranties and their liability terms.
 
-6.4. Please also read our [AI & metocean disclaimer](ai-and-metocean-disclaimer.md), which forms part of these Terms.
+6.4. Risk Assessment, weather routing and other modules that we have not released are not part of the Services. Any reference to them in marketing material is not an offer or a commitment to provide them.
+
+6.5. Please also read our [AI & metocean disclaimer](ai-and-metocean-disclaimer.md), which forms part of these Terms.
 
 ## 7. Acceptable use
 
@@ -147,8 +148,6 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 
 14.2. These obligations do not apply to information that is or becomes public without breach, was lawfully known to the recipient before disclosure, is independently developed, or must be disclosed by law or by order of a competent authority (in which case the disclosing party should be notified where legally permitted).
 
-14.3. Please do not post confidential project information in public or community channels, including our Discord community.
-
 ## 15. Intellectual property
 
 15.1. Konfersi and its licensors own all rights in the Services, including software, models, methods, user interfaces, documentation, Course materials and the "Konfersi" name and logos. These Terms do not transfer any of those rights to you.
@@ -156,8 +155,6 @@ You must comply with our [Acceptable Use Policy](acceptable-use.md), which forms
 15.2. Course materials are licensed to you for personal learning only. You may not copy, record, resell or publicly share them without our written permission.
 
 15.3. If you send us feedback or suggestions, we may use them to improve the Services without any obligation to you.
-
-15.4. Content you post in our community channels remains yours, but you permit us to display, moderate and remove it as needed to operate those channels.
 
 ## 16. Warranty disclaimer
 
