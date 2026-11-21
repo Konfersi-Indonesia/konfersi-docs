@@ -4,7 +4,7 @@ description: Konfersi menghadirkan intelijen metocean, iklim, dan lingkungan mel
 tags: [ikhtisar, metocean, iklim, platform]
 related: [getting-started/products-and-surfaces, getting-started/create-account, company/about]
 status: published
-updated: 2026-11-12
+updated: 2026-11-21
 ---
 
 Konfersi menghadirkan intelijen metocean, iklim, dan lingkungan untuk proyek lepas pantai, pesisir, energi, dan infrastruktur. Anda dapat memanfaatkannya melalui platform digital kami, melalui layanan konsultasi ahli, atau dengan mempelajari metodenya sendiri lewat kursus kami.
@@ -43,7 +43,7 @@ Konfersi Course Series, Web Series, dan Private Course mengajarkan pengolahan da
 
 ## Asal data kami
 
-Model dan analisis kami dikalibrasi serta divalidasi terhadap dataset global yang banyak digunakan, termasuk ERA5, CMEMS, FES2022, dan CMIP6.
+Analisis kami memanfaatkan dataset global yang otoritatif dari lembaga ilmiah terkemuka, termasuk reanalisis ERA5 dari ECMWF, data suhu permukaan laut satelit OSTIA dari UK Met Office, produk kelautan Copernicus Marine (CMEMS), model pasang surut FES2022, serta proyeksi iklim CMIP6.
 
 ## Langkah berikutnya
 
