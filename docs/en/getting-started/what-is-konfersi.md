@@ -4,7 +4,7 @@ description: Konfersi provides metocean, climate and environmental intelligence 
 tags: [overview, metocean, climate, platform]
 related: [getting-started/products-and-surfaces, getting-started/create-account, company/about]
 status: published
-updated: 2026-11-12
+updated: 2026-11-21
 ---
 
 Konfersi delivers metocean, climate and environmental intelligence for offshore, coastal, energy and infrastructure projects. You can work with it through our digital platform, through expert consulting, or by learning the methods yourself in our courses.
@@ -43,7 +43,7 @@ The Konfersi Course Series, Web Series and Private Courses teach practical metoc
 
 ## Where the data comes from
 
-Our models and analyses are calibrated and validated against widely used global datasets, including ERA5, CMEMS, FES2022 and CMIP6.
+Our analyses draw on authoritative global datasets from leading scientific agencies, including ECMWF's ERA5 reanalysis, the UK Met Office's OSTIA satellite sea surface temperature, Copernicus Marine (CMEMS) ocean products, the FES2022 tide model and CMIP6 climate projections.
 
 ## Next steps
 

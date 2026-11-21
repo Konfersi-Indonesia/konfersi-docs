@@ -4,10 +4,18 @@ description: Perubahan pada setiap rilis Dokumentasi Konfersi, dari yang terbaru
 tags: [catatan rilis, changelog, rilis, versi]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-11-13
+updated: 2026-11-21
 ---
 
 Setiap rilis Dokumentasi Konfersi memiliki nomor versi. Versi yang tampil di sidebar dokumentasi adalah rilis yang sedang Anda baca. Rilis yang lebih baru ditampilkan di bagian atas halaman ini.
+
+## 1.4.3 — 21 November 2026
+
+**Diperbarui**
+
+- [Syarat & Ketentuan](../legal/terms.md#6-hal-yang-tidak-termasuk-dalam-layanan), angka 6: Layanan tidak mencakup dasar desain teknik atau kriteria desain teknik yang tersertifikasi atau bercap. Angka 6.2 yang baru: hasil analisis metocean bukan pengganti peringatan cuaca resmi dari otoritas yang berwenang (seperti BMKG) dan hanya dapat digunakan sebagai pertimbangan tambahan yang mendampinginya. Klausul berikutnya kini bernomor 6.3 sampai 6.5.
+- [Syarat & Ketentuan](../legal/terms.md), angka 14 dan 15: klausul tentang komunitas Konfersi dan kanalnya dihapus.
+- [Apa itu Konfersi?](../getting-started/what-is-konfersi.md#asal-data-kami): asal data kini menyebutkan reanalisis ERA5 dari ECMWF, suhu permukaan laut OSTIA dari UK Met Office, Copernicus Marine (CMEMS), model pasang surut FES2022, dan proyeksi iklim CMIP6.
 
 ## 1.4.2 — 13 November 2026
 
