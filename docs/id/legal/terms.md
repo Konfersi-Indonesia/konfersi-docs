@@ -4,7 +4,7 @@ description: Perjanjian antara Anda dan PT Konfersi Metocean Climate Consultant 
 tags: [legal, syarat-ketentuan, perjanjian]
 related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
 status: published
-updated: 2026-09-27
+updated: 2026-11-21
 ---
 
 <scalar-callout type="info">**Berlaku sejak 27 September 2026.** Syarat & Ketentuan ini dibuat dalam Bahasa Indonesia dan bahasa Inggris; apabila terdapat pertentangan, versi Bahasa Indonesia yang berlaku.</scalar-callout>
@@ -62,16 +62,17 @@ Dalam Syarat ini:
 
 6.1. Layanan merupakan alat bantu pengambilan keputusan berbasis digital. Kecuali disepakati lain dalam perjanjian konsultansi atau pernyataan lingkup kerja (*statement of work*, "**SOW**") terpisah yang ditandatangani, Layanan **tidak** mencakup dan tidak boleh dinyatakan sebagai:
 
-1. kajian metocean, dasar desain, atau kriteria desain yang tersertifikasi atau bercap;
-2. analisis mengenai dampak lingkungan (termasuk AMDAL) atau dokumen apa pun untuk diajukan kepada regulator;
-3. saran navigasi, rute pelayaran, atau keselamatan jiwa, maupun pengganti peringatan cuaca resmi;
-4. sertifikasi, persetujuan, atau verifikasi dari badan klasifikasi, surveyor penjamin kelautan (*marine warranty surveyor*), atau lembaga sertifikasi lainnya.
+1. dasar desain teknik (*engineering design basis*) atau kriteria desain teknik (*engineering design criteria*) yang tersertifikasi atau bercap;
+2. saran navigasi, rute pelayaran, atau keselamatan jiwa, maupun pengganti peringatan cuaca resmi;
+3. sertifikasi, persetujuan, atau verifikasi dari badan klasifikasi, surveyor penjamin kelautan (*marine warranty surveyor*), atau lembaga sertifikasi lainnya.
 
-6.2. Jasa konsultansi (seperti kajian metocean, pemodelan laut, atau pemodelan kebisingan bawah air) hanya diberikan berdasarkan SOW terpisah. SOW tersebut, dan bukan Syarat ini, yang mengatur hasil kerja konsultansi, jaminannya, dan ketentuan tanggung jawabnya.
+6.2. Hasil analisis metocean yang dihasilkan melalui Layanan tidak dapat digunakan sebagai pengganti peringatan cuaca resmi dari otoritas yang berwenang (seperti BMKG). Hasil tersebut hanya dapat digunakan sebagai salah satu pertimbangan tambahan yang mendampingi peringatan cuaca resmi.
 
-6.3. Risk Assessment, *weather routing*, dan modul lain yang belum Kami rilis tidak termasuk dalam Layanan. Penyebutan modul tersebut dalam materi pemasaran bukan merupakan penawaran maupun komitmen untuk menyediakannya.
+6.3. Jasa konsultansi (seperti kajian metocean, pemodelan laut, atau pemodelan kebisingan bawah air) hanya diberikan berdasarkan SOW terpisah. SOW tersebut, dan bukan Syarat ini, yang mengatur hasil kerja konsultansi, jaminannya, dan ketentuan tanggung jawabnya.
 
-6.4. Mohon baca juga [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami, yang merupakan bagian dari Syarat ini.
+6.4. Risk Assessment, *weather routing*, dan modul lain yang belum Kami rilis tidak termasuk dalam Layanan. Penyebutan modul tersebut dalam materi pemasaran bukan merupakan penawaran maupun komitmen untuk menyediakannya.
+
+6.5. Mohon baca juga [Penafian AI & metocean](ai-and-metocean-disclaimer.md) Kami, yang merupakan bagian dari Syarat ini.
 
 ## 7. Penggunaan yang wajar
 
@@ -147,8 +148,6 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 14.2. Kewajiban tersebut tidak berlaku terhadap informasi yang telah atau kemudian menjadi informasi publik bukan karena pelanggaran, telah diketahui secara sah oleh penerima sebelum pengungkapan, dikembangkan secara mandiri, atau wajib diungkapkan berdasarkan hukum atau perintah otoritas yang berwenang (dalam hal demikian, pihak yang mengungkapkan sepatutnya diberi tahu sepanjang diizinkan oleh hukum).
 
-14.3. Mohon untuk tidak mengunggah informasi proyek yang bersifat rahasia di kanal publik atau komunitas, termasuk komunitas Discord Kami.
-
 ## 15. Hak kekayaan intelektual
 
 15.1. Konfersi dan para pemberi lisensinya memiliki seluruh hak atas Layanan, termasuk perangkat lunak, model, metode, antarmuka pengguna, dokumentasi, materi Kursus, serta nama dan logo "Konfersi". Syarat ini tidak mengalihkan hak-hak tersebut kepada Anda.
@@ -156,8 +155,6 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 15.2. Materi Kursus dilisensikan kepada Anda hanya untuk pembelajaran pribadi. Anda dilarang menyalin, merekam, menjual kembali, atau membagikannya secara publik tanpa izin tertulis dari Kami.
 
 15.3. Apabila Anda memberikan masukan atau saran kepada Kami, Kami dapat menggunakannya untuk meningkatkan Layanan tanpa kewajiban apa pun kepada Anda.
-
-15.4. Konten yang Anda unggah di kanal komunitas Kami tetap menjadi milik Anda, namun Anda mengizinkan Kami untuk menampilkan, memoderasi, dan menghapusnya sepanjang diperlukan untuk mengelola kanal tersebut.
 
 ## 16. Penafian jaminan
 
