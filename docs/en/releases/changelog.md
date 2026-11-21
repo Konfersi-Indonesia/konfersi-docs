@@ -4,10 +4,18 @@ description: What changed in each release of the Konfersi Docs, newest first.
 tags: [changelog, releases, versions, what's new]
 related: [getting-started/what-is-konfersi, legal/terms, legal/privacy]
 status: published
-updated: 2026-11-13
+updated: 2026-11-21
 ---
 
 Each release of the Konfersi Docs gets a version number. The version shown in the docs sidebar is the release you are reading. Newer releases appear at the top of this page.
+
+## 1.4.3 — 21 November 2026
+
+**Updated**
+
+- [Terms of Service](../legal/terms.md#6-what-the-services-do-not-include), section 6: the Services do not include a certified or stamped engineering design basis or engineering design criteria. New 6.2: metocean analysis results are not a substitute for official weather warnings from the competent authorities (such as BMKG) and may be used only as an additional consideration alongside them. The later clauses are renumbered 6.3 to 6.5.
+- [Terms of Service](../legal/terms.md), sections 14 and 15: the clauses about the Konfersi community and its channels are removed.
+- [What is Konfersi?](../getting-started/what-is-konfersi.md#where-the-data-comes-from): the data sources now name ECMWF's ERA5 reanalysis, the UK Met Office's OSTIA sea surface temperature, Copernicus Marine (CMEMS), the FES2022 tide model and CMIP6 climate projections.
 
 ## 1.4.2 — 13 November 2026
 
