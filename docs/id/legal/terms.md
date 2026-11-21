@@ -2,7 +2,7 @@
 title: Syarat & Ketentuan
 description: Perjanjian antara Anda dan PT Konfersi Metocean Climate Consultant atas penggunaan akun, Console, Lab, Mission Planning, dan kursus Konfersi.
 tags: [legal, syarat-ketentuan, perjanjian]
-related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, billing/refunds-and-cancellation, trust/security, support/contact-support]
+related: [legal/privacy, legal/cookies, legal/acceptable-use, legal/ai-and-metocean-disclaimer, trust/security, support/contact-support]
 status: published
 updated: 2026-09-27
 ---
@@ -117,7 +117,7 @@ Anda wajib mematuhi [Kebijakan Penggunaan yang Wajar](acceptable-use.md) Kami, y
 
 ## 12. Pengembalian dana dan pembatalan
 
-12.1. Angka ini menetapkan ketentuan pengembalian dana yang mengikat. Langkah praktis untuk mengajukan pengembalian dana diuraikan di halaman [Pengembalian dana & pembatalan](../billing/refunds-and-cancellation.md). Ketentuan yang berbeda berlaku untuk Kursus dan untuk Paket platform.
+12.1. Angka ini menetapkan ketentuan pengembalian dana yang mengikat. Langkah praktis untuk mengajukan pengembalian dana dapat diperoleh dari [tim bantuan](../support/contact-support.md#tagihan-dan-pengembalian-dana). Ketentuan yang berbeda berlaku untuk Kursus dan untuk Paket platform.
 
 12.2. **Kursus.** Anda dapat membatalkan pendaftaran Kursus dan memperoleh pengembalian dana secara penuh apabila Anda membatalkan dalam jangka waktu pembatalan yang tercantum di halaman kursus atau pada saat pembayaran, serta sebelum Kursus dimulai atau sebelum Anda mengakses materi Kursus yang terekam. Setelah itu, biaya Kursus tidak dapat dikembalikan, kecuali sebagaimana diatur dalam angka 12.4.
 

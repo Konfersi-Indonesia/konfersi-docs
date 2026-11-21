@@ -1,5 +1,5 @@
 {
-  "$comment": "Pages kept out of releases (the uat and main branches and their vX.Y.Z tags). stg publishes everything; `node scripts/release-scope.mjs apply` marks these pages status: draft on a release branch, and `validate.mjs --release` (CI on uat, main and release tags) fails if one is published there. An entry ending in '/' covers that folder and its overview page. Remove an entry when its product is released.",
+  "$comment": "Pages kept out of releases (the uat and main branches and their vX.Y.Z tags). stg publishes everything; `node scripts/release-scope.mjs apply` marks these pages status: draft on a release branch, and `validate.mjs --release` (CI on uat, main and release tags) fails if one is published there. An entry ending in '/' covers that folder and its overview page. Remove an entry when its product is released. A released page may not link to a hidden page (validate.mjs fails, on stg too) unless the entry has \"links\": \"text\": then the backend shows the link text only.",
   "hide": [
     { "slug": "lab/", "why": "Lab platform not released" },
     { "slug": "using-konfersi/lab-workspace", "why": "Lab platform not released" },
@@ -14,6 +14,6 @@
     { "slug": "account/security/connected-devices", "why": "Lab extension not released" },
     { "slug": "billing/plans-and-pricing", "why": "Lab plans not released" },
     { "slug": "billing/refunds-and-cancellation", "why": "refund policy pending legal review" },
-    { "slug": "legal/ai-and-metocean-disclaimer", "why": "Lab and metocean outputs not released" }
+    { "slug": "legal/ai-and-metocean-disclaimer", "why": "Lab and metocean outputs not released", "links": "text", "linksWhy": "binding cross-references in the Terms (6.4, 19.2), Privacy (12.3) and AUP; rewording them is a legal decision, so released pages show them as text" }
   ]
 }

@@ -2,7 +2,7 @@
 title: Plans & pricing
 description: The Konfersi plan tiers, how plans and add-ons attach to Console projects, and where to see current prices.
 tags: [billing, plans, pricing, add-ons, console]
-related: [billing/payments, billing/refunds-and-cancellation, using-konfersi/console-projects, support/faq]
+related: [billing/payments, legal/terms, using-konfersi/console-projects, support/faq]
 status: published
 updated: 2026-10-12
 ---
@@ -21,7 +21,7 @@ Konfersi plans are built around how much of the platform you use: Lab compute, s
 
 For **Enterprise & Operations**, contact us for a custom proposal. The scope, support terms and licensing are agreed in writing with your organisation. See [Contact support](../support/contact-support.md).
 
-Courses (Konfersi Course Series, Web Series and Private Course) are sold separately from platform plans. See [Refunds & cancellation](refunds-and-cancellation.md) for how course purchases are handled.
+Courses (Konfersi Course Series, Web Series and Private Course) are sold separately from platform plans. See [Refunds and cancellation in the Terms of Service](../legal/terms.md#12-refunds-and-cancellation) for how course purchases are handled.
 
 ## How plans work in the Console
 

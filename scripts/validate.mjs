@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 // Validates the docs repo so the backend sync never ingests a broken tree.
 // Checks: config shape, en/id slug parity, files exist, frontmatter schema,
-// internal links + related slugs resolve, allowed HTML only, no local/absolute
+// internal links + related slugs resolve (pages and #heading anchors), no published page links to a draft or to a page
+// the release scope leaves out (in either locale, on stg too), allowed HTML only, no local/absolute
 // Konfersi hosts, and every stable slug that apps link to still exists.
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname, relative, resolve, posix } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { splitFrontmatter } from './lib/frontmatter.mjs'
-import { loadScope, hiddenBy } from './release-scope.mjs'
+import { loadScopeEntries, hiddenBy } from './release-scope.mjs'
+import { headingIds } from './lib/anchors.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const errors = []
@@ -16,11 +18,17 @@ const fail = (msg) => errors.push(msg)
 // Release mode (uat, main and vX.Y.Z tags): the pages in release-scope.json must be drafts there, and nothing
 // still under legal review may be published. stg runs without it and publishes everything.
 const RELEASE = process.argv.includes('--release') || process.env.DOCS_RELEASE === '1'
-let scope = []
+let scopeEntries = []
 try {
-  scope = loadScope(ROOT)
+  scopeEntries = loadScopeEntries(ROOT)
 } catch (err) {
   fail(String(err.message ?? err))
+}
+const scope = scopeEntries.map((e) => e.slug)
+/** The release-scope entry hiding `slug`, or null. */
+const hidingEntry = (slug) => {
+  const s = hiddenBy(slug, scope)
+  return s === null ? null : scopeEntries.find((e) => e.slug === s)
 }
 
 const config = JSON.parse(readFileSync(join(ROOT, 'scalar.config.json'), 'utf8'))
@@ -100,10 +108,13 @@ const ALLOWED_TAG = /^<\/?scalar-callout(\s+type="(neutral|info|success|warning|
 const FORBIDDEN_HOST = /(localhost|127\.0\.0\.1|\b(?:[a-z0-9-]+\.)*(?:dev|stg|uat)\.konfersi\.com)/i
 const referenced = new Set()
 const statusBySlug = {}
+const anchorsBySlug = {}
 const edges = []
+const anchorChecks = []
 
 for (const locale of locales) {
   statusBySlug[locale] = {}
+  anchorsBySlug[locale] = {}
   const slugSet = new Set((pagesByLocale[locale] ?? []).map((p) => p.slug))
   for (const page of pagesByLocale[locale] ?? []) {
     const where = `[${locale}] ${page.filepath}`
@@ -125,6 +136,7 @@ for (const locale of locales) {
     }
     if (data.status && !STATUSES.has(data.status)) fail(`${where}: status must be draft|published`)
     statusBySlug[locale][page.slug] = data.status
+    anchorsBySlug[locale][page.slug] = headingIds(body)
     if (RELEASE && data.status !== 'draft' && hiddenBy(page.slug, scope)) {
       fail(`${where}: out of the release scope (release-scope.json) but published; run node scripts/release-scope.mjs apply`)
     }
@@ -154,13 +166,20 @@ for (const locale of locales) {
     if (hostHit) fail(`${where}: non-production host "${hostHit[0]}" in content`)
 
     for (const [, target] of prose.matchAll(/\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)) {
-      if (/^(https?:|mailto:|tel:|#)/.test(target)) continue
-      const [pathPart] = target.split('#')
+      if (/^(https?:|mailto:|tel:)/.test(target)) continue
+      const [pathPart, anchor] = target.split('#')
+      if (!pathPart) {
+        anchorChecks.push({ locale, where, slug: page.slug, anchor, target })
+        continue
+      }
       const resolved = posix.normalize(posix.join(posix.dirname(page.filepath), pathPart))
       if (pathPart.endsWith('.md')) {
         const slug = slugFromPath(resolved.replace(`docs/${locale}/`, ''))
         if (!slugSet.has(slug)) fail(`${where}: broken link ${target}`)
-        else edges.push({ locale, where, from: page.slug, to: slug, kind: 'link' })
+        else {
+          edges.push({ locale, where, from: page.slug, to: slug, kind: 'link' })
+          if (anchor) anchorChecks.push({ locale, where, slug, anchor, target })
+        }
       } else if (!existsSync(join(ROOT, resolved))) {
         fail(`${where}: missing asset ${target}`)
       }
@@ -168,12 +187,27 @@ for (const locale of locales) {
   }
 }
 
+// ── #anchors name a heading of the target page (ids as the backend renders them) ──
+for (const { locale, where, slug, anchor, target } of anchorChecks) {
+  if (!anchorsBySlug[locale]?.[slug]?.has(anchor)) fail(`${where}: link ${target} names no heading of "${slug}" (anchor "#${anchor}")`)
+}
+
 // ── Drafts are never published, so nothing public may point at one ──
+// Checked against the release too, on every branch: a page the release publishes may not link to a page the release
+// scope leaves out (it is a draft there), unless that scope entry says `links: "text"` (the backend shows the link
+// text only). So a PR into stg fails for a link that would dangle on uat / production, not only the promotion.
 for (const { locale, where, from, to, kind } of edges) {
-  if (statusBySlug[locale][to] === 'draft' && statusBySlug[locale][from] !== 'draft') {
-    // A page left out by the release scope: the backend renders the link as plain text, so it is only a warning.
-    if (RELEASE && hiddenBy(to, scope)) warnings.push(`${where}: ${kind} to "${to}", left out of this release (shown as plain text)`)
+  const fromStatus = statusBySlug[locale][from]
+  const toStatus = statusBySlug[locale][to]
+  if (fromStatus === 'draft') continue
+  const entry = hidingEntry(to)
+  const sourceReleased = !hidingEntry(from)
+  if (toStatus === 'draft') {
+    if (entry?.links === 'text') warnings.push(`${where}: ${kind} to "${to}", left out of this release (shown as plain text)`)
     else fail(`${where}: ${kind} to draft page "${to}" (drafts are not published)`)
+  } else if (entry && sourceReleased) {
+    if (entry.links === 'text') warnings.push(`${where}: ${kind} to "${to}", left out of releases (shown there as plain text)`)
+    else fail(`${where}: ${kind} to "${to}", which releases leave out (release-scope.json: "${entry.slug}"); link a released page instead, or give that entry links: "text"`)
   }
 }
 for (const [name, slug] of Object.entries(stable)) {

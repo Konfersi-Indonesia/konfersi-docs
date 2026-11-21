@@ -42,4 +42,4 @@ After a ticket closes, you can rate the help from 1 (**Poor**) to 5 (**Excellent
 
 ## Questions for other members
 
-For general how-to questions, you can also ask in [Member Q&A](../using-konfersi/community.md#member-qa). For other ways to reach us, see [Contact support](contact-support.md).
+For general how-to questions, you can also ask in [Member Q&A](../using-konfersi/community.md#member-q-a). For other ways to reach us, see [Contact support](contact-support.md).
